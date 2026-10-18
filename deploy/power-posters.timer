@@ -1,0 +1,10 @@
+[Unit]
+Description=Redraw the power posters every evening (after SLDC, DGR and NFMS have landed)
+
+[Timer]
+OnCalendar=*-*-* 13:00:00
+RandomizedDelaySec=300
+Persistent=true
+
+[Install]
+WantedBy=timers.target

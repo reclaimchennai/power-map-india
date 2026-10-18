@@ -1,0 +1,10 @@
+[Unit]
+Description=Power Map of India: collect SLDC / NPP / CEA / weather and export live JSON
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/projects/electric
+ExecStart=%h/projects/electric/.venv/bin/python -W ignore -m scrapers.collect
+Nice=10
+TimeoutStartSec=900

@@ -1,0 +1,6 @@
+pdfplumber
+requests
+fastapi
+uvicorn
+pandas
+pyarrow

@@ -1,0 +1,10 @@
+[Unit]
+Description=Power Map of India: redraw the India and Tamil Nadu posters from the day's data
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/projects/electric
+ExecStart=%h/projects/electric/.venv/bin/python scripts/render_poster.py --dpi 300
+ExecStart=%h/projects/electric/.venv/bin/python scripts/render_coal_poster.py --dpi 300
+Nice=15
+TimeoutStartSec=900

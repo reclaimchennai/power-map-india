@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TNEB / India Energy Archive — live dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="vendor/leaflet.css">
+<style>
+:root { --bg:#0b0f14; --panel:#121821; --ink:#dce6f0; --dim:#8aa0b4; --hot:#ff5d47; --ok:#3ddc84; --warn:#ffb347; }
+* { box-sizing:border-box; }
+body { margin:0; font:14px/1.45 -apple-system, "Segoe UI", sans-serif; background:var(--bg); color:var(--ink); }
+#layout { display:grid; grid-template-columns: 340px 1fr 340px; height:100vh; }
+aside { background:var(--panel); overflow-y:auto; padding:14px; }
+#map { height:100%; }
+h1 { font-size:15px; margin:0 0 2px; letter-spacing:.4px; }
+.sub { color:var(--dim); font-size:11px; margin-bottom:12px; }
+h2 { font-size:12px; text-transform:uppercase; letter-spacing:1px; color:var(--dim); margin:16px 0 6px; }
+.card { background:#0e141c; border:1px solid #1d2733; border-radius:8px; padding:8px 10px; margin-bottom:6px; }
+.card .big { font-size:20px; font-weight:700; }
+.card .lbl { color:var(--dim); font-size:11px; }
+table { width:100%; border-collapse:collapse; font-size:12px; }
+th { text-align:left; color:var(--dim); font-weight:600; font-size:10px; text-transform:uppercase; }
+td, th { padding:4px 4px; border-bottom:1px solid #1a222d; }
+td.num, th.num { text-align:right; font-variant-numeric:tabular-nums; }
+.crit { color:var(--hot); font-weight:700; }
+.low { color:var(--warn); }
+.okv { color:var(--ok); }
+.bar { height:5px; background:#1a222d; border-radius:3px; overflow:hidden; margin-top:3px; }
+.bar i { display:block; height:100%; background:var(--ok); }
+.bar i.low { background:var(--warn); } .bar i.crit { background:var(--hot); }
+.legend { position:absolute; bottom:14px; left:14px; background:rgba(10,14,20,.85); padding:8px 10px; border-radius:8px; font-size:11px; z-index:800; }
+.base-switch { background:#121821; border:1px solid #1d2733; border-radius:8px; padding:4px; display:flex; gap:3px; z-index:900; }
+.base-switch button { border:0; background:transparent; color:#8aa0b4; font-size:11px; padding:3px 8px; border-radius:5px; cursor:pointer; text-transform:capitalize; }
+.base-switch button.on { background:#3b82c4; color:#fff; }
+.leaflet-control-layers { background:#121821; color:#dce6f0; border:1px solid #1d2733 !important; }
+.leaflet-control-layers-expanded { padding:8px 10px; font-size:12px; }
+.leaflet-popup-content-wrapper, .leaflet-popup-tip { background:#121821; color:#dce6f0; }
+.dot { display:inline-block; width:9px; height:9px; border-radius:50%; margin-right:5px; }
+@media (max-width: 1000px){ #layout{ grid-template-columns:1fr; } aside{height:45vh;} }
+</style>
+</head>
+<body>
+<div id="layout">
+  <aside>
+    <h1>⚡ TN / India Energy Archive</h1>
+    <div class="sub">TNEB SLDC · CEA · NPP — refreshed <span id="ts">…</span></div>
+
+    <h2>Tamil Nadu grid right now</h2>
+    <div class="card"><div class="big" id="peak">—</div><div class="lbl">peak demand MW</div></div>
+    <div class="card"><div class="big" id="cons">—</div><div class="lbl">consumption MU/day</div></div>
+    <div class="card"><div class="big" id="morning">—</div><div class="lbl">morning peak MW</div></div>
+
+    <h2>Generation mix today (MU)</h2>
+    <div id="mix">loading…</div>
+
+    <h2>Imports / inter-state (MU today)</h2>
+    <div id="imports">loading…</div>
+
+    <h2>Supply chain — critical coal stock (all-India, NPP/CEA)</h2>
+    <div id="lowstock">loading…</div>
+    <h2>Coal India (production / offtake, MT)</h2>
+    <div id="cil">loading…</div>
+    <h2>Nuclear fleet (NPCIL, cumulative MU)</h2>
+    <div id="npcil">loading…</div>
+
+    <h2>District-wise capacity (TEDA/ENVIS archive)</h2>
+    <div id="district">loading…</div>
+
+    <h2>Coal stock — Tamil Nadu plants</h2>
+    <div id="coal">loading…</div>
+  </aside>
+
+  <div style="position:relative">
+    <div id="map"></div>
+    <div class="legend">
+      <div style="color:#dce6f0"><b>Generation (god's view)</b></div>
+      <div><span class="dot" style="background:#b458ff"></span>nuclear</div>
+      <div><span class="dot" style="background:#ff5d47"></span>thermal (coal)</div>
+      <div><span class="dot" style="background:#ff8fc7"></span>gas</div>
+      <div><span class="dot" style="background:#26c6ff"></span>hydro</div>
+      <div><span class="dot" style="background:#00c9a7"></span>wind</div>
+      <div><span class="dot" style="background:#ffd23f"></span>solar</div>
+    </div>
+  </div>
+
+  <aside>
+    <h2>Renewable generation today — top states (MU)</h2>
+    <div id="res">loading…</div>
+    <h2>TN renewable stations (today)</h2>
+    <div id="tnres">loading…</div>
+    <h2>Scraper status</h2>
+    <div id="status" class="sub">—</div>
+  </aside>
+</div>
+
+<script src="vendor/leaflet.js"></script>
+<script>
+const map = L.map('map', {zoomControl:true}).setView([11.0, 78.7], 7);
+const BASES = {
+  cream:     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+                          {attribution:'© OpenStreetMap © CARTO', maxZoom:18}),
+  streets:   L.tileLayer('https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
+                          {attribution:'© Google', maxZoom:19}),
+  satellite: L.tileLayer('https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
+                          {attribution:'© Google', maxZoom:19}),
+  hybrid:    L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}',
+                          {attribution:'© Google', maxZoom:19}),
+};
+let activeBase = 'cream';
+BASES[activeBase].addTo(map);
+const applyTint = () => {
+  const tp = document.querySelector('.leaflet-tile-pane');
+  if(tp) tp.style.filter = activeBase === 'cream'
+    ? 'sepia(.22) saturate(.92) brightness(1.04) hue-rotate(-6deg)' : 'none';
+};
+function setBase(name){
+  if(name === activeBase) return;
+  map.removeLayer(BASES[activeBase]);
+  activeBase = name;
+  BASES[name].addTo(map);
+  BASES[name].bringToBack();
+  applyTint();
+}
+const baseCtrl = L.control({position:'topright'});
+baseCtrl.onAdd = () => {
+  const d = L.DomUtil.create('div', 'base-switch');
+  d.innerHTML = Object.keys(BASES).map(b =>
+    `<button data-b="${b}" class="${b===activeBase?'on':''}">${b}</button>`).join('');
+  L.DomEvent.disableClickPropagation(d);
+  d.onclick = e => { const b = e.target.dataset && e.target.dataset.b;
+    if(b){ setBase(b);
+      d.querySelectorAll('button').forEach(x=>x.classList.toggle('on', x.dataset.b===b)); } };
+  return d;
+};
+baseCtrl.addTo(map);
+applyTint();
+
+const linesLayer = L.layerGroup().addTo(map);
+fetch('/geo/tn_lines').then(r=>r.json()).then(gj=>{
+  const col = kv => kv>=400 ? '#ff2e63' : kv>=230 ? '#3b82c4' : kv>=110 ? '#e8960c' : '#9aa7b4';
+  const wt  = kv => kv>=400 ? 2.5  : kv>=230 ? 2    : kv>=110 ? 1.2   : 0.7;
+  L.geoJSON(gj, {
+    style: f => ({color: col(f.properties.kv), weight: wt(f.properties.kv), opacity:.75}),
+    onEachFeature: (f,l) => l.bindPopup(
+      `<b>${f.properties.from} ↔ ${f.properties.to}</b><br>${f.properties.kv} kV<br><i>${f.properties.source}</i>`)
+  }).addTo(linesLayer);
+});
+const PLANT_STYLE = {
+  nuclear:    {color:'#b458ff', label:'Nuclear'},
+  thermal:    {color:'#ff5d47', label:'Thermal (coal)'},
+  gas:        {color:'#ff8fc7', label:'Gas'},
+  hydro:      {color:'#26c6ff', label:'Hydro'},
+  wind:       {color:'#00c9a7', label:'Wind'},
+  solar:      {color:'#ffd23f', label:'Solar'},
+};
+const livePlants = {};
+const plantLayers = {};
+fetch('/geo/tn_plants').then(r=>r.json()).then(gj=>{
+  for(const t of Object.keys(PLANT_STYLE)) plantLayers[t] = L.layerGroup();
+  L.geoJSON(gj, {
+    pointToLayer:(f,latlng)=>{
+      const s = PLANT_STYLE[f.properties.type] || {color:'#ffffff'};
+      const live = livePlants[f.properties.name.toUpperCase()];
+      return L.circleMarker(latlng, {
+        radius: 4 + Math.sqrt(f.properties.capacity_mw)/4.5,
+        color: s.color, weight:2, fillOpacity: live != null ? .55 : .2,
+        dashArray: f.properties.accuracy === 'exact' ? null : '2 3'
+      });
+    },
+    onEachFeature:(f,l)=>{
+      const live = livePlants[f.properties.name.toUpperCase()];
+      l.bindPopup(`<b>${f.properties.name}</b> (${f.properties.type})<br>
+        ${f.properties.capacity_mw} MW · ${f.properties.operator}<br>
+        ${f.properties.accuracy==='exact'?'':'approximate location'}<br>
+        ${live != null ? `<b style="color:#3ddc84">stock today: ${live.stock_total_kt} kt (${live.stock_pct}%)</b>` : ''}`);
+    }
+  }).addTo(map).eachLayer(l => {
+    const t = l.feature.properties.type;
+    if(plantLayers[t]) l.addTo(plantLayers[t]);
+  });
+  const overlays = {'Transmission lines': linesLayer};
+  for(const [t,s] of Object.entries(PLANT_STYLE)) overlays[`${s.label}`] = plantLayers[t];
+  L.control.layers(null, overlays, {collapsed:false, position:'bottomright'}).addTo(map);
+});
+
+function stockClass(p){ return p <= 25 ? 'crit' : p <= 50 ? 'low' : 'okv'; }
+
+async function loadPeak(){
+  const r = await (await fetch('/api/tneb/peak')).json();
+  if(!r.length) return;
+  const d = r[0];
+  document.getElementById('peak').textContent = Math.round(d.peak_demand_mw).toLocaleString();
+  document.getElementById('cons').textContent = d.consumption_mu.toFixed(1);
+  document.getElementById('morning').textContent = Math.round(d.morning_peak_mw).toLocaleString();
+}
+
+async function loadMix(){
+  const r = await (await fetch('/api/tneb/mix')).json();
+  if(!r.rows) return;
+  document.getElementById('ts').textContent = r.date;
+  const key = k => r.rows.find(x => x.item.toLowerCase().includes(k));
+  const own = r.rows.filter(x => x.section === 'TNEB own' && x.mu != null &&
+      !/schemes|captive|purchase/i.test(x.item));
+  document.getElementById('mix').innerHTML = own.map(x =>
+    `<div class="card"><b>${x.item.replace(/^[a-c]\)\s*/,'')}</b>
+      <span class="lbl">${x.capacity_mw ? Math.round(x.capacity_mw)+' MW cap · ' : ''}${x.inst_mw!=null?Math.round(x.inst_mw)+' MW now':''}</span>
+      <div class="big" style="font-size:15px">${x.mu} MU</div></div>`).join('');
+  const cgs = r.rows.filter(x => x.section === 'CGS share' && x.capacity_mw);
+  const cgsCap = cgs.reduce((s,x)=>s+(x.capacity_mw||0),0);
+  const imp = [
+    ['LTOA', key('ltoa')], ['MTOA', key('mtoa')], ['STOA & SWAP', key('stoa')],
+    ['REMC (ISTS)', key('remc')], ['Exchange (+imp/−exp)', key('exchange')],
+    ['TNPDCL exchange', key('tnpdcl')],
+  ].filter(x => x[1] && x[1].mu != null);
+  document.getElementById('imports').innerHTML =
+    `<div class="card"><div class="big">${Math.round(cgsCap).toLocaleString()} MW</div>
+     <div class="lbl">TN share of central stations (CGS)<br>${cgs.map(x=>x.item.replace(/[^A-Za-z0-9 .&()-]/g,'').trim()).join(' · ')}</div></div>` +
+    imp.map(([n,v]) => `<div class="card"><b>${n}</b>
+      <div class="big" style="font-size:15px; ${v.mu<0?'color:var(--warn)':''}">${v.mu} MU</div></div>`).join('');
+}
+
+async function loadCoal(){
+  const r = await (await fetch('/api/coal/latest?state=tamil')).json();
+  document.getElementById('ts').textContent = r.date;
+  r.plants.forEach(p => livePlants[p.plant.trim().toUpperCase()] = p);
+  const rows = r.plants.map(p=>{
+    const pct = p.stock_pct ?? 0;
+    return `<tr class="${stockClass(pct)}"><td>${p.plant}${p.critical?' ✱':''}</td>
+      <td class="num">${p.capacity_mw}</td><td class="num">${pct}%</td><td class="num">${p.stock_total_kt}kt</td></tr>`;
+  }).join('');
+  document.getElementById('coal').innerHTML =
+    `<table><tr><th>plant</th><th class="num">MW</th><th class="num">stock%</th><th class="num">stock</th></tr>${rows}</table>
+     <div class="sub" style="margin-top:6px">✱ critical stock · green dots on map = plants</div>`;
+}
+
+async function loadRes(){
+  const r = await (await fetch('/api/res/states')).json();
+  document.getElementById('res').innerHTML = r.states.slice(0,10).map(s=>{
+    const max = r.states[0].res_total || 1;
+    return `<div class="card"><b>${s.state}</b> <span class="lbl">${s.res_total} MU</span>
+      <div class="bar"><i style="width:${(s.res_total/max*100).toFixed(0)}%"></i></div>
+      <span class="lbl">wind ${s.wind} · solar ${s.solar} · other ${s.res_other}</span></div>`;
+  }).join('');
+}
+
+async function loadTnRes(){
+  const r = await (await fetch('/api/res/stations?state=tamil')).json();
+  document.getElementById('tnres').innerHTML = r.stations.slice(0,15).map(s=>
+    `<div class="card"><b>${s.station}</b> <span class="lbl">${s.type} · ${s.capacity_mw} MW</span>
+     <div class="big" style="font-size:15px">${s.gen_today_mu} MU</div></div>`).join('');
+}
+
+async function loadStatus(){
+  const r = await (await fetch('/api/status')).json();
+  document.getElementById('status').innerHTML = r.map(s=>
+    `${s.ts} — <b>${s.source}</b> ${s.status}`).join('<br>');
+}
+
+async function loadDistrict(){
+  const r = await (await fetch('/api/tn/district')).json();
+  const wind = r.rows.filter(x => x.source_table === '44_wind_cap').slice(0,6);
+  const sol  = r.rows.filter(x => x.source_table === '45_solar_cap').slice(0,6);
+  const list = (title, arr, col) =>
+    `<div class="lbl" style="margin:6px 0 3px">${title}</div>` + arr.map(x =>
+      `<div class="card" style="padding:5px 8px"><b>${x.district}</b>
+       <span style="float:right; color:${col}">${x.capacity_mw} MW</span></div>`).join('');
+  document.getElementById('district').innerHTML =
+    list('Wind (installed MW)', wind, '#00c9a7') +
+    list('Solar (installed MW)', sol, '#ffd23f') +
+    `<div class="sub">nuclear gen by district + hydro/power-house history in DB (tn_district table) · source: TEDA/ENVIS database, ~2017 vintage</div>`;
+}
+
+async function loadSupply(){
+  const r = await (await fetch('/api/supply/stations?low_stock=true')).json();
+  document.getElementById('lowstock').innerHTML = r.stations.map(s=>
+    `<div class="card" style="padding:5px 8px"><b>${s.station}</b>
+     <span class="lbl">${s.state||''} · ${Math.round(s.cap_mw)} MW</span>
+     <div style="color:${s.coal_stock_days<=3?'var(--hot)':'var(--warn)'}; font-weight:700">${s.coal_stock_days} days stock</div>
+     ${s.outage_mw>0?`<span class="lbl" style="color:var(--hot)">outage: ${Math.round(s.outage_mw)} MW</span>`:''}</div>`).join('');
+
+  const c = await (await fetch('/api/supply/coal_india')).json();
+  const prod = c.filter(x => x.source === 'production');
+  const fmt = v => { try { return JSON.parse(v).map(n=>(+n).toFixed(1)).join(' / '); } catch { return v; } };
+  document.getElementById('cil').innerHTML = prod.filter(x=>x.key!=='all_india_latest_mt').map(x=>
+    `<div class="card" style="padding:5px 8px"><b>${x.key}</b>
+     <span class="lbl">target / achieved / prev-yr / growth % — production then offtake</span>
+     <div>${fmt(x.value)}</div></div>`).join('');
+
+  const n = await (await fetch('/api/nuclear/npcil')).json();
+  const bySt = {};
+  n.forEach(u => { (bySt[u.station] = bySt[u.station] || {units:0, mu:0, cap:0}).units++;
+    bySt[u.station].mu += u.cumulative_gen_mu||0; bySt[u.station].cap += u.capacity_mwe||0; });
+  document.getElementById('npcil').innerHTML = Object.entries(bySt).map(([s,v])=>
+    `<div class="card" style="padding:5px 8px"><b>${s}</b>
+     <span class="lbl">${v.units} units · ${Math.round(v.cap)} MWe</span>
+     <span style="float:right">${Math.round(v.mu).toLocaleString()} MU</span></div>`).join('');
+}
+
+async function refresh(){
+  try {
+    await Promise.all([loadPeak(), loadMix(), loadCoal(), loadRes(), loadTnRes(), loadDistrict(), loadSupply(), loadStatus()]);
+  } catch(e){ console.error(e); }
+}
+refresh();
+setInterval(refresh, 5*60*1000);
+
+fetch('/geo/tn_substation').then(r=>r.json()).then(gj=>{
+  function color(v){ v = (v||'').split('/')[0];
+    if(+v >= 400) return '#ff5d47'; if(+v >= 230) return '#6ab0f3'; return '#ffb347'; }
+  L.geoJSON(gj, {
+    pointToLayer:(f,latlng)=> L.circleMarker(latlng,{radius:3, color:color(f.properties.volt_ratio), weight:1, fillOpacity:.8}),
+    onEachFeature:(f,l)=> l.bindPopup(`<b>${f.properties.sub_station||''}</b><br>voltage: ${f.properties.volt_ratio||''}<br>capacity: ${f.properties.total_capacity||''} MVA<br>circle: ${f.properties.circle_name||''}`)
+  }).addTo(map);
+});
+</script>
+</body>
+</html>

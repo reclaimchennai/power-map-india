@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite it as below and credit the original data sources listed in data/LICENSES.md."
+title: "Power Map of India: open data on power stations, coal and fuel supply chains, grid and emissions"
+type: dataset
+authors:
+  - name: "Reclaim Chennai"
+repository-code: "https://github.com/reclaimchennai/power-map-india"
+url: "https://power.reclaimchennai.city"
+license: MIT
+date-released: 2026-10-18
+keywords: [india, electricity, coal, power plants, supply chain, tamil nadu, open data, emissions]

@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# runtime artefacts produced by the collector (see docs/ARCHITECTURE.md)
+data/power.db
+data/power.db-*
+data/weather_now.json
+web/data/live/
+web/posters/
+raw/
+!raw/icons/
