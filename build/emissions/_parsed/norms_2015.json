@@ -1,0 +1,175 @@
+{
+ "meta": {
+  "title": "Stack emission & water norms for coal/lignite (and gas) thermal power plants, India",
+  "primary": "MoEFCC S.O. 3305(E) dated 07-12-2015, Environment (Protection) Amendment Rules, 2015 (Schedule I, entry 25 Thermal Power Plant)",
+  "units": "mg/Nm3 at 6% O2 dry (coal/lignite stack norms); gas turbine NOx in ppm(v/v) at 15% O2",
+  "how_to_apply": "Pick vintage by unit commissioning date (CO2 baseline DB / CEA FGD list give dates); SO2 & Hg depend on unit size (<500 MW vs >=500 MW) for pre-2017 units. SO2 applicability after 11-Jul-2025 also depends on category (see fgd_units.json): Category C units are exempt from the SO2 limit (stack height only).",
+  "files": [
+   "raw/emissions/CPCB_Thermal_Power_Plant_overview_2017.pdf",
+   "raw/emissions/fgd/A_review_report_on_new_SO2_norms.pdf"
+  ],
+  "licence": "Government of India publications; reuse with attribution"
+ },
+ "coal_lignite_units": [
+  {
+   "vintage": "installed before 2003-12-31",
+   "commissioned_to": "2003-12-31",
+   "pm_mg_nm3": 100,
+   "so2_mg_nm3": {
+    "lt_500mw": 600,
+    "ge_500mw": 200
+   },
+   "nox_mg_nm3": 600,
+   "hg_mg_nm3": {
+    "lt_500mw": null,
+    "ge_500mw": 0.03
+   },
+   "compliance": "within 2 years of notification (by 2017-12-07), later category-wise deadlines for SO2 (see fgd_units.json)",
+   "sources": [
+    "https://cpcb.nic.in/uploads/Thermal_Power_Plant_overview.pdf",
+    "https://cea.nic.in/wp-content/uploads/tprm/2021/08/A_review_report_on_new_SO2_norms.pdf"
+   ]
+  },
+  {
+   "vintage": "installed 2004-01-01 to 2016-12-31",
+   "commissioned_from": "2004-01-01",
+   "commissioned_to": "2016-12-31",
+   "pm_mg_nm3": 50,
+   "so2_mg_nm3": {
+    "lt_500mw": 600,
+    "ge_500mw": 200
+   },
+   "nox_mg_nm3": 450,
+   "nox_note": "300 mg/Nm3 in 2015 notification; relaxed to 450 by G.S.R. 662(E) dated 19-10-2020",
+   "hg_mg_nm3": {
+    "lt_500mw": 0.03,
+    "ge_500mw": 0.03
+   },
+   "compliance": "as above",
+   "sources": [
+    "https://cpcb.nic.in/uploads/Thermal_Power_Plant_overview.pdf",
+    "https://cea.nic.in/wp-content/uploads/tprm/2021/08/A_review_report_on_new_SO2_norms.pdf"
+   ]
+  },
+  {
+   "vintage": "installed from 2017-01-01 (incl. units with EC and under construction at notification)",
+   "commissioned_from": "2017-01-01",
+   "pm_mg_nm3": 30,
+   "so2_mg_nm3": {
+    "all": 100
+   },
+   "nox_mg_nm3": 100,
+   "hg_mg_nm3": {
+    "all": 0.03
+   },
+   "sources": [
+    "https://cpcb.nic.in/uploads/Thermal_Power_Plant_overview.pdf",
+    "https://cea.nic.in/wp-content/uploads/tprm/2021/08/A_review_report_on_new_SO2_norms.pdf"
+   ]
+  }
+ ],
+ "note_on_cpcb_text": "CPCB overview writes the 2nd vintage as \"installed after 1st January 2003, up to 31st December 2016\"; CEA review report uses \"January 2004 to December 2016\". The gazette boundary is units installed before 31-12-2003 vs after 01-01-2004.",
+ "pre_2015_norm": {
+  "pm_mg_nm3": {
+   "lt_210mw": 350,
+   "ge_210mw": 150
+  },
+  "note": "earlier Schedule I PM norm (no SO2/NOx limits; SO2 controlled only via stack height)",
+  "sources": [
+   "https://cpcb.nic.in/uploads/Thermal_Power_Plant_overview.pdf"
+  ]
+ },
+ "stack_height": {
+  "ref": "G.S.R. 742(E) dated 30-08-1990",
+  "rules": [
+   {
+    "capacity": "< 200/210 MW",
+    "h_m": "H = 14 * Q^0.3 (Q = SO2 emission kg/hr), min 30 m"
+   },
+   {
+    "capacity": "200/210 MW to < 500 MW",
+    "h_m": 220
+   },
+   {
+    "capacity": ">= 500 MW",
+    "h_m": 275
+   }
+  ],
+  "note": "Under the 11-Jul-2025 rules Category C plants are exempt from SO2 limits if they meet these stack heights (by 2029-12-31)",
+  "sources": [
+   "https://cpcb.nic.in/uploads/Thermal_Power_Plant_overview.pdf"
+  ]
+ },
+ "water": {
+  "rules": [
+   {
+    "applies": "existing once-through-cooling (OTC) plants",
+    "rule": "install cooling tower and achieve specific water consumption <= 3.5 m3/MWh by 2017-12-07"
+   },
+   {
+    "applies": "existing cooling-tower plants",
+    "rule": "<= 3.5 m3/MWh by 2017-12-07"
+   },
+   {
+    "applies": "new plants from 2017-01-01",
+    "rule": "<= 2.5 m3/MWh and zero liquid discharge (2015 text); raised to 3.0 m3/MWh by 28-06-2018 amendment"
+   },
+   {
+    "applies": "sea-water based OTC plants",
+    "rule": "exempted from the specific-water-consumption norms by the 28-06-2018 amendment (secondary sources; gazette number not verified)"
+   }
+  ],
+  "condenser_cooling_discharge": "temperature rise <= 10 C over intake (seawater plants); discharge not permitted in estuaries/near mangroves, coral reefs",
+  "sources": [
+   "https://cpcb.nic.in/uploads/Thermal_Power_Plant_overview.pdf",
+   "https://www.downtoearth.org.in/water/widespread-non-compliance-as-thermal-power-plants-don-t-meet-water-use-norms-65391",
+   "https://www.cag.org.in/newsletters/public-newsense/water-consumption-data-thermal-power-plants"
+  ]
+ },
+ "gas_naphtha_turbines": {
+  "nox_ppm_at_15pct_o2": [
+   {
+    "applies": "existing units (pre 1999-06-01)",
+    "limit": 150
+   },
+   {
+    "applies": "new GT >= 400 MW",
+    "natural_gas": 50,
+    "naphtha": 100
+   },
+   {
+    "applies": "new GT 100-400 MW",
+    "natural_gas": 75,
+    "naphtha": 100
+   },
+   {
+    "applies": "new GT < 100 MW",
+    "natural_gas": 100,
+    "naphtha": 100
+   },
+   {
+    "applies": "gas fired in conventional boiler",
+    "limit": 100
+   }
+  ],
+  "stack_height": "H = 14 * Q^0.3 (Q SO2 kg/hr), min 30 m",
+  "sources": [
+   "https://cpcb.nic.in/uploads/Thermal_Power_Plant_overview.pdf"
+  ]
+ },
+ "beneficiated_coal": {
+  "ref": "G.S.R. 02(E) dated 02-01-2014",
+  "rule": "ash <= 34% (quarterly avg) for non-pithead plants >1000 km from pithead or in urban/ecologically sensitive/critically polluted areas (immediately), 750-1000 km (from 2015-01-01), 500-749 km (from 2016-06-05); CFBC/AFBC/PFBC/IGCC exempt",
+  "sources": [
+   "https://cpcb.nic.in/uploads/Thermal_Power_Plant_overview.pdf"
+  ]
+ },
+ "fly_ash_utilisation": {
+  "ref": "S.O. 804(E) 03-11-2009; S.O. 254(E) 27-01-2016; MoEFCC notification 31-12-2021 and amendments (30-12-2022, 01-01-2024)",
+  "rule": "100% utilisation targets; 2021 notification sets 3-year cycle compliance with environmental compensation",
+  "sources": [
+   "https://cpcb.nic.in/uploads/Thermal_Power_Plant_overview.pdf",
+   "https://cpcb.nic.in/uploads/flyash/Ash_Notification_dated_31.12.2021.pdf"
+  ]
+ }
+}

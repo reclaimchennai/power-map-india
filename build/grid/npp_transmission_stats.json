@@ -1,0 +1,99 @@
+{
+ "scope": "All India, 220 kV and above (NPP dashboard is national only; the ID parameter is ignored \u2014 ID=TN/33/SR return identical payloads)",
+ "fetched": "2026-09-24",
+ "current_fy_period": "APR-2026..MAY-2026",
+ "previous_fy_period": "APR-2025..MAY-2025",
+ "additions_by_voltage": [
+  {
+   "voltage": "220 kV",
+   "ckm_added_current_fy_to_date": 408.0,
+   "mva_added_current_fy_to_date": 6710.0,
+   "ckm_added_same_period_prev_fy": 875.0,
+   "mva_added_same_period_prev_fy": 5045.0
+  },
+  {
+   "voltage": "400 kV",
+   "ckm_added_current_fy_to_date": 2007.0,
+   "mva_added_current_fy_to_date": 3630.0,
+   "ckm_added_same_period_prev_fy": 103.0,
+   "mva_added_same_period_prev_fy": 6985.0
+  },
+  {
+   "voltage": "\u00b1500 kV",
+   "ckm_added_current_fy_to_date": 0.0,
+   "mva_added_current_fy_to_date": 0.0,
+   "ckm_added_same_period_prev_fy": 0.0,
+   "mva_added_same_period_prev_fy": 0.0
+  },
+  {
+   "voltage": "765 kV",
+   "ckm_added_current_fy_to_date": 508.0,
+   "mva_added_current_fy_to_date": 19500.0,
+   "ckm_added_same_period_prev_fy": 0.0,
+   "mva_added_same_period_prev_fy": 18000.0
+  },
+  {
+   "voltage": "\u00b1800 kV",
+   "ckm_added_current_fy_to_date": 0.0,
+   "mva_added_current_fy_to_date": 0.0,
+   "ckm_added_same_period_prev_fy": 0.0,
+   "mva_added_same_period_prev_fy": 0.0
+  },
+  {
+   "voltage": "\u00b1320 kV",
+   "ckm_added_current_fy_to_date": 0.0,
+   "mva_added_current_fy_to_date": 0.0,
+   "ckm_added_same_period_prev_fy": 0.0,
+   "mva_added_same_period_prev_fy": 0.0
+  }
+ ],
+ "annual": [
+  {
+   "fy": "2022-23",
+   "ckm_added": 14625.0,
+   "total_ckm_220kv_plus": 471341.0,
+   "total_transformation_mva": 1180352.0,
+   "mva_added": 75902.0
+  },
+  {
+   "fy": "2023-24",
+   "ckm_added": 14203.0,
+   "total_ckm_220kv_plus": 485544.0,
+   "total_transformation_mva": 1251080.0,
+   "mva_added": 70728.0
+  },
+  {
+   "fy": "2024-25",
+   "ckm_added": 8830.0,
+   "total_ckm_220kv_plus": 494374.0,
+   "total_transformation_mva": 1337513.0,
+   "mva_added": 86433.0
+  },
+  {
+   "fy": "2025-26",
+   "ckm_added": 12139.0,
+   "total_ckm_220kv_plus": 506513.0,
+   "total_transformation_mva": 1450526.0,
+   "mva_added": 113013.0
+  },
+  {
+   "fy": "2026-27",
+   "ckm_added": 2022.0,
+   "total_ckm_220kv_plus": 508535.0,
+   "total_transformation_mva": 1469041.0,
+   "mva_added": 18515.0
+  }
+ ],
+ "header": {
+  "total_ckm_220kv_plus": 508535.0,
+  "total_transformation_mva": 1469041.0,
+  "fy": "2026-27",
+  "installed_capacity_mw": 556193.1,
+  "capacity_reporting_date": "2026-09-22"
+ },
+ "notes": "Field names in NPP are misleading: 'transmission_line_intra_state_ckm_cum' is the all-India cumulative ckm (220 kV+); 'transmission_line_inter_state_ckm' equals the annual addition. transLineList values are FY-to-date additions by voltage (current vs same period last FY).",
+ "sources": [
+  "https://npp.gov.in/dashBoard/getTransmissionLine?ID=IND",
+  "file:raw/grid/npp_trans.json"
+ ]
+}

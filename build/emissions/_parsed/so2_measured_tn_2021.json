@@ -1,0 +1,583 @@
+{
+ "meta": {
+  "source": "CREA & Poovulagin Nanbargal, \"Emission watch: Status assessment of SO2 emission and FGD installation for coal-based power plants in Tamil Nadu\", Oct 2021, Table 09 (RTI data Apr-Jun 2021 + TNPCB OCEMS remark)",
+  "url": "https://energyandcleanair.org/wp/wp-content/uploads/2021/10/TN-Emission-report_final.pdf",
+  "file": "raw/emissions/incidents/crea_TN-Emission-report_2021.pdf"
+ },
+ "units": [
+  {
+   "sl": 1,
+   "unit_name": "NCTPS Unit 1",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 811.0,
+    "2021-05": 711.0,
+    "2021-06": 650.0
+   },
+   "so2_rti_mean_mg_nm3": 724.0,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Around the limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 2,
+   "unit_name": "NCTPS Unit 2",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 532.0,
+    "2021-05": 422.0,
+    "2021-06": 616.0
+   },
+   "so2_rti_mean_mg_nm3": 523.3,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Around the limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 3,
+   "unit_name": "NCTPS Unit 3",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 399.0,
+    "2021-05": 445.0,
+    "2021-06": 435.0
+   },
+   "so2_rti_mean_mg_nm3": 426.3,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Around the limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 4,
+   "unit_name": "NCTPS Unit 4",
+   "capacity_mw": 600.0,
+   "so2_limit_mg_nm3": 200.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 520.0,
+    "2021-05": 6.0,
+    "2021-06": 154.0
+   },
+   "so2_rti_mean_mg_nm3": 226.7,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Above the limit of 200 mg/Nm3"
+  },
+  {
+   "sl": 5,
+   "unit_name": "NCTPS Unit 5",
+   "capacity_mw": 600.0,
+   "so2_limit_mg_nm3": 200.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 555.0,
+    "2021-05": null,
+    "2021-06": 785.0
+   },
+   "so2_rti_mean_mg_nm3": 670.0,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Above the limit of 200 mg/Nm3"
+  },
+  {
+   "sl": 6,
+   "unit_name": "NCTPS Unit 6",
+   "capacity_mw": null,
+   "so2_limit_mg_nm3": null,
+   "so2_rti_mg_nm3": {
+    "2021-04": null,
+    "2021-05": null,
+    "2021-06": null
+   },
+   "so2_rti_mean_mg_nm3": null,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "\u2014"
+  },
+  {
+   "sl": 7,
+   "unit_name": "Vallur TPP Unit 1",
+   "capacity_mw": 500.0,
+   "so2_limit_mg_nm3": 200.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 883.0,
+    "2021-05": 719.0,
+    "2021-06": 856.0
+   },
+   "so2_rti_mean_mg_nm3": 819.3,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Above the limit of 200 mg/Nm3"
+  },
+  {
+   "sl": 8,
+   "unit_name": "Vallur TPP Unit 2",
+   "capacity_mw": 500.0,
+   "so2_limit_mg_nm3": 200.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 841.0,
+    "2021-05": 700.0,
+    "2021-06": 693.0
+   },
+   "so2_rti_mean_mg_nm3": 744.7,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Above the limit of 200 mg/Nm3"
+  },
+  {
+   "sl": 9,
+   "unit_name": "Vallur TPP Unit 3",
+   "capacity_mw": 500.0,
+   "so2_limit_mg_nm3": 200.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 875.0,
+    "2021-05": 857.0,
+    "2021-06": 878.0
+   },
+   "so2_rti_mean_mg_nm3": 870.0,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Above the limit of 200 mg/Nm3"
+  },
+  {
+   "sl": 10,
+   "unit_name": "NLC 2 TPS Unit 1",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 850.0,
+    "2021-05": 961.0,
+    "2021-06": 1045.0
+   },
+   "so2_rti_mean_mg_nm3": 952.0,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Above the limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 11,
+   "unit_name": "NLC 2 TPS Unit 2",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 1280.0,
+    "2021-05": 1261.0,
+    "2021-06": 1165.0
+   },
+   "so2_rti_mean_mg_nm3": 1235.3,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Above the limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 12,
+   "unit_name": "NLC 2 TPS Unit 3",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 1134.0,
+    "2021-05": 1021.0,
+    "2021-06": 1170.0
+   },
+   "so2_rti_mean_mg_nm3": 1108.3,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Above the limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 13,
+   "unit_name": "NLC 2 TPS Unit 4",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 1412.0,
+    "2021-05": 1275.0,
+    "2021-06": 1326.0
+   },
+   "so2_rti_mean_mg_nm3": 1337.7,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Above the limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 14,
+   "unit_name": "NLC 2 TPS Unit 5",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": null,
+    "2021-05": 1411.0,
+    "2021-06": 1488.0
+   },
+   "so2_rti_mean_mg_nm3": 1449.5,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Above the limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 15,
+   "unit_name": "NLC 2 TPS Unit 6",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 935.0,
+    "2021-05": 891.0,
+    "2021-06": 923.0
+   },
+   "so2_rti_mean_mg_nm3": 916.3,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Above the limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 16,
+   "unit_name": "NLC 2 TPS Unit 7",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 88.0,
+    "2021-05": 1098.0,
+    "2021-06": 933.0
+   },
+   "so2_rti_mean_mg_nm3": 706.3,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Above the limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 17,
+   "unit_name": "NLC EXT TPS Unit 1",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 2498.0,
+    "2021-05": 1380.0,
+    "2021-06": 1901.0
+   },
+   "so2_rti_mean_mg_nm3": 1926.3,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Above the limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 18,
+   "unit_name": "NLC EXT TPS Unit 2",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 940.0,
+    "2021-05": 1192.0,
+    "2021-06": 2051.0
+   },
+   "so2_rti_mean_mg_nm3": 1394.3,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Above the limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 19,
+   "unit_name": "NLC 2 TPS Exp Unit 1",
+   "capacity_mw": 250.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 315.0,
+    "2021-05": null,
+    "2021-06": 314.0
+   },
+   "so2_rti_mean_mg_nm3": 314.5,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "ower than limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 20,
+   "unit_name": "NLC 2 TPS Exp Unit 2",
+   "capacity_mw": 250.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 305.0,
+    "2021-05": null,
+    "2021-06": 306.0
+   },
+   "so2_rti_mean_mg_nm3": 305.5,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Lower than limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 21,
+   "unit_name": "ITPCL Unit 1",
+   "capacity_mw": 600.0,
+   "so2_limit_mg_nm3": 200.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 143.0,
+    "2021-05": 159.0,
+    "2021-06": null
+   },
+   "so2_rti_mean_mg_nm3": 151.0,
+   "so2_manual_mg_nm3": 224.0,
+   "ocems_remark": "Around the limit of 200 mg/Nm3"
+  },
+  {
+   "sl": 22,
+   "unit_name": "ITPCL Unit 2",
+   "capacity_mw": 600.0,
+   "so2_limit_mg_nm3": 200.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 141.0,
+    "2021-05": 158.0,
+    "2021-06": 158.0
+   },
+   "so2_rti_mean_mg_nm3": 152.3,
+   "so2_manual_mg_nm3": 230.0,
+   "ocems_remark": "Around the limit of 200 mg/Nm3"
+  },
+  {
+   "sl": 23,
+   "unit_name": "Mettur Unit 1",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": null,
+    "2021-05": null,
+    "2021-06": null
+   },
+   "so2_rti_mean_mg_nm3": null,
+   "so2_manual_mg_nm3": 417.0,
+   "ocems_remark": "Above the limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 24,
+   "unit_name": "Mettur Unit 2",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": null,
+    "2021-05": null,
+    "2021-06": null
+   },
+   "so2_rti_mean_mg_nm3": null,
+   "so2_manual_mg_nm3": 391.0,
+   "ocems_remark": "Above the limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 25,
+   "unit_name": "Mettur Unit 3",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": null,
+    "2021-05": null,
+    "2021-06": null
+   },
+   "so2_rti_mean_mg_nm3": null,
+   "so2_manual_mg_nm3": 418.0,
+   "ocems_remark": "Above the limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 26,
+   "unit_name": "Mettur Unit 4",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": null,
+    "2021-05": null,
+    "2021-06": null
+   },
+   "so2_rti_mean_mg_nm3": null,
+   "so2_manual_mg_nm3": 429.0,
+   "ocems_remark": "Above the limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 27,
+   "unit_name": "Mettur 2 Unit 1",
+   "capacity_mw": 600.0,
+   "so2_limit_mg_nm3": 200.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": null,
+    "2021-05": null,
+    "2021-06": null
+   },
+   "so2_rti_mean_mg_nm3": null,
+   "so2_manual_mg_nm3": 181.0,
+   "ocems_remark": "Above the limit of 200 mg/Nm3"
+  },
+  {
+   "sl": 28,
+   "unit_name": "Tuticorin TPS Unit 1",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": null,
+    "2021-05": null,
+    "2021-06": 276.0
+   },
+   "so2_rti_mean_mg_nm3": 276.0,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Lower than limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 29,
+   "unit_name": "Tuticorin TPS Unit 2",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 158.0,
+    "2021-05": 108.0,
+    "2021-06": 161.0
+   },
+   "so2_rti_mean_mg_nm3": 142.3,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Lower than limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 30,
+   "unit_name": "Tuticorin TPS Unit 3",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 407.0,
+    "2021-05": 296.0,
+    "2021-06": 260.0
+   },
+   "so2_rti_mean_mg_nm3": 321.0,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Lower than limit of 600 mg/Nm3"
+  },
+  {
+   "sl": 31,
+   "unit_name": "Tuticorin TPS Unit 4",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": null,
+    "2021-05": null,
+    "2021-06": null
+   },
+   "so2_rti_mean_mg_nm3": null,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "N.A."
+  },
+  {
+   "sl": 32,
+   "unit_name": "Tuticorin TPS Unit 5",
+   "capacity_mw": 210.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": null,
+    "2021-05": null,
+    "2021-06": null
+   },
+   "so2_rti_mean_mg_nm3": null,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "N.A."
+  },
+  {
+   "sl": 33,
+   "unit_name": "Muthiara TPP Unit 1",
+   "capacity_mw": 600.0,
+   "so2_limit_mg_nm3": 200.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 111.0,
+    "2021-05": 96.0,
+    "2021-06": 155.0
+   },
+   "so2_rti_mean_mg_nm3": 120.7,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Lower than limit of 200 mg/Nm3"
+  },
+  {
+   "sl": 34,
+   "unit_name": "Muthiara TPP Unit 2",
+   "capacity_mw": 600.0,
+   "so2_limit_mg_nm3": 200.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": null,
+    "2021-05": null,
+    "2021-06": null
+   },
+   "so2_rti_mean_mg_nm3": null,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Lower than limit of 200 mg/Nm3"
+  },
+  {
+   "sl": 35,
+   "unit_name": "Tuticorin (P) TPS Unit 1",
+   "capacity_mw": 150.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": null,
+    "2021-05": null,
+    "2021-06": null
+   },
+   "so2_rti_mean_mg_nm3": null,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "N.A."
+  },
+  {
+   "sl": 36,
+   "unit_name": "Tuticorin (P) TPS Unit 2",
+   "capacity_mw": 150.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": null,
+    "2021-05": null,
+    "2021-06": null
+   },
+   "so2_rti_mean_mg_nm3": null,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "N.A."
+  },
+  {
+   "sl": 37,
+   "unit_name": "Neyveli TPS Unit 1",
+   "capacity_mw": 250.0,
+   "so2_limit_mg_nm3": 600.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 3078.0,
+    "2021-05": 3646.0,
+    "2021-06": 1993.0
+   },
+   "so2_rti_mean_mg_nm3": 2905.7,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "Wrong threshold of 6244 mg/Nm3 shown"
+  },
+  {
+   "sl": 38,
+   "unit_name": "Tuticorin (JV) TPP Unit 1",
+   "capacity_mw": 500.0,
+   "so2_limit_mg_nm3": 200.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 147.0,
+    "2021-05": 98.0,
+    "2021-06": 119.0
+   },
+   "so2_rti_mean_mg_nm3": 121.3,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "N.A."
+  },
+  {
+   "sl": 39,
+   "unit_name": "Tuticorin (JV) TPP Unit 2",
+   "capacity_mw": 500.0,
+   "so2_limit_mg_nm3": 200.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": 131.0,
+    "2021-05": 109.0,
+    "2021-06": 76.0
+   },
+   "so2_rti_mean_mg_nm3": 105.3,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "N.A."
+  },
+  {
+   "sl": 40,
+   "unit_name": "NLC New TPP Unit 1",
+   "capacity_mw": 500.0,
+   "so2_limit_mg_nm3": 100.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": null,
+    "2021-05": null,
+    "2021-06": null
+   },
+   "so2_rti_mean_mg_nm3": null,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "N.A."
+  },
+  {
+   "sl": 41,
+   "unit_name": "NLC New TPP Unit 2",
+   "capacity_mw": 500.0,
+   "so2_limit_mg_nm3": 100.0,
+   "so2_rti_mg_nm3": {
+    "2021-04": null,
+    "2021-05": null,
+    "2021-06": null
+   },
+   "so2_rti_mean_mg_nm3": null,
+   "so2_manual_mg_nm3": null,
+   "ocems_remark": "N.A."
+  }
+ ]
+}

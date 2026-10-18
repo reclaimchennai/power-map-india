@@ -1,0 +1,2097 @@
+[
+ {
+  "id": "mettur-tps-1",
+  "name": "Mettur Thermal Power Station I",
+  "aliases": [
+   "METTUR TPS",
+   "MTPS-I",
+   "MTPS I",
+   "Mettur TPS",
+   "Mettur Thermal Power Station-I",
+   "Mettur Thermal Power Station \u2013 1",
+   "MTPS1"
+  ],
+  "type": "coal",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Salem",
+  "lat": 11.771,
+  "lon": 77.8134,
+  "loc_quality": "exact",
+  "capacity_mw": 840,
+  "units": [
+   {
+    "no": 1,
+    "mw": 210,
+    "commissioned": "1987-01-07",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 210,
+    "commissioned": "1987-12-01",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 3,
+    "mw": 210,
+    "commissioned": "1989-03-22",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 4,
+    "mw": 210,
+    "commissioned": "1990-03-27",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNPGCL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "coal",
+   "grade_or_kind": "domestic (CIL/MCL) bituminous; imported Indonesian coal blended in some years",
+   "sources": [
+    {
+     "name": "MCL Talcher coalfield (Odisha)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    },
+    {
+     "name": "MCL IB Valley coalfield (Odisha)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    },
+    {
+     "name": "ECL Raniganj coalfield (West Bengal)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    }
+   ],
+   "route": [
+    "rail: MCL mines -> Paradip port",
+    "sea: Paradip -> Kamarajar (Ennore) port",
+    "rail: Ennore -> Mettur (CEA mode RAIL-SEA-RAIL)"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Cauvery river / Stanley (Mettur) reservoir",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [
+    {
+     "h_m": null,
+     "flues": null
+    },
+    {
+     "h_m": null,
+     "flues": null
+    }
+   ],
+   "cooling_towers": null,
+   "boiler_units": 4,
+   "coal_yard": true,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "First inland thermal station of TNEB, built in two stages (units 1-2 Rs 384.30 cr, units 3-4 Rs 351.76 cr). TNPGCL reports it ranked No.1 among its thermal stations 9 times (to 2023-24).",
+  "links": {
+   "npp_station_id": 100033,
+   "dgr_name": "METTUR TPS",
+   "cea_coal_name": "METTUR TPS",
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/en/generation/generation/thermal-power-stations/mtps1/",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p1",
+   "raw/downloads/tn_energy_database.pdf:p24",
+   "raw/downloads/tn_energy_database.pdf:p25",
+   "https://en.wikipedia.org/wiki/Mettur_Thermal_Power_Station",
+   "raw/tn/osm_chimneys_ct_tn.json (4x210 MW generator nodes 4291760629-36, chimneys w462411328, w909500661)",
+   "raw/feedstock/cea/monthCoal1-2026-Jul.pdf"
+  ]
+ },
+ {
+  "id": "mettur-tps-2",
+  "name": "Mettur Thermal Power Station II",
+  "aliases": [
+   "METTUR TPS-II",
+   "MTPS-II",
+   "MTPS II",
+   "Mettur TPS II",
+   "Mettur Thermal Power Station-II",
+   "MTPS2"
+  ],
+  "type": "coal",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Salem",
+  "lat": 11.7764,
+  "lon": 77.8205,
+  "loc_quality": "exact",
+  "capacity_mw": 600,
+  "units": [
+   {
+    "no": 1,
+    "mw": 600,
+    "commissioned": "2013-10-12",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNPGCL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "coal",
+   "grade_or_kind": "domestic (CIL) bituminous",
+   "sources": [
+    {
+     "name": "MCL Talcher coalfield (Odisha)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    },
+    {
+     "name": "MCL IB Valley coalfield (Odisha)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    }
+   ],
+   "route": [
+    "rail: MCL mines -> Paradip port",
+    "sea: Paradip -> Kamarajar (Ennore) port",
+    "rail: Ennore -> Mettur (CEA mode RAIL-SEA-RAIL)"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Cauvery river / Stanley (Mettur) reservoir",
+   "cooling": "natural draft cooling tower (OSM)"
+  },
+  "structure": {
+   "stacks": [
+    {
+     "h_m": null,
+     "flues": 1
+    }
+   ],
+   "cooling_towers": 1,
+   "boiler_units": 1,
+   "coal_yard": true,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": 52.6
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "First 600 MW unit of TNEB/TANGEDCO and its second inland station; project cost Rs 3550 cr, EPC BGR Energy Systems; first synchronised 04.05.2012, COD 12.10.2013.",
+  "links": {
+   "npp_station_id": 100383,
+   "dgr_name": "METTUR TPS-II",
+   "cea_coal_name": "METTUR TPS-II",
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/en/generation/generation/thermal-power-stations/mtps2/",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p1",
+   "raw/downloads/tn_energy_database.pdf:p24",
+   "https://en.wikipedia.org/wiki/Mettur_Thermal_Power_Station",
+   "raw/tn/osm_chimneys_ct_tn.json (600 MW generator node 4291760641, cooling tower w462411333, chimney w462411334)",
+   "raw/pages/npp_tn.json (100383: 11.7765,77.8210)"
+  ]
+ },
+ {
+  "id": "nctps-1",
+  "name": "North Chennai Thermal Power Station Stage I",
+  "aliases": [
+   "NORTH CHENNAI TPS STAGE 1",
+   "NCTPS-I",
+   "NCTPS I",
+   "NCTPS-1",
+   "NCTPS Stage I",
+   "North Chennai TPS Stage-I",
+   "North Chennai Thermal Power Station \u2013 I"
+  ],
+  "type": "coal",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Tiruvallur",
+  "lat": 13.2535,
+  "lon": 80.3272,
+  "loc_quality": "exact",
+  "capacity_mw": 630,
+  "units": [
+   {
+    "no": 1,
+    "mw": 210,
+    "commissioned": "1994-10-25",
+    "make": "BHEL (boiler BHEL Trichy; turbine KWU design by BHEL; generator BHEL Haridwar)",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 210,
+    "commissioned": "1995-03-27",
+    "make": "BHEL",
+    "status": "operating"
+   },
+   {
+    "no": 3,
+    "mw": 210,
+    "commissioned": "1996-02-24",
+    "make": "BHEL",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNPGCL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "coal",
+   "grade_or_kind": "domestic (Mahanadi Coalfields) bituminous",
+   "sources": [
+    {
+     "name": "MCL Talcher coalfield (Odisha)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    },
+    {
+     "name": "MCL IB Valley coalfield (Odisha)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    }
+   ],
+   "route": [
+    "rail: MCL mines -> Paradip port",
+    "sea: Paradip -> Kamarajar (Ennore) port",
+    "conveyor/rail: port -> plant (unloaders 2x2000 TPH); 22 km rail siding via Athipattu Pudhunagar"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Bay of Bengal (sea water); raw water 3.5 MLD from CMWSSB",
+   "cooling": "once-through seawater"
+  },
+  "structure": {
+   "stacks": [
+    {
+     "h_m": 275,
+     "flues": null
+    }
+   ],
+   "cooling_towers": 0,
+   "boiler_units": 3,
+   "coal_yard": true,
+   "ash_pond": {
+    "lat": null,
+    "lon": null,
+    "area_ha": 130.5
+   },
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": 222.2
+  },
+  "evacuation": [
+   "230 kV indoor switchyard, 8 feeders"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "Built with ADB funding (Rs 1792 cr) at Athipattu near Ennore; 3x210 MW commissioned 1994-96. Ash dyke primary 115 ha + secondary 15.5 ha (capacity 40 LMT); plant area 549 acres. The Ennore SEZ project is being built on part of the Stage I ash dyke.",
+  "links": {
+   "npp_station_id": 100034,
+   "dgr_name": "NORTH CHENNAI TPS STAGE 1",
+   "cea_coal_name": "NORTH CHENNAI TPS STAGE 1",
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/en/generation/generation/thermal-power-stations/nctps1/",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p1",
+   "raw/downloads/tn_energy_database.pdf:p24",
+   "raw/tn/osm_chimneys_ct_tn.json (210 MW generator nodes 7674140481-83, chimney w382881856)",
+   "raw/tn/osm_nctps_area.json (building 'NCTPS-1' w1074457153)",
+   "https://en.wikipedia.org/wiki/North_Chennai_Thermal_Power_Station"
+  ]
+ },
+ {
+  "id": "nctps-2",
+  "name": "North Chennai Thermal Power Station Stage II",
+  "aliases": [
+   "NORTH CHENNAI TPS STAGE 2",
+   "NCTPS-II",
+   "NCTPS II",
+   "NCTPS-2",
+   "NCTPS Stage II",
+   "North Chennai Thermal Power Station-Stage-II"
+  ],
+  "type": "coal",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Tiruvallur",
+  "lat": 13.2567,
+  "lon": 80.3287,
+  "loc_quality": "exact",
+  "capacity_mw": 1200,
+  "units": [
+   {
+    "no": 1,
+    "mw": 600,
+    "commissioned": "2014-03-20",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 600,
+    "commissioned": "2014-05-08",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNPGCL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "coal",
+   "grade_or_kind": "sub-bituminous, design GCV 3855 kcal/kg, HGI 55; domestic + imported Indonesian",
+   "sources": [
+    {
+     "name": "MCL Talcher coalfield (Odisha)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    },
+    {
+     "name": "MCL IB Valley coalfield (Odisha)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    },
+    {
+     "name": "ECL Raniganj coalfield (West Bengal)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    },
+    {
+     "name": "Indonesia (imported)",
+     "kind": "import",
+     "lat": null,
+     "lon": null,
+     "share": null
+    }
+   ],
+   "route": [
+    "rail: MCL mines -> Paradip port",
+    "sea: Paradip -> Kamarajar (Ennore) port",
+    "conveyor: port -> plant (CEA mode RAIL-SEA)"
+   ],
+   "annual_requirement": "3.76 MTPA (design)"
+  },
+  "water": {
+   "source": "Bay of Bengal (sea water, 99,000 m3/h); process water 18 MLD from TTRO/desalination",
+   "cooling": "once-through seawater"
+  },
+  "structure": {
+   "stacks": [
+    {
+     "h_m": 275,
+     "flues": null
+    }
+   ],
+   "cooling_towers": 0,
+   "boiler_units": 2,
+   "coal_yard": true,
+   "ash_pond": {
+    "lat": null,
+    "lon": null,
+    "area_ha": 191.5
+   },
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": 88.2
+  },
+  "evacuation": [
+   "400 kV GIS: Vallur feeders I & II, Alamathy, Manali, S.V. Chatiram feeders I & II"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "TNPGCL page's 'Technical Information' block for NCTPS-II repeats the Stage I 210 MW boiler/turbine data (copy error on site)."
+  },
+  "history": "2x600 MW supercritical-era expansion adjacent (north) of Stage I, cost Rs 4650 cr; COD 20.03.2014 and 08.05.2014. Shares the Stage I ash dump (473.19 acres).",
+  "links": {
+   "npp_station_id": 100877,
+   "dgr_name": "NORTH CHENNAI TPS STAGE 2",
+   "cea_coal_name": "NORTH CHENNAI TPS STAGE 2",
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/en/generation/generation/thermal-power-stations/nctps2/",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p1",
+   "raw/downloads/tn_energy_database.pdf:p24",
+   "raw/tn/osm_chimneys_ct_tn.json (600 MW generator nodes 7674140479-80, chimney w1017185184)",
+   "raw/tn/osm_nctps_area.json (building 'NCTPS-2' w1074457225)",
+   "raw/pages/npp_tn.json (100877: 13.2530,80.3278)"
+  ]
+ },
+ {
+  "id": "nctps-3",
+  "name": "North Chennai Thermal Power Plant Stage III",
+  "aliases": [
+   "NORTH CHENNAI TPS STAGE 3",
+   "NCTPP Stage-III",
+   "NCTPP-III",
+   "NCTPS-III",
+   "NCTPS-3",
+   "NCTPS Stage III",
+   "North Chennai TPS Stage III"
+  ],
+  "type": "coal",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Tiruvallur",
+  "lat": 13.2412,
+  "lon": 80.32,
+  "loc_quality": "exact",
+  "capacity_mw": 800,
+  "units": [
+   {
+    "no": 1,
+    "mw": 800,
+    "commissioned": "2026-01-24",
+    "make": "BHEL (BTG)",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNPGCL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "coal",
+   "grade_or_kind": "domestic (CIL + some SCCL receipts per CEA Jul-2026)",
+   "sources": [
+    {
+     "name": "MCL Talcher coalfield (Odisha)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    },
+    {
+     "name": "MCL IB Valley coalfield (Odisha)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    },
+    {
+     "name": "SCCL (Telangana)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    }
+   ],
+   "route": [
+    "rail (CEA mode RAIL)",
+    "sea: Paradip -> Kamarajar (Ennore) port (as for NCTPS I/II)"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "sea water (Ennore creek pre-cooling channel) + desalination",
+   "cooling": "natural draught cooling tower (NDCT)"
+  },
+  "structure": {
+   "stacks": [
+    {
+     "h_m": null,
+     "flues": 1
+    }
+   ],
+   "cooling_towers": 1,
+   "boiler_units": 1,
+   "coal_yard": true,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "North Chennai TPS Stage III 400 kV substation (OSM w1074489047)"
+  ],
+  "emissions": {
+   "fgd": "FGD awarded to BHEL 22.02.2021 (Rs 615 cr)",
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "1x800 MW supercritical unit announced 2010; BTG BHEL (29.01.2016), BOP re-awarded to CREW 2025. Inaugurated 07.03.2024, coal-fired sync 17.03.2024, trial run Mar-Apr 2025, COD declared 24.01.2026.",
+  "links": {
+   "npp_station_id": 100878,
+   "dgr_name": "NORTH CHENNAI TPS STAGE 3",
+   "cea_coal_name": "NORTH CHENNAI TPS STAGE 3",
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/en/generation/projects/nctps-stage-iii/",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p9",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/powerprojects/nctpp800MWEC20062023.pdf",
+   "raw/tn/osm_chimneys_ct_tn.json (chimney w1074508425 13.2408,80.3198; cooling tower w821888948)",
+   "raw/tn/osm_nctps_area.json (Stage III substation w1074489047)",
+   "raw/pages/npp_tn.json (100878: no coords)"
+  ]
+ },
+ {
+  "id": "ttps",
+  "name": "Tuticorin Thermal Power Station",
+  "aliases": [
+   "TUTICORIN TPS",
+   "TTPS",
+   "Thoothukudi Thermal Power Station",
+   "Tuticorin TPS"
+  ],
+  "type": "coal",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Thoothukudi",
+  "lat": 8.7634,
+  "lon": 78.1763,
+  "loc_quality": "exact",
+  "capacity_mw": 1050,
+  "units": [
+   {
+    "no": 1,
+    "mw": 210,
+    "commissioned": "1980-01",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 210,
+    "commissioned": "1981-01",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 3,
+    "mw": 210,
+    "commissioned": "1982-11",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 4,
+    "mw": 210,
+    "commissioned": "1994-01",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 5,
+    "mw": 210,
+    "commissioned": "1995-03",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNPGCL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "coal",
+   "grade_or_kind": "domestic (MCL Talcher & IB Valley) bituminous",
+   "sources": [
+    {
+     "name": "MCL Talcher coalfield (Odisha)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    },
+    {
+     "name": "MCL IB Valley coalfield (Odisha)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    }
+   ],
+   "route": [
+    "rail: MCL mines -> Paradip / Haldia / Vizag ports",
+    "sea: -> V.O. Chidambaranar (Tuticorin) port",
+    "conveyor: port -> plant (CEA mode RAIL-SEA)"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Tuticorin harbour basin (sea water); raw water from Tamiraparani river via TWAD",
+   "cooling": "once-through seawater"
+  },
+  "structure": {
+   "stacks": [
+    {
+     "h_m": null,
+     "flues": null
+    },
+    {
+     "h_m": null,
+     "flues": null
+    },
+    {
+     "h_m": null,
+     "flues": null
+    }
+   ],
+   "cooling_towers": 0,
+   "boiler_units": 5,
+   "coal_yard": true,
+   "ash_pond": {
+    "lat": 8.7813,
+    "lon": 78.1883,
+    "area_ha": null
+   },
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": 160
+  },
+  "evacuation": [
+   "230 kV indoor switchyard"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "Ash pond point = OSM 'Reclaimed Sea Land - Ash Dyke A1' (w1549535907), attribution to TTPS assumed from location."
+  },
+  "history": "Sanctioned 1973, construction from 1976 on 160 ha of port-trust land in the Thoothukudi harbour estate. First sync dates U1 09.07.1979, U2 17.12.1980, U3 16.04.1982, U4 11.02.1992, U5 31.03.1991; regular generation dates used as commissioning.",
+  "links": {
+   "npp_station_id": 100140,
+   "dgr_name": "TUTICORIN TPS",
+   "cea_coal_name": "TUTICORIN TPS",
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/en/generation/generation/thermal-power-stations/ttps/",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p1",
+   "raw/downloads/tn_energy_database.pdf:p25",
+   "https://en.wikipedia.org/wiki/Tuticorin_Thermal_Power_Station",
+   "raw/tn/osm_power_plants_tn.json (w662798207)",
+   "raw/tn/osm_chimneys_ct_tn.json (generator nodes 5848822929-33, chimneys 5315540259-61)"
+  ]
+ },
+ {
+  "id": "ennore-tps",
+  "name": "Ennore Thermal Power Station",
+  "aliases": [
+   "ENNORE TPS",
+   "ETPS",
+   "Ennore TPS"
+  ],
+  "type": "coal",
+  "status": "retired",
+  "state": "Tamil Nadu",
+  "district": "Tiruvallur",
+  "lat": 13.201,
+  "lon": 80.311,
+  "loc_quality": "exact",
+  "capacity_mw": 450,
+  "units": [
+   {
+    "no": 1,
+    "mw": 60,
+    "commissioned": "1970-03-31",
+    "make": null,
+    "status": "retired"
+   },
+   {
+    "no": 2,
+    "mw": 60,
+    "commissioned": "1971-02-14",
+    "make": null,
+    "status": "retired"
+   },
+   {
+    "no": 3,
+    "mw": 110,
+    "commissioned": "1972-05-17",
+    "make": null,
+    "status": "retired"
+   },
+   {
+    "no": 4,
+    "mw": 110,
+    "commissioned": "1973-05-26",
+    "make": null,
+    "status": "retired"
+   },
+   {
+    "no": 5,
+    "mw": 110,
+    "commissioned": "1975-12-02",
+    "make": null,
+    "status": "retired"
+   }
+  ],
+  "operator": "TNPGCL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "coal",
+   "grade_or_kind": "domestic (MCL Talcher & IB Valley; ECL Raniganj)",
+   "sources": [
+    {
+     "name": "MCL Talcher coalfield (Odisha)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    },
+    {
+     "name": "MCL IB Valley coalfield (Odisha)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    },
+    {
+     "name": "ECL Raniganj coalfield (West Bengal)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    }
+   ],
+   "route": [
+    "sea: -> Chennai/Ennore port"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Ennore creek / sea water",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [
+    {
+     "h_m": null,
+     "flues": null
+    },
+    {
+     "h_m": null,
+     "flues": null
+    },
+    {
+     "h_m": null,
+     "flues": null
+    },
+    {
+     "h_m": null,
+     "flues": null
+    }
+   ],
+   "cooling_towers": null,
+   "boiler_units": 5,
+   "coal_yard": true,
+   "ash_pond": {
+    "lat": 13.2076,
+    "lon": 80.3048,
+    "area_ha": null
+   },
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "TNEB's first thermal plant (first 60 MW unit 1970). All units shut permanently 31.03.2017; site reserved for the 1x660 MW ETPS Expansion project.",
+  "links": {
+   "npp_station_id": 100032,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "raw/downloads/tn_energy_database.pdf:p23",
+   "raw/downloads/tn_energy_database.pdf:p25",
+   "https://www.tnpgcl.org/en/generation/about-us/tnpgcl-profile/",
+   "https://en.wikipedia.org/wiki/Ennore_Thermal_Power_Station",
+   "raw/tn/osm_power_plants_tn.json (w30738573)",
+   "raw/tn/osm_chimneys_ct_tn.json (chimneys w1136702341-44; 'ETPS Flyash Pond' w30738635, w30738642)",
+   "raw/pages/npp_tn.json (100032: 13.2027,80.3114)"
+  ]
+ },
+ {
+  "id": "etps-expansion",
+  "name": "Ennore Thermal Power Station Expansion Project",
+  "aliases": [
+   "ETPS Expansion",
+   "ETPS Expansion Project",
+   "Ennore Expansion TPP",
+   "Ennore Replacement TPP"
+  ],
+  "type": "coal",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Tiruvallur",
+  "lat": 13.201,
+  "lon": 80.311,
+  "loc_quality": "approx",
+  "capacity_mw": 660,
+  "units": [
+   {
+    "no": 1,
+    "mw": 660,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   }
+  ],
+  "operator": "TNPGCL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "coal",
+   "grade_or_kind": "imported coal (EC: 1x660 MW imported-coal supercritical)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [
+    {
+     "h_m": 275,
+     "flues": null
+    }
+   ],
+   "cooling_towers": null,
+   "boiler_units": 1,
+   "coal_yard": null,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "1x660 MW supercritical unit at Ernavur on the old ETPS site, announced 2012; first EPC (LITL) terminated 09.04.2018 and second (BGRESL) terminated 27.02.2024 with ~18.6% progress (275 m chimney shell built). Now to be completed 'as is where is' under DBFOO/PPP via tariff-based bidding (tender Dec 2025, TNERC approval).",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/en/generation/projects/etps-expansion/",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p9",
+   "https://www.tnpgcl.org/static/generation/assets/files/linkpdf/powerprojects/ETPSEC912026.pdf"
+  ]
+ },
+ {
+  "id": "ennore-sez-stpp",
+  "name": "Ennore SEZ Supercritical Thermal Power Project",
+  "aliases": [
+   "ENNORE SCTPP",
+   "Ennore SEZ",
+   "Ennore SEZ STPP",
+   "Ennore SEZ SCTPP",
+   "Ennore SEZ Super Critical Thermal Power Project (Vayalur)"
+  ],
+  "type": "coal",
+  "status": "under_construction",
+  "state": "Tamil Nadu",
+  "district": "Tiruvallur",
+  "lat": 13.2915,
+  "lon": 80.3105,
+  "loc_quality": "exact",
+  "capacity_mw": 1320,
+  "units": [
+   {
+    "no": 1,
+    "mw": 660,
+    "commissioned": null,
+    "make": "BHEL (EPC)",
+    "status": "under_construction"
+   },
+   {
+    "no": 2,
+    "mw": 660,
+    "commissioned": null,
+    "make": "BHEL (EPC)",
+    "status": "under_construction"
+   }
+  ],
+  "operator": "TNPGCL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "coal",
+   "grade_or_kind": "originally imported coal (2014 EC: 4.29 MTPA for 2x800); now CIL bridge linkage till TNPGCL captive mine",
+   "sources": [],
+   "route": [
+    "sea: -> Kamarajar (Ennore) port",
+    "conveyor: port -> plant"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "sea water via NCTPS system",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [
+    {
+     "h_m": 275,
+     "flues": 2
+    }
+   ],
+   "cooling_towers": null,
+   "boiler_units": 2,
+   "coal_yard": true,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "400 kV DC Ennore SEZ STPP - North Chennai pooling station",
+   "400 kV DC Ennore SEZ SCTPP - ETPS Expansion",
+   "400 kV DC Ennore SEZ STPP - North Chennai-II (start-up power)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "Announced 2013 at Kattupalli/Vayalur (Ponneri tk) on the NCTPS-I ash dyke; EC originally for 2x800 MW, built as 2x660 MW by BHEL (zero date 27.09.2014). Physical progress 74.42%; scheduled U1 31.08.2026, U2 30.09.2026.",
+  "links": {
+   "npp_station_id": 100851,
+   "dgr_name": "ENNORE SCTPP",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/en/generation/projects/ennore-sez/",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p9",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/EC%20SEZ%20ENNore.pdf (site 13d17'02\"-13d17'57\"N, 80d18'07\"-80d19'05\"E)",
+   "raw/tn/osm_power_plants_tn.json (w25850550)",
+   "raw/tn/osm_chimneys_ct_tn.json (chimney n10782706379 13.2925,80.3122)",
+   "raw/pages/npp_tn.json (100851 lat typo 3.2917 -> 13.2917, lon 80.3097)"
+  ]
+ },
+ {
+  "id": "udangudi-stpp-1",
+  "name": "Udangudi Supercritical Thermal Power Project Stage I",
+  "aliases": [
+   "UDANGUDI TPP",
+   "Udangudi STPP",
+   "Udangudi Thermal Power Project Stage I",
+   "Udangudi TPP Stage-I"
+  ],
+  "type": "coal",
+  "status": "under_construction",
+  "state": "Tamil Nadu",
+  "district": "Thoothukudi",
+  "lat": 8.4346,
+  "lon": 78.0645,
+  "loc_quality": "exact",
+  "capacity_mw": 1320,
+  "units": [
+   {
+    "no": 1,
+    "mw": 660,
+    "commissioned": null,
+    "make": "BHEL (main plant EPC)",
+    "status": "under_construction"
+   },
+   {
+    "no": 2,
+    "mw": 660,
+    "commissioned": null,
+    "make": "BHEL (main plant EPC)",
+    "status": "under_construction"
+   }
+  ],
+  "operator": "TNPGCL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "coal",
+   "grade_or_kind": "50:50 imported:domestic (fresh EC 2026); GCV 4350 kcal/kg; SCCL bridge linkage for domestic coal",
+   "sources": [
+    {
+     "name": "SCCL (Telangana) bridge linkage",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": 0.5
+    },
+    {
+     "name": "imported coal",
+     "kind": "import",
+     "lat": null,
+     "lon": null,
+     "share": 0.5
+    }
+   ],
+   "route": [
+    "sea: -> Udangudi captive coal jetty (1.2 km)",
+    "pipe conveyor: jetty -> plant"
+   ],
+   "annual_requirement": "5.893 MTPA"
+  },
+  "water": {
+   "source": "sea water (1,94,640 m3/day) + 16 MLD desalination",
+   "cooling": "cooling towers with seawater make-up (blowdown discharged to sea)"
+  },
+  "structure": {
+   "stacks": [
+    {
+     "h_m": 275,
+     "flues": 2
+    }
+   ],
+   "cooling_towers": 2,
+   "boiler_units": 2,
+   "coal_yard": true,
+   "ash_pond": {
+    "lat": null,
+    "lon": null,
+    "area_ha": 48.562
+   },
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": 380
+  },
+  "evacuation": [
+   "400 kV DC Udangudi STPP - Ottapidaram (completed; start-up power)"
+  ],
+  "emissions": {
+   "fgd": "not required (SO2 category C per MoEF 11.07.2025)",
+   "co2_t_per_mwh": null,
+   "notes": "ESP for PM<30 mg/Nm3, low-NOx burners"
+  },
+  "history": "Announced 2013 (EC 2013 for 2x800 MW imported coal, amended 2017 to 2x660). Main plant BHEL 07.12.2017, coal jetty ITD Cementation 13.02.2018. ~95.6% physical progress; fresh EC 02.03.2026; expected U1 Jan-2026/U2 May-2026 (slipping). Stage II and III (2x660 each) and a new 1x800 MW unit on the same land are planned.",
+  "links": {
+   "npp_station_id": 100858,
+   "dgr_name": "UDANGUDI TPP",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/en/generation/projects/udangudi-thermal-project/",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p9",
+   "https://www.tnpgcl.org/static/generation/assets/files/linkpdf/powerprojects/UdangudiEC03032026.pdf",
+   "raw/tn/osm_power_plants_tn.json (relation 15986380)",
+   "raw/tn/osm_chimneys_ct_tn.json (chimney n10982598806, cooling towers w1182706906-07)",
+   "raw/pages/npp_tn.json (100858: 8.4347,78.0611)"
+  ]
+ },
+ {
+  "id": "udangudi-stpp-2-3",
+  "name": "Udangudi Expansion Project Stage II & III",
+  "aliases": [
+   "Udangudi Stage-II",
+   "Udangudi Stage-III",
+   "Udangudi Expansion"
+  ],
+  "type": "coal",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Thoothukudi",
+  "lat": 8.4346,
+  "lon": 78.0645,
+  "loc_quality": "approx",
+  "capacity_mw": 2640,
+  "units": [
+   {
+    "no": 1,
+    "mw": 660,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 2,
+    "mw": 660,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 3,
+    "mw": 660,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 4,
+    "mw": 660,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   }
+  ],
+  "operator": "TNPGCL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "coal",
+   "grade_or_kind": null,
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": null,
+   "cooling_towers": null,
+   "boiler_units": null,
+   "coal_yard": null,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "GoTN approval G.O.(4D) No.1 dt 03.02.2015 for Stage II and III (2x660 MW each); land acquisition in progress (Data Card 2025-26). Location assumed adjacent to Stage I.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p9",
+   "raw/downloads/tn_energy_database.pdf:p124"
+  ]
+ },
+ {
+  "id": "udangudi-800",
+  "name": "New 1x800 MW Thermal Power Plant, Udangudi (Tuticorin district)",
+  "aliases": [
+   "New Thermal Power Plant in Tuticorin district"
+  ],
+  "type": "coal",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Thoothukudi",
+  "lat": 8.4346,
+  "lon": 78.0645,
+  "loc_quality": "approx",
+  "capacity_mw": 800,
+  "units": [
+   {
+    "no": 1,
+    "mw": 800,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   }
+  ],
+  "operator": "TNPGCL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "coal",
+   "grade_or_kind": null,
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": null,
+   "cooling_towers": null,
+   "boiler_units": null,
+   "coal_yard": null,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "GO(Ms) No.45 dt 14.03.2026: 1x800 MW at Udangudi using Stage I land, coal jetty and common facilities and relocating materials procured for the shelved Uppur 2x800 MW project; TBCB mode.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p10",
+   "https://www.tnpgcl.org/en/generation/projects/uppur-thermal-project/"
+  ]
+ },
+ {
+  "id": "uppur-stpp",
+  "name": "Uppur Supercritical Thermal Power Project",
+  "aliases": [
+   "Uppur TPP",
+   "Uppur Power Plant",
+   "Uppur Thermal Power Project"
+  ],
+  "type": "coal",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Ramanathapuram",
+  "lat": 9.5817,
+  "lon": 78.9074,
+  "loc_quality": "approx",
+  "capacity_mw": 1600,
+  "units": [
+   {
+    "no": 1,
+    "mw": 800,
+    "commissioned": null,
+    "make": "BHEL (BTG)",
+    "status": "planned"
+   },
+   {
+    "no": 2,
+    "mw": 800,
+    "commissioned": null,
+    "make": "BHEL (BTG)",
+    "status": "planned"
+   }
+  ],
+  "operator": "TNPGCL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "coal",
+   "grade_or_kind": "design 70% imported / 30% domestic (SHAKTI linkage)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": null,
+   "cooling_towers": null,
+   "boiler_units": null,
+   "coal_yard": null,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "proposed 765 kV lines to Virudhunagar 765 kV SS"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "Announced 2010; BTG BHEL 2016, work suspended 18.03.2021 by NGT(SZ) order (SC stay 01.07.2021); ~38% overall progress. NTPC/NLC declined JV revival; put on hold and materials to be reused at a new 1x800 MW unit at Udangudi (GO 45, 14.03.2026). Status 'planned' = shelved/on hold.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/en/generation/projects/uppur-thermal-project/",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p9",
+   "raw/tn/osm_power_plants_tn.json (w1181414705 'Uppur Power Plant')"
+  ]
+ },
+ {
+  "id": "ntecl-vallur",
+  "name": "Vallur Thermal Power Station (NTPC Tamil Nadu Energy Company)",
+  "aliases": [
+   "VALLUR TPP",
+   "NTECL Vallur",
+   "NTECL",
+   "NTPC-TNEB Energy Co. Ltd.",
+   "NTPC Tamil Nadu Energy Company",
+   "Vallur Thermal Power Project",
+   "Vallur TPS"
+  ],
+  "type": "coal",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Tiruvallur",
+  "lat": 13.2377,
+  "lon": 80.3019,
+  "loc_quality": "exact",
+  "capacity_mw": 1500,
+  "units": [
+   {
+    "no": 1,
+    "mw": 500,
+    "commissioned": "2012-11-29",
+    "make": "BHEL",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 500,
+    "commissioned": "2013-08-25",
+    "make": "BHEL",
+    "status": "operating"
+   },
+   {
+    "no": 3,
+    "mw": 500,
+    "commissioned": "2015-02-26",
+    "make": "BHEL",
+    "status": "operating"
+   }
+  ],
+  "operator": "NTECL (NTPC 50% : TNPGCL 50%)",
+  "owner_sector": "jv",
+  "fuel": {
+   "primary": "coal",
+   "grade_or_kind": "domestic (CIL/MCL) bituminous",
+   "sources": [
+    {
+     "name": "MCL Talcher coalfield (Odisha)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    },
+    {
+     "name": "MCL IB Valley coalfield (Odisha)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    }
+   ],
+   "route": [
+    "rail: MCL mines -> Paradip port",
+    "sea: Paradip -> Kamarajar (Ennore) port",
+    "pipe conveyor 4.4 km (4000 t/h) across Ennore creek: port -> plant"
+   ],
+   "annual_requirement": "4.62 MTPA (Wikipedia)"
+  },
+  "water": {
+   "source": "sea water from NCTPS intake channel; desalination for fresh water",
+   "cooling": "6 induced draft cooling towers (seawater)"
+  },
+  "structure": {
+   "stacks": [
+    {
+     "h_m": null,
+     "flues": null
+    },
+    {
+     "h_m": null,
+     "flues": null
+    }
+   ],
+   "cooling_towers": 6,
+   "boiler_units": 3,
+   "coal_yard": true,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "NTPC-TNEB JV (NTECL) under mega power policy; foundation 05.09.2007, main plant BHEL. Sync U1 09.03.2012, U2 26.02.2013, U3 28.02.2014; COD dates as listed. Cost Rs 10,080.5 cr. TN share 1062 MW (Data Card).",
+  "links": {
+   "npp_station_id": 100139,
+   "dgr_name": "VALLUR TPP",
+   "cea_coal_name": "VALLUR TPP",
+   "sldc_item": "NTECL Vallur"
+  },
+  "sources": [
+   "https://www.tnpgcl.org/en/generation/generation/joint-venture-stations/ntpc-tneb-energy-co-ltd/",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/vallur.pdf",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p2",
+   "https://en.wikipedia.org/wiki/Vallur_Thermal_Power_Station",
+   "raw/tn/osm_power_plants_tn.json (w133591372)",
+   "raw/tn/osm_chimneys_ct_tn.json (500 MW generator nodes 7683033261-63, chimneys n6229143811-12)",
+   "raw/pages/npp_tn.json (100139 coords duplicate NCTPS-I -> not used)"
+  ]
+ },
+ {
+  "id": "ntpl-tuticorin",
+  "name": "NLC Tamil Nadu Power Ltd (NTPL) Tuticorin Thermal Power Station",
+  "aliases": [
+   "NTPL TUTICORIN  TPP",
+   "NTPL TUTICORIN TPP",
+   "NTPL",
+   "NLC Tamil Nadu Power Ltd",
+   "NTPL Thermal Power Station",
+   "NTPL-Tuticorin"
+  ],
+  "type": "coal",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Thoothukudi",
+  "lat": 8.7607,
+  "lon": 78.1694,
+  "loc_quality": "exact",
+  "capacity_mw": 1000,
+  "units": [
+   {
+    "no": 1,
+    "mw": 500,
+    "commissioned": "2015-06-18",
+    "make": "BHEL",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 500,
+    "commissioned": "2015-08-29",
+    "make": "BHEL",
+    "status": "operating"
+   }
+  ],
+  "operator": "NTPL (NLC India 89% : TNPGCL 11%)",
+  "owner_sector": "jv",
+  "fuel": {
+   "primary": "coal",
+   "grade_or_kind": "captive coal from NLC India's Talabira mines (CEA Jul-2026: all receipts 'Captive')",
+   "sources": [
+    {
+     "name": "NLC India Talabira II & III captive coal mine (Odisha)",
+     "kind": "mine",
+     "lat": null,
+     "lon": null,
+     "share": null
+    }
+   ],
+   "route": [
+    "rail: Talabira -> Paradip port",
+    "sea: Paradip -> V.O. Chidambaranar (Tuticorin) port",
+    "conveyor: port -> plant (CEA mode RAIL-SEA)"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "sea water (Tuticorin harbour)",
+   "cooling": "natural draft cooling towers (2 in OSM)"
+  },
+  "structure": {
+   "stacks": [
+    {
+     "h_m": null,
+     "flues": 2
+    }
+   ],
+   "cooling_towers": 2,
+   "boiler_units": 2,
+   "coal_yard": true,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "JV of NLC India and TNEB/TNPGCL in the V.O.C. port harbour estate next to TTPS; main plant BHEL (awarded 28.01.2009); cost Rs 7293.48 cr; COD U1 18.06.2015, U2 29.08.2015. TN share 410 MW (Data Card 2025-26).",
+  "links": {
+   "npp_station_id": 100303,
+   "dgr_name": "NTPL TUTICORIN  TPP",
+   "cea_coal_name": "NTPL TUTICORIN TPP",
+   "sldc_item": "NTPL"
+  },
+  "sources": [
+   "https://www.tnpgcl.org/en/generation/generation/joint-venture-stations/nlc-tamil-nadu-power-ltd/",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/NTPL.pdf",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p2",
+   "raw/downloads/tn_energy_database.pdf:p29",
+   "raw/tn/osm_power_plants_tn.json (w662798206)",
+   "raw/tn/osm_chimneys_ct_tn.json (500 MW generators n5848822927-28, chimney w550334498, cooling towers w499104782-83)",
+   "raw/feedstock/cea/monthCoal1-2026-Jul.pdf",
+   "raw/pages/npp_tn.json (100303 coords 8.4549,78.0914 are wrong - Udangudi area)"
+  ]
+ },
+ {
+  "id": "bbgtps",
+  "name": "Basin Bridge Gas Turbine Power Station",
+  "aliases": [
+   "BASIN BRIDGE GT (Liq.)",
+   "BBGTPS",
+   "Basin Bridge GTPS",
+   "Basin Bridge Gas Turbine"
+  ],
+  "type": "gas",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Chennai",
+  "lat": 13.0985,
+  "lon": 80.2696,
+  "loc_quality": "exact",
+  "capacity_mw": 120,
+  "units": [
+   {
+    "no": 1,
+    "mw": 30,
+    "commissioned": "1996-02-12",
+    "make": "Sumitomo & ABB",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 30,
+    "commissioned": "1996-02-25",
+    "make": "Sumitomo & ABB",
+    "status": "operating"
+   },
+   {
+    "no": 3,
+    "mw": 30,
+    "commissioned": "1996-03-26",
+    "make": "BHEL",
+    "status": "operating"
+   },
+   {
+    "no": 4,
+    "mw": 30,
+    "commissioned": "1996-03-31",
+    "make": "BHEL",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNPGCL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "naphtha",
+   "grade_or_kind": "naphtha / HSD (dual-fuel with natural gas, no gas available in Chennai); HSD only for emergency generation",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [
+    {
+     "h_m": null,
+     "flues": 1
+    },
+    {
+     "h_m": null,
+     "flues": 1
+    },
+    {
+     "h_m": null,
+     "flues": 1
+    },
+    {
+     "h_m": null,
+     "flues": 1
+    }
+   ],
+   "cooling_towers": null,
+   "boiler_units": 0,
+   "coal_yard": null,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "OECF Japan-aided open-cycle GT station (cost ~Rs 490 cr) 3 km from Chennai Central; since 20.01.2010 run mainly as synchronous condensers for reactive power; black-start station for Sub-System 3 of the TN grid. TNPGCL site calls it combined cycle but CEA/Wikipedia list open cycle.",
+  "links": {
+   "npp_station_id": 100052,
+   "dgr_name": "BASIN BRIDGE GT (Liq.)",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/en/generation/generation/gas-turbine-power-stations/bbgtps/",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p1",
+   "raw/downloads/tn_energy_database.pdf:p25",
+   "https://en.wikipedia.org/wiki/Basin_Bridge_Gas_Turbine_Power_Station",
+   "raw/tn/osm_power_plants_tn.json (w28342737)",
+   "raw/tn/osm_chimneys_ct_tn.json (4 chimneys n8751699511-14)"
+  ]
+ },
+ {
+  "id": "valuthur-gtps",
+  "name": "Valuthur Gas Turbine Power Station (Phase I & II)",
+  "aliases": [
+   "VALUTHUR CCPP",
+   "VGTPS",
+   "Valuthur GTPS",
+   "Valathur",
+   "Valuthur Gas Turbine Power Station (Phase-I)",
+   "Valuthur Gas Turbine Power Station (Phase-II)"
+  ],
+  "type": "gas",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Ramanathapuram",
+  "lat": 9.3493,
+  "lon": 78.9236,
+  "loc_quality": "exact",
+  "capacity_mw": 187.2,
+  "units": [
+   {
+    "no": "I-GT",
+    "mw": 59.9,
+    "commissioned": "2002-12-24",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": "I-ST",
+    "mw": 35.1,
+    "commissioned": "2003-03-13",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": "II",
+    "mw": 92.2,
+    "commissioned": "2008",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNPGCL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "gas",
+   "grade_or_kind": "natural gas (combined cycle)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [
+    {
+     "h_m": null,
+     "flues": 1
+    },
+    {
+     "h_m": null,
+     "flues": 1
+    },
+    {
+     "h_m": null,
+     "flues": 1
+    }
+   ],
+   "cooling_towers": null,
+   "boiler_units": null,
+   "coal_yard": null,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "TNPGCL vgtps2 page duplicates Phase I content; Phase II GT/ST split unknown."
+  },
+  "history": "Combined cycle at Valuthur village, 10.5 km from Ramanathapuram; Phase I 95 MW (GT 59.9 + ST 35.1) 2002-03, Phase II 92.2 MW 2008. Capacity 187.2 MW in Data Card 2025-26 vs 186.2 MW in NPP/DGR.",
+  "links": {
+   "npp_station_id": 100188,
+   "dgr_name": "VALUTHUR CCPP",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/en/generation/generation/gas-turbine-power-stations/vgtps1/",
+   "https://www.tnpgcl.org/en/generation/generation/gas-turbine-power-stations/vgtps2/",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p1",
+   "raw/downloads/tn_energy_database.pdf:p25",
+   "raw/tn/osm_power_plants_tn.json (w310430102 'Valathur 187 MW')",
+   "raw/tn/osm_chimneys_ct_tn.json (generators w310430083-84, chimneys n6833104121-22, n8730082435)",
+   "raw/pages/npp_tn.json (100188: 9.3367,78.9146, ~1.7 km off)"
+  ]
+ },
+ {
+  "id": "kuttalam-gtps",
+  "name": "Kuttalam Gas Turbine Power Station",
+  "aliases": [
+   "KUTTALAM CCPP",
+   "KGTPS",
+   "Kuttalam GTPS",
+   "Kuttulam Power Plant",
+   "KUTTALAM GAS TURBINE POWER PROJECT"
+  ],
+  "type": "gas",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Mayiladuthurai",
+  "lat": 11.034,
+  "lon": 79.5858,
+  "loc_quality": "exact",
+  "capacity_mw": 101,
+  "units": [
+   {
+    "no": "GT",
+    "mw": 64,
+    "commissioned": "2003-11-27",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": "ST",
+    "mw": 37,
+    "commissioned": "2004-03-24",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNPGCL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "gas",
+   "grade_or_kind": "natural gas (combined cycle)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [
+    {
+     "h_m": null,
+     "flues": 1
+    },
+    {
+     "h_m": null,
+     "flues": 1
+    }
+   ],
+   "cooling_towers": null,
+   "boiler_units": null,
+   "coal_yard": null,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "Combined cycle at Maruthur village near Kuttalam, 15 km from Mayiladuthurai (district carved from Nagapattinam in 2020); ~600 MU/yr. NPP/DGR list 100 MW.",
+  "links": {
+   "npp_station_id": 100652,
+   "dgr_name": "KUTTALAM CCPP",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/en/generation/generation/gas-turbine-power-stations/kgtps/",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p1",
+   "raw/downloads/tn_energy_database.pdf:p25",
+   "raw/tn/osm_power_plants_tn.json (w823185402 'Kuttulam Power Plant')",
+   "raw/tn/osm_chimneys_ct_tn.json (chimneys n11347061965-66)",
+   "raw/pages/npp_tn.json (100652 coords 11.0751,79.8480 are PPN's area, not used)",
+   "raw/feedstock/tnpcb_thermal_units.pdf"
+  ]
+ },
+ {
+  "id": "thirumakottai-gtps",
+  "name": "Thirumakottai (Kovilkalappal) Gas Turbine Power Station",
+  "aliases": [
+   "KOVIKALPAL CCPP",
+   "TGTPS",
+   "T(K)GTPS",
+   "Kovilkalappal GTPS",
+   "Thirumakotai Power Station",
+   "Thirumakkottai Gas Turbine Power Project",
+   "TKGTPS"
+  ],
+  "type": "gas",
+  "status": "mothballed",
+  "state": "Tamil Nadu",
+  "district": "Tiruvarur",
+  "lat": 10.5414,
+  "lon": 79.45,
+  "loc_quality": "exact",
+  "capacity_mw": 107.88,
+  "units": [
+   {
+    "no": "GT",
+    "mw": 69.65,
+    "commissioned": "2001-02-05",
+    "make": null,
+    "status": "mothballed"
+   },
+   {
+    "no": "ST",
+    "mw": 38.23,
+    "commissioned": "2001-03-30",
+    "make": null,
+    "status": "mothballed"
+   }
+  ],
+  "operator": "TNPGCL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "gas",
+   "grade_or_kind": "natural gas from ONGC wells ~10 km away (GAIL supply)",
+   "sources": [
+    {
+     "name": "ONGC Cauvery basin wells near Thirumakottai",
+     "kind": "gas field",
+     "lat": null,
+     "lon": null,
+     "share": null
+    }
+   ],
+   "route": [
+    "pipeline (GAIL) ~10 km"
+   ],
+   "annual_requirement": "4,50,000 SCMD contracted; 1,70,000 SCMD supplied from Apr 2023"
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [
+    {
+     "h_m": null,
+     "flues": 1
+    },
+    {
+     "h_m": null,
+     "flues": 1
+    }
+   ],
+   "cooling_towers": null,
+   "boiler_units": null,
+   "coal_yard": null,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "TNEB's first combined-cycle station (2001) at Thirumakottai, 19 km from Mannargudi. GAIL cut gas to 1.7 lakh SCMD from Apr 2023; GSA expired 31.07.2023; shut down since 01.08.2023 and excluded from installed capacity.",
+  "links": {
+   "npp_station_id": 100248,
+   "dgr_name": "KOVIKALPAL CCPP",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/en/generation/generation/gas-turbine-power-stations/tgtps/",
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p1",
+   "raw/downloads/tn_energy_database.pdf:p25",
+   "raw/tn/osm_power_plants_tn.json (w341599763)",
+   "raw/tn/osm_chimneys_ct_tn.json (chimneys n8765801466-67)",
+   "raw/pages/npp_tn.json (100248 coords 11.9398,78.4933 wrong, not used)"
+  ]
+ },
+ {
+  "id": "narimanam-gtps",
+  "name": "Narimanam Gas Turbine Power Station",
+  "aliases": [
+   "NARIMANAM GPS",
+   "Narimanam GTPS"
+  ],
+  "type": "gas",
+  "status": "retired",
+  "state": "Tamil Nadu",
+  "district": "Nagapattinam",
+  "lat": null,
+  "lon": null,
+  "loc_quality": null,
+  "capacity_mw": 10,
+  "units": [
+   {
+    "no": 1,
+    "mw": 10,
+    "commissioned": "1991",
+    "make": null,
+    "status": "retired"
+   }
+  ],
+  "operator": "TNEB (historic)",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "naphtha",
+   "grade_or_kind": "naphtha",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": null,
+   "cooling_towers": null,
+   "boiler_units": null,
+   "coal_yard": null,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "10 MW naphtha-based gas station commissioned 1991-92 (TNPGCL profile). Absent from the 2020 ENVIS database and the 2025-26 installed-capacity data card; status 'retired' is inferred, no decommissioning date found. NPP entry has 0 MW and bogus coordinates (11.597,79.505 = Neyveli).",
+  "links": {
+   "npp_station_id": 100710,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/en/generation/about-us/tnpgcl-profile/",
+   "raw/pages/npp_tn.json (100710)"
+  ]
+ }
+]

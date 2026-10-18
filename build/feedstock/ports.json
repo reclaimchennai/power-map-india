@@ -1,0 +1,3945 @@
+{
+ "meta": {
+  "generated": "2026-09-24",
+  "description": "Coal import and coastal-shipping ports serving Indian (especially Tamil Nadu) thermal plants: terminals, the TN plants each serves, and approximate sea lanes.",
+  "coords": "WGS84. Each record has loc_precision. Terminal coordinates come from Global Energy Monitor (GEM) wiki where marked; port points from Wikipedia or OSM.",
+  "sea_lanes_note": "approximate illustrative route through hand-picked open-sea waypoints, densified along great circles; NOT a vessel track. Real routing varies with ship size, season and charter.",
+  "tn_coal_flow_fy22": "MoC ICLP (Jan 2024): FY22 Odisha to Tamil Nadu coal was 28.12 Mt, of which 26.30 Mt went rail-sea-rail, 1.16 Mt rail and 0.66 Mt road.",
+  "licences": {
+   "GEM wiki": "Global Energy Monitor, CC BY 4.0 (per GEM terms; verify before redistribution)",
+   "Wikipedia": "CC BY-SA 4.0",
+   "OSM": "ODbL 1.0",
+   "Government of India documents": "public; attribute source"
+  },
+  "sources": [
+   "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf",
+   "https://www.gem.wiki/Coal_terminals_in_India"
+  ]
+ },
+ "ports": [
+  {
+   "id": "port-kamarajar",
+   "name": "Kamarajar Port (Ennore)",
+   "aka": [
+    "Ennore Port",
+    "KPL"
+   ],
+   "state": "Tamil Nadu",
+   "lat": 13.25164,
+   "lon": 80.32683,
+   "loc_precision": "port reference point (Wikipedia)",
+   "role": [
+    "unloading: coastal domestic coal (RSR)",
+    "unloading: imported coal"
+   ],
+   "operator": "Kamarajar Port Ltd (Chennai Port Authority owned)",
+   "notes": "Built as a satellite of Chennai Port primarily for TNEB thermal coal; first coal unloaded 22-Jun-2001. Hosts TNPGCL/NTECL captive coal berths feeding NCTPS, Vallur and (via rail from the NCTPS yard) Mettur.",
+   "terminals": [
+    {
+     "id": "kpl-cb1",
+     "name": "Coal Berth 1 (CB-1)",
+     "operator": "TNPGCL",
+     "lat": 13.2611,
+     "lon": 80.3406,
+     "loc_precision": "exact (GEM)",
+     "capacity_mtpa": 8,
+     "since": 2001,
+     "serves": [
+      "nctps-1",
+      "nctps-2",
+      "nctps-3",
+      "mettur-1",
+      "mettur-2"
+     ],
+     "evacuation": "conveyor to NCTPS coal yard; onward rail rakes from NCTPS yard to Mettur (and formerly Ennore TPS)",
+     "sources": [
+      "https://www.gem.wiki/Kamarajar_Port_Coal_Berth_1",
+      "https://www.tnpgcl.org/en/generation/generation/thermal-power-stations/nctps1/",
+      "file:raw/feedstock/gem/Kamarajar_Port_Coal_Berth_1.html"
+     ]
+    },
+    {
+     "id": "kpl-cb2",
+     "name": "Coal Berth 2 (CB-2)",
+     "operator": "NTECL (NTPC-TANGEDCO JV)",
+     "lat": 13.2602,
+     "lon": 80.3409,
+     "loc_precision": "exact (GEM)",
+     "capacity_mtpa": 8,
+     "since": 2001,
+     "serves": [
+      "vallur-ntecl"
+     ],
+     "evacuation": "4.4 km pipe conveyor (4,000 t/h) across Ennore Creek to Vallur TPP",
+     "sources": [
+      "https://www.gem.wiki/Kamarajar_Port_Coal_Berth_2",
+      "https://en.wikipedia.org/wiki/Vallur_Thermal_Power_Station",
+      "file:raw/feedstock/gem/Kamarajar_Port_Coal_Berth_2.html"
+     ]
+    },
+    {
+     "id": "kpl-cb3",
+     "name": "Coal Berth 3 (CB-3)",
+     "operator": "TNPGCL",
+     "lat": 13.2607,
+     "lon": 80.3373,
+     "loc_precision": "exact (GEM)",
+     "capacity_mtpa": 9,
+     "since": 2025,
+     "serves": [
+      "ennore-sez",
+      "nctps-1",
+      "nctps-2",
+      "nctps-3"
+     ],
+     "evacuation": "shore unloaders (2 x 2,600 t/h, up to 120,000 DWT) and conveyors to Ennore SEZ (Vayalur) project, with connection to NCTPS",
+     "sources": [
+      "https://www.gem.wiki/Kamarajar_Port_Coal_Berth_3",
+      "file:raw/feedstock/gem/Kamarajar_Port_Coal_Berth_3.html"
+     ]
+    },
+    {
+     "id": "kpl-ectpl",
+     "name": "Ennore Coal Terminal (ex-Chettinad International Coal Terminal), JSW Infrastructure",
+     "operator": "Ennore Coal Terminal Pvt Ltd (JSW Infrastructure)",
+     "lat": 13.262598,
+     "lon": 80.339736,
+     "loc_precision": "exact (GEM)",
+     "capacity_mtpa": 11,
+     "since": 2011,
+     "serves": [],
+     "evacuation": "common-user import terminal (coal, coke, limestone); road/rail to private users",
+     "sources": [
+      "https://www.gem.wiki/Kamarajar_Port_Ennore_Coal_Terminal",
+      "https://en.wikipedia.org/wiki/Kamarajar_Port",
+      "file:raw/feedstock/gem/Kamarajar_Port_Ennore_Coal_Terminal.html"
+     ]
+    }
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kamarajar_Port",
+    "https://www.gem.wiki/Kamarajar_Port",
+    "file:raw/feedstock/wiki/Kamarajar_Port.json"
+   ]
+  },
+  {
+   "id": "port-chennai",
+   "name": "Chennai Port",
+   "state": "Tamil Nadu",
+   "lat": 13.08441,
+   "lon": 80.2899,
+   "loc_precision": "port reference point (Wikipedia)",
+   "role": [
+    "historical: coal unloading (stopped)"
+   ],
+   "status": "no thermal-coal handling",
+   "notes": "TNEB coal handling moved to Ennore (Kamarajar) after 2001; Madras High Court ordered on 11-May-2011 that coal/iron ore handling stop (shifted to Ennore from 1-Oct-2011); Supreme Court allowed resumption with conditions in Sept 2012 but the port ceased coal handling in Oct 2012. Included for history only.",
+   "terminals": [],
+   "serves_now": [],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chennai_Port",
+    "https://www.gem.wiki/Port_of_Chennai",
+    "http://www.thehindubusinessline.com/industry-and-economy/logistics/article2009687.ece"
+   ]
+  },
+  {
+   "id": "port-voc",
+   "name": "V.O. Chidambaranar Port (Tuticorin / Thoothukudi)",
+   "state": "Tamil Nadu",
+   "lat": 8.74903,
+   "lon": 78.22639,
+   "loc_precision": "OSM harbour node 5315518550",
+   "role": [
+    "unloading: coastal domestic coal (RSR)",
+    "unloading: imported coal"
+   ],
+   "notes": "Wikipedia's infobox coordinate for this port (8.4730 N, 78.1215 E) is wrong (about 30 km south of the harbour), so the OSM harbour node is used. Coal is handled at Coal Jetties I & II (captive, for TTPS), NCB-I (captive, NTPL), NCB-II (common user) and NCB-III (JSW multipurpose).",
+   "terminals": [
+    {
+     "id": "voc-coal-jetty-1-2",
+     "name": "Coal Jetties I & II (TTPS captive)",
+     "operator": "TNPGCL",
+     "lat": null,
+     "lon": null,
+     "loc_precision": null,
+     "serves": [
+      "tuticorin-tps"
+     ],
+     "evacuation": "conveyor to Tuticorin TPS (plant sits on port land in the Harbour Estate)",
+     "sources": [
+      "https://www.gem.wiki/V.O._Chidambaranar_Port",
+      "https://www.tnpgcl.org/en/generation/generation/thermal-power-stations/ttps/"
+     ]
+    },
+    {
+     "id": "voc-ncb1",
+     "name": "North Cargo Berth I (NCB-I), NTPL captive",
+     "operator": "NLC Tamil Nadu Power Ltd",
+     "lat": 8.7602,
+     "lon": 78.2078,
+     "loc_precision": "exact (GEM)",
+     "capacity_mtpa": 12.2,
+     "since": 2014,
+     "serves": [
+      "ntpl-tuticorin"
+     ],
+     "evacuation": "dedicated conveyor to NTPL",
+     "sources": [
+      "https://www.gem.wiki/VOC_Port_NCB-I_Coal_Terminal",
+      "file:raw/feedstock/gem/VOC_Port_NCB-I_Coal_Terminal.html"
+     ]
+    },
+    {
+     "id": "voc-ncb2",
+     "name": "North Cargo Berth II (NCB-II), common user",
+     "operator": null,
+     "lat": null,
+     "lon": null,
+     "loc_precision": null,
+     "serves": [],
+     "sources": [
+      "https://www.gem.wiki/V.O._Chidambaranar_Port"
+     ]
+    },
+    {
+     "id": "voc-ncb3",
+     "name": "NCB-III, JSW Tuticorin Multipurpose Terminal",
+     "operator": "JSW Infrastructure",
+     "lat": null,
+     "lon": null,
+     "loc_precision": null,
+     "serves": [],
+     "sources": [
+      "https://www.gem.wiki/V.O._Chidambaranar_Port"
+     ]
+    }
+   ],
+   "sources": [
+    "https://www.gem.wiki/V.O._Chidambaranar_Port",
+    "https://www.openstreetmap.org/node/5315518550",
+    "file:raw/feedstock/ports/osm_ports_bboxes.json"
+   ]
+  },
+  {
+   "id": "port-udangudi-jetty",
+   "name": "Udangudi captive offshore coal jetty (Kallamozhi)",
+   "state": "Tamil Nadu",
+   "lat": 8.42345,
+   "lon": 78.0963,
+   "loc_precision": "OSM way 1208274329 'Udangudi Pier' centroid",
+   "role": [
+    "unloading: coastal domestic + imported coal (captive)"
+   ],
+   "operator": "TNPGCL",
+   "status": "operating (first coal vessel 2025/26)",
+   "notes": "Offshore jetty about 8 km off the Kallamozhi coast built by ITD Cementation for Udangudi Stage-I. MoC logistics plan: Chandrabila block coal railed about 200 km to Paradip, then 1,224 nautical miles by sea to this jetty.",
+   "terminals": [],
+   "serves_now": [
+    "udangudi"
+   ],
+   "sources": [
+    "https://www.tnpgcl.org/en/generation/projects/udangudi-thermal-project/",
+    "https://en.wikipedia.org/wiki/Udangudi_Super_Critical_Thermal_Power_Station",
+    "https://www.openstreetmap.org/way/1208274329",
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf",
+    "file:raw/feedstock/coal_logistics/moc_iclp_2024-01-31.pdf"
+   ]
+  },
+  {
+   "id": "port-itpcl-jetty",
+   "name": "ITPCL captive jetty (Parangipettai / C. Pudupettai, Cuddalore) - under construction",
+   "state": "Tamil Nadu",
+   "lat": 11.52276,
+   "lon": 79.76996,
+   "loc_precision": "approx: unnamed OSM pier (way 1305008985) next to the ITPCL site; identification inferred",
+   "role": [
+    "planned: imported coal unloading (captive)"
+   ],
+   "operator": "IL&FS Tamil Nadu Power Co",
+   "capacity_mtpa": 5,
+   "status": "under construction (IL&FS investment teaser, Nov 2023: about 50% complete)",
+   "notes": "Until the jetty is finished, ITPCL's imported coal is handled at Karaikal Port, about 133 km away, and railed on Indian Railways to a 5 km captive siding (IL&FS teaser, Nov 2023). ITPCL holds a coal CCOW licence at Upau, South Kalimantan, Indonesia.",
+   "terminals": [],
+   "serves_now": [],
+   "serves_planned": [
+    "itpcl-cuddalore"
+   ],
+   "sources": [
+    "https://www.ilfsindia.com/pdf/Investment-Teaser-ILFS-Tamil-Nadu-Power-Company-Limited.pdf",
+    "https://itpclindia.com/",
+    "https://www.openstreetmap.org/way/1305008985",
+    "file:raw/feedstock/web/ilfsindia.com_pdf_Investment-Teaser-ILFS-Tamil-Nadu-Power-Company-Limited.pdf"
+   ]
+  },
+  {
+   "id": "port-karaikal",
+   "name": "Karaikal Port (Puducherry UT)",
+   "state": "Puducherry",
+   "lat": 10.838,
+   "lon": 79.846,
+   "loc_precision": "port reference point (Wikipedia)",
+   "role": [
+    "unloading: coal (coastal + imports)"
+   ],
+   "operator": "Karaikal Port Pvt Ltd (developed by MARG group)",
+   "notes": "Handles coal and pet coke and sends 4-5 coal rakes a day. Imported coal for ITPCL (Cuddalore) is unloaded here and railed about 133 km to the plant (IL&FS teaser, Nov 2023). Nearest port to Nagai TPP (Okkur, about 9 km per GEM); CEA lists Nagai as RAIL-SEA-ROAD with loading- and unloading-port stocks. The Karaikal-Nagai link is inferred, not confirmed.",
+   "terminals": [],
+   "serves_now": [
+    "itpcl-cuddalore (rail, about 133 km)",
+    "nagai-tpp (inferred)"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Karaikal_Port",
+    "https://www.ilfsindia.com/pdf/Investment-Teaser-ILFS-Tamil-Nadu-Power-Company-Limited.pdf",
+    "https://www.gem.wiki/Nagai_Nagapattinam_Power_Project",
+    "file:build/feedstock/_parsed/cea_daily_coal_remarks_decoded.json"
+   ]
+  },
+  {
+   "id": "port-kattupalli",
+   "name": "Kattupalli Port (Adani)",
+   "state": "Tamil Nadu",
+   "lat": 13.3047,
+   "lon": 80.3561,
+   "loc_precision": "exact (GEM)",
+   "role": [
+    "none for coal"
+   ],
+   "notes": "Coal is not among this port's approved cargoes (EC for berths 4-5, Mar 2025). Listed only because it sits next to Kamarajar.",
+   "terminals": [],
+   "sources": [
+    "https://www.gem.wiki/Kattupalli_Port"
+   ]
+  },
+  {
+   "id": "port-paradip",
+   "name": "Paradip Port",
+   "state": "Odisha",
+   "lat": 20.2654,
+   "lon": 86.67628,
+   "loc_precision": "port reference point (Wikipedia)",
+   "role": [
+    "loading: MCL Talcher/Ib Valley coal for coastal shipping (RSR)",
+    "import"
+   ],
+   "notes": "Main loading port for Tamil Nadu's domestic coal. FY22 MCL RSR despatch via Paradip was 24.84 Mt, including 10.92 Mt for TANGEDCO, 4.27 Mt for NTECL Vallur and 0.97 Mt for NTPL. Coal terminals: Mechanised Coal Handling Plant (MCHP), East Quay coal terminal, Kalinga International Coal Terminal (import) and Western Dock.",
+   "fy22_rsr_loading_mt": {
+    "total_mcl": 24.84,
+    "tangedco": 10.92,
+    "vallur-ntecl": 4.27,
+    "ntpl-tuticorin": 0.97,
+    "rayalaseema_apgenco": 1.4,
+    "sds_appdcl": 2.28,
+    "sembcorp": 4.75,
+    "kpcl": 0.23
+   },
+   "fy30_projection_mt": 60.13,
+   "rail_feed": [
+    "Talcher coalfield -> Talcher Rd/Budhapank -> Rajathgarh -> Cuttack -> Haridaspur -> Paradeep",
+    "Ib Valley -> Jharsuguda -> Sambalpur -> Angul -> Talcher Rd -> Paradeep"
+   ],
+   "terminals": [
+    {
+     "id": "paradip-mchp",
+     "name": "Mechanized Coal Handling Plant"
+    },
+    {
+     "id": "paradip-eq",
+     "name": "East Quay coal terminal"
+    },
+    {
+     "id": "paradip-kict",
+     "name": "Kalinga International Coal Terminal (import)"
+    }
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Paradip_Port",
+    "https://www.gem.wiki/Paradip_Port",
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf",
+    "file:raw/feedstock/coal_logistics/moc_iclp_2024-01-31.pdf"
+   ]
+  },
+  {
+   "id": "port-visakhapatnam",
+   "name": "Visakhapatnam Port",
+   "state": "Andhra Pradesh",
+   "lat": 17.69833,
+   "lon": 83.27861,
+   "loc_precision": "port reference point (Wikipedia)",
+   "role": [
+    "loading: MCL coal for coastal shipping",
+    "import"
+   ],
+   "fy22_rsr_loading_mt": {
+    "tangedco": 2.5
+   },
+   "notes": "FY22: 2.5 Mt of TANGEDCO's MCL coal was loaded here (MoC ICLP). Coal terminals: EQ1, EQ1A, Vizag Seaport (EQ8/EQ9) and Vizag General Cargo Berth (Vedanta).",
+   "terminals": [],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Visakhapatnam_Port",
+    "https://www.gem.wiki/Visakhapatnam_Port",
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf",
+    "file:raw/feedstock/coal_logistics/moc_iclp_2024-01-31.pdf",
+    "https://www.shippingtribune.com/news/shipping/Coal+shipment:+How+Vizag+Port+wooed+back+Tangedco"
+   ]
+  },
+  {
+   "id": "port-gangavaram",
+   "name": "Gangavaram Port (Adani)",
+   "state": "Andhra Pradesh",
+   "lat": 17.6215,
+   "lon": 83.2298,
+   "loc_precision": "port reference point (Wikipedia)",
+   "role": [
+    "import",
+    "candidate loading port for MCL coastal coal (ICLP)"
+   ],
+   "terminals": [],
+   "notes": "Handled about 8 Mt of Panamax coal in 2024 (Breakwave Advisors). The MoC ICLP lists it among the east-coast ports to be explored for coastal shipping.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gangavaram_Port",
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf",
+    "https://www.breakwaveadvisors.com/insights/2025/1/31/where-india-stands-with-coal"
+   ]
+  },
+  {
+   "id": "port-haldia",
+   "name": "Haldia Dock Complex (Syama Prasad Mookerjee Port)",
+   "state": "West Bengal",
+   "lat": 22.0447,
+   "lon": 88.0888,
+   "loc_precision": "port reference point (Wikipedia)",
+   "role": [
+    "historical/occasional loading port for ECL/MCL coal to TN",
+    "coking-coal import"
+   ],
+   "terminals": [],
+   "notes": "Historically one of three TNEB loading ports (Haldia, Paradip, Vizag). Haldia has mechanised coal berths 2, 3, 4 and 4A.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Haldia_Dock_Complex",
+    "https://www.gem.wiki/Haldia_Port",
+    "https://en.wikipedia.org/wiki/Kamarajar_Port"
+   ]
+  },
+  {
+   "id": "port-dhamra",
+   "name": "Dhamra Port (Adani)",
+   "state": "Odisha",
+   "lat": 20.82333,
+   "lon": 86.96278,
+   "loc_precision": "port reference point (Wikipedia)",
+   "role": [
+    "loading: MCL coastal coal",
+    "import"
+   ],
+   "fy22_rsr_loading_mt": {
+    "vallur-ntecl": 1.3
+   },
+   "terminals": [],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dhamra_Port",
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf",
+    "file:raw/feedstock/coal_logistics/moc_iclp_2024-01-31.pdf"
+   ]
+  },
+  {
+   "id": "port-krishnapatnam",
+   "name": "Krishnapatnam Port (Adani)",
+   "state": "Andhra Pradesh",
+   "lat": 14.25,
+   "lon": 80.13333,
+   "loc_precision": "port reference point (Wikipedia)",
+   "role": [
+    "unloading: RSR coal for AP plants",
+    "import"
+   ],
+   "terminals": [],
+   "notes": "Unloading port for MCL RSR coal to Rayalaseema TPS, Sri Damodaram Sanjeevaiah TPS and Sembcorp's Painampuram & SGPL (FY22 ICLP). Handled about 11 Mt of Panamax coal in 2024.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Krishnapatnam_Port",
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf",
+    "file:raw/feedstock/coal_logistics/moc_iclp_2024-01-31.pdf",
+    "https://www.breakwaveadvisors.com/insights/2025/1/31/where-india-stands-with-coal"
+   ]
+  },
+  {
+   "id": "port-kakinada",
+   "name": "Kakinada Port",
+   "state": "Andhra Pradesh",
+   "lat": 16.975,
+   "lon": 82.279,
+   "loc_precision": "port reference point (Wikipedia)",
+   "role": [
+    "minor coal"
+   ],
+   "terminals": [],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kakinada_Port"
+   ]
+  },
+  {
+   "id": "port-mundra",
+   "name": "Mundra Port (Adani)",
+   "state": "Gujarat",
+   "lat": 22.746,
+   "lon": 69.7,
+   "loc_precision": "port reference point (Wikipedia)",
+   "role": [
+    "import: coal for Adani Mundra TPP and Tata Mundra UMPP"
+   ],
+   "terminals": [
+    {
+     "id": "mundra-west-basin",
+     "name": "Mundra West Basin Coal Terminal (WB1-WB4, about 60 Mtpa)"
+    }
+   ],
+   "notes": "Mundra UMPP (CGPL, Tata Power) and Adani Power Mundra run on imported coal (CEA monthly statement: 100% import).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mundra_Port",
+    "https://www.gem.wiki/Mundra_Port",
+    "https://en.wikipedia.org/wiki/Mundra_Ultra_Mega_Power_Plant",
+    "file:build/feedstock/_parsed/coal_receipts_cea_monthly.json"
+   ]
+  }
+ ],
+ "foreign_loading_ports": [
+  {
+   "id": "fport-kalimantan-south",
+   "name": "South Kalimantan coal anchorages (Taboneo / Banjarmasin), Indonesia",
+   "country": "Indonesia",
+   "lat": -3.32,
+   "lon": 114.5925,
+   "loc_precision": "approx: Banjarmasin city point (Wikipedia); Taboneo transhipment anchorage lies offshore to the SW",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Banjarmasin"
+   ]
+  },
+  {
+   "id": "fport-kalimantan-east",
+   "name": "East Kalimantan coal ports (Samarinda / Balikpapan area), Indonesia",
+   "country": "Indonesia",
+   "lat": -1.2768,
+   "lon": 116.8277,
+   "loc_precision": "approx: Balikpapan city point (Wikipedia)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Balikpapan",
+    "https://en.wikipedia.org/wiki/Samarinda"
+   ]
+  },
+  {
+   "id": "fport-newcastle",
+   "name": "Port of Newcastle (NSW), Australia",
+   "country": "Australia",
+   "lat": -32.9167,
+   "lon": 151.8,
+   "loc_precision": "port reference point (Wikipedia)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Port_of_Newcastle"
+   ]
+  },
+  {
+   "id": "fport-hay-point",
+   "name": "Hay Point / Dalrymple Bay (Queensland), Australia",
+   "country": "Australia",
+   "lat": -21.3027,
+   "lon": 149.2636,
+   "loc_precision": "locality point (Wikipedia)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Hay_Point,_Queensland"
+   ]
+  },
+  {
+   "id": "fport-richards-bay",
+   "name": "Richards Bay Coal Terminal, South Africa",
+   "country": "South Africa",
+   "lat": -28.818,
+   "lon": 32.052,
+   "loc_precision": "port reference point (Wikipedia)",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Port_of_Richards_Bay"
+   ]
+  }
+ ],
+ "tn_plant_port_map": [
+  {
+   "plant_id": "nctps-1",
+   "unloading": "port-kamarajar",
+   "terminal": "kpl-cb1",
+   "last_mile": "conveyor",
+   "loading": [
+    "port-paradip",
+    "port-visakhapatnam (TANGEDCO share, FY22)"
+   ],
+   "sources": [
+    "https://www.tnpgcl.org/en/generation/generation/thermal-power-stations/nctps1/",
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf"
+   ]
+  },
+  {
+   "plant_id": "nctps-2",
+   "unloading": "port-kamarajar",
+   "terminal": "kpl-cb1",
+   "last_mile": "conveyor",
+   "loading": [
+    "port-paradip"
+   ],
+   "imports": "Indonesia (TNPGCL: 'also imported coal from Indonesia')",
+   "sources": [
+    "https://www.tnpgcl.org/en/generation/generation/thermal-power-stations/nctps2/",
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf"
+   ]
+  },
+  {
+   "plant_id": "nctps-3",
+   "unloading": "port-kamarajar (imported share)",
+   "terminal": "kpl-cb1/kpl-cb3",
+   "last_mile": "conveyor",
+   "note": "Domestic linkage is SCCL (Telangana), about 606 km by all-rail (CEA mode RAIL). Imported coal (1.45 Mtpa MoU with MMTC) comes through Kamarajar.",
+   "sources": [
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf",
+    "file:build/feedstock/_parsed/cea_daily_coal_remarks_decoded.json",
+    "file:build/feedstock/_parsed/coal_receipts_cea_monthly.json"
+   ]
+  },
+  {
+   "plant_id": "vallur-ntecl",
+   "unloading": "port-kamarajar",
+   "terminal": "kpl-cb2",
+   "last_mile": "4.4 km pipe conveyor",
+   "loading": [
+    "port-paradip",
+    "port-dhamra"
+   ],
+   "sources": [
+    "https://www.gem.wiki/Kamarajar_Port_Coal_Berth_2",
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf"
+   ]
+  },
+  {
+   "plant_id": "mettur-1",
+   "unloading": "port-kamarajar",
+   "terminal": "kpl-cb1",
+   "last_mile": "rail from NCTPS yard (about 360 km) to Mettur",
+   "loading": [
+    "port-paradip"
+   ],
+   "sources": [
+    "https://www.tnpgcl.org/en/generation/generation/thermal-power-stations/nctps1/",
+    "https://www.cag.org.in/sites/default/files/database/declining_efficiency_of_mettur_thermal_power_station_newsletter_december_2019_11-09-2019_aakanksha_0.pdf"
+   ]
+  },
+  {
+   "plant_id": "mettur-2",
+   "unloading": "port-kamarajar",
+   "terminal": "kpl-cb1",
+   "last_mile": "rail from NCTPS yard to Mettur",
+   "loading": [
+    "port-paradip"
+   ],
+   "sources": [
+    "https://www.tnpgcl.org/en/generation/generation/thermal-power-stations/nctps1/",
+    "https://www.cag.org.in/sites/default/files/database/declining_efficiency_of_mettur_thermal_power_station_newsletter_december_2019_11-09-2019_aakanksha_0.pdf"
+   ]
+  },
+  {
+   "plant_id": "ennore-sez",
+   "unloading": "port-kamarajar",
+   "terminal": "kpl-cb3",
+   "last_mile": "conveyor",
+   "loading": [
+    "port-paradip (Chandrabila block coal)"
+   ],
+   "status": "under construction",
+   "sources": [
+    "https://www.gem.wiki/Kamarajar_Port_Coal_Berth_3",
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf"
+   ]
+  },
+  {
+   "plant_id": "ennore-tps",
+   "unloading": "port-kamarajar",
+   "last_mile": "rail/road from NCTPS yard",
+   "status": "retired",
+   "sources": [
+    "https://www.tnpgcl.org/en/generation/generation/thermal-power-stations/nctps1/",
+    "https://en.wikipedia.org/wiki/Ennore_Thermal_Power_Station"
+   ]
+  },
+  {
+   "plant_id": "tuticorin-tps",
+   "unloading": "port-voc",
+   "terminal": "voc-coal-jetty-1-2",
+   "last_mile": "conveyor",
+   "loading": [
+    "port-paradip",
+    "port-visakhapatnam"
+   ],
+   "sources": [
+    "https://www.tnpgcl.org/en/generation/generation/thermal-power-stations/ttps/",
+    "https://www.gem.wiki/V.O._Chidambaranar_Port",
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf"
+   ]
+  },
+  {
+   "plant_id": "ntpl-tuticorin",
+   "unloading": "port-voc",
+   "terminal": "voc-ncb1",
+   "last_mile": "conveyor",
+   "loading": [
+    "port-paradip (NLC Talabira II&III captive coal)"
+   ],
+   "sources": [
+    "https://www.gem.wiki/VOC_Port_NCB-I_Coal_Terminal",
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf"
+   ]
+  },
+  {
+   "plant_id": "sepc-tuticorin-st4",
+   "unloading": "port-voc",
+   "terminal": null,
+   "last_mile": "coal jetty + conveyor (per MEIL); plant on 90 acres of VOC port land",
+   "sources": [
+    "https://meil.in/tuticorin-thermal-power",
+    "file:build/feedstock/_parsed/cea_daily_coal_remarks_decoded.json"
+   ]
+  },
+  {
+   "plant_id": "indbarath-tuticorin",
+   "unloading": "port-voc",
+   "terminal": null,
+   "last_mile": "road (CEA mode RAIL-SEA-ROAD)",
+   "sources": [
+    "file:build/feedstock/_parsed/cea_daily_coal_remarks_decoded.json"
+   ]
+  },
+  {
+   "plant_id": "muthiara-coastal-energen",
+   "unloading": "port-voc",
+   "terminal": null,
+   "last_mile": "about 18 km overland; exact mode unconfirmed (EIA proposed rail via Melathattaparai)",
+   "sources": [
+    "https://www.gem.wiki/Mutiara_Coastal_Energen_Thermal_Power_Plant",
+    "https://www.newsonprojects.com/news/coastal-energens-plant-95-per-cent-complete-but-no-means-to-bring-coal",
+    "file:build/feedstock/_parsed/cea_daily_coal_remarks_decoded.json"
+   ]
+  },
+  {
+   "plant_id": "udangudi",
+   "unloading": "port-udangudi-jetty",
+   "last_mile": "conveyor",
+   "loading": [
+    "port-paradip"
+   ],
+   "sources": [
+    "https://www.tnpgcl.org/en/generation/projects/udangudi-thermal-project/",
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf"
+   ]
+  },
+  {
+   "plant_id": "itpcl-cuddalore",
+   "unloading": "port-karaikal",
+   "last_mile": "Indian Railways about 133 km to a 5 km captive siding",
+   "planned": "own captive jetty (port-itpcl-jetty, under construction)",
+   "loading": [
+    "South Kalimantan, Indonesia (ITPCL Upau CCOW) and other imports"
+   ],
+   "sources": [
+    "https://www.ilfsindia.com/pdf/Investment-Teaser-ILFS-Tamil-Nadu-Power-Company-Limited.pdf",
+    "file:build/feedstock/_parsed/coal_receipts_cea_monthly.json"
+   ]
+  },
+  {
+   "plant_id": "nagai-tpp",
+   "unloading": "port-karaikal (inferred)",
+   "last_mile": "road (CEA mode RAIL-SEA-ROAD)",
+   "confidence": "low",
+   "sources": [
+    "file:build/feedstock/_parsed/cea_daily_coal_remarks_decoded.json",
+    "https://www.gem.wiki/Nagai_Nagapattinam_Power_Project"
+   ]
+  },
+  {
+   "plant_id": "opg-gummidipoondi",
+   "unloading": "port-kamarajar (inferred: nearest coal port, about 20 km)",
+   "last_mile": "road (CEA mode RAIL-SEA-ROAD)",
+   "confidence": "low",
+   "sources": [
+    "file:build/feedstock/_parsed/cea_daily_coal_remarks_decoded.json",
+    "file:build/feedstock/_parsed/coal_receipts_cea_monthly.json"
+   ]
+  },
+  {
+   "plant_id": "tulsyan-nec",
+   "unloading": "port-kamarajar (inferred)",
+   "last_mile": "road",
+   "confidence": "low",
+   "sources": [
+    "file:build/feedstock/_parsed/cea_daily_coal_remarks_decoded.json"
+   ]
+  }
+ ],
+ "sea_lanes": [
+  {
+   "id": "lane-paradip-kamarajar",
+   "kind": "coastal",
+   "from": "port-paradip",
+   "to": "port-kamarajar",
+   "cargo": "MCL Talcher/Ib Valley coal (RSR)",
+   "serves": [
+    "nctps-1",
+    "nctps-2",
+    "vallur-ntecl",
+    "mettur-1",
+    "mettur-2",
+    "ennore-sez"
+   ],
+   "sources": [
+    "https://www.tnpgcl.org/en/generation/generation/thermal-power-stations/nctps1/",
+    "https://www.tnpgcl.org/en/generation/generation/thermal-power-stations/nctps2/",
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf"
+   ],
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      86.6763,
+      20.2654
+     ],
+     [
+      86.85,
+      20.2
+     ],
+     [
+      85.8556,
+      19.2719
+     ],
+     [
+      84.8725,
+      18.3384
+     ],
+     [
+      83.9,
+      17.4
+     ],
+     [
+      82.7,
+      16.3
+     ],
+     [
+      81.3,
+      15.4
+     ],
+     [
+      80.45,
+      14.3
+     ],
+     [
+      80.45,
+      13.3
+     ],
+     [
+      80.3406,
+      13.2607
+     ]
+    ]
+   },
+   "waypoints_latlon": [
+    [
+     20.2654,
+     86.67628
+    ],
+    [
+     20.2,
+     86.85
+    ],
+    [
+     17.4,
+     83.9
+    ],
+    [
+     16.3,
+     82.7
+    ],
+    [
+     15.4,
+     81.3
+    ],
+    [
+     14.3,
+     80.45
+    ],
+    [
+     13.3,
+     80.45
+    ],
+    [
+     13.2607,
+     80.3406
+    ]
+   ],
+   "length_km_approx": 1093,
+   "length_nm_approx": 590,
+   "geometry_precision": "approximate_waypoints",
+   "estimate": true,
+   "method": "approximate illustrative route through hand-picked open-sea waypoints, densified along great circles; NOT a vessel track. Real routing varies with ship size, season and charter."
+  },
+  {
+   "id": "lane-dhamra-kamarajar",
+   "kind": "coastal",
+   "from": "port-dhamra",
+   "to": "port-kamarajar",
+   "cargo": "MCL coal for NTECL Vallur (1.3 Mt FY22)",
+   "serves": [
+    "vallur-ntecl"
+   ],
+   "sources": [
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf"
+   ],
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      86.9628,
+      20.8233
+     ],
+     [
+      87.2,
+      20.6
+     ],
+     [
+      86.95,
+      20.2
+     ],
+     [
+      86.85,
+      20.2
+     ],
+     [
+      85.8556,
+      19.2719
+     ],
+     [
+      84.8725,
+      18.3384
+     ],
+     [
+      83.9,
+      17.4
+     ],
+     [
+      82.7,
+      16.3
+     ],
+     [
+      81.3,
+      15.4
+     ],
+     [
+      80.45,
+      14.3
+     ],
+     [
+      80.45,
+      13.3
+     ],
+     [
+      80.3406,
+      13.2607
+     ]
+    ]
+   },
+   "waypoints_latlon": [
+    [
+     20.82333,
+     86.96278
+    ],
+    [
+     20.6,
+     87.2
+    ],
+    [
+     20.2,
+     86.95
+    ],
+    [
+     20.2,
+     86.85
+    ],
+    [
+     17.4,
+     83.9
+    ],
+    [
+     16.3,
+     82.7
+    ],
+    [
+     15.4,
+     81.3
+    ],
+    [
+     14.3,
+     80.45
+    ],
+    [
+     13.3,
+     80.45
+    ],
+    [
+     13.2607,
+     80.3406
+    ]
+   ],
+   "length_km_approx": 1170,
+   "length_nm_approx": 632,
+   "geometry_precision": "approximate_waypoints",
+   "estimate": true,
+   "method": "approximate illustrative route through hand-picked open-sea waypoints, densified along great circles; NOT a vessel track. Real routing varies with ship size, season and charter."
+  },
+  {
+   "id": "lane-paradip-voc",
+   "kind": "coastal",
+   "from": "port-paradip",
+   "to": "port-voc",
+   "cargo": "MCL coal for TTPS, NTPL (Talabira captive), Tuticorin St-IV, Ind-Barath",
+   "serves": [
+    "tuticorin-tps",
+    "ntpl-tuticorin",
+    "sepc-tuticorin-st4",
+    "indbarath-tuticorin"
+   ],
+   "note": "Large vessels cannot use Palk Strait / Adam's Bridge (Sethusamudram channel never completed), so east-coast to Tuticorin traffic sails round Sri Lanka.",
+   "sources": [
+    "https://www.tnpgcl.org/en/generation/generation/thermal-power-stations/ttps/",
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf",
+    "https://www.gem.wiki/VOC_Port_NCB-I_Coal_Terminal"
+   ],
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      86.6763,
+      20.2654
+     ],
+     [
+      86.85,
+      20.2
+     ],
+     [
+      85.8556,
+      19.2719
+     ],
+     [
+      84.8725,
+      18.3384
+     ],
+     [
+      83.9,
+      17.4
+     ],
+     [
+      82.7,
+      16.3
+     ],
+     [
+      81.3,
+      15.4
+     ],
+     [
+      80.45,
+      14.3
+     ],
+     [
+      80.45,
+      13.15
+     ],
+     [
+      80.45,
+      12.0
+     ],
+     [
+      80.5,
+      10.2
+     ],
+     [
+      81.7,
+      8.5
+     ],
+     [
+      81.8504,
+      7.4
+     ],
+     [
+      82.0,
+      6.3
+     ],
+     [
+      80.6,
+      5.75
+     ],
+     [
+      79.85,
+      6.1
+     ],
+     [
+      79.25,
+      7.4
+     ],
+     [
+      78.55,
+      8.3
+     ],
+     [
+      78.2078,
+      8.7602
+     ]
+    ]
+   },
+   "waypoints_latlon": [
+    [
+     20.2654,
+     86.67628
+    ],
+    [
+     20.2,
+     86.85
+    ],
+    [
+     17.4,
+     83.9
+    ],
+    [
+     16.3,
+     82.7
+    ],
+    [
+     15.4,
+     81.3
+    ],
+    [
+     14.3,
+     80.45
+    ],
+    [
+     12.0,
+     80.45
+    ],
+    [
+     10.2,
+     80.5
+    ],
+    [
+     8.5,
+     81.7
+    ],
+    [
+     6.3,
+     82.0
+    ],
+    [
+     5.75,
+     80.6
+    ],
+    [
+     6.1,
+     79.85
+    ],
+    [
+     7.4,
+     79.25
+    ],
+    [
+     8.3,
+     78.55
+    ],
+    [
+     8.7602,
+     78.2078
+    ]
+   ],
+   "length_km_approx": 2509,
+   "length_nm_approx": 1355,
+   "geometry_precision": "approximate_waypoints",
+   "estimate": true,
+   "method": "approximate illustrative route through hand-picked open-sea waypoints, densified along great circles; NOT a vessel track. Real routing varies with ship size, season and charter."
+  },
+  {
+   "id": "lane-vizag-voc",
+   "kind": "coastal",
+   "from": "port-visakhapatnam",
+   "to": "port-voc",
+   "cargo": "MCL coal for TANGEDCO (2.5 Mt FY22 via Vizag)",
+   "serves": [
+    "tuticorin-tps"
+   ],
+   "sources": [
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf"
+   ],
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      83.2786,
+      17.6983
+     ],
+     [
+      83.6,
+      17.4
+     ],
+     [
+      82.7,
+      16.3
+     ],
+     [
+      81.3,
+      15.4
+     ],
+     [
+      80.45,
+      14.3
+     ],
+     [
+      80.45,
+      13.15
+     ],
+     [
+      80.45,
+      12.0
+     ],
+     [
+      80.5,
+      10.2
+     ],
+     [
+      81.7,
+      8.5
+     ],
+     [
+      81.8504,
+      7.4
+     ],
+     [
+      82.0,
+      6.3
+     ],
+     [
+      80.6,
+      5.75
+     ],
+     [
+      79.85,
+      6.1
+     ],
+     [
+      79.25,
+      7.4
+     ],
+     [
+      78.55,
+      8.3
+     ],
+     [
+      78.2078,
+      8.7602
+     ]
+    ]
+   },
+   "waypoints_latlon": [
+    [
+     17.69833,
+     83.27861
+    ],
+    [
+     17.4,
+     83.6
+    ],
+    [
+     16.3,
+     82.7
+    ],
+    [
+     15.4,
+     81.3
+    ],
+    [
+     14.3,
+     80.45
+    ],
+    [
+     12.0,
+     80.45
+    ],
+    [
+     10.2,
+     80.5
+    ],
+    [
+     8.5,
+     81.7
+    ],
+    [
+     6.3,
+     82.0
+    ],
+    [
+     5.75,
+     80.6
+    ],
+    [
+     6.1,
+     79.85
+    ],
+    [
+     7.4,
+     79.25
+    ],
+    [
+     8.3,
+     78.55
+    ],
+    [
+     8.7602,
+     78.2078
+    ]
+   ],
+   "length_km_approx": 2076,
+   "length_nm_approx": 1121,
+   "geometry_precision": "approximate_waypoints",
+   "estimate": true,
+   "method": "approximate illustrative route through hand-picked open-sea waypoints, densified along great circles; NOT a vessel track. Real routing varies with ship size, season and charter."
+  },
+  {
+   "id": "lane-paradip-udangudi",
+   "kind": "coastal",
+   "from": "port-paradip",
+   "to": "port-udangudi-jetty",
+   "cargo": "Chandrabila block / SCCL bridge-linkage coal for Udangudi (planned 3.65 Mt/yr)",
+   "serves": [
+    "udangudi"
+   ],
+   "stated_distance_nm": 1224,
+   "sources": [
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf",
+    "file:raw/feedstock/coal_logistics/moc_iclp_2024-01-31.pdf",
+    "https://www.tnpgcl.org/en/generation/projects/udangudi-thermal-project/"
+   ],
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      86.6763,
+      20.2654
+     ],
+     [
+      86.85,
+      20.2
+     ],
+     [
+      85.8556,
+      19.2719
+     ],
+     [
+      84.8725,
+      18.3384
+     ],
+     [
+      83.9,
+      17.4
+     ],
+     [
+      82.7,
+      16.3
+     ],
+     [
+      81.3,
+      15.4
+     ],
+     [
+      80.45,
+      14.3
+     ],
+     [
+      80.45,
+      13.15
+     ],
+     [
+      80.45,
+      12.0
+     ],
+     [
+      80.5,
+      10.2
+     ],
+     [
+      81.7,
+      8.5
+     ],
+     [
+      81.8504,
+      7.4
+     ],
+     [
+      82.0,
+      6.3
+     ],
+     [
+      80.6,
+      5.75
+     ],
+     [
+      79.85,
+      6.1
+     ],
+     [
+      79.25,
+      7.4
+     ],
+     [
+      78.5,
+      8.0
+     ],
+     [
+      78.0963,
+      8.4235
+     ]
+    ]
+   },
+   "waypoints_latlon": [
+    [
+     20.2654,
+     86.67628
+    ],
+    [
+     20.2,
+     86.85
+    ],
+    [
+     17.4,
+     83.9
+    ],
+    [
+     16.3,
+     82.7
+    ],
+    [
+     15.4,
+     81.3
+    ],
+    [
+     14.3,
+     80.45
+    ],
+    [
+     12.0,
+     80.45
+    ],
+    [
+     10.2,
+     80.5
+    ],
+    [
+     8.5,
+     81.7
+    ],
+    [
+     6.3,
+     82.0
+    ],
+    [
+     5.75,
+     80.6
+    ],
+    [
+     6.1,
+     79.85
+    ],
+    [
+     7.4,
+     79.25
+    ],
+    [
+     8.0,
+     78.5
+    ],
+    [
+     8.42345,
+     78.0963
+    ]
+   ],
+   "length_km_approx": 2490,
+   "length_nm_approx": 1345,
+   "geometry_precision": "approximate_waypoints",
+   "estimate": true,
+   "method": "approximate illustrative route through hand-picked open-sea waypoints, densified along great circles; NOT a vessel track. Real routing varies with ship size, season and charter."
+  },
+  {
+   "id": "lane-paradip-karaikal",
+   "kind": "coastal",
+   "from": "port-paradip",
+   "to": "port-karaikal",
+   "cargo": "domestic coal for Nagai TPP (inferred)",
+   "serves": [
+    "nagai-tpp"
+   ],
+   "confidence": "low (inferred)",
+   "sources": [
+    "file:build/feedstock/_parsed/cea_daily_coal_remarks_decoded.json",
+    "https://www.gem.wiki/Nagai_Nagapattinam_Power_Project"
+   ],
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      86.6763,
+      20.2654
+     ],
+     [
+      86.85,
+      20.2
+     ],
+     [
+      85.8556,
+      19.2719
+     ],
+     [
+      84.8725,
+      18.3384
+     ],
+     [
+      83.9,
+      17.4
+     ],
+     [
+      82.7,
+      16.3
+     ],
+     [
+      81.3,
+      15.4
+     ],
+     [
+      80.45,
+      14.3
+     ],
+     [
+      80.4249,
+      13.15
+     ],
+     [
+      80.4,
+      12.0
+     ],
+     [
+      80.1,
+      11.0
+     ],
+     [
+      79.846,
+      10.838
+     ]
+    ]
+   },
+   "waypoints_latlon": [
+    [
+     20.2654,
+     86.67628
+    ],
+    [
+     20.2,
+     86.85
+    ],
+    [
+     17.4,
+     83.9
+    ],
+    [
+     16.3,
+     82.7
+    ],
+    [
+     15.4,
+     81.3
+    ],
+    [
+     14.3,
+     80.45
+    ],
+    [
+     12.0,
+     80.4
+    ],
+    [
+     11.0,
+     80.1
+    ],
+    [
+     10.838,
+     79.846
+    ]
+   ],
+   "length_km_approx": 1374,
+   "length_nm_approx": 742,
+   "geometry_precision": "approximate_waypoints",
+   "estimate": true,
+   "method": "approximate illustrative route through hand-picked open-sea waypoints, densified along great circles; NOT a vessel track. Real routing varies with ship size, season and charter."
+  },
+  {
+   "id": "lane-paradip-krishnapatnam",
+   "kind": "coastal",
+   "from": "port-paradip",
+   "to": "port-krishnapatnam",
+   "cargo": "MCL RSR coal for AP plants (RTPP, SDSTPS, Painampuram, SGPL)",
+   "serves": [],
+   "sources": [
+    "https://coal.gov.in/sites/default/files/2024-01/31-01-2024-iclp.pdf"
+   ],
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      86.6763,
+      20.2654
+     ],
+     [
+      86.85,
+      20.2
+     ],
+     [
+      85.8556,
+      19.2719
+     ],
+     [
+      84.8725,
+      18.3384
+     ],
+     [
+      83.9,
+      17.4
+     ],
+     [
+      82.7,
+      16.3
+     ],
+     [
+      81.3,
+      15.4
+     ],
+     [
+      80.45,
+      14.3
+     ],
+     [
+      80.18,
+      14.25
+     ]
+    ]
+   },
+   "waypoints_latlon": [
+    [
+     20.2654,
+     86.67628
+    ],
+    [
+     20.2,
+     86.85
+    ],
+    [
+     17.4,
+     83.9
+    ],
+    [
+     16.3,
+     82.7
+    ],
+    [
+     15.4,
+     81.3
+    ],
+    [
+     14.3,
+     80.45
+    ],
+    [
+     14.25,
+     80.18
+    ]
+   ],
+   "length_km_approx": 998,
+   "length_nm_approx": 539,
+   "geometry_precision": "approximate_waypoints",
+   "estimate": true,
+   "method": "approximate illustrative route through hand-picked open-sea waypoints, densified along great circles; NOT a vessel track. Real routing varies with ship size, season and charter."
+  },
+  {
+   "id": "lane-kalimantan-kamarajar",
+   "kind": "import",
+   "from": "fport-kalimantan-south",
+   "to": "port-kamarajar",
+   "cargo": "Indonesian thermal coal",
+   "serves": [
+    "nctps-3",
+    "mettur-2",
+    "ennore-sez",
+    "opg-gummidipoondi"
+   ],
+   "sources": [
+    "https://www.tnpgcl.org/en/generation/generation/thermal-power-stations/nctps2/",
+    "https://www.gem.wiki/Kamarajar_Port"
+   ],
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      114.5925,
+      -3.32
+     ],
+     [
+      114.0,
+      -3.9
+     ],
+     [
+      113.0006,
+      -4.3507
+     ],
+     [
+      112.0,
+      -4.8
+     ],
+     [
+      110.7993,
+      -4.351
+     ],
+     [
+      109.6,
+      -3.9
+     ],
+     [
+      108.9,
+      -2.0
+     ],
+     [
+      107.9329,
+      -1.2336
+     ],
+     [
+      106.9663,
+      -0.4669
+     ],
+     [
+      106.0,
+      0.3
+     ],
+     [
+      104.1,
+      1.15
+     ],
+     [
+      103.0502,
+      1.6253
+     ],
+     [
+      102.0,
+      2.1
+     ],
+     [
+      100.6,
+      3.3
+     ],
+     [
+      99.4,
+      4.6
+     ],
+     [
+      98.3011,
+      5.251
+     ],
+     [
+      97.2,
+      5.9
+     ],
+     [
+      95.9671,
+      6.0028
+     ],
+     [
+      94.7338,
+      6.1028
+     ],
+     [
+      93.5,
+      6.2
+     ],
+     [
+      92.5056,
+      6.7591
+     ],
+     [
+      91.5089,
+      7.3163
+     ],
+     [
+      90.5097,
+      7.8712
+     ],
+     [
+      89.5078,
+      8.4237
+     ],
+     [
+      88.5031,
+      8.9738
+     ],
+     [
+      87.4953,
+      9.521
+     ],
+     [
+      86.4843,
+      10.0654
+     ],
+     [
+      85.4699,
+      10.6067
+     ],
+     [
+      84.4519,
+      11.1448
+     ],
+     [
+      83.4302,
+      11.6794
+     ],
+     [
+      82.4045,
+      12.2104
+     ],
+     [
+      81.3747,
+      12.7375
+     ],
+     [
+      80.3406,
+      13.2607
+     ]
+    ]
+   },
+   "waypoints_latlon": [
+    [
+     -3.32,
+     114.5925
+    ],
+    [
+     -3.9,
+     114.0
+    ],
+    [
+     -4.8,
+     112.0
+    ],
+    [
+     -3.9,
+     109.6
+    ],
+    [
+     -2.0,
+     108.9
+    ],
+    [
+     0.3,
+     106.0
+    ],
+    [
+     1.15,
+     104.1
+    ],
+    [
+     2.1,
+     102.0
+    ],
+    [
+     3.3,
+     100.6
+    ],
+    [
+     4.6,
+     99.4
+    ],
+    [
+     5.9,
+     97.2
+    ],
+    [
+     6.2,
+     93.5
+    ],
+    [
+     13.2607,
+     80.3406
+    ]
+   ],
+   "length_km_approx": 4480,
+   "length_nm_approx": 2419,
+   "geometry_precision": "approximate_waypoints",
+   "estimate": true,
+   "method": "approximate illustrative route through hand-picked open-sea waypoints, densified along great circles; NOT a vessel track. Real routing varies with ship size, season and charter."
+  },
+  {
+   "id": "lane-kalimantan-voc",
+   "kind": "import",
+   "from": "fport-kalimantan-south",
+   "to": "port-voc",
+   "cargo": "Indonesian thermal coal",
+   "serves": [
+    "muthiara-coastal-energen",
+    "sepc-tuticorin-st4",
+    "ntpl-tuticorin"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/NTPL_Thermal_Power_Station",
+    "file:build/feedstock/_parsed/coal_receipts_cea_monthly.json"
+   ],
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      114.5925,
+      -3.32
+     ],
+     [
+      114.0,
+      -3.9
+     ],
+     [
+      113.0006,
+      -4.3507
+     ],
+     [
+      112.0,
+      -4.8
+     ],
+     [
+      110.7993,
+      -4.351
+     ],
+     [
+      109.6,
+      -3.9
+     ],
+     [
+      108.9,
+      -2.0
+     ],
+     [
+      107.9329,
+      -1.2336
+     ],
+     [
+      106.9663,
+      -0.4669
+     ],
+     [
+      106.0,
+      0.3
+     ],
+     [
+      104.1,
+      1.15
+     ],
+     [
+      103.0502,
+      1.6253
+     ],
+     [
+      102.0,
+      2.1
+     ],
+     [
+      100.6,
+      3.3
+     ],
+     [
+      99.4,
+      4.6
+     ],
+     [
+      98.3011,
+      5.251
+     ],
+     [
+      97.2,
+      5.9
+     ],
+     [
+      95.9671,
+      6.0028
+     ],
+     [
+      94.7338,
+      6.1028
+     ],
+     [
+      93.5,
+      6.2
+     ],
+     [
+      92.399,
+      6.0844
+     ],
+     [
+      91.2986,
+      5.9665
+     ],
+     [
+      90.1986,
+      5.8465
+     ],
+     [
+      89.099,
+      5.7243
+     ],
+     [
+      88.0,
+      5.6
+     ],
+     [
+      86.7667,
+      5.6065
+     ],
+     [
+      85.5333,
+      5.6103
+     ],
+     [
+      84.3,
+      5.6116
+     ],
+     [
+      83.0667,
+      5.6103
+     ],
+     [
+      81.8333,
+      5.6065
+     ],
+     [
+      80.6,
+      5.6
+     ],
+     [
+      79.75,
+      6.1
+     ],
+     [
+      79.2,
+      7.4
+     ],
+     [
+      78.55,
+      8.3
+     ],
+     [
+      78.2078,
+      8.7602
+     ]
+    ]
+   },
+   "waypoints_latlon": [
+    [
+     -3.32,
+     114.5925
+    ],
+    [
+     -3.9,
+     114.0
+    ],
+    [
+     -4.8,
+     112.0
+    ],
+    [
+     -3.9,
+     109.6
+    ],
+    [
+     -2.0,
+     108.9
+    ],
+    [
+     0.3,
+     106.0
+    ],
+    [
+     1.15,
+     104.1
+    ],
+    [
+     2.1,
+     102.0
+    ],
+    [
+     3.3,
+     100.6
+    ],
+    [
+     4.6,
+     99.4
+    ],
+    [
+     5.9,
+     97.2
+    ],
+    [
+     6.2,
+     93.5
+    ],
+    [
+     5.6,
+     88.0
+    ],
+    [
+     5.6,
+     80.6
+    ],
+    [
+     6.1,
+     79.75
+    ],
+    [
+     7.4,
+     79.2
+    ],
+    [
+     8.3,
+     78.55
+    ],
+    [
+     8.7602,
+     78.2078
+    ]
+   ],
+   "length_km_approx": 4723,
+   "length_nm_approx": 2550,
+   "geometry_precision": "approximate_waypoints",
+   "estimate": true,
+   "method": "approximate illustrative route through hand-picked open-sea waypoints, densified along great circles; NOT a vessel track. Real routing varies with ship size, season and charter."
+  },
+  {
+   "id": "lane-kalimantan-karaikal",
+   "kind": "import",
+   "from": "fport-kalimantan-south",
+   "to": "port-karaikal",
+   "cargo": "Indonesian thermal coal for ITPCL (100% imported; ITPCL holds an Upau, South Kalimantan coal licence)",
+   "serves": [
+    "itpcl-cuddalore"
+   ],
+   "sources": [
+    "https://www.ilfsindia.com/pdf/Investment-Teaser-ILFS-Tamil-Nadu-Power-Company-Limited.pdf",
+    "https://en.wikipedia.org/wiki/Cuddalore_IL%26FS_Thermal_Power_Station",
+    "file:build/feedstock/_parsed/coal_receipts_cea_monthly.json"
+   ],
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      114.5925,
+      -3.32
+     ],
+     [
+      114.0,
+      -3.9
+     ],
+     [
+      113.0006,
+      -4.3507
+     ],
+     [
+      112.0,
+      -4.8
+     ],
+     [
+      110.7993,
+      -4.351
+     ],
+     [
+      109.6,
+      -3.9
+     ],
+     [
+      108.9,
+      -2.0
+     ],
+     [
+      107.9329,
+      -1.2336
+     ],
+     [
+      106.9663,
+      -0.4669
+     ],
+     [
+      106.0,
+      0.3
+     ],
+     [
+      104.1,
+      1.15
+     ],
+     [
+      103.0502,
+      1.6253
+     ],
+     [
+      102.0,
+      2.1
+     ],
+     [
+      100.6,
+      3.3
+     ],
+     [
+      99.4,
+      4.6
+     ],
+     [
+      98.3011,
+      5.251
+     ],
+     [
+      97.2,
+      5.9
+     ],
+     [
+      95.9671,
+      6.0028
+     ],
+     [
+      94.7338,
+      6.1028
+     ],
+     [
+      93.5,
+      6.2
+     ],
+     [
+      92.4205,
+      6.6414
+     ],
+     [
+      91.3391,
+      7.0805
+     ],
+     [
+      90.2556,
+      7.517
+     ],
+     [
+      89.17,
+      7.9509
+     ],
+     [
+      88.082,
+      8.382
+     ],
+     [
+      86.9917,
+      8.8101
+     ],
+     [
+      85.8988,
+      9.235
+     ],
+     [
+      84.8033,
+      9.6566
+     ],
+     [
+      83.7051,
+      10.0748
+     ],
+     [
+      82.604,
+      10.4893
+     ],
+     [
+      81.5,
+      10.9
+     ],
+     [
+      80.2,
+      10.85
+     ],
+     [
+      79.846,
+      10.838
+     ]
+    ]
+   },
+   "waypoints_latlon": [
+    [
+     -3.32,
+     114.5925
+    ],
+    [
+     -3.9,
+     114.0
+    ],
+    [
+     -4.8,
+     112.0
+    ],
+    [
+     -3.9,
+     109.6
+    ],
+    [
+     -2.0,
+     108.9
+    ],
+    [
+     0.3,
+     106.0
+    ],
+    [
+     1.15,
+     104.1
+    ],
+    [
+     2.1,
+     102.0
+    ],
+    [
+     3.3,
+     100.6
+    ],
+    [
+     4.6,
+     99.4
+    ],
+    [
+     5.9,
+     97.2
+    ],
+    [
+     6.2,
+     93.5
+    ],
+    [
+     10.9,
+     81.5
+    ],
+    [
+     10.85,
+     80.2
+    ],
+    [
+     10.838,
+     79.846
+    ]
+   ],
+   "length_km_approx": 4439,
+   "length_nm_approx": 2397,
+   "geometry_precision": "approximate_waypoints",
+   "estimate": true,
+   "method": "approximate illustrative route through hand-picked open-sea waypoints, densified along great circles; NOT a vessel track. Real routing varies with ship size, season and charter."
+  },
+  {
+   "id": "lane-richardsbay-voc",
+   "kind": "import",
+   "from": "fport-richards-bay",
+   "to": "port-voc",
+   "cargo": "South African thermal coal",
+   "serves": [],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Port_of_Richards_Bay"
+   ],
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      32.052,
+      -28.818
+     ],
+     [
+      33.5,
+      -29.0
+     ],
+     [
+      34.8385,
+      -28.8823
+     ],
+     [
+      36.1738,
+      -28.7514
+     ],
+     [
+      37.5055,
+      -28.6075
+     ],
+     [
+      38.8335,
+      -28.4505
+     ],
+     [
+      40.1573,
+      -28.2807
+     ],
+     [
+      41.4768,
+      -28.0982
+     ],
+     [
+      42.7917,
+      -27.9031
+     ],
+     [
+      44.1017,
+      -27.6956
+     ],
+     [
+      45.4065,
+      -27.4758
+     ],
+     [
+      46.706,
+      -27.2439
+     ],
+     [
+      48.0,
+      -27.0
+     ],
+     [
+      48.9122,
+      -26.2752
+     ],
+     [
+      49.813,
+      -25.5447
+     ],
+     [
+      50.7029,
+      -24.8088
+     ],
+     [
+      51.5822,
+      -24.0677
+     ],
+     [
+      52.4514,
+      -23.3216
+     ],
+     [
+      53.3109,
+      -22.5707
+     ],
+     [
+      54.161,
+      -21.8154
+     ],
+     [
+      55.0022,
+      -21.0557
+     ],
+     [
+      55.8348,
+      -20.2919
+     ],
+     [
+      56.6592,
+      -19.5243
+     ],
+     [
+      57.4758,
+      -18.7529
+     ],
+     [
+      58.285,
+      -17.978
+     ],
+     [
+      59.087,
+      -17.1998
+     ],
+     [
+      59.8824,
+      -16.4185
+     ],
+     [
+      60.6713,
+      -15.6342
+     ],
+     [
+      61.4542,
+      -14.8471
+     ],
+     [
+      62.2315,
+      -14.0573
+     ],
+     [
+      63.0034,
+      -13.2651
+     ],
+     [
+      63.7702,
+      -12.4706
+     ],
+     [
+      64.5324,
+      -11.674
+     ],
+     [
+      65.2902,
+      -10.8753
+     ],
+     [
+      66.0439,
+      -10.0748
+     ],
+     [
+      66.7939,
+      -9.2726
+     ],
+     [
+      67.5405,
+      -8.4688
+     ],
+     [
+      68.2839,
+      -7.6636
+     ],
+     [
+      69.0246,
+      -6.8572
+     ],
+     [
+      69.7627,
+      -6.0496
+     ],
+     [
+      70.4987,
+      -5.241
+     ],
+     [
+      71.2327,
+      -4.4316
+     ],
+     [
+      71.9651,
+      -3.6215
+     ],
+     [
+      72.6962,
+      -2.8107
+     ],
+     [
+      73.4264,
+      -1.9995
+     ],
+     [
+      74.1557,
+      -1.188
+     ],
+     [
+      74.8847,
+      -0.3763
+     ],
+     [
+      75.6135,
+      0.4355
+     ],
+     [
+      76.3425,
+      1.2472
+     ],
+     [
+      77.0719,
+      2.0587
+     ],
+     [
+      77.8021,
+      2.8698
+     ],
+     [
+      78.5333,
+      3.6805
+     ],
+     [
+      79.2658,
+      4.4906
+     ],
+     [
+      80.0,
+      5.3
+     ],
+     [
+      79.75,
+      6.1
+     ],
+     [
+      79.2,
+      7.4
+     ],
+     [
+      78.55,
+      8.3
+     ],
+     [
+      78.2078,
+      8.7602
+     ]
+    ]
+   },
+   "waypoints_latlon": [
+    [
+     -28.818,
+     32.052
+    ],
+    [
+     -29.0,
+     33.5
+    ],
+    [
+     -27.0,
+     48.0
+    ],
+    [
+     5.3,
+     80.0
+    ],
+    [
+     6.1,
+     79.75
+    ],
+    [
+     7.4,
+     79.2
+    ],
+    [
+     8.3,
+     78.55
+    ],
+    [
+     8.7602,
+     78.2078
+    ]
+   ],
+   "length_km_approx": 6992,
+   "length_nm_approx": 3776,
+   "geometry_precision": "approximate_waypoints",
+   "estimate": true,
+   "method": "approximate illustrative route through hand-picked open-sea waypoints, densified along great circles; NOT a vessel track. Real routing varies with ship size, season and charter."
+  },
+  {
+   "id": "lane-richardsbay-kamarajar",
+   "kind": "import",
+   "from": "fport-richards-bay",
+   "to": "port-kamarajar",
+   "cargo": "South African thermal coal",
+   "serves": [],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Port_of_Richards_Bay"
+   ],
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      32.052,
+      -28.818
+     ],
+     [
+      33.5,
+      -29.0
+     ],
+     [
+      34.8385,
+      -28.8823
+     ],
+     [
+      36.1738,
+      -28.7514
+     ],
+     [
+      37.5055,
+      -28.6075
+     ],
+     [
+      38.8335,
+      -28.4505
+     ],
+     [
+      40.1573,
+      -28.2807
+     ],
+     [
+      41.4768,
+      -28.0982
+     ],
+     [
+      42.7917,
+      -27.9031
+     ],
+     [
+      44.1017,
+      -27.6956
+     ],
+     [
+      45.4065,
+      -27.4758
+     ],
+     [
+      46.706,
+      -27.2439
+     ],
+     [
+      48.0,
+      -27.0
+     ],
+     [
+      48.9179,
+      -26.276
+     ],
+     [
+      49.8243,
+      -25.5463
+     ],
+     [
+      50.7198,
+      -24.811
+     ],
+     [
+      51.6046,
+      -24.0705
+     ],
+     [
+      52.4792,
+      -23.3249
+     ],
+     [
+      53.3441,
+      -22.5745
+     ],
+     [
+      54.1995,
+      -21.8196
+     ],
+     [
+      55.046,
+      -21.0603
+     ],
+     [
+      55.8838,
+      -20.2968
+     ],
+     [
+      56.7134,
+      -19.5295
+     ],
+     [
+      57.5352,
+      -18.7583
+     ],
+     [
+      58.3494,
+      -17.9836
+     ],
+     [
+      59.1565,
+      -17.2055
+     ],
+     [
+      59.9568,
+      -16.4243
+     ],
+     [
+      60.7507,
+      -15.64
+     ],
+     [
+      61.5386,
+      -14.8529
+     ],
+     [
+      62.3207,
+      -14.0632
+     ],
+     [
+      63.0974,
+      -13.2709
+     ],
+     [
+      63.8691,
+      -12.4763
+     ],
+     [
+      64.636,
+      -11.6795
+     ],
+     [
+      65.3985,
+      -10.8807
+     ],
+     [
+      66.157,
+      -10.08
+     ],
+     [
+      66.9117,
+      -9.2777
+     ],
+     [
+      67.6629,
+      -8.4737
+     ],
+     [
+      68.411,
+      -7.6683
+     ],
+     [
+      69.1563,
+      -6.8616
+     ],
+     [
+      69.899,
+      -6.0538
+     ],
+     [
+      70.6396,
+      -5.2449
+     ],
+     [
+      71.3782,
+      -4.4352
+     ],
+     [
+      72.1152,
+      -3.6248
+     ],
+     [
+      72.8508,
+      -2.8138
+     ],
+     [
+      73.5855,
+      -2.0023
+     ],
+     [
+      74.3194,
+      -1.1904
+     ],
+     [
+      75.0529,
+      -0.3784
+     ],
+     [
+      75.7862,
+      0.4337
+     ],
+     [
+      76.5198,
+      1.2457
+     ],
+     [
+      77.2537,
+      2.0575
+     ],
+     [
+      77.9884,
+      2.869
+     ],
+     [
+      78.7242,
+      3.68
+     ],
+     [
+      79.4613,
+      4.4903
+     ],
+     [
+      80.2,
+      5.3
+     ],
+     [
+      81.3,
+      5.6
+     ],
+     [
+      82.3,
+      7.5
+     ],
+     [
+      81.869,
+      8.5005
+     ],
+     [
+      81.4358,
+      9.5005
+     ],
+     [
+      81.0,
+      10.5
+     ],
+     [
+      80.7264,
+      11.9001
+     ],
+     [
+      80.45,
+      13.3
+     ],
+     [
+      80.3406,
+      13.2607
+     ]
+    ]
+   },
+   "waypoints_latlon": [
+    [
+     -28.818,
+     32.052
+    ],
+    [
+     -29.0,
+     33.5
+    ],
+    [
+     -27.0,
+     48.0
+    ],
+    [
+     5.3,
+     80.2
+    ],
+    [
+     5.6,
+     81.3
+    ],
+    [
+     7.5,
+     82.3
+    ],
+    [
+     10.5,
+     81.0
+    ],
+    [
+     13.3,
+     80.45
+    ],
+    [
+     13.2607,
+     80.3406
+    ]
+   ],
+   "length_km_approx": 7628,
+   "length_nm_approx": 4119,
+   "geometry_precision": "approximate_waypoints",
+   "estimate": true,
+   "method": "approximate illustrative route through hand-picked open-sea waypoints, densified along great circles; NOT a vessel track. Real routing varies with ship size, season and charter."
+  },
+  {
+   "id": "lane-newcastle-kamarajar",
+   "kind": "import",
+   "from": "fport-newcastle",
+   "to": "port-kamarajar",
+   "cargo": "Australian thermal coal (southern route, south of Australia)",
+   "serves": [],
+   "note": "Only one possible route. Many Australia-India voyages go instead through the Indonesian straits (Lombok/Makassar) or Torres Strait.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Port_of_Newcastle"
+   ],
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      151.8,
+      -32.9167
+     ],
+     [
+      151.5,
+      -34.5
+     ],
+     [
+      150.8542,
+      -35.737
+     ],
+     [
+      150.1881,
+      -36.9704
+     ],
+     [
+      149.5,
+      -38.2
+     ],
+     [
+      147.9135,
+      -38.8109
+     ],
+     [
+      146.3,
+      -39.4
+     ],
+     [
+      144.6881,
+      -39.1553
+     ],
+     [
+      143.0878,
+      -38.8885
+     ],
+     [
+      141.5,
+      -38.6
+     ],
+     [
+      140.0918,
+      -38.0242
+     ],
+     [
+      138.7059,
+      -37.4319
+     ],
+     [
+      137.3421,
+      -36.8236
+     ],
+     [
+      136.0,
+      -36.2
+     ],
+     [
+      134.6118,
+      -36.25
+     ],
+     [
+      133.2222,
+      -36.284
+     ],
+     [
+      131.8316,
+      -36.3019
+     ],
+     [
+      130.4407,
+      -36.3037
+     ],
+     [
+      129.05,
+      -36.2894
+     ],
+     [
+      127.6601,
+      -36.259
+     ],
+     [
+      126.2715,
+      -36.2125
+     ],
+     [
+      124.8849,
+      -36.15
+     ],
+     [
+      123.5008,
+      -36.0716
+     ],
+     [
+      122.1197,
+      -35.9773
+     ],
+     [
+      120.7422,
+      -35.8671
+     ],
+     [
+      119.3688,
+      -35.7414
+     ],
+     [
+      118.0,
+      -35.6
+     ],
+     [
+      116.2937,
+      -35.3119
+     ],
+     [
+      114.6,
+      -35.0
+     ],
+     [
+      113.7409,
+      -34.1552
+     ],
+     [
+      112.8989,
+      -33.3046
+     ],
+     [
+      112.0732,
+      -32.4484
+     ],
+     [
+      111.2632,
+      -31.587
+     ],
+     [
+      110.4679,
+      -30.7205
+     ],
+     [
+      109.6869,
+      -29.8492
+     ],
+     [
+      108.9195,
+      -28.9735
+     ],
+     [
+      108.165,
+      -28.0934
+     ],
+     [
+      107.4227,
+      -27.2093
+     ],
+     [
+      106.6922,
+      -26.3214
+     ],
+     [
+      105.9728,
+      -25.4298
+     ],
+     [
+      105.264,
+      -24.5347
+     ],
+     [
+      104.5652,
+      -23.6364
+     ],
+     [
+      103.876,
+      -22.735
+     ],
+     [
+      103.1959,
+      -21.8307
+     ],
+     [
+      102.5243,
+      -20.9236
+     ],
+     [
+      101.8608,
+      -20.0139
+     ],
+     [
+      101.2049,
+      -19.1018
+     ],
+     [
+      100.5562,
+      -18.1874
+     ],
+     [
+      99.9143,
+      -17.2708
+     ],
+     [
+      99.2788,
+      -16.3523
+     ],
+     [
+      98.6492,
+      -15.4318
+     ],
+     [
+      98.0252,
+      -14.5096
+     ],
+     [
+      97.4064,
+      -13.5857
+     ],
+     [
+      96.7924,
+      -12.6603
+     ],
+     [
+      96.1828,
+      -11.7336
+     ],
+     [
+      95.5773,
+      -10.8055
+     ],
+     [
+      94.9756,
+      -9.8763
+     ],
+     [
+      94.3772,
+      -8.946
+     ],
+     [
+      93.7819,
+      -8.0148
+     ],
+     [
+      93.1893,
+      -7.0827
+     ],
+     [
+      92.5991,
+      -6.1498
+     ],
+     [
+      92.011,
+      -5.2163
+     ],
+     [
+      91.4246,
+      -4.2823
+     ],
+     [
+      90.8396,
+      -3.3478
+     ],
+     [
+      90.2558,
+      -2.413
+     ],
+     [
+      89.6727,
+      -1.4779
+     ],
+     [
+      89.0902,
+      -0.5427
+     ],
+     [
+      88.5078,
+      0.3926
+     ],
+     [
+      87.9253,
+      1.3278
+     ],
+     [
+      87.3424,
+      2.2629
+     ],
+     [
+      86.7587,
+      3.1978
+     ],
+     [
+      86.174,
+      4.1323
+     ],
+     [
+      85.5878,
+      5.0664
+     ],
+     [
+      85.0,
+      6.0
+     ],
+     [
+      84.2069,
+      6.903
+     ],
+     [
+      83.4107,
+      7.8047
+     ],
+     [
+      82.6111,
+      8.7049
+     ],
+     [
+      81.8077,
+      9.6034
+     ],
+     [
+      81.0,
+      10.5
+     ],
+     [
+      80.7264,
+      11.9001
+     ],
+     [
+      80.45,
+      13.3
+     ],
+     [
+      80.3406,
+      13.2607
+     ]
+    ]
+   },
+   "waypoints_latlon": [
+    [
+     -32.9167,
+     151.8
+    ],
+    [
+     -34.5,
+     151.5
+    ],
+    [
+     -38.2,
+     149.5
+    ],
+    [
+     -39.4,
+     146.3
+    ],
+    [
+     -38.6,
+     141.5
+    ],
+    [
+     -36.2,
+     136.0
+    ],
+    [
+     -35.6,
+     118.0
+    ],
+    [
+     -35.0,
+     114.6
+    ],
+    [
+     6.0,
+     85.0
+    ],
+    [
+     10.5,
+     81.0
+    ],
+    [
+     13.3,
+     80.45
+    ],
+    [
+     13.2607,
+     80.3406
+    ]
+   ],
+   "length_km_approx": 10358,
+   "length_nm_approx": 5593,
+   "geometry_precision": "approximate_waypoints",
+   "estimate": true,
+   "method": "approximate illustrative route through hand-picked open-sea waypoints, densified along great circles; NOT a vessel track. Real routing varies with ship size, season and charter."
+  },
+  {
+   "id": "lane-kalimantan-mundra",
+   "kind": "import",
+   "from": "fport-kalimantan-south",
+   "to": "port-mundra",
+   "cargo": "Indonesian coal for Mundra UMPP / Adani Mundra",
+   "serves": [
+    "mundra-umpp",
+    "adani-mundra"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mundra_Ultra_Mega_Power_Plant",
+    "file:build/feedstock/_parsed/coal_receipts_cea_monthly.json"
+   ],
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      114.5925,
+      -3.32
+     ],
+     [
+      114.0,
+      -3.9
+     ],
+     [
+      113.0006,
+      -4.3507
+     ],
+     [
+      112.0,
+      -4.8
+     ],
+     [
+      110.7993,
+      -4.351
+     ],
+     [
+      109.6,
+      -3.9
+     ],
+     [
+      108.9,
+      -2.0
+     ],
+     [
+      107.9329,
+      -1.2336
+     ],
+     [
+      106.9663,
+      -0.4669
+     ],
+     [
+      106.0,
+      0.3
+     ],
+     [
+      104.1,
+      1.15
+     ],
+     [
+      103.0502,
+      1.6253
+     ],
+     [
+      102.0,
+      2.1
+     ],
+     [
+      100.6,
+      3.3
+     ],
+     [
+      99.4,
+      4.6
+     ],
+     [
+      98.3011,
+      5.251
+     ],
+     [
+      97.2,
+      5.9
+     ],
+     [
+      95.9671,
+      6.0028
+     ],
+     [
+      94.7338,
+      6.1028
+     ],
+     [
+      93.5,
+      6.2
+     ],
+     [
+      92.399,
+      6.0844
+     ],
+     [
+      91.2986,
+      5.9665
+     ],
+     [
+      90.1986,
+      5.8465
+     ],
+     [
+      89.099,
+      5.7243
+     ],
+     [
+      88.0,
+      5.6
+     ],
+     [
+      86.7667,
+      5.6065
+     ],
+     [
+      85.5333,
+      5.6103
+     ],
+     [
+      84.3,
+      5.6116
+     ],
+     [
+      83.0667,
+      5.6103
+     ],
+     [
+      81.8333,
+      5.6065
+     ],
+     [
+      80.6,
+      5.6
+     ],
+     [
+      79.2348,
+      5.9034
+     ],
+     [
+      77.8682,
+      6.2034
+     ],
+     [
+      76.5,
+      6.5
+     ],
+     [
+      75.9569,
+      7.448
+     ],
+     [
+      75.4114,
+      8.3953
+     ],
+     [
+      74.8632,
+      9.3418
+     ],
+     [
+      74.3121,
+      10.2875
+     ],
+     [
+      73.7576,
+      11.2323
+     ],
+     [
+      73.1995,
+      12.176
+     ],
+     [
+      72.6375,
+      13.1186
+     ],
+     [
+      72.0711,
+      14.06
+     ],
+     [
+      71.5,
+      15.0
+     ],
+     [
+      71.0148,
+      16.0864
+     ],
+     [
+      70.5244,
+      17.1717
+     ],
+     [
+      70.0281,
+      18.2558
+     ],
+     [
+      69.5256,
+      19.3387
+     ],
+     [
+      69.0164,
+      20.4201
+     ],
+     [
+      68.5,
+      21.5
+     ],
+     [
+      69.7,
+      22.72
+     ]
+    ]
+   },
+   "waypoints_latlon": [
+    [
+     -3.32,
+     114.5925
+    ],
+    [
+     -3.9,
+     114.0
+    ],
+    [
+     -4.8,
+     112.0
+    ],
+    [
+     -3.9,
+     109.6
+    ],
+    [
+     -2.0,
+     108.9
+    ],
+    [
+     0.3,
+     106.0
+    ],
+    [
+     1.15,
+     104.1
+    ],
+    [
+     2.1,
+     102.0
+    ],
+    [
+     3.3,
+     100.6
+    ],
+    [
+     4.6,
+     99.4
+    ],
+    [
+     5.9,
+     97.2
+    ],
+    [
+     6.2,
+     93.5
+    ],
+    [
+     5.6,
+     88.0
+    ],
+    [
+     5.6,
+     80.6
+    ],
+    [
+     6.5,
+     76.5
+    ],
+    [
+     15.0,
+     71.5
+    ],
+    [
+     21.5,
+     68.5
+    ],
+    [
+     22.72,
+     69.7
+    ]
+   ],
+   "length_km_approx": 6798,
+   "length_nm_approx": 3671,
+   "geometry_precision": "approximate_waypoints",
+   "estimate": true,
+   "method": "approximate illustrative route through hand-picked open-sea waypoints, densified along great circles; NOT a vessel track. Real routing varies with ship size, season and charter."
+  },
+  {
+   "id": "lane-richardsbay-mundra",
+   "kind": "import",
+   "from": "fport-richards-bay",
+   "to": "port-mundra",
+   "cargo": "South African coal for Mundra plants",
+   "serves": [
+    "mundra-umpp",
+    "adani-mundra"
+   ],
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mundra_Ultra_Mega_Power_Plant"
+   ],
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      32.052,
+      -28.818
+     ],
+     [
+      33.5,
+      -29.0
+     ],
+     [
+      34.746,
+      -28.8776
+     ],
+     [
+      35.9889,
+      -28.7437
+     ],
+     [
+      37.2285,
+      -28.5985
+     ],
+     [
+      38.4646,
+      -28.4421
+     ],
+     [
+      39.6969,
+      -28.2745
+     ],
+     [
+      40.9251,
+      -28.0959
+     ],
+     [
+      42.1492,
+      -27.9064
+     ],
+     [
+      43.3689,
+      -27.7062
+     ],
+     [
+      44.584,
+      -27.4953
+     ],
+     [
+      45.7943,
+      -27.2738
+     ],
+     [
+      46.9997,
+      -27.042
+     ],
+     [
+      48.2,
+      -26.8
+     ],
+     [
+      48.7346,
+      -25.8238
+     ],
+     [
+      49.2604,
+      -24.8457
+     ],
+     [
+      49.778,
+      -23.8657
+     ],
+     [
+      50.2878,
+      -22.8841
+     ],
+     [
+      50.7902,
+      -21.9009
+     ],
+     [
+      51.2858,
+      -20.9161
+     ],
+     [
+      51.7749,
+      -19.93
+     ],
+     [
+      52.2579,
+      -18.9425
+     ],
+     [
+      52.7353,
+      -17.9538
+     ],
+     [
+      53.2073,
+      -16.9639
+     ],
+     [
+      53.6744,
+      -15.973
+     ],
+     [
+      54.1369,
+      -14.9811
+     ],
+     [
+      54.5951,
+      -13.9882
+     ],
+     [
+      55.0494,
+      -12.9945
+     ],
+     [
+      55.5,
+      -12.0
+     ],
+     [
+      55.7331,
+      -10.9097
+     ],
+     [
+      55.9646,
+      -9.8192
+     ],
+     [
+      56.1945,
+      -8.7286
+     ],
+     [
+      56.4231,
+      -7.6378
+     ],
+     [
+      56.6505,
+      -6.5469
+     ],
+     [
+      56.8769,
+      -5.4559
+     ],
+     [
+      57.1025,
+      -4.3648
+     ],
+     [
+      57.3275,
+      -3.2737
+     ],
+     [
+      57.5519,
+      -2.1825
+     ],
+     [
+      57.776,
+      -1.0912
+     ],
+     [
+      58.0,
+      0.0
+     ],
+     [
+      58.4188,
+      1.0733
+     ],
+     [
+      58.8378,
+      2.1466
+     ],
+     [
+      59.2575,
+      3.2198
+     ],
+     [
+      59.678,
+      4.2928
+     ],
+     [
+      60.0997,
+      5.3656
+     ],
+     [
+      60.523,
+      6.438
+     ],
+     [
+      60.948,
+      7.5102
+     ],
+     [
+      61.3751,
+      8.5819
+     ],
+     [
+      61.8046,
+      9.6531
+     ],
+     [
+      62.2368,
+      10.7238
+     ],
+     [
+      62.6722,
+      11.794
+     ],
+     [
+      63.1109,
+      12.8634
+     ],
+     [
+      63.5534,
+      13.9321
+     ],
+     [
+      64.0,
+      15.0
+     ],
+     [
+      64.6233,
+      15.9347
+     ],
+     [
+      65.2524,
+      16.8675
+     ],
+     [
+      65.8877,
+      17.7984
+     ],
+     [
+      66.5297,
+      18.7273
+     ],
+     [
+      67.1788,
+      19.6539
+     ],
+     [
+      67.8354,
+      20.5782
+     ],
+     [
+      68.5,
+      21.5
+     ],
+     [
+      69.7,
+      22.72
+     ]
+    ]
+   },
+   "waypoints_latlon": [
+    [
+     -28.818,
+     32.052
+    ],
+    [
+     -29.0,
+     33.5
+    ],
+    [
+     -26.8,
+     48.2
+    ],
+    [
+     -12.0,
+     55.5
+    ],
+    [
+     0.0,
+     58.0
+    ],
+    [
+     15.0,
+     64.0
+    ],
+    [
+     21.5,
+     68.5
+    ],
+    [
+     22.72,
+     69.7
+    ]
+   ],
+   "length_km_approx": 7625,
+   "length_nm_approx": 4117,
+   "geometry_precision": "approximate_waypoints",
+   "estimate": true,
+   "method": "approximate illustrative route through hand-picked open-sea waypoints, densified along great circles; NOT a vessel track. Real routing varies with ship size, season and charter."
+  }
+ ]
+}

@@ -1,0 +1,843 @@
+{
+ "meta": {
+  "title": "Nuclear fuel supply chains for Tamil Nadu reactors (Kudankulam, MAPS, PFBR) + Indian fuel-cycle facilities",
+  "generated": "2026-09-24",
+  "notes": [
+   "Coordinates only where OSM/Wikipedia/GEO give them; many UCIL mines/mills have no public coordinates and are left null (never guessed).",
+   "loc_precision: exact_osm | wikipedia | co-located_approx (placed on a neighbouring sourced feature) | campus_approx | adjacent_site_approx | town_centroid | null.",
+   "Transport modes for uranium concentrate, fuel bundles and plutonium are security-sensitive and unpublished: mode \"unknown\" is used rather than inventing rail/road.",
+   "Kudankulam fuel arrives by chartered cargo aircraft from Russia (Dec-2025 unit-3 delivery); the Indian airport is not named in any source found.",
+   "npcil_units table in data/power.db was checked: it has no Kudankulam rows and garbled capacity columns, so it was not used."
+  ],
+  "sources": [
+   "CEA/NPP Daily Generation Report in data/power.db table dgr_stations (2026-09-22): KUDANKULAM 2000 MW, MADRAS A.P.S. 440 MW, BHAVINI PFBR 0 MW",
+   "https://en.wikipedia.org/wiki/Fast_Breeder_Test_Reactor (raw/feedstock/nuclear/wiki_Fast_Breeder_Test_Reactor.txt)",
+   "https://en.wikipedia.org/wiki/Heavy_Water_Board (raw/feedstock/nuclear/Heavy_Water_Board.txt)",
+   "https://en.wikipedia.org/wiki/Indira_Gandhi_Centre_for_Atomic_Research (raw/feedstock/nuclear/wiki_Indira_Gandhi_Centre_for_Atomic_Research.txt)",
+   "https://en.wikipedia.org/wiki/Jaduguda_Uranium_Mine (raw/feedstock/nuclear/wiki_Jaduguda_uranium_mine.txt)",
+   "https://en.wikipedia.org/wiki/Kudankulam_Nuclear_Power_Plant (raw/feedstock/nuclear/Kudankulam_Nuclear_Power_Plant.txt; CC BY-SA)",
+   "https://en.wikipedia.org/wiki/Madras_Atomic_Power_Station (raw/feedstock/nuclear/Madras_Atomic_Power_Station.txt)",
+   "https://en.wikipedia.org/wiki/Nuclear_Fuel_Complex (raw/feedstock/nuclear/Nuclear_Fuel_Complex.txt)",
+   "https://en.wikipedia.org/wiki/Prototype_Fast_Breeder_Reactor (raw/feedstock/nuclear/Prototype_Fast_Breeder_Reactor.txt)",
+   "https://en.wikipedia.org/wiki/Talcher (coordinates via API; raw/feedstock/nuclear/wiki_search_fuelcycle.json)",
+   "https://en.wikipedia.org/wiki/Tarapur_Atomic_Power_Station (raw/feedstock/nuclear/wiki_Tarapur_Atomic_Power_Station.txt)",
+   "https://en.wikipedia.org/wiki/Tummalapalle_uranium_mine (raw/feedstock/nuclear/Tummalapalle_uranium_mine.txt)",
+   "https://en.wikipedia.org/wiki/Turamdih_Uranium_Mine (raw/feedstock/nuclear/wiki_Turamdih_Uranium_Mine.txt)",
+   "https://en.wikipedia.org/wiki/Uranium_Corporation_of_India (raw/feedstock/nuclear/Uranium_Corporation_of_India.txt)",
+   "https://fissilematerials.org/blog/2014/07/india_ratifies_an_additio.html (IPFM: Madras 1&2 among unsafeguarded PHWRs; raw/feedstock/nuclear/ipfm_2014_safeguards.html)",
+   "https://fissilematerials.org/library/barc03.pdf (P.K. Dey, BARC, \"Spent fuel reprocessing: an overview\", INSAC-2003; raw/feedstock/nuclear/barc03_spent_fuel_reprocessing_overview.pdf)",
+   "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)",
+   "https://www.business-standard.com/industry/news/rosatom-supplies-nuclear-fuel-kudankulam-unit-3-initial-loading-125123001040_1.html (via web search)",
+   "https://www.globalenergyobservatory.org/geoid/3789 (raw/feedstock/nuclear/geo_3789.html)",
+   "https://www.globalenergyobservatory.org/geoid/44876 (raw/feedstock/nuclear/geo_44876.html)",
+   "https://www.neimagazine.com/news/first-fuel-delivered-to-kudankulam-3/ (via web search)",
+   "https://www.openstreetmap.org (Overpass extract 2026-09-24, raw/feedstock/nuclear/osm_nuclear_sites.json; ODbL)",
+   "https://www.openstreetmap.org (Overpass extract 2026-09-24, raw/feedstock/nuclear/osm_nuclear_sites2.json; ODbL)",
+   "https://www.world-nuclear-news.org/Articles/TVEL-starts-PWR-fuel-fabrication-at-Novosibirsk (via web search)",
+   "https://www.world-nuclear-news.org/articles/first-nuclear-fuel-delivered-for-kudankulam-unit-3 (Dec 2025; via WebFetch)"
+  ]
+ },
+ "nodes": [
+  {
+   "id": "kudankulam",
+   "name": "Kudankulam Nuclear Power Project (KKNPP) units 1-6",
+   "kind": "reactor",
+   "operator": "NPCIL",
+   "country": "India",
+   "status": "U1-2 operating (2 x 1000 MW VVER-1000/V-412); U3-4 commissioning (first fuel delivered Dec-2025); U5-6 under construction (2021)",
+   "lat": 8.17254,
+   "lon": 77.70553,
+   "loc_precision": "exact_osm",
+   "loc_note": "OSM way 384663588 (site); unit generator ways: U1 8.16862,77.71384 (1429814528), U2 8.16813,77.7117 (385260247), U3 8.16658,77.70454, U4 8.16607,77.70236, U5 8.16535,77.69933, U6 8.16491,77.69715. GEO 8.1691,77.71327.",
+   "capacity": "2000 MW operating (DGR)",
+   "notes": "Light-water VVER: needs enriched UO2 fuel (imported from Russia) but no heavy water.",
+   "sources": [
+    "https://www.openstreetmap.org (Overpass extract 2026-09-24, raw/feedstock/nuclear/osm_nuclear_sites.json; ODbL)",
+    "https://www.globalenergyobservatory.org/geoid/44876 (raw/feedstock/nuclear/geo_44876.html)",
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)",
+    "https://www.world-nuclear-news.org/articles/first-nuclear-fuel-delivered-for-kudankulam-unit-3 (Dec 2025; via WebFetch)",
+    "CEA/NPP Daily Generation Report in data/power.db table dgr_stations (2026-09-22): KUDANKULAM 2000 MW, MADRAS A.P.S. 440 MW, BHAVINI PFBR 0 MW"
+   ]
+  },
+  {
+   "id": "maps",
+   "name": "Madras Atomic Power Station (MAPS), Kalpakkam",
+   "kind": "reactor",
+   "operator": "NPCIL",
+   "country": "India",
+   "status": "operating: 2 x 220 MW-class PHWR (205 MWe each in WNA reactor table; units critical 1983 & 1985)",
+   "lat": 12.55705,
+   "lon": 80.17239,
+   "loc_precision": "exact_osm",
+   "loc_note": "OSM way 98366375; GEO 12.5574,80.17584; Wikipedia 12.5575,80.175.",
+   "capacity": "440 MW (DGR)",
+   "notes": "Natural-uranium PHWR, heavy-water moderated & cooled, seawater-cooled condensers. NOT under IAEA safeguards (India's 2006 separation plan), therefore fuelled only with domestic (UCIL) uranium.",
+   "sources": [
+    "https://www.openstreetmap.org (Overpass extract 2026-09-24, raw/feedstock/nuclear/osm_nuclear_sites.json; ODbL)",
+    "https://www.globalenergyobservatory.org/geoid/3789 (raw/feedstock/nuclear/geo_3789.html)",
+    "https://en.wikipedia.org/wiki/Madras_Atomic_Power_Station (raw/feedstock/nuclear/Madras_Atomic_Power_Station.txt)",
+    "https://fissilematerials.org/blog/2014/07/india_ratifies_an_additio.html (IPFM: Madras 1&2 among unsafeguarded PHWRs; raw/feedstock/nuclear/ipfm_2014_safeguards.html)",
+    "CEA/NPP Daily Generation Report in data/power.db table dgr_stations (2026-09-22): KUDANKULAM 2000 MW, MADRAS A.P.S. 440 MW, BHAVINI PFBR 0 MW"
+   ]
+  },
+  {
+   "id": "pfbr",
+   "name": "Prototype Fast Breeder Reactor (PFBR), Kalpakkam",
+   "kind": "reactor",
+   "operator": "BHAVINI",
+   "country": "India",
+   "status": "first criticality 6 Apr 2026 (Wikipedia); not yet in commercial operation (DGR 0 MW)",
+   "lat": 12.55303,
+   "lon": 80.17369,
+   "loc_precision": "exact_osm",
+   "loc_note": "OSM node 6861924154 (power=generator); Wikipedia 12.55306,80.17333.",
+   "capacity": "500 MWe (design)",
+   "notes": "Pool-type sodium-cooled FBR; MOX (PuO2-UO2) driver fuel, U (and planned Th) blanket; 1,750 t sodium. India will not accept safeguards on PFBR or FBTR (IPFM 2014).",
+   "sources": [
+    "https://www.openstreetmap.org (Overpass extract 2026-09-24, raw/feedstock/nuclear/osm_nuclear_sites.json; ODbL)",
+    "https://en.wikipedia.org/wiki/Prototype_Fast_Breeder_Reactor (raw/feedstock/nuclear/Prototype_Fast_Breeder_Reactor.txt)",
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)",
+    "https://fissilematerials.org/blog/2014/07/india_ratifies_an_additio.html (IPFM: Madras 1&2 among unsafeguarded PHWRs; raw/feedstock/nuclear/ipfm_2014_safeguards.html)",
+    "CEA/NPP Daily Generation Report in data/power.db table dgr_stations (2026-09-22): KUDANKULAM 2000 MW, MADRAS A.P.S. 440 MW, BHAVINI PFBR 0 MW"
+   ]
+  },
+  {
+   "id": "fbtr",
+   "name": "Fast Breeder Test Reactor (FBTR), IGCAR Kalpakkam",
+   "kind": "reactor",
+   "operator": "IGCAR",
+   "country": "India",
+   "status": "research reactor (context)",
+   "lat": 12.56235,
+   "lon": 80.16454,
+   "loc_precision": "wikipedia",
+   "loc_note": "Wikipedia coordinates.",
+   "capacity": null,
+   "notes": "Mixed-carbide fuel from BARC; its spent fuel reprocessed at IGCAR (CORAL, DFRP) - closes the fast-reactor fuel cycle at small scale.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Fast_Breeder_Test_Reactor (raw/feedstock/nuclear/wiki_Fast_Breeder_Test_Reactor.txt)",
+    "https://en.wikipedia.org/wiki/Indira_Gandhi_Centre_for_Atomic_Research (raw/feedstock/nuclear/wiki_Indira_Gandhi_Centre_for_Atomic_Research.txt)",
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)"
+   ]
+  },
+  {
+   "id": "tvel-enrichment",
+   "name": "TVEL / Rosatom uranium conversion & enrichment (specific plant not published)",
+   "kind": "enrichment_foreign",
+   "operator": "TVEL (Rosatom)",
+   "country": "Russia",
+   "status": null,
+   "lat": null,
+   "lon": null,
+   "loc_precision": null,
+   "loc_note": "Which Russian enrichment plant supplies KKNPP fuel is not published.",
+   "capacity": null,
+   "notes": "",
+   "sources": [
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)"
+   ]
+  },
+  {
+   "id": "nccp-novosibirsk",
+   "name": "Novosibirsk Chemical Concentrates Plant (NCCP / NZKhK)",
+   "kind": "fuel_fabrication",
+   "operator": "TVEL (Rosatom)",
+   "country": "Russia",
+   "status": null,
+   "lat": 55.09164,
+   "lon": 82.98555,
+   "loc_precision": "exact_osm",
+   "loc_note": "OSM way 51916722 \"Новосибирский завод химконцентратов\".",
+   "capacity": null,
+   "notes": "Fabricates the TVS-2M VVER-1000 fuel assemblies delivered to Kudankulam (unit-3 first core Dec-2025; units 1-2 on TVS-2M since 2022, 18-month cycles).",
+   "sources": [
+    "https://www.openstreetmap.org (Overpass extract 2026-09-24, raw/feedstock/nuclear/osm_nuclear_sites.json; ODbL)",
+    "https://www.world-nuclear-news.org/articles/first-nuclear-fuel-delivered-for-kudankulam-unit-3 (Dec 2025; via WebFetch)",
+    "https://www.world-nuclear-news.org/Articles/TVEL-starts-PWR-fuel-fabrication-at-Novosibirsk (via web search)"
+   ]
+  },
+  {
+   "id": "india-arrival-airport-unknown",
+   "name": "Indian arrival airport for KKNPP fuel flights (not published)",
+   "kind": "airport",
+   "operator": null,
+   "country": "India",
+   "status": null,
+   "lat": null,
+   "lon": null,
+   "loc_precision": null,
+   "loc_note": "Press releases say the assemblies \"were flown by cargo plane\" (7 flights for unit-3 core + reserve) but do not name the airport.",
+   "capacity": null,
+   "notes": "",
+   "sources": [
+    "https://www.world-nuclear-news.org/articles/first-nuclear-fuel-delivered-for-kudankulam-unit-3 (Dec 2025; via WebFetch)",
+    "https://www.business-standard.com/industry/news/rosatom-supplies-nuclear-fuel-kudankulam-unit-3-initial-loading-125123001040_1.html (via web search)"
+   ]
+  },
+  {
+   "id": "kknpp-spent-fuel-storage",
+   "name": "KKNPP on-site spent-fuel storage (in-reactor pools + away-from-reactor store)",
+   "kind": "reprocessing",
+   "operator": "NPCIL",
+   "country": "India",
+   "status": "storage; reprocessing planned in a future safeguarded Indian plant",
+   "lat": null,
+   "lon": null,
+   "loc_precision": null,
+   "loc_note": "On the KKNPP site; footprint not mapped.",
+   "capacity": null,
+   "notes": "1988 agreement required return of used fuel to Russia; 1998 supplement allows India to retain and reprocess it under safeguards (WNA).",
+   "sources": [
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)"
+   ]
+  },
+  {
+   "id": "ucil-jaduguda-mine",
+   "name": "UCIL Jaduguda uranium mine (underground, since 1967)",
+   "kind": "uranium_mine",
+   "operator": "UCIL",
+   "country": "India",
+   "status": null,
+   "lat": 22.653273,
+   "lon": 86.346639,
+   "loc_precision": "wikipedia",
+   "loc_note": "Wikipedia Jaduguda Uranium Mine coordinates; OSM town node Jaduguda 22.65563,86.34995.",
+   "capacity": null,
+   "notes": "Ore grade ~0.05-0.06% U (WNA). Singhbhum shear zone, East Singhbhum dist., Jharkhand.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jaduguda_Uranium_Mine (raw/feedstock/nuclear/wiki_Jaduguda_uranium_mine.txt)",
+    "https://en.wikipedia.org/wiki/Uranium_Corporation_of_India (raw/feedstock/nuclear/Uranium_Corporation_of_India.txt)",
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)",
+    "https://www.openstreetmap.org (Overpass extract 2026-09-24, raw/feedstock/nuclear/osm_nuclear_sites.json; ODbL)"
+   ]
+  },
+  {
+   "id": "ucil-jaduguda-mill",
+   "name": "UCIL Jaduguda mill (processing plant)",
+   "kind": "mill",
+   "operator": "UCIL",
+   "country": "India",
+   "status": null,
+   "lat": 22.653273,
+   "lon": 86.346639,
+   "loc_precision": "co-located_approx",
+   "loc_note": "Placed at the Jaduguda mine coordinates - Wikipedia: \"Jadugoda process plant is located close to the mine\".",
+   "capacity": "2,500 t ore/day (WNA)",
+   "notes": "Treats ore from Jaduguda, Bhatin and Narwapahar; product magnesium diuranate (MDU, \"yellowcake\").",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uranium_Corporation_of_India (raw/feedstock/nuclear/Uranium_Corporation_of_India.txt)",
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)"
+   ]
+  },
+  {
+   "id": "ucil-bhatin-mine",
+   "name": "UCIL Bhatin uranium mine",
+   "kind": "uranium_mine",
+   "operator": "UCIL",
+   "country": "India",
+   "status": null,
+   "lat": null,
+   "lon": null,
+   "loc_precision": null,
+   "loc_note": "\"3 km away from Jaduguda\" (Wikipedia) - no coordinate published.",
+   "capacity": null,
+   "notes": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uranium_Corporation_of_India (raw/feedstock/nuclear/Uranium_Corporation_of_India.txt)"
+   ]
+  },
+  {
+   "id": "ucil-narwapahar-mine",
+   "name": "UCIL Narwapahar uranium mine (1995)",
+   "kind": "uranium_mine",
+   "operator": "UCIL",
+   "country": "India",
+   "status": null,
+   "lat": null,
+   "lon": null,
+   "loc_precision": null,
+   "loc_note": "No sourced coordinate.",
+   "capacity": null,
+   "notes": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Uranium_Corporation_of_India (raw/feedstock/nuclear/Uranium_Corporation_of_India.txt)",
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)"
+   ]
+  },
+  {
+   "id": "ucil-turamdih-mine",
+   "name": "UCIL Turamdih uranium mine (2003)",
+   "kind": "uranium_mine",
+   "operator": "UCIL",
+   "country": "India",
+   "status": null,
+   "lat": null,
+   "lon": null,
+   "loc_precision": null,
+   "loc_note": "\"24 km west of Jaduguda ... 5 km south of Tatanagar railway station\" (Wikipedia) - no coordinate published.",
+   "capacity": null,
+   "notes": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Turamdih_Uranium_Mine (raw/feedstock/nuclear/wiki_Turamdih_Uranium_Mine.txt)",
+    "https://en.wikipedia.org/wiki/Uranium_Corporation_of_India (raw/feedstock/nuclear/Uranium_Corporation_of_India.txt)"
+   ]
+  },
+  {
+   "id": "ucil-turamdih-mill",
+   "name": "UCIL Turamdih mill (2008)",
+   "kind": "mill",
+   "operator": "UCIL",
+   "country": "India",
+   "status": null,
+   "lat": null,
+   "lon": null,
+   "loc_precision": null,
+   "loc_note": "No sourced coordinate; 7 km from Mohuldih (WNA).",
+   "capacity": "3,000 t/day expanding to 4,500 t/day (WNA)",
+   "notes": "Treats ore from Turamdih, Banduhurang and Mohuldih.",
+   "sources": [
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)",
+    "https://en.wikipedia.org/wiki/Uranium_Corporation_of_India (raw/feedstock/nuclear/Uranium_Corporation_of_India.txt)"
+   ]
+  },
+  {
+   "id": "ucil-banduhurang-mine",
+   "name": "UCIL Banduhurang uranium mine (open pit, 2007)",
+   "kind": "uranium_mine",
+   "operator": "UCIL",
+   "country": "India",
+   "status": null,
+   "lat": null,
+   "lon": null,
+   "loc_precision": null,
+   "loc_note": "No sourced coordinate.",
+   "capacity": null,
+   "notes": "",
+   "sources": [
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)"
+   ]
+  },
+  {
+   "id": "ucil-bagjata-mine",
+   "name": "UCIL Bagjata uranium mine (underground, 2008)",
+   "kind": "uranium_mine",
+   "operator": "UCIL",
+   "country": "India",
+   "status": null,
+   "lat": null,
+   "lon": null,
+   "loc_precision": null,
+   "loc_note": "No sourced coordinate.",
+   "capacity": null,
+   "notes": "",
+   "sources": [
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)"
+   ]
+  },
+  {
+   "id": "ucil-mohuldih-mine",
+   "name": "UCIL Mohuldih uranium mine (underground, 2012)",
+   "kind": "uranium_mine",
+   "operator": "UCIL",
+   "country": "India",
+   "status": null,
+   "lat": null,
+   "lon": null,
+   "loc_precision": null,
+   "loc_note": "Seraikela-Kharsawan district; no sourced coordinate.",
+   "capacity": null,
+   "notes": "",
+   "sources": [
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)",
+    "https://en.wikipedia.org/wiki/Uranium_Corporation_of_India (raw/feedstock/nuclear/Uranium_Corporation_of_India.txt)"
+   ]
+  },
+  {
+   "id": "ucil-tummalapalle-mine",
+   "name": "UCIL Tummalapalle uranium mine (YSR Kadapa, AP)",
+   "kind": "uranium_mine",
+   "operator": "UCIL",
+   "country": "India",
+   "status": null,
+   "lat": 14.32064,
+   "lon": 78.26879,
+   "loc_precision": "exact_osm",
+   "loc_note": "OSM way 963431375 \"Tummalapalle uranium mine\" (landuse=quarry); Wikipedia 14.32,78.26.",
+   "capacity": null,
+   "notes": "Resources ~120,229 tU (2017, WNA) - India's largest deposit. Commercial production from June 2012.",
+   "sources": [
+    "https://www.openstreetmap.org (Overpass extract 2026-09-24, raw/feedstock/nuclear/osm_nuclear_sites2.json; ODbL)",
+    "https://en.wikipedia.org/wiki/Tummalapalle_uranium_mine (raw/feedstock/nuclear/Tummalapalle_uranium_mine.txt)",
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)"
+   ]
+  },
+  {
+   "id": "ucil-tummalapalle-mill",
+   "name": "UCIL Tummalapalle mill (alkaline pressure leach)",
+   "kind": "mill",
+   "operator": "UCIL",
+   "country": "India",
+   "status": null,
+   "lat": 14.32064,
+   "lon": 78.26879,
+   "loc_precision": "co-located_approx",
+   "loc_note": "Placed at the mine; exact mill footprint not separately mapped.",
+   "capacity": "3,000 t/day expanding to 4,500 t/day (WNA); expected ~220 tU/yr",
+   "notes": "Produces sodium diuranate.",
+   "sources": [
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)",
+    "https://en.wikipedia.org/wiki/Tummalapalle_uranium_mine (raw/feedstock/nuclear/Tummalapalle_uranium_mine.txt)"
+   ]
+  },
+  {
+   "id": "nfc-hyderabad",
+   "name": "Nuclear Fuel Complex (NFC), Hyderabad (Moula Ali/ECIL area)",
+   "kind": "fuel_fabrication",
+   "operator": "DAE - NFC",
+   "country": "India",
+   "status": null,
+   "lat": 17.46445,
+   "lon": 78.57273,
+   "loc_precision": "campus_vicinity",
+   "loc_note": "OSM way 356190914 \"NFC Guest House\" (campus vicinity; plant footprint not mapped); OSM \"DAE Colony\" 17.46994,78.56899; Wikipedia Moula Ali 17.468,78.556.",
+   "capacity": "~1,250-1,500 t/yr PHWR fuel (WNA)",
+   "notes": "Refines MDU/SDU to UO2, makes pellets, zircaloy tubes and 220 MWe PHWR fuel bundles (15.2 kg UO2 each, Wikipedia) - MAPS fuel comes from here. Some NFC facilities are safeguarded (for imported uranium), others are not.",
+   "sources": [
+    "https://www.openstreetmap.org (Overpass extract 2026-09-24, raw/feedstock/nuclear/osm_nuclear_sites2.json; ODbL)",
+    "https://en.wikipedia.org/wiki/Nuclear_Fuel_Complex (raw/feedstock/nuclear/Nuclear_Fuel_Complex.txt)",
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)"
+   ]
+  },
+  {
+   "id": "hwp-tuticorin",
+   "name": "Heavy Water Plant Tuticorin (HWB)",
+   "kind": "heavy_water_plant",
+   "operator": "Heavy Water Board (DAE)",
+   "country": "India",
+   "status": "operating per HWB list (Wikipedia: one of seven plants; also makes solvents)",
+   "lat": 8.74087,
+   "lon": 78.14628,
+   "loc_precision": "exact_osm",
+   "loc_note": "OSM way 309279889 \"HWP\"; OSM \"Hwp Township Hospital\" 8.73568,78.12104 nearby.",
+   "capacity": null,
+   "notes": "Commissioned July 1978; monothermal ammonia-hydrogen exchange, historically integrated with the neighbouring SPIC ammonia plant. The only HWB plant in Tamil Nadu.",
+   "sources": [
+    "https://www.openstreetmap.org (Overpass extract 2026-09-24, raw/feedstock/nuclear/osm_nuclear_sites2.json; ODbL)",
+    "https://en.wikipedia.org/wiki/Heavy_Water_Board (raw/feedstock/nuclear/Heavy_Water_Board.txt)"
+   ]
+  },
+  {
+   "id": "hwp-manuguru",
+   "name": "Heavy Water Plant Manuguru (Aswapuram)",
+   "kind": "heavy_water_plant",
+   "operator": "Heavy Water Board",
+   "country": "India",
+   "status": null,
+   "lat": 17.87883,
+   "lon": 80.85226,
+   "loc_precision": "exact_osm",
+   "loc_note": "OSM way 109386335 \"Aswapuram Heavy Water Plant\".",
+   "capacity": "185 t/yr",
+   "notes": "Bithermal H2S-H2O exchange; flagship HWB plant (Dec-1991); captive 3 x 30 MWe coal power plant.",
+   "sources": [
+    "https://www.openstreetmap.org (Overpass extract 2026-09-24, raw/feedstock/nuclear/osm_nuclear_sites.json; ODbL)",
+    "https://en.wikipedia.org/wiki/Heavy_Water_Board (raw/feedstock/nuclear/Heavy_Water_Board.txt)"
+   ]
+  },
+  {
+   "id": "hwp-kota",
+   "name": "Heavy Water Plant Kota (Rawatbhata)",
+   "kind": "heavy_water_plant",
+   "operator": "Heavy Water Board",
+   "country": "India",
+   "status": null,
+   "lat": 24.88376,
+   "lon": 75.61034,
+   "loc_precision": "exact_osm",
+   "loc_note": "OSM way 175347138 \"Heavy Water Plant\".",
+   "capacity": null,
+   "notes": "H2O-H2S bithermal; next to RAPS.",
+   "sources": [
+    "https://www.openstreetmap.org (Overpass extract 2026-09-24, raw/feedstock/nuclear/osm_nuclear_sites.json; ODbL)",
+    "https://en.wikipedia.org/wiki/Heavy_Water_Board (raw/feedstock/nuclear/Heavy_Water_Board.txt)"
+   ]
+  },
+  {
+   "id": "hwp-baroda",
+   "name": "Heavy Water Plant Baroda (Vadodara)",
+   "kind": "heavy_water_plant",
+   "operator": "Heavy Water Board",
+   "country": "India",
+   "status": "heavy-water production suspended 1999 (GSFC ammonia plant change); potassium metal plant",
+   "lat": 22.37305,
+   "lon": 73.15235,
+   "loc_precision": "adjacent_site_approx",
+   "loc_note": "Placed at OSM way 29547338 GSFC (HWP is \"adjacent to GSFC\").",
+   "capacity": null,
+   "notes": "",
+   "sources": [
+    "https://www.openstreetmap.org (Overpass extract 2026-09-24, raw/feedstock/nuclear/osm_nuclear_sites2.json; ODbL)",
+    "https://en.wikipedia.org/wiki/Heavy_Water_Board (raw/feedstock/nuclear/Heavy_Water_Board.txt)"
+   ]
+  },
+  {
+   "id": "hwp-hazira",
+   "name": "Heavy Water Plant Hazira",
+   "kind": "heavy_water_plant",
+   "operator": "Heavy Water Board",
+   "country": "India",
+   "status": null,
+   "lat": null,
+   "lon": null,
+   "loc_precision": null,
+   "loc_note": "\"about 16 km from Surat city\" (Wikipedia); no sourced coordinate.",
+   "capacity": null,
+   "notes": "Ammonia-hydrogen exchange, commissioned Feb-1991.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Heavy_Water_Board (raw/feedstock/nuclear/Heavy_Water_Board.txt)"
+   ]
+  },
+  {
+   "id": "hwp-thal",
+   "name": "Heavy Water Plant Thal (Thal-Vaishet, Raigad)",
+   "kind": "heavy_water_plant",
+   "operator": "Heavy Water Board",
+   "country": "India",
+   "status": null,
+   "lat": 18.69834,
+   "lon": 72.87032,
+   "loc_precision": "adjacent_site_approx",
+   "loc_note": "Placed at OSM way 122091071 RCF Thal fertiliser complex (host plant).",
+   "capacity": null,
+   "notes": "Commissioned 1985.",
+   "sources": [
+    "https://www.openstreetmap.org (Overpass extract 2026-09-24, raw/feedstock/nuclear/osm_nuclear_sites2.json; ODbL)",
+    "https://en.wikipedia.org/wiki/Heavy_Water_Board (raw/feedstock/nuclear/Heavy_Water_Board.txt)"
+   ]
+  },
+  {
+   "id": "hwp-talcher",
+   "name": "Heavy Water Plant Talcher",
+   "kind": "heavy_water_plant",
+   "operator": "Heavy Water Board",
+   "country": "India",
+   "status": "heavy-water production suspended 1994; now solvent (D2EHPA, TBP) and B-10 enrichment facilities",
+   "lat": 20.95,
+   "lon": 85.23,
+   "loc_precision": "town_centroid",
+   "loc_note": "Wikipedia Talcher town coordinates (plant not mapped).",
+   "capacity": null,
+   "notes": "",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Heavy_Water_Board (raw/feedstock/nuclear/Heavy_Water_Board.txt)",
+    "https://en.wikipedia.org/wiki/Talcher (coordinates via API; raw/feedstock/nuclear/wiki_search_fuelcycle.json)"
+   ]
+  },
+  {
+   "id": "karp-kalpakkam",
+   "name": "Kalpakkam Atomic Reprocessing Plant (KARP), BARC Facilities Kalpakkam",
+   "kind": "reprocessing",
+   "operator": "BARC",
+   "country": "India",
+   "status": "operating (commissioned 1998; shut 2003-2009 after an accident, upgraded)",
+   "lat": 12.5238,
+   "lon": 80.1569,
+   "loc_precision": "campus_approx",
+   "loc_note": "IGCAR/Kalpakkam campus coordinates (Wikipedia IGCAR); KARP footprint not mapped.",
+   "capacity": "~100 t/yr heavy metal (WNA)",
+   "notes": "Reprocesses MAPS spent fuel (BARC 2003). Supplies plutonium for FBR fuel.",
+   "sources": [
+    "https://fissilematerials.org/library/barc03.pdf (P.K. Dey, BARC, \"Spent fuel reprocessing: an overview\", INSAC-2003; raw/feedstock/nuclear/barc03_spent_fuel_reprocessing_overview.pdf)",
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)",
+    "https://en.wikipedia.org/wiki/Indira_Gandhi_Centre_for_Atomic_Research (raw/feedstock/nuclear/wiki_Indira_Gandhi_Centre_for_Atomic_Research.txt)"
+   ]
+  },
+  {
+   "id": "prefre-tarapur",
+   "name": "Power Reactor Fuel Reprocessing plants (PREFRE-1 1979, PREFRE-2 2010), BARC Tarapur",
+   "kind": "reprocessing",
+   "operator": "BARC",
+   "country": "India",
+   "status": null,
+   "lat": 19.83259,
+   "lon": 72.66915,
+   "loc_precision": "campus_approx",
+   "loc_note": "Placed at OSM way 331427518 Tarapur Atomic Power Station (BARC Tarapur campus adjoins; facility footprint not mapped).",
+   "capacity": "~100 t/yr (WNA)",
+   "notes": "Reprocesses unsafeguarded PHWR fuel (KAPS per BARC 2003).",
+   "sources": [
+    "https://fissilematerials.org/library/barc03.pdf (P.K. Dey, BARC, \"Spent fuel reprocessing: an overview\", INSAC-2003; raw/feedstock/nuclear/barc03_spent_fuel_reprocessing_overview.pdf)",
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)",
+    "https://www.openstreetmap.org (Overpass extract 2026-09-24, raw/feedstock/nuclear/osm_nuclear_sites2.json; ODbL)"
+   ]
+  },
+  {
+   "id": "barc-tarapur-mox",
+   "name": "BARC Advanced Fuel Fabrication Facility / Fuel Fabrication Facility (MOX), Tarapur",
+   "kind": "fuel_fabrication",
+   "operator": "BARC (Nuclear Recycle Board)",
+   "country": "India",
+   "status": null,
+   "lat": 19.83259,
+   "lon": 72.66915,
+   "loc_precision": "campus_approx",
+   "loc_note": "Same campus placeholder as PREFRE (OSM TAPS site).",
+   "capacity": null,
+   "notes": "Fabricates PFBR MOX fuel; BARC director (Jan-2023): 100,000 fuel elements made for PFBR.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Prototype_Fast_Breeder_Reactor (raw/feedstock/nuclear/Prototype_Fast_Breeder_Reactor.txt)",
+    "https://en.wikipedia.org/wiki/Tarapur_Atomic_Power_Station (raw/feedstock/nuclear/wiki_Tarapur_Atomic_Power_Station.txt)",
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)"
+   ]
+  },
+  {
+   "id": "igcar-dfrp",
+   "name": "IGCAR CORAL / Demonstration Fast Reactor Fuel Reprocessing Plant, Kalpakkam",
+   "kind": "reprocessing",
+   "operator": "IGCAR",
+   "country": "India",
+   "status": "operating (DFRP dedicated 2024)",
+   "lat": 12.5238,
+   "lon": 80.1569,
+   "loc_precision": "campus_approx",
+   "loc_note": "IGCAR campus (Wikipedia).",
+   "capacity": null,
+   "notes": "Reprocesses FBTR carbide fuel.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indira_Gandhi_Centre_for_Atomic_Research (raw/feedstock/nuclear/wiki_Indira_Gandhi_Centre_for_Atomic_Research.txt)"
+   ]
+  },
+  {
+   "id": "frfcf-kalpakkam",
+   "name": "Fast Reactor Fuel Cycle Facility (FRFCF), Kalpakkam",
+   "kind": "reprocessing",
+   "operator": "DAE / IGCAR",
+   "country": "India",
+   "status": "under construction/planned",
+   "lat": null,
+   "lon": null,
+   "loc_precision": null,
+   "loc_note": "Kalpakkam; site coordinates not published/mapped.",
+   "capacity": null,
+   "notes": "Will reprocess PFBR spent fuel and re-fabricate fuel to close the PFBR cycle (WNA).",
+   "sources": [
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)"
+   ]
+  }
+ ],
+ "chains": [
+  {
+   "plant_id": "kudankulam",
+   "fuel_type": "enriched UO2 (TVS-2M assemblies for VVER-1000)",
+   "supplier": "TVEL (Rosatom), Russia",
+   "safeguards": "IAEA-safeguarded (INFCIRC/754)",
+   "steps": [
+    {
+     "from": "tvel-enrichment",
+     "to": "nccp-novosibirsk",
+     "mode": "unknown",
+     "material": "enriched uranium (UF6 -> UO2 powder)",
+     "notes": "Inside Russia; route not published."
+    },
+    {
+     "from": "nccp-novosibirsk",
+     "to": "india-arrival-airport-unknown",
+     "mode": "air",
+     "material": "finished TVS-2M fuel assemblies",
+     "notes": "Chartered cargo aircraft; unit-3 initial core + reserve needed 7 flights (Dec-2025 onward)."
+    },
+    {
+     "from": "india-arrival-airport-unknown",
+     "to": "kudankulam",
+     "mode": "road",
+     "material": "fuel assemblies",
+     "notes": "Final leg by road assumed (no rail/sea link to the fuel store is reported); airport not named."
+    },
+    {
+     "from": "kudankulam",
+     "to": "kknpp-spent-fuel-storage",
+     "mode": "on-site",
+     "material": "spent fuel",
+     "notes": "Retained in India; to be reprocessed in a future safeguarded plant."
+    }
+   ],
+   "notes": "Units 1-2: TVS-2M since 2022 (18-month cycles). Unit 3 is the first VVER-1000 to start on an 18-month cycle; 2024 contract covers units 3-4 for life. No heavy water needed.",
+   "sources": [
+    "https://www.world-nuclear-news.org/articles/first-nuclear-fuel-delivered-for-kudankulam-unit-3 (Dec 2025; via WebFetch)",
+    "https://www.neimagazine.com/news/first-fuel-delivered-to-kudankulam-3/ (via web search)",
+    "https://www.business-standard.com/industry/news/rosatom-supplies-nuclear-fuel-kudankulam-unit-3-initial-loading-125123001040_1.html (via web search)",
+    "https://www.world-nuclear-news.org/Articles/TVEL-starts-PWR-fuel-fabrication-at-Novosibirsk (via web search)",
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)",
+    "https://en.wikipedia.org/wiki/Kudankulam_Nuclear_Power_Plant (raw/feedstock/nuclear/Kudankulam_Nuclear_Power_Plant.txt; CC BY-SA)"
+   ]
+  },
+  {
+   "plant_id": "maps",
+   "fuel_type": "natural UO2 (220 MWe PHWR fuel bundles, 15.2 kg UO2 each)",
+   "supplier": "UCIL (ore/yellowcake) -> NFC Hyderabad (bundles)",
+   "safeguards": "unsafeguarded -> domestic uranium only",
+   "steps": [
+    {
+     "from": "ucil-jaduguda-mine",
+     "to": "ucil-jaduguda-mill",
+     "mode": "on-site",
+     "material": "uranium ore",
+     "notes": ""
+    },
+    {
+     "from": "ucil-bhatin-mine",
+     "to": "ucil-jaduguda-mill",
+     "mode": "road",
+     "material": "uranium ore",
+     "notes": "Bhatin and Narwapahar ore is processed at Jaduguda (Wikipedia UCIL); mode not published."
+    },
+    {
+     "from": "ucil-narwapahar-mine",
+     "to": "ucil-jaduguda-mill",
+     "mode": "road",
+     "material": "uranium ore",
+     "notes": "mode not published"
+    },
+    {
+     "from": "ucil-turamdih-mine",
+     "to": "ucil-turamdih-mill",
+     "mode": "on-site",
+     "material": "uranium ore",
+     "notes": ""
+    },
+    {
+     "from": "ucil-banduhurang-mine",
+     "to": "ucil-turamdih-mill",
+     "mode": "road",
+     "material": "uranium ore",
+     "notes": "mode not published"
+    },
+    {
+     "from": "ucil-mohuldih-mine",
+     "to": "ucil-turamdih-mill",
+     "mode": "road",
+     "material": "uranium ore",
+     "notes": "7 km (WNA); mode not published"
+    },
+    {
+     "from": "ucil-bagjata-mine",
+     "to": "ucil-turamdih-mill",
+     "mode": "road",
+     "material": "uranium ore",
+     "notes": "mill assignment not stated explicitly; Turamdih mill \"serving these mines\" (WNA)"
+    },
+    {
+     "from": "ucil-tummalapalle-mine",
+     "to": "ucil-tummalapalle-mill",
+     "mode": "on-site",
+     "material": "uranium ore",
+     "notes": ""
+    },
+    {
+     "from": "ucil-jaduguda-mill",
+     "to": "nfc-hyderabad",
+     "mode": "unknown",
+     "material": "magnesium diuranate (yellowcake)",
+     "notes": "Transport mode/route not published (security)."
+    },
+    {
+     "from": "ucil-turamdih-mill",
+     "to": "nfc-hyderabad",
+     "mode": "unknown",
+     "material": "magnesium diuranate",
+     "notes": "Transport mode/route not published."
+    },
+    {
+     "from": "ucil-tummalapalle-mill",
+     "to": "nfc-hyderabad",
+     "mode": "unknown",
+     "material": "sodium diuranate",
+     "notes": "Transport mode/route not published."
+    },
+    {
+     "from": "nfc-hyderabad",
+     "to": "maps",
+     "mode": "unknown",
+     "material": "PHWR fuel bundles",
+     "notes": "Road transport likely but not documented."
+    },
+    {
+     "from": "maps",
+     "to": "karp-kalpakkam",
+     "mode": "on-site",
+     "material": "spent fuel",
+     "notes": "Same Kalpakkam complex; MAPS spent fuel reprocessed at KARP (BARC 2003)."
+    }
+   ],
+   "heavy_water": "Moderator/coolant D2O from the Heavy Water Board pool (plants: Tuticorin, Manuguru, Kota, Hazira, Thal, Baroda, Talcher). Which plant supplies MAPS make-up is not published; HWP Tuticorin is the only one in TN.",
+   "share": null,
+   "notes": "Mill-to-reactor shares are not published (UCIL output is not disclosed). Wikipedia's MAPS article says spent fuel went to Tarapur reprocessing \"since 1985\"; BARC (2003) assigns MAPS fuel to KARP (commissioned 1998) - both may be true for different periods.",
+   "sources": [
+    "https://fissilematerials.org/blog/2014/07/india_ratifies_an_additio.html (IPFM: Madras 1&2 among unsafeguarded PHWRs; raw/feedstock/nuclear/ipfm_2014_safeguards.html)",
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)",
+    "https://en.wikipedia.org/wiki/Uranium_Corporation_of_India (raw/feedstock/nuclear/Uranium_Corporation_of_India.txt)",
+    "https://en.wikipedia.org/wiki/Nuclear_Fuel_Complex (raw/feedstock/nuclear/Nuclear_Fuel_Complex.txt)",
+    "https://en.wikipedia.org/wiki/Heavy_Water_Board (raw/feedstock/nuclear/Heavy_Water_Board.txt)",
+    "https://fissilematerials.org/library/barc03.pdf (P.K. Dey, BARC, \"Spent fuel reprocessing: an overview\", INSAC-2003; raw/feedstock/nuclear/barc03_spent_fuel_reprocessing_overview.pdf)",
+    "https://en.wikipedia.org/wiki/Madras_Atomic_Power_Station (raw/feedstock/nuclear/Madras_Atomic_Power_Station.txt)"
+   ]
+  },
+  {
+   "plant_id": "pfbr",
+   "fuel_type": "MOX (PuO2-UO2) driver fuel; depleted/natural U (and later Th) blanket",
+   "supplier": "BARC (Pu recovery + MOX fabrication at Tarapur)",
+   "safeguards": "unsafeguarded",
+   "steps": [
+    {
+     "from": "maps",
+     "to": "karp-kalpakkam",
+     "mode": "on-site",
+     "material": "PHWR spent fuel",
+     "notes": ""
+    },
+    {
+     "from": "karp-kalpakkam",
+     "to": "barc-tarapur-mox",
+     "mode": "unknown",
+     "material": "reactor-grade plutonium oxide",
+     "notes": "Plutonium from existing PHWRs (WNA); inter-site transport not published."
+    },
+    {
+     "from": "prefre-tarapur",
+     "to": "barc-tarapur-mox",
+     "mode": "on-site",
+     "material": "reactor-grade plutonium oxide",
+     "notes": "Tarapur campus."
+    },
+    {
+     "from": "nfc-hyderabad",
+     "to": "barc-tarapur-mox",
+     "mode": "unknown",
+     "material": "depleted/natural UO2",
+     "notes": "Assumed U source for MOX & blanket (NFC makes UO2 pellets incl. depleted U); not explicitly documented for PFBR."
+    },
+    {
+     "from": "barc-tarapur-mox",
+     "to": "pfbr",
+     "mode": "unknown",
+     "material": "MOX fuel subassemblies",
+     "notes": "Tarapur -> Kalpakkam (~1,300 km); mode not published."
+    },
+    {
+     "from": "pfbr",
+     "to": "frfcf-kalpakkam",
+     "mode": "on-site",
+     "material": "PFBR spent fuel",
+     "notes": "Future: FRFCF to close the cycle."
+    }
+   ],
+   "notes": "Core loading began 4-Mar-2024 (initiated), final loading from 18-Oct-2025, first criticality 6-Apr-2026 (Wikipedia).",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Prototype_Fast_Breeder_Reactor (raw/feedstock/nuclear/Prototype_Fast_Breeder_Reactor.txt)",
+    "https://world-nuclear.org/information-library/country-profiles/countries-g-n/india (World Nuclear Association, Nuclear Power in India; raw/feedstock/nuclear/wna_india.html)",
+    "https://fissilematerials.org/library/barc03.pdf (P.K. Dey, BARC, \"Spent fuel reprocessing: an overview\", INSAC-2003; raw/feedstock/nuclear/barc03_spent_fuel_reprocessing_overview.pdf)",
+    "https://fissilematerials.org/blog/2014/07/india_ratifies_an_additio.html (IPFM: Madras 1&2 among unsafeguarded PHWRs; raw/feedstock/nuclear/ipfm_2014_safeguards.html)"
+   ]
+  }
+ ]
+}

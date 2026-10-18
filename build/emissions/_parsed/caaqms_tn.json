@@ -1,0 +1,1973 @@
+{
+ "meta": {
+  "built": "2026-09-24",
+  "description": "Continuous (CAAQMS) and manual (NAMP) ambient air-quality monitoring stations in Tamil Nadu, with distances to TN thermal/gas/nuclear plants (<=40 km).",
+  "notes": [
+   "CAAQMS list = union of (a) stations reporting on CPCB's live feed on 2026-09-24 (11 TN stations) and (b) CPCB CCR station metadata as mirrored in the HuggingFace dataset Zeel/C1 (28 TN stations). Stations only in (b) were not reporting at fetch time.",
+   "CPCB's authenticated station-master API (airquality.cpcb.gov.in/projectworkflow/...get-site-station-master-data-list) returned 401; OpenAQ v3 needs an API key - not used.",
+   "There is NO CAAQMS in Neyveli, Mettur, Kalpakkam or Kudankulam: nearest continuous monitors are Kudikadu (SIPCOT Cuddalore) ~32-40 km from the Neyveli stations, Sona College Salem ~35 km from Mettur, Crescent University Chengalpattu ~37 km from MAPS/PFBR, Meelavittan Thoothukudi ~84 km from Kudankulam; see plant_nearest_caaqms. NLC/NPCIL run their own EC-compliance AAQ stations (not public as coordinates).",
+   "NAMP sites have no published coordinates; where given, lat/lon are locality centroids (OSM/Nominatim) and labelled as such.",
+   "Distances are great-circle km between station coordinates and OSM plant centroids."
+  ],
+  "plant_coords_used": {
+   "nctps-1": {
+    "lat": 13.24895,
+    "lon": 80.32776,
+    "osm": "way/102546589",
+    "osm_name": "North Chennai Thermal Station",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'North Chennai Thermal Station' (1830 MW, covers Stage I+II); centroid",
+    "source": "https://www.openstreetmap.org/way/102546589"
+   },
+   "nctps-2": {
+    "lat": 13.24895,
+    "lon": 80.32776,
+    "osm": "way/102546589",
+    "osm_name": "North Chennai Thermal Station",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "same NCTPS complex polygon; centroid",
+    "source": "https://www.openstreetmap.org/way/102546589"
+   },
+   "nctps-3": {
+    "lat": 13.24895,
+    "lon": 80.32776,
+    "osm": "way/102546589",
+    "osm_name": "North Chennai Thermal Station",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "Stage III (800 MW) is adjacent to the NCTPS complex; complex centroid used",
+    "source": "https://www.openstreetmap.org/way/102546589"
+   },
+   "ennore-tps": {
+    "lat": 13.1995,
+    "lon": 80.30948,
+    "osm": "way/30738573",
+    "osm_name": "Ennore Thermal Power Station",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon centroid (old ETPS site, decommissioned)",
+    "source": "https://www.openstreetmap.org/way/30738573"
+   },
+   "ennore-sez": {
+    "lat": 13.28238,
+    "lon": 80.31026,
+    "osm": "way/25850550",
+    "osm_name": "Ennore SEZ Super Critical Thermal Power Project (Vayalur)",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'Ennore SEZ Super Critical Thermal Power Project (Vayalur)' centroid",
+    "source": "https://www.openstreetmap.org/way/25850550"
+   },
+   "mettur-1": {
+    "lat": 11.77547,
+    "lon": 77.81542,
+    "osm": "way/429967366",
+    "osm_name": "Mettur Thermal Power Plant",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'Mettur Thermal Power Plant' (1440 MW, both stages); centroid",
+    "source": "https://www.openstreetmap.org/way/429967366"
+   },
+   "mettur-2": {
+    "lat": 11.77547,
+    "lon": 77.81542,
+    "osm": "way/429967366",
+    "osm_name": "Mettur Thermal Power Plant",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "same Mettur complex polygon; centroid",
+    "source": "https://www.openstreetmap.org/way/429967366"
+   },
+   "tuticorin-tps": {
+    "lat": 8.76277,
+    "lon": 78.1759,
+    "osm": "way/662798207",
+    "osm_name": "Tuticorin Thermal Power Station",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon centroid",
+    "source": "https://www.openstreetmap.org/way/662798207"
+   },
+   "ntpl-tuticorin": {
+    "lat": 8.76163,
+    "lon": 78.16886,
+    "osm": "way/662798206",
+    "osm_name": "NTPL Thermal Power Station",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon centroid",
+    "source": "https://www.openstreetmap.org/way/662798206"
+   },
+   "vallur-ntecl": {
+    "lat": 13.23691,
+    "lon": 80.30672,
+    "osm": "way/133591372",
+    "osm_name": "Vallur Thermal Power Station",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon centroid",
+    "source": "https://www.openstreetmap.org/way/133591372"
+   },
+   "neyveli-ts1-exp": {
+    "lat": 11.59248,
+    "lon": 79.47198,
+    "osm": "way/465874233",
+    "osm_name": "Neyveli Thermal Power Station I",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'Neyveli Thermal Power Station I' tagged 420 MW (= TS-I Expansion 2x210); centroid",
+    "source": "https://www.openstreetmap.org/way/465874233"
+   },
+   "neyveli-ts2": {
+    "lat": 11.5548,
+    "lon": 79.44323,
+    "osm": "way/136727943",
+    "osm_name": "Neyveli Thermal Power Station II",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'Neyveli Thermal Power Station II' (1970 MW = TS-II 1470 + TS-II Exp 500); centroid",
+    "source": "https://www.openstreetmap.org/way/136727943"
+   },
+   "neyveli-ts2-exp": {
+    "lat": 11.5548,
+    "lon": 79.44323,
+    "osm": "way/136727943",
+    "osm_name": "Neyveli Thermal Power Station II",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "TS-II Expansion lies within the TS-II polygon; centroid",
+    "source": "https://www.openstreetmap.org/way/136727943"
+   },
+   "nnttp": {
+    "lat": 11.58969,
+    "lon": 79.45155,
+    "osm": "way/345057949",
+    "osm_name": "Neyveli New Thermal Power Station",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'Neyveli New Thermal Power Station' centroid",
+    "source": "https://www.openstreetmap.org/way/345057949"
+   },
+   "itpcl-cuddalore": {
+    "lat": 11.52616,
+    "lon": 79.75176,
+    "osm": "way/645959123",
+    "osm_name": "IL&FS Tamil Nadu Thermal Power Station",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'IL&FS Tamil Nadu Thermal Power Station' centroid",
+    "source": "https://www.openstreetmap.org/way/645959123"
+   },
+   "muthiara-coastal-energen": {
+    "lat": 8.91298,
+    "lon": 78.14508,
+    "osm": "way/733764035",
+    "osm_name": "Mutiara Thermal Power Plant",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'Mutiara Thermal Power Plant' centroid",
+    "source": "https://www.openstreetmap.org/way/733764035"
+   },
+   "sepc-tuticorin-st4": {
+    "lat": 8.756,
+    "lon": 78.15745,
+    "osm": "way/822892679",
+    "osm_name": "SEPC",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'SEPC' 525 MW centroid",
+    "source": "https://www.openstreetmap.org/way/822892679"
+   },
+   "indbarath-tuticorin": {
+    "lat": 8.88514,
+    "lon": 78.05445,
+    "osm": "way/385432388",
+    "osm_name": "Thoothukudi IBTPL power station",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'Thoothukudi IBTPL power station' 300 MW centroid",
+    "source": "https://www.openstreetmap.org/way/385432388"
+   },
+   "taqa-neyveli": {
+    "lat": 11.54159,
+    "lon": 79.41485,
+    "osm": "way/924966809",
+    "osm_name": "Neyveli Zero Power Plant",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'Neyveli Zero Power Plant' 250 MW centroid",
+    "source": "https://www.openstreetmap.org/way/924966809"
+   },
+   "opg-gummidipoondi": {
+    "lat": 13.43667,
+    "lon": 80.09644,
+    "osm": "way/840721288",
+    "osm_name": "Chennai OPG Power Plant",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'Chennai OPG Power Plant' centroid",
+    "source": "https://www.openstreetmap.org/way/840721288"
+   },
+   "tulsyan-nec": {
+    "lat": 13.41656,
+    "lon": 80.05754,
+    "osm": "way/636898416",
+    "osm_name": "Tulsyan Steel Gummidipoondi Captive Power Plant",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'Tulsyan Steel Gummidipoondi Captive Power Plant' centroid",
+    "source": "https://www.openstreetmap.org/way/636898416"
+   },
+   "ppn-power": {
+    "lat": 11.07452,
+    "lon": 79.8324,
+    "osm": "way/156177503",
+    "osm_name": "Pillaiperumalnallur Gas Power Plant",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'Pillaiperumalnallur Gas Power Plant' centroid",
+    "source": "https://www.openstreetmap.org/way/156177503"
+   },
+   "basin-bridge-gt": {
+    "lat": 13.09817,
+    "lon": 80.26973,
+    "osm": "way/28342737",
+    "osm_name": "Basin Bridge Gas Turbine Power Station",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'Basin Bridge Gas Turbine Power Station' centroid",
+    "source": "https://www.openstreetmap.org/way/28342737"
+   },
+   "kuttalam-gt": {
+    "lat": 11.03381,
+    "lon": 79.58612,
+    "osm": "way/823185402",
+    "osm_name": "Kuttulam Power Plant",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'Kuttulam Power Plant' (TANGEDCO, gas) centroid",
+    "source": "https://www.openstreetmap.org/way/823185402"
+   },
+   "thirumakottai-gt": {
+    "lat": 10.541,
+    "lon": 79.44974,
+    "osm": "way/341599763",
+    "osm_name": "Thirumakotai Power Station",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'Thirumakotai Power Station' centroid",
+    "source": "https://www.openstreetmap.org/way/341599763"
+   },
+   "valuthur-gt": {
+    "lat": 9.34927,
+    "lon": 78.92357,
+    "osm": "way/310430102",
+    "osm_name": "Valathur",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'Valathur' (TANGEDCO gas 187 MW) centroid",
+    "source": "https://www.openstreetmap.org/way/310430102"
+   },
+   "kudankulam": {
+    "lat": 8.17254,
+    "lon": 77.70553,
+    "osm": "way/384663588",
+    "osm_name": "Kudankulam Nuclear Power Plant",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'Kudankulam Nuclear Power Plant' centroid",
+    "source": "https://www.openstreetmap.org/way/384663588"
+   },
+   "maps": {
+    "lat": 12.55705,
+    "lon": 80.17239,
+    "osm": "way/98366375",
+    "osm_name": "Madras Atomic Power Station",
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM polygon 'Madras Atomic Power Station' centroid",
+    "source": "https://www.openstreetmap.org/way/98366375"
+   },
+   "pfbr": {
+    "lat": 12.55303,
+    "lon": 80.17369,
+    "osm": "node/6861924154",
+    "osm_name": "Prototype Fast Breeder Reactor",
+    "loc_precision": "osm_node",
+    "note": "OSM node power=generator 'Prototype Fast Breeder Reactor'",
+    "source": "https://www.openstreetmap.org/node/6861924154"
+   },
+   "udangudi": {
+    "lat": 8.43458,
+    "lon": 78.06449,
+    "osm": "relation/15986380",
+    "osm_name": null,
+    "loc_precision": "osm_polygon_centroid",
+    "note": "OSM relation power=plant, operator TNPGCL, 1320 MW, near Udangudi; centroid",
+    "source": "https://www.openstreetmap.org/relation/15986380"
+   }
+  },
+  "plant_nearest_caaqms": {
+   "nctps-1": [
+    {
+     "station_id": "caaqms-gandhi-nagar-ennore-chennai",
+     "distance_km": 3.5
+    },
+    {
+     "station_id": "caaqms-manali-chennai",
+     "distance_km": 11.7
+    }
+   ],
+   "nctps-2": [
+    {
+     "station_id": "caaqms-gandhi-nagar-ennore-chennai",
+     "distance_km": 3.5
+    },
+    {
+     "station_id": "caaqms-manali-chennai",
+     "distance_km": 11.7
+    }
+   ],
+   "nctps-3": [
+    {
+     "station_id": "caaqms-gandhi-nagar-ennore-chennai",
+     "distance_km": 3.5
+    },
+    {
+     "station_id": "caaqms-manali-chennai",
+     "distance_km": 11.7
+    }
+   ],
+   "ennore-tps": [
+    {
+     "station_id": "caaqms-gandhi-nagar-ennore-chennai",
+     "distance_km": 2.4
+    },
+    {
+     "station_id": "caaqms-manali-chennai",
+     "distance_km": 6.4
+    }
+   ],
+   "ennore-sez": [
+    {
+     "station_id": "caaqms-gandhi-nagar-ennore-chennai",
+     "distance_km": 7.2
+    },
+    {
+     "station_id": "caaqms-manali-chennai",
+     "distance_km": 14.1
+    }
+   ],
+   "mettur-1": [
+    {
+     "station_id": "caaqms-sona-college-of-technology-salem",
+     "distance_km": 35.4
+    },
+    {
+     "station_id": "caaqms-kumaran-college-tirupur",
+     "distance_km": 92.6
+    }
+   ],
+   "mettur-2": [
+    {
+     "station_id": "caaqms-sona-college-of-technology-salem",
+     "distance_km": 35.4
+    },
+    {
+     "station_id": "caaqms-kumaran-college-tirupur",
+     "distance_km": 92.6
+    }
+   ],
+   "tuticorin-tps": [
+    {
+     "station_id": "caaqms-meelavittan-thoothukudi",
+     "distance_km": 10.3
+    },
+    {
+     "station_id": "caaqms-collectorate-office-virudhunagar",
+     "distance_km": 92.0
+    }
+   ],
+   "ntpl-tuticorin": [
+    {
+     "station_id": "caaqms-meelavittan-thoothukudi",
+     "distance_km": 9.8
+    },
+    {
+     "station_id": "caaqms-collectorate-office-virudhunagar",
+     "distance_km": 91.9
+    }
+   ],
+   "vallur-ntecl": [
+    {
+     "station_id": "caaqms-gandhi-nagar-ennore-chennai",
+     "distance_km": 2.5
+    },
+    {
+     "station_id": "caaqms-manali-chennai",
+     "distance_km": 9.3
+    }
+   ],
+   "neyveli-ts1-exp": [
+    {
+     "station_id": "caaqms-kudikadu-cuddalore",
+     "distance_km": 32.2
+    },
+    {
+     "station_id": "caaqms-semmandalam-cuddalore",
+     "distance_km": 35.8
+    }
+   ],
+   "neyveli-ts2": [
+    {
+     "station_id": "caaqms-kudikadu-cuddalore",
+     "distance_km": 36.6
+    },
+    {
+     "station_id": "caaqms-semmandalam-cuddalore",
+     "distance_km": 40.7
+    }
+   ],
+   "neyveli-ts2-exp": [
+    {
+     "station_id": "caaqms-kudikadu-cuddalore",
+     "distance_km": 36.6
+    },
+    {
+     "station_id": "caaqms-semmandalam-cuddalore",
+     "distance_km": 40.7
+    }
+   ],
+   "nnttp": [
+    {
+     "station_id": "caaqms-kudikadu-cuddalore",
+     "distance_km": 34.5
+    },
+    {
+     "station_id": "caaqms-semmandalam-cuddalore",
+     "distance_km": 37.8
+    }
+   ],
+   "itpcl-cuddalore": [
+    {
+     "station_id": "caaqms-kudikadu-cuddalore",
+     "distance_km": 17.4
+    },
+    {
+     "station_id": "caaqms-semmandalam-cuddalore",
+     "distance_km": 26.4
+    }
+   ],
+   "muthiara-coastal-energen": [
+    {
+     "station_id": "caaqms-meelavittan-thoothukudi",
+     "distance_km": 11.9
+    },
+    {
+     "station_id": "caaqms-collectorate-office-virudhunagar",
+     "distance_km": 75.0
+    }
+   ],
+   "sepc-tuticorin-st4": [
+    {
+     "station_id": "caaqms-meelavittan-thoothukudi",
+     "distance_km": 9.3
+    },
+    {
+     "station_id": "caaqms-collectorate-office-virudhunagar",
+     "distance_km": 92.2
+    }
+   ],
+   "indbarath-tuticorin": [
+    {
+     "station_id": "caaqms-meelavittan-thoothukudi",
+     "distance_km": 9.1
+    },
+    {
+     "station_id": "caaqms-collectorate-office-virudhunagar",
+     "distance_km": 75.9
+    }
+   ],
+   "taqa-neyveli": [
+    {
+     "station_id": "caaqms-kudikadu-cuddalore",
+     "distance_km": 40.1
+    },
+    {
+     "station_id": "caaqms-semmandalam-cuddalore",
+     "distance_km": 44.1
+    }
+   ],
+   "opg-gummidipoondi": [
+    {
+     "station_id": "caaqms-anthoni-pillai-nagar-gummidipoondi",
+     "distance_km": 2.9
+    },
+    {
+     "station_id": "caaqms-gandhi-nagar-ennore-chennai",
+     "distance_km": 34.3
+    }
+   ],
+   "tulsyan-nec": [
+    {
+     "station_id": "caaqms-anthoni-pillai-nagar-gummidipoondi",
+     "distance_km": 5.5
+    },
+    {
+     "station_id": "caaqms-manali-village-chennai",
+     "distance_km": 35.3
+    }
+   ],
+   "ppn-power": [
+    {
+     "station_id": "caaqms-kudikadu-cuddalore",
+     "distance_km": 68.2
+    },
+    {
+     "station_id": "caaqms-semmandalam-cuddalore",
+     "distance_km": 77.2
+    }
+   ],
+   "basin-bridge-gt": [
+    {
+     "station_id": "caaqms-royapuram-chennai",
+     "distance_km": 2.4
+    },
+    {
+     "station_id": "caaqms-kodungaiyur-chennai",
+     "distance_km": 3.3
+    }
+   ],
+   "kuttalam-gt": [
+    {
+     "station_id": "caaqms-keelapalur-ariyalur",
+     "distance_km": 56.4
+    },
+    {
+     "station_id": "caaqms-kudikadu-cuddalore",
+     "distance_km": 74.4
+    }
+   ],
+   "thirumakottai-gt": [
+    {
+     "station_id": "caaqms-keelapalur-ariyalur",
+     "distance_km": 71.8
+    },
+    {
+     "station_id": "caaqms-bharathidasan-university-palkalaiperur",
+     "distance_km": 78.9
+    }
+   ],
+   "valuthur-gt": [
+    {
+     "station_id": "caaqms-chalai-bazaar-ramanathapuram",
+     "distance_km": 10.2
+    },
+    {
+     "station_id": "caaqms-meelavittan-thoothukudi",
+     "distance_km": 108.2
+    }
+   ],
+   "kudankulam": [
+    {
+     "station_id": "caaqms-meelavittan-thoothukudi",
+     "distance_km": 83.7
+    },
+    {
+     "station_id": "caaqms-collectorate-office-virudhunagar",
+     "distance_km": 156.5
+    }
+   ],
+   "maps": [
+    {
+     "station_id": "caaqms-crescent-university-chengalpattu",
+     "distance_km": 36.9
+    },
+    {
+     "station_id": "caaqms-perungudi-chennai",
+     "distance_km": 44.6
+    }
+   ],
+   "pfbr": [
+    {
+     "station_id": "caaqms-crescent-university-chengalpattu",
+     "distance_km": 37.4
+    },
+    {
+     "station_id": "caaqms-perungudi-chennai",
+     "distance_km": 45.0
+    }
+   ],
+   "udangudi": [
+    {
+     "station_id": "caaqms-meelavittan-thoothukudi",
+     "distance_km": 42.6
+    },
+    {
+     "station_id": "caaqms-collectorate-office-virudhunagar",
+     "distance_km": 125.7
+    }
+   ]
+  },
+  "licence": "CPCB/TNPCB data: Government of India open data (GODL); OSM data (c) OpenStreetMap contributors, ODbL."
+ },
+ "stations": [
+  {
+   "id": "caaqms-alandur-bus-depot-chennai",
+   "name": "Alandur Bus Depot, Chennai - CPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "CPCB",
+   "city": "Chennai",
+   "address": "MKN Rd, St Thomas Mount, Chennai, Tamil Nadu 600016",
+   "cpcb_site_id": null,
+   "lat": 12.9099161,
+   "lon": 80.1076538,
+   "loc_precision": "SUSPECT: CPCB-metadata coordinates (12.9099, 80.1077) fall ~11 km SW of the stated address (MKN Road, St Thomas Mount/Alandur, Chennai 600016); treat as approximate",
+   "parameters": null,
+   "reporting_on_2026-09-24": false,
+   "sources": [
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "loc_suspect": true,
+   "near_plants": [
+    {
+     "plant_id": "basin-bridge-gt",
+     "distance_km": 27.3
+    },
+    {
+     "plant_id": "ennore-tps",
+     "distance_km": 38.9
+    },
+    {
+     "plant_id": "maps",
+     "distance_km": 39.9
+    }
+   ]
+  },
+  {
+   "id": "caaqms-anthoni-pillai-nagar-gummidipoondi",
+   "name": "Anthoni Pillai Nagar, Gummidipoondi - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Gummidipoondi",
+   "address": "EPIP Building, SIPCOT Industrial Estate Road, Near to SIPCOT Fire and Police Station, Gummidipoondi",
+   "cpcb_site_id": "site_5362",
+   "lat": 13.4127,
+   "lon": 80.1081,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": [
+    "PM2.5",
+    "PM10",
+    "NO2",
+    "NH3",
+    "SO2",
+    "CO",
+    "OZONE"
+   ],
+   "reporting_on_2026-09-24": true,
+   "sources": [
+    "https://airquality.cpcb.gov.in/caaqms/iit_rss_feed_with_coordinates (saved raw/emissions/caaqms/cpcb_rss_feed_with_coordinates_2026-09-24.xml)",
+    "https://api.data.gov.in/resource/3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69 (saved raw/emissions/caaqms/datagov_aqi_tn_2026-09-24.json)",
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "opg-gummidipoondi",
+     "distance_km": 2.9
+    },
+    {
+     "plant_id": "tulsyan-nec",
+     "distance_km": 5.5
+    },
+    {
+     "plant_id": "ennore-sez",
+     "distance_km": 26.2
+    },
+    {
+     "plant_id": "vallur-ntecl",
+     "distance_km": 29.1
+    },
+    {
+     "plant_id": "nctps-1",
+     "distance_km": 29.9
+    },
+    {
+     "plant_id": "nctps-2",
+     "distance_km": 29.9
+    },
+    {
+     "plant_id": "nctps-3",
+     "distance_km": 29.9
+    },
+    {
+     "plant_id": "ennore-tps",
+     "distance_km": 32.2
+    },
+    {
+     "plant_id": "basin-bridge-gt",
+     "distance_km": 39.1
+    }
+   ]
+  },
+  {
+   "id": "caaqms-arumbakkam-chennai",
+   "name": "Arumbakkam, Chennai - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Chennai",
+   "address": "4 and 5, Murugesan Street, Balavinayagar Nagar, Arumbakkam, chennai - 600106 (opposite side of vijay park hotel - 100 Feet Road)",
+   "cpcb_site_id": "site_5361",
+   "lat": 13.0664,
+   "lon": 80.2112,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": [
+    "PM2.5",
+    "PM10",
+    "NO2",
+    "NH3",
+    "SO2",
+    "CO",
+    "OZONE"
+   ],
+   "reporting_on_2026-09-24": true,
+   "sources": [
+    "https://airquality.cpcb.gov.in/caaqms/iit_rss_feed_with_coordinates (saved raw/emissions/caaqms/cpcb_rss_feed_with_coordinates_2026-09-24.xml)",
+    "https://api.data.gov.in/resource/3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69 (saved raw/emissions/caaqms/datagov_aqi_tn_2026-09-24.json)",
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "basin-bridge-gt",
+     "distance_km": 7.3
+    },
+    {
+     "plant_id": "ennore-tps",
+     "distance_km": 18.2
+    },
+    {
+     "plant_id": "vallur-ntecl",
+     "distance_km": 21.6
+    },
+    {
+     "plant_id": "nctps-1",
+     "distance_km": 23.9
+    },
+    {
+     "plant_id": "nctps-2",
+     "distance_km": 23.9
+    },
+    {
+     "plant_id": "nctps-3",
+     "distance_km": 23.9
+    },
+    {
+     "plant_id": "ennore-sez",
+     "distance_km": 26.3
+    }
+   ]
+  },
+  {
+   "id": "caaqms-bharathidasan-university-palkalaiperur",
+   "name": "Bharathidasan University, Palkalaiperur - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Palkalaiperur",
+   "address": "Department of Environmental Biotechnology, Bharathidasan University, Palkalaiperur, Tiruchirappalli.",
+   "cpcb_site_id": null,
+   "lat": 10.681158,
+   "lon": 78.741746,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": null,
+   "reporting_on_2026-09-24": false,
+   "sources": [
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "caaqms-bombay-castel-ooty",
+   "name": "Bombay Castel, Ooty - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Ooty",
+   "address": "Aavin Junction Milk factory, Bombay Castel, Ooty.",
+   "cpcb_site_id": null,
+   "lat": 11.4068288,
+   "lon": 76.7138973,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": null,
+   "reporting_on_2026-09-24": false,
+   "sources": [
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "caaqms-chalai-bazaar-ramanathapuram",
+   "name": "Chalai Bazaar, Ramanathapuram - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Ramanathapuram",
+   "address": "Government Hospital, Chalai Bazaar, Kochi Madurai Dhanushkodi Road, Ramanathapuram.",
+   "cpcb_site_id": "site_5625",
+   "lat": 9.36399,
+   "lon": 78.831977,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": [
+    "PM2.5",
+    "PM10",
+    "NO2",
+    "NH3",
+    "SO2",
+    "CO",
+    "OZONE"
+   ],
+   "reporting_on_2026-09-24": true,
+   "sources": [
+    "https://airquality.cpcb.gov.in/caaqms/iit_rss_feed_with_coordinates (saved raw/emissions/caaqms/cpcb_rss_feed_with_coordinates_2026-09-24.xml)",
+    "https://api.data.gov.in/resource/3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69 (saved raw/emissions/caaqms/datagov_aqi_tn_2026-09-24.json)",
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "valuthur-gt",
+     "distance_km": 10.2
+    }
+   ]
+  },
+  {
+   "id": "caaqms-collectorate-office-virudhunagar",
+   "name": "Collectorate Office, Virudhunagar - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Virudhunagar",
+   "address": "No-23, Master Plan Complex, Sathur Road, Collectorate, Virudhunagar.",
+   "cpcb_site_id": null,
+   "lat": 9.559382,
+   "lon": 77.948828,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": null,
+   "reporting_on_2026-09-24": false,
+   "sources": [
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "caaqms-crescent-university-chengalpattu",
+   "name": "Crescent University, Chengalpattu - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Chengalpattu",
+   "address": "B.S Abdur Rahman University, Seethakathi Estate, G.S.T Main Road, Vandalur, Chengalpattu, Tamilnadu.",
+   "cpcb_site_id": null,
+   "lat": 12.8777316,
+   "lon": 80.0834807,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": null,
+   "reporting_on_2026-09-24": false,
+   "sources": [
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "basin-bridge-gt",
+     "distance_km": 31.7
+    },
+    {
+     "plant_id": "maps",
+     "distance_km": 36.9
+    },
+    {
+     "plant_id": "pfbr",
+     "distance_km": 37.4
+    }
+   ]
+  },
+  {
+   "id": "caaqms-gandhi-nagar-ennore-chennai",
+   "name": "Gandhi Nagar_Ennore, Chennai - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Chennai",
+   "address": "1st floor, Government Primary Health Care Centre, Kathivakkam, Gandhi Nagar, Ennore Chennai.",
+   "cpcb_site_id": null,
+   "lat": 13.218341,
+   "lon": 80.32027,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": null,
+   "reporting_on_2026-09-24": false,
+   "sources": [
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "ennore-tps",
+     "distance_km": 2.4
+    },
+    {
+     "plant_id": "vallur-ntecl",
+     "distance_km": 2.5
+    },
+    {
+     "plant_id": "nctps-1",
+     "distance_km": 3.5
+    },
+    {
+     "plant_id": "nctps-2",
+     "distance_km": 3.5
+    },
+    {
+     "plant_id": "nctps-3",
+     "distance_km": 3.5
+    },
+    {
+     "plant_id": "ennore-sez",
+     "distance_km": 7.2
+    },
+    {
+     "plant_id": "basin-bridge-gt",
+     "distance_km": 14.4
+    },
+    {
+     "plant_id": "opg-gummidipoondi",
+     "distance_km": 34.3
+    },
+    {
+     "plant_id": "tulsyan-nec",
+     "distance_km": 36.0
+    }
+   ]
+  },
+  {
+   "id": "caaqms-keelapalur-ariyalur",
+   "name": "Keelapalur, Ariyalur - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Ariyalur",
+   "address": "SF No 4/326, Trichy Main Road, Opp Government Polytechnic College, Keelapalur Village.",
+   "cpcb_site_id": null,
+   "lat": 11.06825,
+   "lon": 79.07033,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": null,
+   "reporting_on_2026-09-24": false,
+   "sources": [
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "caaqms-kilambi-kanchipuram",
+   "name": "Kilambi, Kanchipuram - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Kanchipuram",
+   "address": "Thirumalai Engineering College, Kilambi, Krishanpuram Post, Kanchipuram",
+   "cpcb_site_id": null,
+   "lat": 12.864618,
+   "lon": 79.659968,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": null,
+   "reporting_on_2026-09-24": false,
+   "sources": [
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "caaqms-kodungaiyur-chennai",
+   "name": "Kodungaiyur, Chennai - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Chennai",
+   "address": "No 23, Srinivasan Street, Krishnamurthy Nagar, Kodungaiyur, Near to MKB Nagar East Ave",
+   "cpcb_site_id": "site_5365",
+   "lat": 13.1278,
+   "lon": 80.2642,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": [
+    "PM2.5",
+    "PM10",
+    "NO2",
+    "NH3",
+    "SO2",
+    "CO",
+    "OZONE"
+   ],
+   "reporting_on_2026-09-24": true,
+   "sources": [
+    "https://airquality.cpcb.gov.in/caaqms/iit_rss_feed_with_coordinates (saved raw/emissions/caaqms/cpcb_rss_feed_with_coordinates_2026-09-24.xml)",
+    "https://api.data.gov.in/resource/3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69 (saved raw/emissions/caaqms/datagov_aqi_tn_2026-09-24.json)",
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "basin-bridge-gt",
+     "distance_km": 3.3
+    },
+    {
+     "plant_id": "ennore-tps",
+     "distance_km": 9.4
+    },
+    {
+     "plant_id": "vallur-ntecl",
+     "distance_km": 13.0
+    },
+    {
+     "plant_id": "nctps-1",
+     "distance_km": 15.1
+    },
+    {
+     "plant_id": "nctps-2",
+     "distance_km": 15.1
+    },
+    {
+     "plant_id": "nctps-3",
+     "distance_km": 15.1
+    },
+    {
+     "plant_id": "ennore-sez",
+     "distance_km": 17.9
+    },
+    {
+     "plant_id": "opg-gummidipoondi",
+     "distance_km": 38.8
+    },
+    {
+     "plant_id": "tulsyan-nec",
+     "distance_km": 39.1
+    }
+   ]
+  },
+  {
+   "id": "caaqms-kudikadu-cuddalore",
+   "name": "Kudikadu, Cuddalore - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Cuddalore",
+   "address": "Plot No.: A-3, SIPCOT Industrial Complex, Kudikadu, Cuddalore.",
+   "cpcb_site_id": null,
+   "lat": 11.6829898,
+   "lon": 79.7532099,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": null,
+   "reporting_on_2026-09-24": false,
+   "sources": [
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "itpcl-cuddalore",
+     "distance_km": 17.4
+    },
+    {
+     "plant_id": "neyveli-ts1-exp",
+     "distance_km": 32.2
+    },
+    {
+     "plant_id": "nnttp",
+     "distance_km": 34.5
+    },
+    {
+     "plant_id": "neyveli-ts2",
+     "distance_km": 36.6
+    },
+    {
+     "plant_id": "neyveli-ts2-exp",
+     "distance_km": 36.6
+    }
+   ]
+  },
+  {
+   "id": "caaqms-kumaran-college-tirupur",
+   "name": "Kumaran College, Tirupur - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Tirupur",
+   "address": "Tiruppur Kumaran College, Mangalam Road, Tiruppur, Tamilnadu.",
+   "cpcb_site_id": null,
+   "lat": 11.0973603,
+   "lon": 77.3228673,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": null,
+   "reporting_on_2026-09-24": false,
+   "sources": [
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "caaqms-manali-village-chennai",
+   "name": "Manali Village, Chennai - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Chennai",
+   "address": "Government School, Periya Thoppu Manali, Chennai TamilNadu.",
+   "cpcb_site_id": "site_5092",
+   "lat": 13.1662,
+   "lon": 80.2584,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": [
+    "PM2.5",
+    "PM10",
+    "NO2",
+    "NH3",
+    "SO2",
+    "CO",
+    "OZONE"
+   ],
+   "reporting_on_2026-09-24": true,
+   "sources": [
+    "https://airquality.cpcb.gov.in/caaqms/iit_rss_feed_with_coordinates (saved raw/emissions/caaqms/cpcb_rss_feed_with_coordinates_2026-09-24.xml)",
+    "https://api.data.gov.in/resource/3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69 (saved raw/emissions/caaqms/datagov_aqi_tn_2026-09-24.json)",
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "ennore-tps",
+     "distance_km": 6.7
+    },
+    {
+     "plant_id": "basin-bridge-gt",
+     "distance_km": 7.7
+    },
+    {
+     "plant_id": "vallur-ntecl",
+     "distance_km": 9.4
+    },
+    {
+     "plant_id": "nctps-1",
+     "distance_km": 11.9
+    },
+    {
+     "plant_id": "nctps-2",
+     "distance_km": 11.9
+    },
+    {
+     "plant_id": "nctps-3",
+     "distance_km": 11.9
+    },
+    {
+     "plant_id": "ennore-sez",
+     "distance_km": 14.1
+    },
+    {
+     "plant_id": "opg-gummidipoondi",
+     "distance_km": 34.8
+    },
+    {
+     "plant_id": "tulsyan-nec",
+     "distance_km": 35.3
+    }
+   ]
+  },
+  {
+   "id": "caaqms-manali-chennai",
+   "name": "Manali, Chennai - CPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "CPCB",
+   "city": "Chennai",
+   "address": null,
+   "cpcb_site_id": "site_306",
+   "lat": 13.164544,
+   "lon": 80.26285,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": [
+    "PM2.5",
+    "PM10",
+    "NO2",
+    "NH3",
+    "SO2",
+    "CO",
+    "OZONE"
+   ],
+   "reporting_on_2026-09-24": true,
+   "sources": [
+    "https://airquality.cpcb.gov.in/caaqms/iit_rss_feed_with_coordinates (saved raw/emissions/caaqms/cpcb_rss_feed_with_coordinates_2026-09-24.xml)",
+    "https://api.data.gov.in/resource/3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69 (saved raw/emissions/caaqms/datagov_aqi_tn_2026-09-24.json)",
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "ennore-tps",
+     "distance_km": 6.4
+    },
+    {
+     "plant_id": "basin-bridge-gt",
+     "distance_km": 7.4
+    },
+    {
+     "plant_id": "vallur-ntecl",
+     "distance_km": 9.3
+    },
+    {
+     "plant_id": "nctps-1",
+     "distance_km": 11.7
+    },
+    {
+     "plant_id": "nctps-2",
+     "distance_km": 11.7
+    },
+    {
+     "plant_id": "nctps-3",
+     "distance_km": 11.7
+    },
+    {
+     "plant_id": "ennore-sez",
+     "distance_km": 14.1
+    },
+    {
+     "plant_id": "opg-gummidipoondi",
+     "distance_km": 35.2
+    },
+    {
+     "plant_id": "tulsyan-nec",
+     "distance_km": 35.8
+    }
+   ]
+  },
+  {
+   "id": "caaqms-meelavittan-thoothukudi",
+   "name": "Meelavittan, Thoothukudi - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Thoothukudi",
+   "address": "Door No 1A/175D, Meelavittan Main, Meelavittan Village, Thoothukudi - 628001",
+   "cpcb_site_id": "site_5367",
+   "lat": 8.816428,
+   "lon": 78.099039,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": [
+    "PM2.5",
+    "PM10",
+    "NO2",
+    "NH3",
+    "SO2",
+    "CO",
+    "OZONE"
+   ],
+   "reporting_on_2026-09-24": true,
+   "sources": [
+    "https://airquality.cpcb.gov.in/caaqms/iit_rss_feed_with_coordinates (saved raw/emissions/caaqms/cpcb_rss_feed_with_coordinates_2026-09-24.xml)",
+    "https://api.data.gov.in/resource/3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69 (saved raw/emissions/caaqms/datagov_aqi_tn_2026-09-24.json)",
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "indbarath-tuticorin",
+     "distance_km": 9.1
+    },
+    {
+     "plant_id": "sepc-tuticorin-st4",
+     "distance_km": 9.3
+    },
+    {
+     "plant_id": "ntpl-tuticorin",
+     "distance_km": 9.8
+    },
+    {
+     "plant_id": "tuticorin-tps",
+     "distance_km": 10.3
+    },
+    {
+     "plant_id": "muthiara-coastal-energen",
+     "distance_km": 11.9
+    }
+   ]
+  },
+  {
+   "id": "caaqms-mendonsa-colony-dindigul",
+   "name": "Mendonsa Colony, Dindigul - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Dindigul",
+   "address": "PSNA Infosys Building, No :66, AMC Road, Near Bus Stand, Dindigul.",
+   "cpcb_site_id": null,
+   "lat": 10.358535,
+   "lon": 77.984321,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": null,
+   "reporting_on_2026-09-24": false,
+   "sources": [
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "caaqms-psg-college-of-arts-and-science-coimbatore",
+   "name": "PSG College of Arts and Science, Coimbatore - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Coimbatore",
+   "address": "PSG Collage of Arts and Science, Avinashi Road, Civil Aerodrome Post, Coimbatore.",
+   "cpcb_site_id": null,
+   "lat": 11.0328,
+   "lon": 77.0349,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": null,
+   "reporting_on_2026-09-24": false,
+   "sources": [
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "caaqms-perungudi-chennai",
+   "name": "Perungudi, Chennai - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Chennai",
+   "address": "Door No 1/465, 6th cross Street, Sree Sai Nagar, Thuraipakkam, Near to small toll plaza",
+   "cpcb_site_id": "site_5363",
+   "lat": 12.9533,
+   "lon": 80.2357,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": [
+    "PM2.5",
+    "PM10",
+    "NO2",
+    "NH3",
+    "SO2",
+    "CO",
+    "OZONE"
+   ],
+   "reporting_on_2026-09-24": true,
+   "sources": [
+    "https://airquality.cpcb.gov.in/caaqms/iit_rss_feed_with_coordinates (saved raw/emissions/caaqms/cpcb_rss_feed_with_coordinates_2026-09-24.xml)",
+    "https://api.data.gov.in/resource/3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69 (saved raw/emissions/caaqms/datagov_aqi_tn_2026-09-24.json)",
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "basin-bridge-gt",
+     "distance_km": 16.5
+    },
+    {
+     "plant_id": "ennore-tps",
+     "distance_km": 28.5
+    },
+    {
+     "plant_id": "vallur-ntecl",
+     "distance_km": 32.5
+    },
+    {
+     "plant_id": "nctps-1",
+     "distance_km": 34.4
+    },
+    {
+     "plant_id": "nctps-2",
+     "distance_km": 34.4
+    },
+    {
+     "plant_id": "nctps-3",
+     "distance_km": 34.4
+    },
+    {
+     "plant_id": "ennore-sez",
+     "distance_km": 37.5
+    }
+   ]
+  },
+  {
+   "id": "caaqms-royapuram-chennai",
+   "name": "Royapuram, Chennai - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Chennai",
+   "address": "M/s Thirumalai Chemicals Ltd. Near to Royapuram Bridge",
+   "cpcb_site_id": "site_5364",
+   "lat": 13.1036,
+   "lon": 80.2909,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": [
+    "PM2.5",
+    "PM10",
+    "NO2",
+    "NH3",
+    "SO2",
+    "CO",
+    "OZONE"
+   ],
+   "reporting_on_2026-09-24": true,
+   "sources": [
+    "https://airquality.cpcb.gov.in/caaqms/iit_rss_feed_with_coordinates (saved raw/emissions/caaqms/cpcb_rss_feed_with_coordinates_2026-09-24.xml)",
+    "https://api.data.gov.in/resource/3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69 (saved raw/emissions/caaqms/datagov_aqi_tn_2026-09-24.json)",
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "basin-bridge-gt",
+     "distance_km": 2.4
+    },
+    {
+     "plant_id": "ennore-tps",
+     "distance_km": 10.9
+    },
+    {
+     "plant_id": "vallur-ntecl",
+     "distance_km": 14.9
+    },
+    {
+     "plant_id": "nctps-1",
+     "distance_km": 16.6
+    },
+    {
+     "plant_id": "nctps-2",
+     "distance_km": 16.6
+    },
+    {
+     "plant_id": "nctps-3",
+     "distance_km": 16.6
+    },
+    {
+     "plant_id": "ennore-sez",
+     "distance_km": 20.0
+    }
+   ]
+  },
+  {
+   "id": "caaqms-sidco-kurichi-coimbatore",
+   "name": "SIDCO Kurichi, Coimbatore - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Coimbatore",
+   "address": "SIDCO Kurichi, Coimbatore, Tamil Nadu.",
+   "cpcb_site_id": null,
+   "lat": 10.942451,
+   "lon": 76.978996,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": null,
+   "reporting_on_2026-09-24": false,
+   "sources": [
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "caaqms-sipcot-phase-1-hosur",
+   "name": "SIPCOT Phase-1, Hosur - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Hosur",
+   "address": "Plot No:149, 1 st Floor, SIPCOT PHASE-1, Dharga, Hosur.",
+   "cpcb_site_id": null,
+   "lat": 12.746998,
+   "lon": 77.813811,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": null,
+   "reporting_on_2026-09-24": false,
+   "sources": [
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "caaqms-semmandalam-cuddalore",
+   "name": "Semmandalam, Cuddalore - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Cuddalore",
+   "address": "29/23, Nellikuppam Main Road, Semmendalam, Near Anchaneyar Temple, Cuddalore.",
+   "cpcb_site_id": null,
+   "lat": 11.7637683,
+   "lon": 79.7499835,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": null,
+   "reporting_on_2026-09-24": false,
+   "sources": [
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "itpcl-cuddalore",
+     "distance_km": 26.4
+    },
+    {
+     "plant_id": "neyveli-ts1-exp",
+     "distance_km": 35.8
+    },
+    {
+     "plant_id": "nnttp",
+     "distance_km": 37.8
+    }
+   ]
+  },
+  {
+   "id": "caaqms-sona-college-of-technology-salem",
+   "name": "Sona College of Technology, Salem - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Salem",
+   "address": "Sona college of Technology, Junction Main Road, Salem.",
+   "cpcb_site_id": null,
+   "lat": 11.679111,
+   "lon": 78.125052,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": null,
+   "reporting_on_2026-09-24": false,
+   "sources": [
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "mettur-1",
+     "distance_km": 35.4
+    },
+    {
+     "plant_id": "mettur-2",
+     "distance_km": 35.4
+    }
+   ]
+  },
+  {
+   "id": "caaqms-st-joseph-college-tiruchirappalli",
+   "name": "St Joseph College, Tiruchirappalli - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Tiruchirappalli",
+   "address": "College Main Road, Annamalai Nagar, Teppakulam, Tiruchirappalli.",
+   "cpcb_site_id": null,
+   "lat": 10.830158,
+   "lon": 78.691849,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": null,
+   "reporting_on_2026-09-24": false,
+   "sources": [
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "caaqms-uchapatti-madurai",
+   "name": "Uchapatti, Madurai - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Madurai",
+   "address": null,
+   "cpcb_site_id": "site_5614",
+   "lat": 9.865935,
+   "lon": 78.022669,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": [
+    "PM2.5",
+    "PM10",
+    "NO2",
+    "NH3",
+    "SO2",
+    "CO",
+    "OZONE"
+   ],
+   "reporting_on_2026-09-24": true,
+   "sources": [
+    "https://airquality.cpcb.gov.in/caaqms/iit_rss_feed_with_coordinates (saved raw/emissions/caaqms/cpcb_rss_feed_with_coordinates_2026-09-24.xml)",
+    "https://api.data.gov.in/resource/3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69 (saved raw/emissions/caaqms/datagov_aqi_tn_2026-09-24.json)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "caaqms-vasanthapuram-vellore",
+   "name": "Vasanthapuram, Vellore - TNPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "TNPCB",
+   "city": "Vellore",
+   "address": "Khanna Mahal, Anna Salai, Vasanthapuram, Kosapet, Vellore.",
+   "cpcb_site_id": null,
+   "lat": 12.909494,
+   "lon": 79.131861,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": null,
+   "reporting_on_2026-09-24": false,
+   "sources": [
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "caaqms-velachery-res-area-chennai",
+   "name": "Velachery Res. Area, Chennai - CPCB",
+   "kind": "CAAQMS (continuous)",
+   "operator": "CPCB",
+   "city": "Chennai",
+   "address": "Sardar Patel Road, Opposite to C.L.R.I, Beside The Adyar Cancer Institute, Adyar, Chennai, Tamil Nadu 600036",
+   "cpcb_site_id": "site_288",
+   "lat": 13.0052189,
+   "lon": 80.2398125,
+   "loc_precision": "station coordinates as published in CPCB CCR metadata",
+   "parameters": [
+    "PM2.5",
+    "PM10",
+    "NO2",
+    "NH3",
+    "SO2",
+    "CO",
+    "OZONE"
+   ],
+   "reporting_on_2026-09-24": true,
+   "sources": [
+    "https://airquality.cpcb.gov.in/caaqms/iit_rss_feed_with_coordinates (saved raw/emissions/caaqms/cpcb_rss_feed_with_coordinates_2026-09-24.xml)",
+    "https://api.data.gov.in/resource/3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69 (saved raw/emissions/caaqms/datagov_aqi_tn_2026-09-24.json)",
+    "https://huggingface.co/datasets/Zeel/C1/resolve/main/station_data.csv (third-party copy of CPCB CCR station metadata; saved raw/emissions/caaqms/hf_zeel_c1_station_data.csv)"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "basin-bridge-gt",
+     "distance_km": 10.8
+    },
+    {
+     "plant_id": "ennore-tps",
+     "distance_km": 22.9
+    },
+    {
+     "plant_id": "vallur-ntecl",
+     "distance_km": 26.8
+    },
+    {
+     "plant_id": "nctps-1",
+     "distance_km": 28.7
+    },
+    {
+     "plant_id": "nctps-2",
+     "distance_km": 28.7
+    },
+    {
+     "plant_id": "nctps-3",
+     "distance_km": 28.7
+    },
+    {
+     "plant_id": "ennore-sez",
+     "distance_km": 31.7
+    }
+   ]
+  },
+  {
+   "id": "namp-chennai-kathivakkam",
+   "name": "Kathivakkam, Chennai (NAMP)",
+   "kind": "NAMP manual (24-h samples twice a week; RSPM/PM10, SO2, NO2)",
+   "operator": "TNPCB (CPCB-funded NAMP)",
+   "city": "Chennai",
+   "land_use": "industrial area",
+   "lat": 13.21418,
+   "lon": 80.31875,
+   "loc_precision": "locality only (OSM place node 309346479), not the monitoring site",
+   "parameters": [
+    "PM10",
+    "SO2",
+    "NO2"
+   ],
+   "sources": [
+    "https://tnpcb.gov.in/airquality.php (saved raw/emissions/caaqms/tnpcb_airquality.php.html)",
+    "https://cpcb.nic.in/uploads/Stations_NAMP.pdf (saved raw/emissions/caaqms/cpcb_Stations_NAMP_2024-11-19.pdf; gives city counts only)",
+    "https://www.openstreetmap.org/node/309346479"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "ennore-tps",
+     "distance_km": 1.9
+    },
+    {
+     "plant_id": "vallur-ntecl",
+     "distance_km": 2.8
+    },
+    {
+     "plant_id": "nctps-1",
+     "distance_km": 4.0
+    },
+    {
+     "plant_id": "nctps-2",
+     "distance_km": 4.0
+    },
+    {
+     "plant_id": "nctps-3",
+     "distance_km": 4.0
+    },
+    {
+     "plant_id": "ennore-sez",
+     "distance_km": 7.6
+    },
+    {
+     "plant_id": "basin-bridge-gt",
+     "distance_km": 13.9
+    },
+    {
+     "plant_id": "opg-gummidipoondi",
+     "distance_km": 34.5
+    },
+    {
+     "plant_id": "tulsyan-nec",
+     "distance_km": 36.1
+    }
+   ]
+  },
+  {
+   "id": "namp-chennai-manali",
+   "name": "Manali, Chennai (NAMP)",
+   "kind": "NAMP manual (24-h samples twice a week; RSPM/PM10, SO2, NO2)",
+   "operator": "TNPCB (CPCB-funded NAMP)",
+   "city": "Chennai",
+   "land_use": "industrial area",
+   "lat": 13.18106,
+   "lon": 80.26942,
+   "loc_precision": "locality only (Nominatim result for 'Manali, Chennai': https://www.openstreetmap.org/relation/7886090), not the monitoring site",
+   "parameters": [
+    "PM10",
+    "SO2",
+    "NO2"
+   ],
+   "sources": [
+    "https://tnpcb.gov.in/airquality.php (saved raw/emissions/caaqms/tnpcb_airquality.php.html)",
+    "https://cpcb.nic.in/uploads/Stations_NAMP.pdf (saved raw/emissions/caaqms/cpcb_Stations_NAMP_2024-11-19.pdf; gives city counts only)",
+    "https://www.openstreetmap.org/relation/7886090"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "ennore-tps",
+     "distance_km": 4.8
+    },
+    {
+     "plant_id": "vallur-ntecl",
+     "distance_km": 7.4
+    },
+    {
+     "plant_id": "basin-bridge-gt",
+     "distance_km": 9.2
+    },
+    {
+     "plant_id": "nctps-1",
+     "distance_km": 9.8
+    },
+    {
+     "plant_id": "nctps-2",
+     "distance_km": 9.8
+    },
+    {
+     "plant_id": "nctps-3",
+     "distance_km": 9.8
+    },
+    {
+     "plant_id": "ennore-sez",
+     "distance_km": 12.1
+    },
+    {
+     "plant_id": "opg-gummidipoondi",
+     "distance_km": 34.0
+    },
+    {
+     "plant_id": "tulsyan-nec",
+     "distance_km": 34.8
+    }
+   ]
+  },
+  {
+   "id": "namp-chennai-thiruvottiyur",
+   "name": "Thiruvottiyur, Chennai (NAMP)",
+   "kind": "NAMP manual (24-h samples twice a week; RSPM/PM10, SO2, NO2)",
+   "operator": "TNPCB (CPCB-funded NAMP)",
+   "city": "Chennai",
+   "land_use": "industrial area",
+   "lat": 13.15657,
+   "lon": 80.30065,
+   "loc_precision": "locality only (Nominatim result for 'Tiruvottiyur, Chennai': https://www.openstreetmap.org/relation/7885949), not the monitoring site",
+   "parameters": [
+    "PM10",
+    "SO2",
+    "NO2"
+   ],
+   "sources": [
+    "https://tnpcb.gov.in/airquality.php (saved raw/emissions/caaqms/tnpcb_airquality.php.html)",
+    "https://cpcb.nic.in/uploads/Stations_NAMP.pdf (saved raw/emissions/caaqms/cpcb_Stations_NAMP_2024-11-19.pdf; gives city counts only)",
+    "https://www.openstreetmap.org/relation/7885949"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "ennore-tps",
+     "distance_km": 4.9
+    },
+    {
+     "plant_id": "basin-bridge-gt",
+     "distance_km": 7.3
+    },
+    {
+     "plant_id": "vallur-ntecl",
+     "distance_km": 9.0
+    },
+    {
+     "plant_id": "nctps-1",
+     "distance_km": 10.7
+    },
+    {
+     "plant_id": "nctps-2",
+     "distance_km": 10.7
+    },
+    {
+     "plant_id": "nctps-3",
+     "distance_km": 10.7
+    },
+    {
+     "plant_id": "ennore-sez",
+     "distance_km": 14.0
+    },
+    {
+     "plant_id": "opg-gummidipoondi",
+     "distance_km": 38.2
+    },
+    {
+     "plant_id": "tulsyan-nec",
+     "distance_km": 39.1
+    }
+   ]
+  },
+  {
+   "id": "namp-thoothukudi-raja-agencies",
+   "name": "Raja Agencies, Thoothukudi (NAMP)",
+   "kind": "NAMP manual (24-h samples twice a week; RSPM/PM10, SO2, NO2)",
+   "operator": "TNPCB (CPCB-funded NAMP)",
+   "city": "Thoothukudi",
+   "land_use": "industrial zone",
+   "lat": null,
+   "lon": null,
+   "loc_precision": "unknown - TNPCB publishes no coordinates for NAMP sites",
+   "parameters": [
+    "PM10",
+    "SO2",
+    "NO2"
+   ],
+   "sources": [
+    "https://tnpcb.gov.in/airquality.php (saved raw/emissions/caaqms/tnpcb_airquality.php.html)",
+    "https://cpcb.nic.in/uploads/Stations_NAMP.pdf (saved raw/emissions/caaqms/cpcb_Stations_NAMP_2024-11-19.pdf; gives city counts only)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "namp-thoothukudi-sipcot",
+   "name": "SIPCOT, Thoothukudi (NAMP)",
+   "kind": "NAMP manual (24-h samples twice a week; RSPM/PM10, SO2, NO2)",
+   "operator": "TNPCB (CPCB-funded NAMP)",
+   "city": "Thoothukudi",
+   "land_use": "industrial zone",
+   "lat": null,
+   "lon": null,
+   "loc_precision": "unknown - TNPCB publishes no coordinates for NAMP sites",
+   "parameters": [
+    "PM10",
+    "SO2",
+    "NO2"
+   ],
+   "sources": [
+    "https://tnpcb.gov.in/airquality.php (saved raw/emissions/caaqms/tnpcb_airquality.php.html)",
+    "https://cpcb.nic.in/uploads/Stations_NAMP.pdf (saved raw/emissions/caaqms/cpcb_Stations_NAMP_2024-11-19.pdf; gives city counts only)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "namp-thoothukudi-a-v-m-building",
+   "name": "A.V.M. Building, Thoothukudi (NAMP)",
+   "kind": "NAMP manual (24-h samples twice a week; RSPM/PM10, SO2, NO2)",
+   "operator": "TNPCB (CPCB-funded NAMP)",
+   "city": "Thoothukudi",
+   "land_use": "residential zone",
+   "lat": null,
+   "lon": null,
+   "loc_precision": "unknown - TNPCB publishes no coordinates for NAMP sites",
+   "parameters": [
+    "PM10",
+    "SO2",
+    "NO2"
+   ],
+   "sources": [
+    "https://tnpcb.gov.in/airquality.php (saved raw/emissions/caaqms/tnpcb_airquality.php.html)",
+    "https://cpcb.nic.in/uploads/Stations_NAMP.pdf (saved raw/emissions/caaqms/cpcb_Stations_NAMP_2024-11-19.pdf; gives city counts only)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "namp-mettur-raman-nagar",
+   "name": "Raman Nagar, Mettur (NAMP)",
+   "kind": "NAMP manual (24-h samples twice a week; RSPM/PM10, SO2, NO2)",
+   "operator": "TNPCB (CPCB-funded NAMP)",
+   "city": "Mettur",
+   "land_use": "residential zone",
+   "lat": 11.81644,
+   "lon": 77.84457,
+   "loc_precision": "locality only (Nominatim result for 'Raman Nagar, Mettur': https://www.openstreetmap.org/node/10246783558), not the monitoring site",
+   "parameters": [
+    "PM10",
+    "SO2",
+    "NO2"
+   ],
+   "sources": [
+    "https://tnpcb.gov.in/airquality.php (saved raw/emissions/caaqms/tnpcb_airquality.php.html)",
+    "https://cpcb.nic.in/uploads/Stations_NAMP.pdf (saved raw/emissions/caaqms/cpcb_Stations_NAMP_2024-11-19.pdf; gives city counts only)",
+    "https://www.openstreetmap.org/node/10246783558"
+   ],
+   "near_plants": [
+    {
+     "plant_id": "mettur-1",
+     "distance_km": 5.6
+    },
+    {
+     "plant_id": "mettur-2",
+     "distance_km": 5.6
+    }
+   ]
+  },
+  {
+   "id": "namp-mettur-sidco",
+   "name": "SIDCO, Mettur (NAMP)",
+   "kind": "NAMP manual (24-h samples twice a week; RSPM/PM10, SO2, NO2)",
+   "operator": "TNPCB (CPCB-funded NAMP)",
+   "city": "Mettur",
+   "land_use": "industrial zone",
+   "lat": null,
+   "lon": null,
+   "loc_precision": "unknown - TNPCB publishes no coordinates for NAMP sites",
+   "parameters": [
+    "PM10",
+    "SO2",
+    "NO2"
+   ],
+   "sources": [
+    "https://tnpcb.gov.in/airquality.php (saved raw/emissions/caaqms/tnpcb_airquality.php.html)",
+    "https://cpcb.nic.in/uploads/Stations_NAMP.pdf (saved raw/emissions/caaqms/cpcb_Stations_NAMP_2024-11-19.pdf; gives city counts only)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "namp-cuddalore-echankadu-village",
+   "name": "Echankadu Village, Cuddalore (NAMP)",
+   "kind": "NAMP manual (24-h samples twice a week; RSPM/PM10, SO2, NO2)",
+   "operator": "TNPCB (CPCB-funded NAMP)",
+   "city": "Cuddalore",
+   "land_use": "residential zone",
+   "lat": null,
+   "lon": null,
+   "loc_precision": "unknown - TNPCB publishes no coordinates for NAMP sites",
+   "parameters": [
+    "PM10",
+    "SO2",
+    "NO2"
+   ],
+   "sources": [
+    "https://tnpcb.gov.in/airquality.php (saved raw/emissions/caaqms/tnpcb_airquality.php.html)",
+    "https://cpcb.nic.in/uploads/Stations_NAMP.pdf (saved raw/emissions/caaqms/cpcb_Stations_NAMP_2024-11-19.pdf; gives city counts only)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "namp-cuddalore-dee-office",
+   "name": "DEE Office, Cuddalore (NAMP)",
+   "kind": "NAMP manual (24-h samples twice a week; RSPM/PM10, SO2, NO2)",
+   "operator": "TNPCB (CPCB-funded NAMP)",
+   "city": "Cuddalore",
+   "land_use": "commercial zone",
+   "lat": null,
+   "lon": null,
+   "loc_precision": "unknown - TNPCB publishes no coordinates for NAMP sites",
+   "parameters": [
+    "PM10",
+    "SO2",
+    "NO2"
+   ],
+   "sources": [
+    "https://tnpcb.gov.in/airquality.php (saved raw/emissions/caaqms/tnpcb_airquality.php.html)",
+    "https://cpcb.nic.in/uploads/Stations_NAMP.pdf (saved raw/emissions/caaqms/cpcb_Stations_NAMP_2024-11-19.pdf; gives city counts only)"
+   ],
+   "near_plants": []
+  },
+  {
+   "id": "namp-cuddalore-sipcot",
+   "name": "SIPCOT, Cuddalore (NAMP)",
+   "kind": "NAMP manual (24-h samples twice a week; RSPM/PM10, SO2, NO2)",
+   "operator": "TNPCB (CPCB-funded NAMP)",
+   "city": "Cuddalore",
+   "land_use": "industrial zone",
+   "lat": null,
+   "lon": null,
+   "loc_precision": "unknown - TNPCB publishes no coordinates for NAMP sites",
+   "parameters": [
+    "PM10",
+    "SO2",
+    "NO2"
+   ],
+   "sources": [
+    "https://tnpcb.gov.in/airquality.php (saved raw/emissions/caaqms/tnpcb_airquality.php.html)",
+    "https://cpcb.nic.in/uploads/Stations_NAMP.pdf (saved raw/emissions/caaqms/cpcb_Stations_NAMP_2024-11-19.pdf; gives city counts only)"
+   ],
+   "near_plants": []
+  }
+ ]
+}

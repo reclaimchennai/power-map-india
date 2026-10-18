@@ -1,0 +1,184 @@
+VEDANTA TPP: NPP 21.8167,84.0422 is 243 km from OSM 'Lanjigarh Refinery Vedanta Power Station' -> OSM 19.7106,83.4014
+MAITHON RB TPP: NPP 23.7956,86.4305 is 34 km from OSM 'Maithon Power Plant' -> OSM 23.8210,86.7587
+VIJJESWARAM CCPP: NPP 17.0801,82.1320 is 46 km from OSM 'Vijjeswaram Gas Power Plant' -> OSM 16.9347,81.7246
+LALITPUR TPS: NPP 24.8619,78.5328 is 14 km from OSM 'Lalitpur Thermal Power Station' -> OSM 24.7935,78.6459
+RAGHUNATHPUR TPP: NPP 23.6007,86.4777 is 19 km from OSM 'Raghunathpur Thermal Power Station' -> OSM 23.6215,86.6583
+DURGAPUR TPS: NPP 23.4684,87.1505 is 13 km from OSM 'Durgapur Steel Thermal Power Station' -> OSM 23.5775,87.2068
+PIPAVAV CCPP: NPP 21.0197,71.4218 is 14 km from OSM 'GSPC Pipavav Power Company Ltd.' -> OSM 20.8987,71.4651
+KOYNA DPH  HPS: NPP 17.4668,73.8765 is 15 km from OSM 'Koyna Dam Powerhouse' -> OSM 17.4020,73.7504
+VAITARNA HPS: NPP 19.6707,73.2907 is 15 km from OSM 'Middle Vaitarna Dam' -> OSM 19.7057,73.4331
+BHAWANI BARRAGE-II HPS: NPP 11.3077,77.7399 vs dossier 11.3309,77.7581 (3.3 km) -> dossier
+BHAWANI BARRAGE-III HPS: NPP 11.3854,77.7158 vs dossier 11.2429,77.8659 (22.8 km) -> dossier
+DHUVARAN TPS: NPP 23.2560,72.8415 is 112 km from OSM 'Dhuvaran Phase 1' -> OSM 22.2515,72.7424
+MAHESHWAR HPS: NPP 22.7770,75.8953 is 72 km from OSM 'Maheshwar' -> OSM 22.1643,75.6815
+PARLI TPS: NPP 19.2600,75.6464 is 102 km from OSM 'Parli Thermal Power Station' -> OSM 18.8696,76.5263
+GH TPS (LEH.MOH.): NPP position rejected (same point as RAJPURA TPP); no replacement — not mapped
+RAYALASEEMA TPS: NPP 14.6511,78.0468 is 45 km from OSM 'Rayalaseema Thermal Power Station' -> OSM 14.7046,78.4570
+ADANI POWER LIMITED MUNDRA TPP - I & II: NPP 22.8246,69.5660 is 80 km from OSM 'Adani' -> OSM 23.3672,70.0808
+WARDHA WARORA TPP: NPP 20.1917,78.9721 is 9 km from OSM 'Wardha Warora Power Plant' -> OSM 20.2728,78.9814
+MAQSOODPUR TPS: NPP position rejected (same point as ROSA TPP Ph-I); no replacement — not mapped
+BARKHERA TPS: NPP 28.4796,80.0522 is 24 km from OSM 'Barkhera Thermal Power Station' -> OSM 28.4732,79.8067
+ROSA TPP Ph-I: NPP position rejected (same point as MAQSOODPUR TPS) -> OSM 'Rosa Thermal Power Plant' 27.8191,79.9367
+JSW RATNAGIRI TPP: NPP 19.4073,73.2573 is 83 km from OSM 'JSW Dolvi Ispat Captive Power Plant' -> OSM 18.6861,73.0432
+ANUPPUR TPP: NPP 23.1672,81.6699 is 17 km from OSM 'Anuppur Thermal Power Project' -> OSM 23.0671,81.7900
+IDUKKI HPS: NPP 9.8428,76.9767 is 14 km from OSM 'Idukki hydro power station' -> OSM 9.7893,76.8596
+UPPER INDRAVATI HPS: NPP 19.2763,82.8298 is 17 km from OSM 'Indravati Dam' -> OSM 19.4270,82.8596
+KUTTIYADI HPS: NPP 12.1274,75.3000 is 92 km from OSM 'Kuttiyadi Hydroelectric project, Kakkayam' -> OSM 11.5480,75.8990
+LOWER JHELUM  HPS: NPP 33.2512,76.0640 is 200 km from OSM 'Lower Jhelum' -> OSM 34.1513,74.1969
+LOWER SILERU  HPS: NPP 13.9860,79.5279 is 488 km from OSM 'Lower Sileru Power House' -> OSM 17.8703,81.6593
+LAKSHADWEEP DG: NPP position rejected (outside Lakshadweep); no replacement — not mapped
+SINGARENI TPP: NPP 17.1074,79.4364 is 191 km from OSM 'Singareni Thermal Power Plant' -> OSM 18.8222,79.5697
+RAMPUR HPS: NPP 31.2718,77.0023 is 58 km from OSM 'Rampur Hydro Power Station' -> OSM 31.4001,77.5925
+KOVIKALPAL CCPP: NPP 11.9398,78.4933 vs dossier 10.5414,79.4500 (187.3 km) -> dossier
+KUTCH LIG. TPS: NPP 22.9183,70.0111 is 150 km from OSM 'Kutch Lignite Thermal Power Station' -> OSM 23.6614,68.7802
+BASPA  HPS: NPP 31.4307,78.2416 is 9 km from OSM 'Baspa 2' -> OSM 31.4957,78.1891
+ESSAR CCPP: NPP 22.8091,69.5991 is 57 km from OSM 'Essar Power' -> OSM 22.3080,69.7112
+BHAKRA LEFT HPS: NPP 32.0462,78.7117 is 227 km from OSM 'Bhakra Power station' -> OSM 31.4095,76.4321
+URI-I HPS: NPP position rejected (same point as URI-II HPS) -> OSM 'URI II' 34.0918,74.0312
+SHANAN HPS: NPP 30.9072,76.7550 is 121 km from OSM 'Shanan Power Project' -> OSM 31.9901,76.8073
+SHOLAYAR HPS (TN): NPP 10.2983,76.8808 vs dossier 10.3556,76.8805 (6.4 km) -> dossier
+NTPL TUTICORIN  TPP: NPP 8.4549,78.0914 vs dossier 8.7607,78.1694 (35.1 km) -> dossier
+RATNAGIRI CCPP: NPP 16.9882,73.3312 is 37 km from OSM 'JSW Ratnagiri Power Plant' -> OSM 17.2973,73.2122
+NEYVELI TPS-II EXP: NPP 11.5927,79.4757 vs dossier 11.5476,79.4432 (6.1 km) -> dossier
+BARSINGSAR LIGNITE: NPP 28.3802,72.7930 is 71 km from OSM 'Barsingsar Thermal Power Station' -> OSM 27.8461,73.1982
+SIMHAPURI TPS: NPP 14.4339,80.1398 is 26 km from OSM 'Simhapuri Power Plant' -> OSM 14.2054,80.0882
+UTRAULA TPS: NPP 26.7680,82.1727 is 66 km from OSM 'Utraula Thermal Power Station' -> OSM 27.3483,82.3178
+BELA TPS: NPP 21.2923,79.1974 is 56 km from OSM 'Bela Power Plant' -> OSM 20.8111,79.0540
+BUDGE BUDGE TPS: NPP 22.4171,87.8888 is 26 km from OSM 'Budge Budge Power station' -> OSM 22.4684,88.1393
+KOYNA-IV  HPS: NPP 21.4298,78.0781 is 638 km from OSM 'Koyna Dam Powerhouse' -> OSM 17.4020,73.7504
+KUTTIYADI ADDL EXTN: NPP 11.5992,75.5867 is 34 km from OSM 'Kuttiyadi Hydroelectric project, Kakkayam' -> OSM 11.5480,75.8990
+DHUVARAN CCPP: NPP 23.2508,72.8994 is 112 km from OSM 'Dhuvaran Phase 1' -> OSM 22.2515,72.7424
+MEENAKSHI ENERGY LTD: NPP 14.3342,80.1539 is 15 km from OSM 'Meenakshi Thamminapatnam Thermal Power Plant' -> OSM 14.2132,80.0928
+BALIMELA HPS: NPP 18.1397,82.1234 is 10 km from OSM 'Balimela Power House' -> OSM 18.2074,82.0604
+ADANI POWER LIMITED RAIPUR TPP: NPP 21.4496,81.8540 is 150 km from OSM 'Adani Korba West power station' -> OSM 21.7431,83.2741
+KAKATIYA TPS: NPP 17.4423,78.4981 is 175 km from OSM 'Kakatiya Thermal Power Station' -> OSM 18.3830,79.8293
+RAJPURA TPP: NPP position rejected (same point as GH TPS (LEH.MOH.)) -> OSM 'Rajpura Thermal Power Plant' 30.5555,76.5724
+TALWANDI SABO TPP: NPP 29.9894,75.0882 is 16 km from OSM 'Talwandi Sabo Power Limited' -> OSM 29.9170,75.2276
+GANDHI NAGAR TPS: NPP position rejected (same point as VATWA CCPP); no replacement — not mapped
+DURGAPUR STEEL TPS: NPP 23.4653,87.1481 is 14 km from OSM 'Durgapur Steel Thermal Power Station' -> OSM 23.5775,87.2068
+KOPILI HPS: NPP 25.5177,92.6679 is 9 km from OSM 'Kopili Hydro Power Station' -> OSM 25.5860,92.7229
+MAHI BAJAJ-I HPS: NPP 23.6271,74.5446 is 10 km from OSM 'Mahi Power House I' -> OSM 23.5447,74.5059
+URI-II HPS: NPP position rejected (same point as URI-I HPS) -> OSM 'URI II' 34.0918,74.0312
+SWASTIK KORBA TPP: NPP 22.1621,81.0165 is 174 km from OSM 'Swastik Power and Mineral Resources Private Limited' -> OSM 22.2985,82.7028
+SINGRAULI STPS: NPP 24.1701,82.7759 is 10 km from OSM 'Singrauli Super Thermal Power Station' -> OSM 24.1053,82.7054
+MAHADEV PRASAD STPP: NPP 23.9756,83.5513 is 285 km from OSM 'Mahadev Prasad Super Thermal Power Plant' -> OSM 22.8377,86.0592
+AMRAVATI TPS: NPP 20.9369,77.7799 is 20 km from OSM 'Amravati Thermal Power Project' -> OSM 21.0754,77.9037
+ADANI POWER LIMITED TIRODA TPP: NPP 21.4068,79.9307 is 779 km from OSM 'Adani Electric Substation' -> OSM 19.0769,72.8849
+BUTIBORI TPP: NPP 21.2837,79.1878 is 47 km from OSM 'Butibori Indorama Power Station' -> OSM 20.9241,78.9506
+BARADARHA TPS: NPP 22.4189,81.2844 is 204 km from OSM 'Baradarha Power Station' -> OSM 21.9081,83.1916
+SASAN UMTPP: NPP 24.0628,82.6252 is 10 km from OSM 'Sasan UMPP' -> OSM 23.9717,82.6258
+SIMHADRI: NPP 15.2382,77.9234 is 611 km from OSM 'Simhadri Super Thermal Power Station' -> OSM 17.5921,83.0963
+UNCHAHAR TPS: NPP 25.4255,81.9122 is 79 km from OSM 'Unchahar' -> OSM 25.8888,81.3141
+OP JINDAL TPS: NPP 22.1129,83.4646 is 24 km from OSM 'Raigarh Jindal power station' -> OSM 21.9254,83.3450
+SOUTHERN REPL. TPS: NPP 22.4310,87.9493 is 38 km from OSM 'Southern CESC power station' -> OSM 22.5478,88.2944
+PAPANASAM HPS: NPP 8.7120,77.3932 vs dossier 8.7066,77.3627 (3.4 km) -> dossier
+PERIYAR HPS: NPP 9.6461,77.2148 vs dossier 9.6267,77.1905 (3.4 km) -> dossier
+PYKARA HPS: NPP 11.4625,76.6033 vs dossier 11.5337,76.6012 (7.9 km) -> dossier
+KHANDONG HPS: NPP position rejected (outside Assam) -> OSM 'Khandong Hydro Power Station' 25.5171,92.6660
+MOYAR  HPS: NPP 11.6022,76.7201 vs dossier 11.6140,76.6923 (3.3 km) -> dossier
+MUKERIAN-I HPS: NPP 30.5223,75.3642 is 155 km from OSM 'Mukerian Hydel Project IV' -> OSM 31.8904,75.6652
+MIHAN TPS: NPP 21.3241,79.5670 is 73 km from OSM 'Mihan Sez Power Plant' -> OSM 21.0368,78.9340
+ALIYAR  HPS: NPP 10.4718,76.9729 vs dossier 10.4547,77.0078 (4.3 km) -> dossier
+S SAROVAR CHPH HPS: NPP 21.9176,73.9039 is 18 km from OSM 'Sardar Sarovar Project' -> OSM 21.8380,73.7561
+SANJAY HPS: NPP 31.2642,78.4835 is 57 km from OSM 'Sanjay Vidyut hydro power station' -> OSM 31.5638,77.9904
+MUTHIARA TPP: NPP 8.9428,78.1798 vs dossier 8.9143,78.1446 (5.0 km) -> dossier
+UPPER SILERU HPS: NPP 15.1740,79.0531 is 409 km from OSM 'Lower Sileru Power House' -> OSM 17.8703,81.6593
+UPPER SINDH-II HPS: NPP 34.1980,75.1245 is 22 km from OSM 'Upper Sindh-II Hydroelectric Power Station' -> OSM 34.2674,74.8969
+UHL-III HPS: NPP 31.9543,76.8081 is 12 km from OSM 'Uhl III hydro power station' -> OSM 31.8751,76.7216
+KUTTALAM CCPP: NPP 11.0751,79.8480 vs dossier 11.0340,79.5858 (29.0 km) -> dossier
+TRIPURA CCPP: NPP 23.8063,91.6067 is 39 km from OSM 'ONGC Tripura (Palatana) Power Plant' -> OSM 23.4956,91.4392
+ANTA CCPP: NPP 25.2956,76.6698 is 37 km from OSM 'Anta Thermal Power Station' -> OSM 25.1802,76.3200
+MAITHON GT (Liq.): NPP 23.7955,86.4333 is 33 km from OSM 'Maithon Power Plant' -> OSM 23.8210,86.7587
+KAIGA: NPP 14.6693,74.3090 is 26 km from OSM 'Kaiga Atomic Power Station' -> OSM 14.8661,74.4384
+MARWA TPS: NPP 22.4181,82.6736 is 39 km from OSM 'Marwa Thermal Power Plant' -> OSM 22.0704,82.6052
+UNOSUGEN CCPP: NPP 22.9594,71.2495 is 254 km from OSM 'UNOSUGEN' -> OSM 21.3412,72.9891
+MAHAN TPP: NPP 24.2182,82.5532 is 10 km from OSM 'Mahan Aluminium Bargawan Coal Power Plant' -> OSM 24.2245,82.4550
+GOINDWAL SAHIB TPP: NPP 31.5047,74.8851 is 28 km from OSM 'Goindwal Sahib thermal Power plant' -> OSM 31.3902,75.1475
+ADANI POWER LIMITED RAIGARH TPP: NPP 23.7649,81.8238 is 270 km from OSM 'Adani Korba West power station' -> OSM 21.7431,83.2741
+GAUTAMI CCPP: NPP 16.8389,82.2367 is 25 km from OSM 'Gautami Combined Cycle Power Plant' -> OSM 17.0402,82.1294
+NEYVELI TPS-II: NPP 11.5916,79.4501 vs dossier 11.5586,79.4407 (3.8 km) -> dossier
+RAJASTHAN  A.P.S.: NPP 27.3913,73.4326 is 355 km from OSM 'Rajasthan Atomic Power Station' -> OSM 24.8768,75.6294
+TARAPUR: NPP 18.9368,72.8336 is 101 km from OSM 'Tarapur Atomic Power Station' -> OSM 19.8326,72.6686
+PEDDAPURAM CCPP: NPP position rejected (same point as VEMAGIRI CCPP); no replacement — not mapped
+SAMALPATTI DG: NPP 13.0251,80.2629 vs dossier 12.2870,78.4085 (217.3 km) -> dossier
+SURAT LIG. TPS: NPP 21.1985,72.7534 is 42 km from OSM 'Surat Lignite Power Plant' -> OSM 21.3947,73.1052
+GMR Energy Ltd - Kakinada: NPP position rejected (same point as GREL CCPP (Rajahmundry)); no replacement — not mapped
+VATWA CCPP: NPP position rejected (same point as GANDHI NAGAR TPS); no replacement — not mapped
+NARIMANAM GPS: dossier has no verified position; NPP 11.5972,79.5046 not used — not mapped
+PARBATI-III HPS: NPP 31.7509,77.2430 is 9 km from OSM 'Parbati-II' -> OSM 31.7838,77.3278
+MANERI BHALI-I HPS: NPP 30.7392,78.5288 is 8 km from OSM 'Maneri Bhali I Power Station' -> OSM 30.7259,78.4448
+MANERI BHALI-II HPS: NPP 30.2896,80.7875 is 230 km from OSM 'Maneri Bhali I Power Station' -> OSM 30.7259,78.4448
+VALANTARVY CCPP: NPP 11.1204,79.8178 vs dossier 9.3279,78.9214 (222.1 km) -> dossier
+VEMAGIRI CCPP: NPP position rejected (same point as PEDDAPURAM CCPP); no replacement — not mapped
+CHIBRO (YAMUNA)  HPS: NPP 30.7486,78.4525 is 66 km from OSM 'Chibro Power Plant' -> OSM 30.5571,77.7968
+AGARTALA GT: NPP 23.8328,91.2880 is 8 km from OSM 'Agartala gas turbine combined cycle power plant' -> OSM 23.8696,91.3600
+BAGLIHAR II  HPS: NPP 33.1264,75.4715 is 16 km from OSM 'Baglihar hydro power station' -> OSM 33.1792,75.3166
+BUDHIL HPS: NPP 31.7870,78.7006 is 217 km from OSM 'BUDHIL' -> OSM 32.4540,76.5344
+MALANA-II  HPS: NPP 32.4254,77.4989 is 44 km from OSM 'MALANA' -> OSM 32.0812,77.2751
+JEGURUPADU CCPP PH II: NPP 17.0683,82.2531 is 44 km from OSM 'Jegurupadu Combined Cycle Power Plant' -> OSM 16.9300,81.8622
+B. BRIDGE DG: NPP 11.7867,77.8829 vs dossier 13.0983,80.2702 (297.4 km) -> dossier
+KARUPPUR CCPP: NPP 11.7711,77.8480 vs dossier 11.1216,79.5288 (196.9 km) -> dossier
+KONASEEMA CCPP: NPP 14.7404,78.6235 is 412 km from OSM 'Konaseema Power Plant' -> OSM 16.7373,81.8629
+BAGLIHAR  HPS: NPP 33.2637,75.1854 is 15 km from OSM 'Baglihar hydro power station' -> OSM 33.1792,75.3166
+KHARA  HPS: NPP 25.1909,82.0723 is 723 km from OSM 'Khara Power Plant' -> OSM 30.3508,77.6017
+LOKTAK HPS: NPP 24.5502,93.7994 is 14 km from OSM 'Loktak hydro power station' -> OSM 24.5874,93.6697
+KODAYAR-I HPS: NPP 8.4859,77.2796 vs dossier 8.5225,77.3569 (9.4 km) -> dossier
+KULHAL  HPS: NPP 31.3938,79.0840 is 175 km from OSM 'Kulhal Power Plant' -> OSM 30.4287,77.6296
+KUNDAH-I HPS: NPP 11.2629,76.6334 vs dossier 11.2862,76.6514 (3.3 km) -> dossier
+SAINJ HPS: NPP 31.7706,77.3089 is 9 km from OSM 'Sainj Hydro Power Project' -> OSM 31.7796,77.4075
+KISHANGANGA HPS: NPP 33.8790,75.9682 is 138 km from OSM 'Kishanganga Hydroelectric Plant' -> OSM 34.4635,74.6449
+HIRANMAYE TPP: NPP 22.5930,88.8078 is 92 km from OSM 'Hiranmaye Haldia Power Plant' -> OSM 22.0806,88.1000
+MANGAON CCPP: NPP 19.0092,72.9009 is 83 km from OSM 'Mangaon Combined Cycle Power Plant' -> OSM 18.4086,73.3611
+GREL CCPP (Rajahmundry): NPP position rejected (same point as GMR Energy Ltd - Kakinada) -> OSM 'Rajahmundry Power Plant' 16.9241,81.8096
+JEGURUPADU CCPP PH I: NPP 17.2937,82.4564 is 75 km from OSM 'Jegurupadu Combined Cycle Power Plant' -> OSM 16.9300,81.8622
+DIKCHU HPS: NPP 27.8242,88.7303 is 51 km from OSM 'Dikchu Hydroelectric Power Plant' -> OSM 27.4013,88.5273
+TUIRIAL HPS: NPP 23.7191,92.7984 is 72 km from OSM 'Tuirial Hydro Power Station' -> OSM 24.3574,92.8840
+MEJA STPP: NPP 24.0955,82.6863 is 138 km from OSM 'Meja Thermal Power Station' -> OSM 25.1424,81.9481
+NEYVELI NEW TPP: NPP 11.5486,79.5014 vs dossier 11.5901,79.4533 (7.0 km) -> dossier
+NABINAGAR STPP: NPP 24.9678,86.2399 is 211 km from OSM 'Nabinagar Super Thermal Power Project' -> OSM 24.7733,84.1602
+BHADRADRI TPP: NPP 18.0892,78.8546 is 199 km from OSM 'Bhadradri Thermal Power Plant' -> OSM 18.0285,80.7388
+YELAHANKA CCPP: NPP 14.3523,75.3464 is 278 km from OSM 'Yelahanka Combined Cycle Power Plant' -> OSM 13.1170,77.5817
+DARLIPALI STPS: NPP 19.8264,84.0154 is 238 km from OSM 'Darlipali Super Thermal Power Station' -> OSM 21.9676,83.8878
+PARBATI-II HPS: NPP 31.6045,76.9930 is 37 km from OSM 'Parbati-II' -> OSM 31.7838,77.3278
+SINGOLI BHATWARI HPS: NPP 30.4239,78.7525 is 28 km from OSM 'Singoli Bhatwari hydro power station' -> OSM 30.4098,79.0474
+LAKWA REPLACEMENT POWER PROJECT: NPP 26.6224,92.8464 is 211 km from OSM 'Lakwa Replacement Power Plant' -> OSM 26.9852,94.9300
+KOTHAGUDEM TPS (STAGE-7): NPP 17.2161,79.1552 is 169 km from OSM 'Kothagudem Thermal Power Station' -> OSM 17.6167,80.6937
+BHAKRA RIGHT HPS: NPP 31.5504,77.5867 is 111 km from OSM 'Bhakra Power station' -> OSM 31.4095,76.4321
+ANANDPUR SAHIB-II HPS: NPP 30.4721,75.2397 is 149 km from OSM 'Anandpur Sahib Power House I' -> OSM 31.2714,76.4939
+MUKERIAN-II HPS: NPP 31.4699,75.3622 is 55 km from OSM 'Mukerian Hydel Project IV' -> OSM 31.8904,75.6652
+MUKERIAN-III HPS: NPP 30.7973,75.4479 is 123 km from OSM 'Mukerian Hydel Project IV' -> OSM 31.8904,75.6652
+MUKERIAN-IV HPS: NPP 31.4987,74.7451 is 97 km from OSM 'Mukerian Hydel Project IV' -> OSM 31.8904,75.6652
+MAHI BAJAJ-II HPS: NPP 25.9183,71.4001 is 404 km from OSM 'Mahi Power House II' -> OSM 23.3560,74.2360
+KUTTIYADI EXTN HPS: NPP 10.2165,76.3320 is 155 km from OSM 'Kuttiyadi Hydroelectric project, Kakkayam' -> OSM 11.5480,75.8990
+KODAYAR-II HPS: NPP 11.2262,79.4262 vs dossier 8.5032,77.3122 (381.2 km) -> dossier
+KUNDAH-II HPS: NPP 11.8994,79.7271 vs dossier 11.2505,76.6802 (339.7 km) -> dossier
+KUNDAH-III HPS: NPP 10.9395,78.6883 vs dossier 11.2429,76.7695 (212.1 km) -> dossier
+KUNDAH-IV HPS: NPP 10.7263,79.3753 vs dossier 11.2605,76.8061 (286.7 km) -> dossier
+KUNDAH-V HPS: NPP 12.0567,79.0158 vs dossier 11.3044,76.5757 (278.6 km) -> dossier
+LOWER METTUR-II HPS: NPP 12.2626,79.4455 vs dossier 11.6436,77.7565 (196.2 km) -> dossier
+LOWER METTUR-III HPS: NPP 10.1867,78.7739 vs dossier 11.5752,77.7420 (191.1 km) -> dossier
+LOWER METTUR-IV HPS: NPP 11.4506,78.8959 vs dossier 11.4855,77.7017 (130.2 km) -> dossier
+KHARGONE STPP: NPP 23.5880,78.8968 is 355 km from OSM 'Khargone power station' -> OSM 22.0621,75.8571
+SAWRA KUDDU HPS: NPP 31.1883,77.4237 is 41 km from OSM 'Sawra Kuddu hydro power station' -> OSM 31.0560,77.8225
+DISHERGARH TPP: NPP 23.0709,87.4404 is 91 km from OSM 'Dishergarh Power Plant' -> OSM 23.6898,86.8537
+TELANGANA STPP PH-1: NPP 18.4500,79.2800 is 39 km from OSM 'Telangana Super Thermal Power Plant' -> OSM 18.7519,79.4721
+BAJOLI HOLI HPS: NPP 32.5581,76.1306 is 45 km from OSM 'GMR Bajoli Holi Hydropower Station' -> OSM 32.3420,76.5352
+ADANI POWER LIMITED MUNDRA TPP - III: NPP 22.8235,69.5535 is 81 km from OSM 'Adani' -> OSM 23.3672,70.0808
+JAWAHARPUR STPP: NPP 27.2900,78.4900 is 41 km from OSM 'Jawaharpur Super Thermal Power Station' -> OSM 27.4990,78.8295
+TUTICORIN TPP ST-IV: NPP 8.4500,78.1000 vs dossier 8.7555,78.1576 (34.6 km) -> dossier
+LOWER SUBANSIRI  HEP: NPP position rejected (outside Arunachal Pradesh); no replacement — not mapped
+SHREE CEMENT LTD TPS: NPP 26.0739,74.3850 is 29 km from OSM 'Shree Ras Cement Power Station' -> OSM 26.2625,74.1872
+LOWER KOPILI HPS: NPP position rejected (outside Assam) -> OSM 'Kopili Hydro Power Station' 25.5860,92.7229
+TEHRI PSP: NPP 30.3000,78.3000 is 19 km from OSM 'Tehri Dam Power House' -> OSM 30.3700,78.4794
+TCP Limited: NPP 13.0382,80.2643 vs dossier 13.3835,80.1131 (41.7 km) -> dossier
+SHAHPURKUNDI HPS: NPP position rejected (no position); no replacement — not mapped
+LOWER SILERU EXTENSION HPS: NPP position rejected (no position) -> OSM 'Lower Sileru Power House' 17.8703,81.6593
+RANGIT-IV HPS: NPP position rejected (no position) -> OSM 'RANGIT-III' 27.2946,88.2919
+Dhaulasidh HPS: NPP position rejected (no position); no replacement — not mapped
+PAKAL DUL HPS: NPP position rejected (no position) -> OSM 'Dul Hasti Hydroelectric Plant' 33.2869,75.7621
+KIRU HPS: NPP position rejected (no position); no replacement — not mapped
+VISHNUGAD PIPALKOTI HPS: NPP position rejected (no position); no replacement — not mapped
+GANDHI SAGAR PSP: NPP position rejected (no position) -> OSM 'Gandhi Sagar' 24.7014,75.5539
+CHITRAVATHI PSP: NPP position rejected (no position); no replacement — not mapped
+Malibrahamani TPP: NPP position rejected (no position); no replacement — not mapped
+OSM renewables added: 1991

@@ -1,0 +1,6505 @@
+[
+ {
+  "id": "kundah-1",
+  "name": "Kundah Power House I",
+  "aliases": [
+   "Kundah PH I",
+   "Kundah PH. I",
+   "Kundah Power House-1",
+   "KUNDAH I",
+   "Kundah PH I Hydroelectric Power Plant",
+   "KUNDAH-I HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Nilgiris",
+  "lat": 11.28622,
+  "lon": 76.65145,
+  "loc_quality": "exact",
+  "capacity_mw": 60,
+  "units": [
+   {
+    "no": 1,
+    "mw": 20,
+    "commissioned": "1960-07",
+    "make": "Dominion Engineering (turbine) / Canadian Westinghouse (generator)",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 20,
+    "commissioned": "1960-07",
+    "make": "Dominion Engineering / Canadian Westinghouse",
+    "status": "operating"
+   },
+   {
+    "no": 3,
+    "mw": 20,
+    "commissioned": "1964-04",
+    "make": "Dominion Engineering / Canadian Westinghouse",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Avalanche dam",
+     "kind": "reservoir",
+     "lat": 11.3189,
+     "lon": 76.6167,
+     "share": null
+    },
+    {
+     "name": "Emerald reservoir",
+     "kind": "reservoir",
+     "lat": null,
+     "lon": null,
+     "share": null
+    }
+   ],
+   "route": [
+    "tunnel/penstock: Avalanche-Emerald -> Kundah PH-I (Pelton)",
+    "tailrace -> Kundah Palam forebay dam -> Kundah PH-II"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Avalanche and Emerald reservoirs (Kundah river)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "Commissioned 1960-64 (3x20 MW, vertical Pelton) as the first stage of the Kundah hydro-electric scheme (Canadian-supplied turbines/generators per GEO); powerhouse at Kundah Palam, elevation 5353 ft. TNGECL Generation Circle: Kundah.",
+  "links": {
+   "npp_station_id": 100765,
+   "dgr_name": "KUNDAH-I HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20111206021014/http://www.tangedco.gov.in/hydrokundah.html",
+   "https://www.openstreetmap.org/way/823190927",
+   "https://globalenergyobservatory.org/geoid/3916",
+   "https://www.tngecl.org/static/greenenergy/assets/files/drip/ESDDAvalanche030523.pdf",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "kundah-2",
+  "name": "Kundah Power House II",
+  "aliases": [
+   "Kundah PH II",
+   "Kundah PH. II",
+   "Kundah Power House-2",
+   "KUNDAH II/Geddai",
+   "Kundah2 HPP",
+   "Kundah PH II Hydroelectric Power Plant",
+   "KUNDAH-II HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Nilgiris",
+  "lat": 11.25048,
+  "lon": 76.6802,
+  "loc_quality": "exact",
+  "capacity_mw": 175,
+  "units": [
+   {
+    "no": 1,
+    "mw": 35,
+    "commissioned": "1960-10",
+    "make": "Dominion Engineering / Canadian General Electric",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 35,
+    "commissioned": "1961-01",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 3,
+    "mw": 35,
+    "commissioned": "1961-05",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 4,
+    "mw": 35,
+    "commissioned": "1961-06",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 5,
+    "mw": 35,
+    "commissioned": "1964-02",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Kundah Palam dam",
+     "kind": "reservoir",
+     "lat": 11.2833,
+     "lon": 76.65,
+     "share": null
+    }
+   ],
+   "route": [
+    "Kundah Palam forebay -> head race tunnel -> penstock -> PH-II at Pegumbahallah/Geddai",
+    "tailrace -> Geddai dam -> Kundah PH-III"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Kundah Palam forebay dam (tailrace of Kundah PH-I)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "230 kV switchyard 'Kundah2 HPP' (OSM way 1494896787)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "5x35 MW vertical Pelton units commissioned 1960-64; located at Pegumbahallah (Geddai), elevation 2876 ft. TNGECL Generation Circle: Kundah. Location note: NPP station_details coordinate (11.899, 79.727) is in the Cuddalore plains, ~340 km off; ignored.",
+  "links": {
+   "npp_station_id": 100820,
+   "dgr_name": "KUNDAH-II HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20111206021014/http://www.tangedco.gov.in/hydrokundah.html",
+   "https://www.openstreetmap.org/way/1463910410",
+   "https://www.openstreetmap.org/way/1494896787",
+   "https://globalenergyobservatory.org/geoid/41246",
+   "https://www.tngecl.org/static/greenenergy/assets/files/drip/ESDDKundahpallamdam.pdf",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "kundah-3",
+  "name": "Kundah Power House III",
+  "aliases": [
+   "Kundah PH III",
+   "Kundah Power House-3",
+   "KUNDAH III/Parali",
+   "Kundah3 HPP",
+   "Parali Power House",
+   "Kundah PH III Hydroelectric Power Plant",
+   "KUNDAH-III HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Coimbatore",
+  "lat": 11.24291,
+  "lon": 76.76948,
+  "loc_quality": "exact",
+  "capacity_mw": 180,
+  "units": [
+   {
+    "no": 1,
+    "mw": 60,
+    "commissioned": "1965-04",
+    "make": "Vancouver Iron & Engineering / Canadian Westinghouse",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 60,
+    "commissioned": "1965-06",
+    "make": "Vancouver Iron & Engineering / Canadian Westinghouse",
+    "status": "operating"
+   },
+   {
+    "no": 3,
+    "mw": 60,
+    "commissioned": "1978-02",
+    "make": "Dominion Engineering / Canadian General Electric",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Geddai dam",
+     "kind": "reservoir",
+     "lat": null,
+     "lon": null,
+     "share": null
+    },
+    {
+     "name": "Kattery dam",
+     "kind": "reservoir",
+     "lat": 11.3404,
+     "lon": 76.7325,
+     "share": null
+    }
+   ],
+   "route": [
+    "Geddai forebay -> tunnel/penstock -> PH-III at Parali",
+    "tailrace -> Pillur reservoir -> Kundah PH-IV"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Geddai dam (Pegumbahallah, Nirali Pallam, Kattery weir diversions)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "230 kV switchyard 'Kundah3 HPP' (OSM way 337856906)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "3x60 MW Pelton units at Parali (elev. 1429 ft), units 1-2 in 1965, unit 3 in 1978. TNGECL Generation Circle: Kundah. Location note: NPP coordinate (10.939, 78.688) is near Tiruchirappalli; ignored.",
+  "links": {
+   "npp_station_id": 100821,
+   "dgr_name": "KUNDAH-III HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20111206021014/http://www.tangedco.gov.in/hydrokundah.html",
+   "https://www.openstreetmap.org/way/234170806",
+   "https://www.openstreetmap.org/way/337856906",
+   "https://globalenergyobservatory.org/geoid/41247",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "kundah-4",
+  "name": "Kundah Power House IV",
+  "aliases": [
+   "Kundah PH IV",
+   "Kundah Power House-4",
+   "KUNDAH IV/Pillur",
+   "Kundah4 HPP",
+   "Pillur Power House",
+   "Kundah PH IV Hydroelectric Power Plant",
+   "KUNDAH-IV HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Coimbatore",
+  "lat": 11.26048,
+  "lon": 76.80614,
+  "loc_quality": "exact",
+  "capacity_mw": 100,
+  "units": [
+   {
+    "no": 1,
+    "mw": 50,
+    "commissioned": "1966-02",
+    "make": "Canadian Vickers / Canadian General Electric",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 50,
+    "commissioned": "1978-10",
+    "make": "Dominion Engineering / Canadian General Electric",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Pillur dam",
+     "kind": "reservoir",
+     "lat": 11.2599,
+     "lon": 76.8059,
+     "share": null
+    }
+   ],
+   "route": [
+    "Pillur reservoir -> penstock -> PH-IV at dam toe (vertical Francis)",
+    "tailrace -> Bhavani river"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Pillur dam (tailrace of Kundah PH-III + Bhavani inflows)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": 87.78,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "230 kV switchyard 'Kundah4 HPP' (OSM way 337856847)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "Tail-end station of the Kundah complex at Pillur dam; 2x50 MW Francis units (1966, 1978). TNGECL Generation Circle: Kundah. Location note: NPP coordinate (10.726, 79.375) is near Thanjavur; ignored. DRIP ESDD gives Pillur dam at 11°15'N 76°41'E, which is ~13 km west of the actual dam (OSM 11.2599, 76.8059) - DRIP longitude appears wrong.",
+  "links": {
+   "npp_station_id": 100822,
+   "dgr_name": "KUNDAH-IV HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20111206021014/http://www.tangedco.gov.in/hydrokundah.html",
+   "https://www.openstreetmap.org/way/823190928",
+   "https://www.openstreetmap.org/way/337856847",
+   "https://globalenergyobservatory.org/geoid/41248",
+   "https://www.tngecl.org/static/greenenergy/assets/files/drip/ESDDPillur08022024.pdf",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "kundah-5",
+  "name": "Kundah Power House V",
+  "aliases": [
+   "Kundah PH V",
+   "Kundah Power House-5",
+   "Kundah PH V Hydroelectric Power Plant",
+   "Avalanche Power House",
+   "KUNDAH-V HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Nilgiris",
+  "lat": 11.30445,
+  "lon": 76.57571,
+  "loc_quality": "exact",
+  "capacity_mw": 40,
+  "units": [
+   {
+    "no": 1,
+    "mw": 20,
+    "commissioned": "1964-10",
+    "make": "Dominion Engineering / Canadian Westinghouse",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 20,
+    "commissioned": "1989-12",
+    "make": "BHEL Bhopal",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Upper Bhavani dam",
+     "kind": "reservoir",
+     "lat": null,
+     "lon": null,
+     "share": null
+    },
+    {
+     "name": "Western Catchment Weir I",
+     "kind": "reservoir",
+     "lat": 11.2508,
+     "lon": 76.5111,
+     "share": null
+    }
+   ],
+   "route": [
+    "Upper Bhavani -> tunnel/penstock -> PH-V",
+    "tailrace -> Avalanche reservoir"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Upper Bhavani dam and Western Catchment weir I",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "2x20 MW (1964, 1989) station using Upper Bhavani and Western Catchment water; discharges into Avalanche reservoir (elev. 6527 ft). TNGECL Generation Circle: Kundah. Location note: Unnamed OSM hydro plant polygon (way 1470127962) with penstock (way 1543174843) coincides with GEO 11.3044,76.5759. OSM feature named 'KUNDAH V/Avalanchi' (way 1463910409, 11.230,76.524, tagged waterway=dam) is a dam near Upper Bhavani, not the powerhouse. NPP coordinate (12.057, 79.016) is near Tiruvannamalai; ignored.",
+  "links": {
+   "npp_station_id": 100823,
+   "dgr_name": "KUNDAH-V HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20111206021014/http://www.tangedco.gov.in/hydrokundah.html",
+   "https://www.openstreetmap.org/way/1470127962",
+   "https://www.openstreetmap.org/way/1543174843",
+   "https://globalenergyobservatory.org/geoid/41249",
+   "https://www.tngecl.org/static/greenenergy/assets/files/drip/ESDDAvalanche030523.pdf",
+   "https://www.tngecl.org/static/greenenergy/assets/files/drip/ESDDWesternCatchmentI.pdf",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "kundah-6",
+  "name": "Kundah Power House VI (Parsons Valley)",
+  "aliases": [
+   "Kundah PH VI",
+   "Kundah Power House-6",
+   "Kundah PH 6",
+   "Parsons Valley Power House",
+   "Kundah PH VI (Parsons Valley) Hydroelectric Power Plant",
+   "PARSON`S VALLEY HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Nilgiris",
+  "lat": 11.36477,
+  "lon": 76.60426,
+  "loc_quality": "exact",
+  "capacity_mw": 30,
+  "units": [
+   {
+    "no": 1,
+    "mw": 30,
+    "commissioned": "2000-03",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Parsons Valley dam",
+     "kind": "reservoir",
+     "lat": 11.3933,
+     "lon": 76.595,
+     "share": null
+    },
+    {
+     "name": "Western Catchment Weir II",
+     "kind": "reservoir",
+     "lat": 11.3181,
+     "lon": 76.5444,
+     "share": null
+    },
+    {
+     "name": "Western Catchment Weir III",
+     "kind": "reservoir",
+     "lat": 11.3306,
+     "lon": 76.5547,
+     "share": null
+    }
+   ],
+   "route": [
+    "Parsons Valley reservoir -> penstock -> PH-VI",
+    "tailrace -> Emerald reservoir"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Parsons Valley dam, Porthimund dam, Western Catchment weirs II & III",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "110 kV switchyard 'Kundah PH 6' (OSM way 1202687585)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "1x30 MW unit commissioned 20.03.2000 (elev. 6519 ft) using Parsons Valley storage before the water enters Emerald reservoir. TNGECL Generation Circle: Kundah.",
+  "links": {
+   "npp_station_id": 100448,
+   "dgr_name": "PARSON`S VALLEY HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20111206021014/http://www.tangedco.gov.in/hydrokundah.html",
+   "https://www.openstreetmap.org/way/1470127963",
+   "https://www.openstreetmap.org/way/1202687585",
+   "https://globalenergyobservatory.org/geoid/41250",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/ESDDParsonsValleyDam(27121).pdf",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "pykara",
+  "name": "Pykara Power House (Singara)",
+  "aliases": [
+   "Pykara PH",
+   "Singara Power House",
+   "Pykara (Singara) Heritage Power House",
+   "Singara Hydro Electric Power Station",
+   "Pykara (Singara) Hydroelectric Power Plant",
+   "PYKARA POWER HOUSE /SINGARA",
+   "PYKARA HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Nilgiris",
+  "lat": 11.53367,
+  "lon": 76.60115,
+  "loc_quality": "exact",
+  "capacity_mw": 59.2,
+  "units": [
+   {
+    "no": 1,
+    "mw": 7,
+    "commissioned": "1933-06",
+    "make": "Escher Wyss (horizontal Pelton) / Metropolitan-Vickers",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 7,
+    "commissioned": "1932-11",
+    "make": "Escher Wyss / Metropolitan-Vickers",
+    "status": "operating"
+   },
+   {
+    "no": 3,
+    "mw": 7,
+    "commissioned": "1932-09",
+    "make": "Escher Wyss / Metropolitan-Vickers",
+    "status": "operating"
+   },
+   {
+    "no": 4,
+    "mw": 11,
+    "commissioned": "1939-08",
+    "make": "Escher Wyss / Metropolitan-Vickers",
+    "status": "operating"
+   },
+   {
+    "no": 5,
+    "mw": 13.6,
+    "commissioned": "1954-05",
+    "make": "Escher Wyss / Metropolitan-Vickers",
+    "status": "operating"
+   },
+   {
+    "no": 6,
+    "mw": 13.6,
+    "commissioned": "1954-06",
+    "make": "Escher Wyss / Metropolitan-Vickers",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Pykara dam",
+     "kind": "reservoir",
+     "lat": 11.4617,
+     "lon": 76.6033,
+     "share": null
+    },
+    {
+     "name": "Mukurthi dam",
+     "kind": "reservoir",
+     "lat": 11.4102,
+     "lon": 76.5637,
+     "share": null
+    },
+    {
+     "name": "Sandynallah dam",
+     "kind": "reservoir",
+     "lat": 11.4422,
+     "lon": 76.6536,
+     "share": null
+    },
+    {
+     "name": "Glenmorgan dam",
+     "kind": "reservoir",
+     "lat": 11.503,
+     "lon": 76.5907,
+     "share": null
+    },
+    {
+     "name": "Pykara new forebay dam",
+     "kind": "reservoir",
+     "lat": 11.4833,
+     "lon": 76.6,
+     "share": null
+    }
+   ],
+   "route": [
+    "Pykara/Glenmorgan forebay -> penstocks (head ~3030 ft) -> Singara PH",
+    "tailrace -> Maravakandy dam -> Moyar PH"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Mukurthi, Pykara, Sandynallah and Glenmorgan reservoirs (Pykara river)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "110 kV switchyard 'Pykara PH' (OSM way 590285279)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "First hydro scheme of the Madras Government (1929), first units 1932-33; originally 70.2 MW with 7 units, unit 4 (11 MW) damaged and removed in 2004, now 59.2 MW (3x7 + 1x11 + 2x13.6). Unit-to-rating mapping inferred from commissioning order. TNGECL Generation Circle: Kundah. Location note: NPP coordinate (11.4625, 76.6033) is the Pykara dam, 8 km south of the Singara powerhouse; ignored. NPP capacity 70.2 MW is the pre-2004 value.",
+  "links": {
+   "npp_station_id": 100459,
+   "dgr_name": "PYKARA HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://www.tngecl.org/en/greenenergy/about-us/tngecl-profile/",
+   "https://web.archive.org/web/20111206021014/http://www.tangedco.gov.in/hydrokundah.html",
+   "https://www.openstreetmap.org/way/1036169310",
+   "https://www.openstreetmap.org/way/590285279",
+   "https://globalenergyobservatory.org/geoid/41262",
+   "https://www.tngecl.org/media/filer_public/07/a3/07a3a858-d2e6-4372-b236-7c0aa4e101a0/esdd_pykara892020.pdf",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "pykara-micro",
+  "name": "Pykara Micro Power House",
+  "aliases": [
+   "Pykara Micro PH",
+   "Pykara Mini Power House",
+   "PYKARA MICRO POWER HOUSE"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Nilgiris",
+  "lat": 11.4617,
+  "lon": 76.6033,
+  "loc_quality": "approx",
+  "capacity_mw": 2,
+  "units": [
+   {
+    "no": 1,
+    "mw": 2,
+    "commissioned": "1989-10",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Pykara dam",
+     "kind": "reservoir",
+     "lat": 11.4617,
+     "lon": 76.6033,
+     "share": null
+    }
+   ],
+   "route": [
+    "Pykara dam -> dam-toe micro PH (head 25-113 ft)"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Pykara dam (toe of dam)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": 193,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "Dam-toe micro hydel station at Pykara dam commissioned 09.10.1989. Data card lists 1x2 MW; the 2011 TANGEDCO page says 2x1 MW. TNGECL Generation Circle: Kundah. Location note: Placed at Pykara dam (DRIP ESDD 11°27'42\"N 76°36'12\"E; OSM dam way 24657704); powerhouse at dam toe not individually mapped.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20111206021014/http://www.tangedco.gov.in/hydrokundah.html",
+   "https://www.openstreetmap.org/way/24657704",
+   "https://www.tngecl.org/media/filer_public/07/a3/07a3a858-d2e6-4372-b236-7c0aa4e101a0/esdd_pykara892020.pdf"
+  ]
+ },
+ {
+  "id": "moyar",
+  "name": "Moyar Power House",
+  "aliases": [
+   "Moyar PH",
+   "Moyar Hydroelectric Power Station",
+   "Moyar hydro-electric power house",
+   "MOYAR POWER HOUSE",
+   "MOYAR  HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Nilgiris",
+  "lat": 11.61399,
+  "lon": 76.6923,
+  "loc_quality": "exact",
+  "capacity_mw": 40,
+  "units": [
+   {
+    "no": 1,
+    "mw": 14,
+    "commissioned": "1952-04",
+    "make": "Boving (Pelton) / Metropolitan-Vickers; uprated 12->14 MW after RMU w.e.f. 11.12.2024",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 14,
+    "commissioned": "1952-09",
+    "make": "Boving / Metropolitan-Vickers; uprated 12->14 MW after RMU w.e.f. 10.11.2025",
+    "status": "operating"
+   },
+   {
+    "no": 3,
+    "mw": 12,
+    "commissioned": "1953-01",
+    "make": "Boving / Metropolitan-Vickers",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Moyar forebay dam",
+     "kind": "reservoir",
+     "lat": 11.6044,
+     "lon": 76.6919,
+     "share": null
+    },
+    {
+     "name": "Maravakandy dam",
+     "kind": "reservoir",
+     "lat": 11.5731,
+     "lon": 76.6547,
+     "share": null
+    }
+   ],
+   "route": [
+    "Pykara + PUSHEP tailrace -> Maravakandy dam -> Moyar forebay -> penstock -> PH at bottom of Moyar gorge"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Moyar forebay dam and Maravakandy dam (tailrace of Pykara PH / PUSHEP)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": 13.0,
+   "dam_len_m": 731.0,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "110 kV switchyard 'Moyar PH' (OSM way 590285278)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "3x12 MW (1952-53); capacity raised to 40 MW after RMU of units 1 and 2 (2024-25). Website still lists 36 MW. TNGECL Generation Circle: Kundah.",
+  "links": {
+   "npp_station_id": 100480,
+   "dgr_name": "MOYAR  HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20111206021014/http://www.tangedco.gov.in/hydrokundah.html",
+   "https://www.openstreetmap.org/way/1036169314",
+   "https://www.openstreetmap.org/way/590285278",
+   "https://globalenergyobservatory.org/geoid/41260",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/ESDDMOYAR23092022.pdf",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "maravakandy-micro",
+  "name": "Maravakandy Mini Micro Power House",
+  "aliases": [
+   "Maravakandy PH",
+   "Maravakandy Mini PH",
+   "Maravakandy Hydroelectric Power Station",
+   "MARAVAKANDY POWER HOUSE"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Nilgiris",
+  "lat": 11.57471,
+  "lon": 76.65399,
+  "loc_quality": "exact",
+  "capacity_mw": 0.75,
+  "units": [
+   {
+    "no": 1,
+    "mw": 0.75,
+    "commissioned": "1992-10",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Maravakandy dam",
+     "kind": "reservoir",
+     "lat": 11.5731,
+     "lon": 76.6547,
+     "share": null
+    }
+   ],
+   "route": [
+    "Maravakandy dam -> dam-toe micro PH"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Maravakandy dam (toe of dam; Pykara PH tailrace)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": 17.3,
+   "dam_len_m": 414.5,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "110 kV substation 'Maravakandy PH' (OSM way 1036169312)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "1x0.75 MW dam-toe micro hydel commissioned 14.10.1992. TNGECL Generation Circle: Kundah.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20111206021014/http://www.tangedco.gov.in/hydrokundah.html",
+   "https://www.openstreetmap.org/way/1036169313",
+   "https://www.openstreetmap.org/way/1036169312",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/MaravakandyESDD.pdf"
+  ]
+ },
+ {
+  "id": "mukurthy-micro",
+  "name": "Mukurthy Mini Power House",
+  "aliases": [
+   "Mukurthy Mini PH",
+   "Mukkuruthy Power House",
+   "Mukurthi Micro Power House",
+   "MUKURTHY MICRO POWER HOUSE"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Nilgiris",
+  "lat": 11.4102,
+  "lon": 76.5637,
+  "loc_quality": "approx",
+  "capacity_mw": 0.7,
+  "units": [
+   {
+    "no": 1,
+    "mw": 0.35,
+    "commissioned": "2001-06",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 0.35,
+    "commissioned": "2003-11",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Mukurthi dam",
+     "kind": "reservoir",
+     "lat": 11.4102,
+     "lon": 76.5637,
+     "share": null
+    }
+   ],
+   "route": [
+    "Mukurthi dam -> dam-toe mini PH"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Mukurthi dam (toe of dam)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": 34.0,
+   "dam_len_m": 161.54,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "2x0.35 MW mini hydel at the toe of Mukurthi dam (elev. 6800 ft), units 2001 and 2003. TNGECL Generation Circle: Kundah. Location note: Placed at Mukurthi dam (OSM way 622366324; DRIP gives 11°24'N 76°34'E); powerhouse not individually mapped.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20111206021014/http://www.tangedco.gov.in/hydrokundah.html",
+   "https://www.openstreetmap.org/way/622366324",
+   "https://www.tngecl.org/media/filer_public/1b/f1/1bf1933e-cb31-42b0-93ed-c43db5783936/mukurthy_dam.pdf"
+  ]
+ },
+ {
+  "id": "pushep",
+  "name": "Pykara Ultimate Stage Hydro Electric Project (PUSHEP)",
+  "aliases": [
+   "PUSHEP",
+   "PUSHEPH",
+   "Pykara Ultimate Stage HEP",
+   "Pykara Ultimate Stage Hydroelectric Power Plant",
+   "Pykara (PUSHEP) Ultimate Stage Hydroelectric Power Plant",
+   "PYKARA ULTMATE HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Nilgiris",
+  "lat": 11.52276,
+  "lon": 76.60087,
+  "loc_quality": "exact",
+  "capacity_mw": 150,
+  "units": [
+   {
+    "no": 1,
+    "mw": 50,
+    "commissioned": null,
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 50,
+    "commissioned": null,
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 3,
+    "mw": 50,
+    "commissioned": null,
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Pykara new forebay dam",
+     "kind": "reservoir",
+     "lat": 11.4833,
+     "lon": 76.6,
+     "share": null
+    },
+    {
+     "name": "Sandynallah dam",
+     "kind": "reservoir",
+     "lat": 11.4422,
+     "lon": 76.6536,
+     "share": null
+    }
+   ],
+   "route": [
+    "Pykara new forebay -> underground PH (3x50 MW)",
+    "tailrace -> Maravakandy -> Moyar PH"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Pykara new forebay dam (Pykara, Mukurthi, Sandynallah, Glenmorgan storages)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "230 kV switchyard 'PUSHEP' (OSM way 357561237)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "Underground 3x50 MW station commissioned 06.09.2005 (per 2011 TANGEDCO page), using the same Pykara storages as the Singara powerhouse. Surface switchyard location given. TNGECL Generation Circle: Kundah.",
+  "links": {
+   "npp_station_id": 100497,
+   "dgr_name": "PYKARA ULTMATE HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20111206021014/http://www.tangedco.gov.in/hydrokundah.html",
+   "https://www.openstreetmap.org/node/9546484166",
+   "https://www.openstreetmap.org/way/357561237",
+   "https://globalenergyobservatory.org/geoid/41266",
+   "file:raw/pages/npp_tn.json#station_details",
+   "https://www.tngecl.org/media/filer_public/74/a3/74a35e08-071b-4d1e-a0a4-229dc9486295/pykara_new_forebay_dam.pdf"
+  ]
+ },
+ {
+  "id": "kadamparai-psp",
+  "name": "Kadamparai Pumped Storage Power House",
+  "aliases": [
+   "Kadamparai PH",
+   "Kadamparai Power House",
+   "Kadamparai Hydroelectric Power Plant",
+   "Kadamparai Hydroelectric Pumped Storage Power Plant",
+   "KADAMPARAI POWER HOUSE (PUMPED STORAGE SCHEME)",
+   "KADAMPARI HPS"
+  ],
+  "type": "pumped_storage",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Coimbatore",
+  "lat": 10.41042,
+  "lon": 77.04337,
+  "loc_quality": "exact",
+  "capacity_mw": 400,
+  "units": [
+   {
+    "no": 1,
+    "mw": 100,
+    "commissioned": "1987-10",
+    "make": "Boving (reversible Francis) / GEC UK",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 100,
+    "commissioned": "1988-02",
+    "make": "BHEL Bhopal",
+    "status": "operating"
+   },
+   {
+    "no": 3,
+    "mw": 100,
+    "commissioned": "1989-04",
+    "make": "BHEL Bhopal",
+    "status": "operating"
+   },
+   {
+    "no": 4,
+    "mw": 100,
+    "commissioned": "1988-12",
+    "make": "BHEL Bhopal",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "pumped storage",
+   "sources": [
+    {
+     "name": "Kadamparai dam (upper reservoir)",
+     "kind": "reservoir",
+     "lat": 10.3938,
+     "lon": 77.0457,
+     "share": null
+    },
+    {
+     "name": "Upper Aliyar dam (lower reservoir)",
+     "kind": "reservoir",
+     "lat": 10.4376,
+     "lon": 77.0132,
+     "share": null
+    }
+   ],
+   "route": [
+    "generation: Kadamparai reservoir -> underground PH -> Upper Aliyar",
+    "pumping (off-peak): Upper Aliyar -> Kadamparai"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Kadamparai reservoir (upper) / Upper Aliyar reservoir (lower)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "230 kV switchyard 'Kadamparai' (OSM way 373398388)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "First underground pumped-storage scheme of TNEB, in the Anamalai hills (Pollachi taluk); 4x100 MW reversible units commissioned 1987-89. Pump mode at night when frequency >49.4 Hz. TNGECL Generation Circle: Kadamparai. Location note: Underground powerhouse; coordinate is the surface switchyard (OSM + GEO agree). NPP coordinate (10.3896, 77.0435) is 2.3 km south near Kadamparai dam.",
+  "links": {
+   "npp_station_id": 100205,
+   "dgr_name": "KADAMPARI HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://www.tngecl.org/en/greenenergy/about-us/tngecl-profile/",
+   "https://web.archive.org/web/20121013005907/http://www.tangedco.gov.in/hydrokadam.html",
+   "https://www.openstreetmap.org/node/9567098999",
+   "https://www.openstreetmap.org/way/373398388",
+   "https://globalenergyobservatory.org/geoid/3766",
+   "file:raw/pages/npp_tn.json#station_details",
+   "https://cea.nic.in/wp-content/uploads/hpi/2026/02/PSP_Annex_VI_PSP_Status_of_development_-1.pdf"
+  ]
+ },
+ {
+  "id": "aliyar",
+  "name": "Aliyar Power House",
+  "aliases": [
+   "Aliyar PH",
+   "Aliyar hydro power station",
+   "Aliyar Hydroelectric Power Plant",
+   "ALIYAR POWER HOUSE",
+   "Aliyar Power Hosue",
+   "ALIYAR  HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Coimbatore",
+  "lat": 10.45467,
+  "lon": 77.00784,
+  "loc_quality": "exact",
+  "capacity_mw": 60,
+  "units": [
+   {
+    "no": 1,
+    "mw": 60,
+    "commissioned": "1970-03",
+    "make": "Neyrpic (vertical Pelton) / Alstom",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Upper Aliyar dam",
+     "kind": "reservoir",
+     "lat": 10.4376,
+     "lon": 77.0132,
+     "share": null
+    }
+   ],
+   "route": [
+    "Upper Aliyar -> tunnel/penstock -> PH at Navamalai",
+    "tailrace -> Aliyar reservoir"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Upper Aliyar reservoir (Parambikulam-Aliyar Project)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "230/110 kV substation 'Aliyar' (OSM way 373398416)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "1x60 MW Pelton unit commissioned 21.03.1970 at Navamalai (elev. 1083 ft), part of the Parambikulam-Aliyar Project. TNGECL Generation Circle: Kadamparai. Location note: NPP coordinate (10.4718, 76.9729) is near Aliyar dam, ~4 km NW of the powerhouse.",
+  "links": {
+   "npp_station_id": 100495,
+   "dgr_name": "ALIYAR  HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005907/http://www.tangedco.gov.in/hydrokadam.html",
+   "https://www.openstreetmap.org/way/373398417",
+   "https://www.openstreetmap.org/way/373398416",
+   "https://globalenergyobservatory.org/geoid/41259",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "aliyar-mini",
+  "name": "Aliyar Mini Power House",
+  "aliases": [
+   "Aliyar Mini PH",
+   "Mini Aliyar Power House",
+   "ALIYAR MINI POWER HOUSE",
+   "Lower Aliyar Mini PH"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Coimbatore",
+  "lat": 10.48422,
+  "lon": 76.96603,
+  "loc_quality": "approx",
+  "capacity_mw": 2.5,
+  "units": [
+   {
+    "no": 1,
+    "mw": 1.25,
+    "commissioned": "2002-09",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 1.25,
+    "commissioned": "2002-09",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Aliyar dam",
+     "kind": "reservoir",
+     "lat": 10.4828,
+     "lon": 76.9709,
+     "share": null
+    }
+   ],
+   "route": [
+    "Aliyar dam -> irrigation outlet mini PH"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Aliyar (lower) reservoir",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "2x1.25 MW irrigation mini hydel at Aliyar dam, commissioned 23.09.2002. TNGECL Generation Circle: Kadamparai. Location note: Unnamed OSM hydro plant (way 1468881080) 0.5 km from Aliyar dam; identification by proximity only.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005907/http://www.tangedco.gov.in/hydrokadam.html",
+   "https://www.openstreetmap.org/way/1468881080",
+   "https://www.openstreetmap.org/way/84635275"
+  ]
+ },
+ {
+  "id": "sarkarpathy",
+  "name": "Sarkarpathy Power House",
+  "aliases": [
+   "Sarkarpathy PH",
+   "Sakarapathy Power House",
+   "Sarkarpathy Hydroelectric Power Plant",
+   "SARKARPATHY POWER HOUSE",
+   "SARKARPATHY HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Coimbatore",
+  "lat": 10.47044,
+  "lon": 76.85848,
+  "loc_quality": "exact",
+  "capacity_mw": 30,
+  "units": [
+   {
+    "no": 1,
+    "mw": 30,
+    "commissioned": "1966-08",
+    "make": "Hitachi (vertical Francis) / Hitachi",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Parambikulam reservoir",
+     "kind": "reservoir",
+     "lat": 10.3859,
+     "lon": 76.8087,
+     "share": null
+    }
+   ],
+   "route": [
+    "Parambikulam/Thunakadavu -> contour tunnel -> Sarkarpathy PH",
+    "tailrace -> Parambikulam-Aliyar contour canal"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Parambikulam and Thunakadavu reservoirs (Parambikulam-Aliyar Project)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "110 kV substation 'Sarkarpathy' (OSM way 370180423)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "1x30 MW unit commissioned 14.08.1966 (elev. 1429 ft), part of the Parambikulam-Aliyar Project (irrigation). TNGECL Generation Circle: Kadamparai. Location note: OSM node + OSM substation + NPP agree within 0.3 km; GEO point (10.4558, 76.8302) is 3.3 km off.",
+  "links": {
+   "npp_station_id": 100512,
+   "dgr_name": "SARKARPATHY HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005907/http://www.tangedco.gov.in/hydrokadam.html",
+   "https://www.openstreetmap.org/node/337555791",
+   "https://www.openstreetmap.org/way/370180423",
+   "file:raw/pages/npp_tn.json#station_details",
+   "https://globalenergyobservatory.org/geoid/41258"
+  ]
+ },
+ {
+  "id": "sholayar-1",
+  "name": "Sholayar Power House I",
+  "aliases": [
+   "Sholayar PH-I",
+   "Sholayar Power Hosue - 1",
+   "SHOLAYAR POWER HOUSE – I",
+   "Sholayar I Hydroelectric Power House",
+   "SHOLAYAR I&II",
+   "SHOLAYAR HPS (TN)"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Coimbatore",
+  "lat": 10.35563,
+  "lon": 76.88054,
+  "loc_quality": "exact",
+  "capacity_mw": 84,
+  "units": [
+   {
+    "no": 1,
+    "mw": 42,
+    "commissioned": "1971-04",
+    "make": "Litostroj (vertical Francis) / Rade Koncar; uprated 35->42 MW",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 42,
+    "commissioned": "1971-05",
+    "make": "Litostroj / Rade Koncar; uprated 35->42 MW",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Upper Sholayar dam",
+     "kind": "reservoir",
+     "lat": 10.2958,
+     "lon": 76.8795,
+     "share": null
+    }
+   ],
+   "route": [
+    "Upper Sholayar -> tunnel -> PH-I at Manomboli",
+    "tailrace -> Parambikulam system"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Upper Sholayar reservoir",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "Commissioned April-May 1971 as 2x35 MW at Manomboli (elev. 1931 ft); now 2x42 MW. Sholayar water is shared inter-state with Kerala. TNGECL Generation Circle: Kadamparai. Location note: OSM polygon 'SHOLAYAR I&II' and GEO 'Sholayar I' agree (0.2 km). The DGR/NPP entry 'SHOLAYAR HPS (TN)' (84 MW) matches PH-I capacity but its coordinate (10.2983, 76.8808) sits at PH-II near the dam.",
+  "links": {
+   "npp_station_id": 100294,
+   "dgr_name": "SHOLAYAR HPS (TN)",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005907/http://www.tangedco.gov.in/hydrokadam.html",
+   "https://www.openstreetmap.org/way/1463910406",
+   "https://globalenergyobservatory.org/geoid/41254",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "sholayar-2",
+  "name": "Sholayar Power House II",
+  "aliases": [
+   "Sholayar PH-II",
+   "Sholayar Power Hosue - 2",
+   "SHOLAYAR POWER HOUSE – II",
+   "Sholayar II Hydroelectric Power House"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Coimbatore",
+  "lat": 10.30367,
+  "lon": 76.87338,
+  "loc_quality": "exact",
+  "capacity_mw": 25,
+  "units": [
+   {
+    "no": 1,
+    "mw": 25,
+    "commissioned": "1971-03",
+    "make": "Litostroj (vertical Francis) / Rade Koncar",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Upper Sholayar dam",
+     "kind": "reservoir",
+     "lat": 10.2958,
+     "lon": 76.8795,
+     "share": null
+    }
+   ],
+   "route": [
+    "Upper Sholayar dam -> PH-II below dam",
+    "tailrace -> Lower Sholayar (Kerala)"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Upper Sholayar reservoir",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "1x25 MW unit commissioned 29.03.1971 near Sholayar dam (elev. 2750 ft); releases water to Kerala under inter-state sharing. TNGECL Generation Circle: Kadamparai. Location note: Unnamed OSM hydro plant way 1468881078, GEO 'Sholayar II' (0.6 km) and the NPP 'SHOLAYAR HPS (TN)' point (1.2 km) cluster here.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005907/http://www.tangedco.gov.in/hydrokadam.html",
+   "https://www.openstreetmap.org/way/1468881078",
+   "https://globalenergyobservatory.org/geoid/41255",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "thirumurthy-mini",
+  "name": "Thirumurthy Mini Power House",
+  "aliases": [
+   "Thirumurthy Mini PH",
+   "Thirumoorthy Power House",
+   "THIRUMURTHY MINI PH."
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Tiruppur",
+  "lat": 10.4748,
+  "lon": 77.1485,
+  "loc_quality": "approx",
+  "capacity_mw": 1.95,
+  "units": [
+   {
+    "no": 1,
+    "mw": 0.65,
+    "commissioned": "2000-03",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 0.65,
+    "commissioned": "2000-03",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 3,
+    "mw": 0.65,
+    "commissioned": "2000-03",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Thirumoorthi dam",
+     "kind": "reservoir",
+     "lat": 10.4748,
+     "lon": 77.1485,
+     "share": null
+    }
+   ],
+   "route": [
+    "Thirumurthy dam -> irrigation outlet mini PH"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Thirumurthy dam (irrigation)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "3x0.65 MW irrigation mini hydel near Udumalpet, commissioned 20.03.2000. TNGECL Generation Circle: Kadamparai. Location note: Placed at Thirumoorthi dam (OSM way 840910471); powerhouse not mapped.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005907/http://www.tangedco.gov.in/hydrokadam.html",
+   "https://www.openstreetmap.org/way/840910471"
+  ]
+ },
+ {
+  "id": "poonachi-mini",
+  "name": "Poonachi Mini Power House",
+  "aliases": [
+   "Poonachi Mini PH",
+   "Poonachi Power Hosue",
+   "POONACHI MINI PH",
+   "Punachi"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Coimbatore",
+  "lat": null,
+  "lon": null,
+  "loc_quality": "approx",
+  "capacity_mw": 2,
+  "units": [
+   {
+    "no": 1,
+    "mw": 1,
+    "commissioned": "1992-11",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 1,
+    "commissioned": "1992-12",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "run-of-river",
+   "sources": [
+    {
+     "name": "Punachi river (run of river)",
+     "kind": "reservoir",
+     "lat": null,
+     "lon": null,
+     "share": null
+    }
+   ],
+   "route": [
+    "run-of-river diversion -> mini PH"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Punachi river (run-of-river)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "2x1 MW run-of-river mini hydel commissioned Nov-Dec 1992, Kadamparai circle; the TANGEDCO schematic map shows it between Aliyar and Kadamparai (Anamalai hills). TNGECL Generation Circle: Kadamparai. Location note: Exact location unknown; not in OSM/GEO/NPP. OSM substation 'Poonachi' (Anthiyur, Erode) is a different place.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005907/http://www.tangedco.gov.in/hydrokadam.html",
+   "https://web.archive.org/web/2023/https://www.tangedco.gov.in/images/hydromap.jpg"
+  ]
+ },
+ {
+  "id": "amaravathi",
+  "name": "Amaravathi Power House",
+  "aliases": [
+   "Amaravathy Power House",
+   "Amaravathi PH",
+   "AMARAVATHI",
+   "Amaravathy Power Hosue"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Tiruppur",
+  "lat": 10.4181,
+  "lon": 77.2638,
+  "loc_quality": "approx",
+  "capacity_mw": 4,
+  "units": [
+   {
+    "no": 1,
+    "mw": 2,
+    "commissioned": "2006-09",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 2,
+    "commissioned": "2006-11",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Amaravathi dam",
+     "kind": "reservoir",
+     "lat": 10.4181,
+     "lon": 77.2638,
+     "share": null
+    }
+   ],
+   "route": [
+    "Amaravathi dam -> irrigation outlet PH"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Amaravathi reservoir (irrigation)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "2x2 MW irrigation hydel at Amaravathi dam, commissioned Sept-Nov 2006. TNGECL Generation Circle: Kadamparai. Location note: Placed at Amaravathi dam (OSM way 203611386); powerhouse not mapped.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005907/http://www.tangedco.gov.in/hydrokadam.html",
+   "https://www.openstreetmap.org/way/203611386"
+  ]
+ },
+ {
+  "id": "mettur-dam",
+  "name": "Mettur Dam Power House",
+  "aliases": [
+   "Mettur Dam PH",
+   "Dam Power Hosue/Mettur",
+   "METTUR DAM POWER HOUSE",
+   "Mettur Dam and Tunnel Hydro Power Plant",
+   "METTUR DAM HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Salem",
+  "lat": 11.8007,
+  "lon": 77.80962,
+  "loc_quality": "exact",
+  "capacity_mw": 50,
+  "units": [
+   {
+    "no": 1,
+    "mw": 12.5,
+    "commissioned": "1937-06",
+    "make": "BTH England (horizontal Francis); renovated 2007-04",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 12.5,
+    "commissioned": "1937-08",
+    "make": "BTH England; renovated 2004-09",
+    "status": "operating"
+   },
+   {
+    "no": 3,
+    "mw": 12.5,
+    "commissioned": "1938-01",
+    "make": "BTH England; renovated 2006-08",
+    "status": "operating"
+   },
+   {
+    "no": 4,
+    "mw": 12.5,
+    "commissioned": "1946-10",
+    "make": "BTH England; renovated 2005-01",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Mettur dam / Stanley reservoir",
+     "kind": "reservoir",
+     "lat": 11.8035,
+     "lon": 77.8063,
+     "share": null
+    }
+   ],
+   "route": [
+    "Mettur dam -> dam-toe PH (head 18-49 m)",
+    "tailrace -> Cauvery -> Lower Mettur barrages"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Stanley reservoir (Mettur dam, Cauvery) - irrigation releases",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": 40,
+   "dam_len_m": 1700,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "110 kV substation 'Mettur Dam PH' (OSM way 340479153)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "4x12.5 MW units 1937-46 at the toe of Mettur (Stanley) dam, renovated 2004-07. Dam height/length from GEO. TNGECL Generation Circle: Erode.",
+  "links": {
+   "npp_station_id": 100472,
+   "dgr_name": "METTUR DAM HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005901/http://www.tangedco.gov.in/hydroerode.html",
+   "https://www.openstreetmap.org/way/429967365",
+   "https://www.openstreetmap.org/way/340479153",
+   "https://globalenergyobservatory.org/geoid/4261",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "mettur-tunnel",
+  "name": "Mettur Tunnel Power House",
+  "aliases": [
+   "Mettur Tunnel PH",
+   "Tunnel Power Hosue/Mettur",
+   "METTUR TUNNEL POWER HOUSE",
+   "METTUR TUNNEL HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Salem",
+  "lat": 11.79797,
+  "lon": 77.81076,
+  "loc_quality": "exact",
+  "capacity_mw": 200,
+  "units": [
+   {
+    "no": 1,
+    "mw": 50,
+    "commissioned": "1965-08",
+    "make": "Machinoexport USSR (vertical Kaplan)",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 50,
+    "commissioned": "1966-07",
+    "make": "Machinoexport USSR",
+    "status": "operating"
+   },
+   {
+    "no": 3,
+    "mw": 50,
+    "commissioned": "1966-07",
+    "make": "Machinoexport USSR",
+    "status": "operating"
+   },
+   {
+    "no": 4,
+    "mw": 50,
+    "commissioned": "1966-07",
+    "make": "Machinoexport USSR",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Mettur dam / Stanley reservoir",
+     "kind": "reservoir",
+     "lat": 11.8035,
+     "lon": 77.8063,
+     "share": null
+    }
+   ],
+   "route": [
+    "Stanley reservoir -> tunnel -> Tunnel PH",
+    "tailrace -> Cauvery"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Stanley reservoir (Mettur dam) via tunnel - irrigation releases",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "230 kV switchyard 'Mettur Tunnel Power House' (OSM way 340479063)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "4x50 MW Kaplan units commissioned 1965-66 (Soviet supply). TNGECL Generation Circle: Erode. Location note: NPP coordinate (11.772, 77.806) is 2.9 km south (near Mettur TPS); OSM polygon + switchyard used.",
+  "links": {
+   "npp_station_id": 100473,
+   "dgr_name": "METTUR TUNNEL HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005901/http://www.tangedco.gov.in/hydroerode.html",
+   "https://www.openstreetmap.org/way/429967367",
+   "https://www.openstreetmap.org/way/340479063",
+   "https://globalenergyobservatory.org/geoid/4261",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "lower-mettur-1",
+  "name": "Lower Mettur Barrage Power House I (Chekkanur)",
+  "aliases": [
+   "Lower Mettur Barrage PH-I",
+   "LM Barrage Power Hosue 1/ Chekkanur",
+   "LMHEP-1",
+   "Lower Mettur Barrage I Power House",
+   "Lower Mettur (LMHEP) Hydro Power Plant",
+   "LOWER METTUR-I HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Salem",
+  "lat": 11.72751,
+  "lon": 77.77932,
+  "loc_quality": "exact",
+  "capacity_mw": 30,
+  "units": [
+   {
+    "no": 1,
+    "mw": 15,
+    "commissioned": "1988-08",
+    "make": "Fuji Electric (bulb turbine/generator)",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 15,
+    "commissioned": "1988-08",
+    "make": "Fuji Electric (bulb turbine/generator)",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "run-of-river (barrage)",
+   "sources": [
+    {
+     "name": "Mettur dam / Stanley reservoir",
+     "kind": "reservoir",
+     "lat": 11.8035,
+     "lon": 77.8063,
+     "share": null
+    }
+   ],
+   "route": [
+    "Mettur releases -> Cauvery -> barrage pondage -> bulb units (head 3-7.5 m)"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Cauvery river pondage below Mettur dam (irrigation releases)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "110 kV substation 'Lower Mettur Barrage I PH' (OSM way 340479170)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of four barrage powerhouses (Lower Mettur Hydro-Electric Project, 4x2x15 MW bulb units, Fuji Electric) built 1987-89 on the Cauvery below Mettur; near Chekkanur. TNGECL Generation Circle: Erode. Location note: NPP coordinate for this station is wrong (off by >8 km; II-IV are 50-150 km away); OSM named polygon used.",
+  "links": {
+   "npp_station_id": 100218,
+   "dgr_name": "LOWER METTUR-I HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005901/http://www.tangedco.gov.in/hydroerode.html",
+   "https://www.openstreetmap.org/way/429967361",
+   "file:raw/pages/npp_tn.json#station_details",
+   "https://www.openstreetmap.org/way/340479170"
+  ]
+ },
+ {
+  "id": "lower-mettur-2",
+  "name": "Lower Mettur Barrage Power House II (Nerinjipettai)",
+  "aliases": [
+   "Lower Mettur Barrage PH-II",
+   "LM Barrage Power Hosue 2/ Nerinjipettai",
+   "LMHEP-2",
+   "Lower Mettur Barrage II Power House",
+   "Lower Mettur (LMHEP) Hydro Power Plant",
+   "LOWER METTUR-II HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Erode",
+  "lat": 11.6436,
+  "lon": 77.75647,
+  "loc_quality": "exact",
+  "capacity_mw": 30,
+  "units": [
+   {
+    "no": 1,
+    "mw": 15,
+    "commissioned": "1988-08",
+    "make": "Fuji Electric (bulb turbine/generator)",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 15,
+    "commissioned": "1988-08",
+    "make": "Fuji Electric (bulb turbine/generator)",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "run-of-river (barrage)",
+   "sources": [
+    {
+     "name": "Mettur dam / Stanley reservoir",
+     "kind": "reservoir",
+     "lat": 11.8035,
+     "lon": 77.8063,
+     "share": null
+    }
+   ],
+   "route": [
+    "Mettur releases -> Cauvery -> barrage pondage -> bulb units (head 3-7.5 m)"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Cauvery river pondage below Mettur dam (irrigation releases)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of four barrage powerhouses (Lower Mettur Hydro-Electric Project, 4x2x15 MW bulb units, Fuji Electric) built 1987-89 on the Cauvery below Mettur; near Nerinjipettai. TNGECL Generation Circle: Erode. Location note: NPP coordinate for this station is wrong (off by >8 km; II-IV are 50-150 km away); OSM named polygon used.",
+  "links": {
+   "npp_station_id": 100824,
+   "dgr_name": "LOWER METTUR-II HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005901/http://www.tangedco.gov.in/hydroerode.html",
+   "https://www.openstreetmap.org/way/429967362",
+   "file:raw/pages/npp_tn.json#station_details",
+   "https://globalenergyobservatory.org/geoid/4099"
+  ]
+ },
+ {
+  "id": "lower-mettur-3",
+  "name": "Lower Mettur Barrage Power House III (Kuthiraikalmedu (Koneripatti))",
+  "aliases": [
+   "Lower Mettur Barrage PH-III",
+   "LM Barrage Power Hosue 3/ Kuthiraikalmedu",
+   "LMHEP-3",
+   "Lower Mettur Barrage III Power House",
+   "Lower Mettur (LMHEP) Hydro Power Plant",
+   "LOWER METTUR-III HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Erode",
+  "lat": 11.5752,
+  "lon": 77.74198,
+  "loc_quality": "exact",
+  "capacity_mw": 30,
+  "units": [
+   {
+    "no": 1,
+    "mw": 15,
+    "commissioned": "1988-01",
+    "make": "Fuji Electric (bulb turbine/generator)",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 15,
+    "commissioned": "1988-09",
+    "make": "Fuji Electric (bulb turbine/generator)",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "run-of-river (barrage)",
+   "sources": [
+    {
+     "name": "Mettur dam / Stanley reservoir",
+     "kind": "reservoir",
+     "lat": 11.8035,
+     "lon": 77.8063,
+     "share": null
+    }
+   ],
+   "route": [
+    "Mettur releases -> Cauvery -> barrage pondage -> bulb units (head 3-7.5 m)"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Cauvery river pondage below Mettur dam (irrigation releases)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of four barrage powerhouses (Lower Mettur Hydro-Electric Project, 4x2x15 MW bulb units, Fuji Electric) built 1987-89 on the Cauvery below Mettur; near Kuthiraikalmedu (Koneripatti). TNGECL Generation Circle: Erode. Location note: NPP coordinate for this station is wrong (off by >8 km; II-IV are 50-150 km away); OSM named polygon used.",
+  "links": {
+   "npp_station_id": 100825,
+   "dgr_name": "LOWER METTUR-III HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005901/http://www.tangedco.gov.in/hydroerode.html",
+   "https://www.openstreetmap.org/way/429967363",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "lower-mettur-4",
+  "name": "Lower Mettur Barrage Power House IV (Uratchikottai)",
+  "aliases": [
+   "Lower Mettur Barrage PH-IV",
+   "LM Barrage Power Hosue 4/ Uratchikottai",
+   "LMHEP-4",
+   "Lower Mettur Barrage IV Power House",
+   "Lower Mettur (LMHEP) Hydro Power Plant",
+   "LOWER METTUR-IV HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Erode",
+  "lat": 11.48545,
+  "lon": 77.70171,
+  "loc_quality": "exact",
+  "capacity_mw": 30,
+  "units": [
+   {
+    "no": 1,
+    "mw": 15,
+    "commissioned": "1989-09",
+    "make": "Fuji Electric (bulb turbine/generator)",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 15,
+    "commissioned": "1988-12",
+    "make": "Fuji Electric (bulb turbine/generator)",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "run-of-river (barrage)",
+   "sources": [
+    {
+     "name": "Mettur dam / Stanley reservoir",
+     "kind": "reservoir",
+     "lat": 11.8035,
+     "lon": 77.8063,
+     "share": null
+    }
+   ],
+   "route": [
+    "Mettur releases -> Cauvery -> barrage pondage -> bulb units (head 3-7.5 m)"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Cauvery river pondage below Mettur dam (irrigation releases)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "110 kV substation 'Lower Mettur Barrage IV PH' (OSM way 508747380)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of four barrage powerhouses (Lower Mettur Hydro-Electric Project, 4x2x15 MW bulb units, Fuji Electric) built 1987-89 on the Cauvery below Mettur; near Uratchikottai. TNGECL Generation Circle: Erode. Location note: NPP coordinate for this station is wrong (off by >8 km; II-IV are 50-150 km away); OSM named polygon used.",
+  "links": {
+   "npp_station_id": 100826,
+   "dgr_name": "LOWER METTUR-IV HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005901/http://www.tangedco.gov.in/hydroerode.html",
+   "https://www.openstreetmap.org/way/429967364",
+   "file:raw/pages/npp_tn.json#station_details",
+   "https://www.openstreetmap.org/way/508747380"
+  ]
+ },
+ {
+  "id": "bhavani-kattalai-1",
+  "name": "Bhavani Kattalai Barrage Power House I (Samayasangili)",
+  "aliases": [
+   "Bhavani Kattalai Barrage PH-I",
+   "BK Barrage Power Hosue 1/ Samayasangili",
+   "Bhavani Kattalai I",
+   "Bhawani Kattalai Barrage I Hydroelectric Power Plant",
+   "Bhavani Kattalai I Hydroelectric Power Plant",
+   "BHAVANI KATTALAI BARRGAE - I",
+   "BHAWANI KATTAL"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Namakkal",
+  "lat": 11.38418,
+  "lon": 77.71474,
+  "loc_quality": "exact",
+  "capacity_mw": 30,
+  "units": [
+   {
+    "no": 1,
+    "mw": 15,
+    "commissioned": "2006-08",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 15,
+    "commissioned": "2006-09",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "run-of-river (barrage)",
+   "sources": [
+    {
+     "name": "Mettur dam / Stanley reservoir",
+     "kind": "reservoir",
+     "lat": 11.8035,
+     "lon": 77.8063,
+     "share": null
+    }
+   ],
+   "route": [
+    "Mettur releases -> Cauvery -> barrage pondage -> bulb units"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Cauvery river pondage (below Lower Mettur barrages)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "Barrage powerhouse (2x15 MW) on the Cauvery between Bhavani and Pasur; commissioned Aug-Sep 2006. TNGECL Generation Circle: Erode. Location note: OSM polygon, NPP and GEO agree.",
+  "links": {
+   "npp_station_id": 100295,
+   "dgr_name": "BHAWANI KATTAL",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005901/http://www.tangedco.gov.in/hydroerode.html",
+   "https://www.openstreetmap.org/way/429967371",
+   "https://globalenergyobservatory.org/geoid/41243",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "bhavani-kattalai-2",
+  "name": "Bhavani Kattalai Barrage Power House II (Vendipalayam)",
+  "aliases": [
+   "Bhavani Kattalai Barrage PH-II",
+   "BK Barrage Power Hosue 2/ Vendipalayam",
+   "Bhavani Kattalai II",
+   "Bhawani Kattalai Barrage II Hydroelectric Power Plant",
+   "Bhavani Kattalai II Hydroelectric Power Plant",
+   "BHAVANI KATTALAI BARRGAE - II",
+   "BHAWANI BARRAGE-II HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Erode",
+  "lat": 11.33091,
+  "lon": 77.75807,
+  "loc_quality": "exact",
+  "capacity_mw": 30,
+  "units": [
+   {
+    "no": 1,
+    "mw": 15,
+    "commissioned": "2011-07",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 15,
+    "commissioned": "2011-09",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "run-of-river (barrage)",
+   "sources": [
+    {
+     "name": "Mettur dam / Stanley reservoir",
+     "kind": "reservoir",
+     "lat": 11.8035,
+     "lon": 77.8063,
+     "share": null
+    }
+   ],
+   "route": [
+    "Mettur releases -> Cauvery -> barrage pondage -> bulb units"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Cauvery river pondage (below Lower Mettur barrages)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "Barrage powerhouse (2x15 MW) on the Cauvery between Bhavani and Pasur; units dated 28.07.2011 and 29.09.2011 by the TANGEDCO page; GEO gives 2013. TNGECL Generation Circle: Erode. Location note: NPP coordinate (11.3077, 77.7399) is 3.2 km off; OSM polygon + GEO agree.",
+  "links": {
+   "npp_station_id": 100117,
+   "dgr_name": "BHAWANI BARRAGE-II HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005901/http://www.tangedco.gov.in/hydroerode.html",
+   "https://www.openstreetmap.org/way/429967370",
+   "https://globalenergyobservatory.org/geoid/44619",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "bhavani-kattalai-3",
+  "name": "Bhavani Kattalai Barrage Power House III (Cholasiramani)",
+  "aliases": [
+   "Bhavani Kattalai Barrage PH-III",
+   "BK Barrage Power Hosue 3/ Cholasiramani",
+   "Bhavani Kattalai III",
+   "Bhawani Kattalai Barrage III Hydroelectric Power Plant",
+   "Bhavani Kattalai III Hydroelectric Power Plant",
+   "BHAVANI KATTALAI BARRGAE - III",
+   "BHAWANI BARRAGE-III HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Namakkal",
+  "lat": 11.24286,
+  "lon": 77.86595,
+  "loc_quality": "exact",
+  "capacity_mw": 30,
+  "units": [
+   {
+    "no": 1,
+    "mw": 15,
+    "commissioned": null,
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 15,
+    "commissioned": null,
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "run-of-river (barrage)",
+   "sources": [
+    {
+     "name": "Mettur dam / Stanley reservoir",
+     "kind": "reservoir",
+     "lat": 11.8035,
+     "lon": 77.8063,
+     "share": null
+    }
+   ],
+   "route": [
+    "Mettur releases -> Cauvery -> barrage pondage -> bulb units"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Cauvery river pondage (below Lower Mettur barrages)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "Barrage powerhouse (2x15 MW) on the Cauvery between Bhavani and Pasur; commissioned 2012-13 (GEO); exact unit dates not found. TNGECL Generation Circle: Erode. Location note: NPP coordinate for 'BHAWANI BARRAGE-III HPS' duplicates Bhavani Kattalai-I (11.385, 77.716), ~23 km off; OSM polygon + GEO agree.",
+  "links": {
+   "npp_station_id": 100118,
+   "dgr_name": "BHAWANI BARRAGE-III HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005901/http://www.tangedco.gov.in/hydroerode.html",
+   "https://www.openstreetmap.org/way/429967372",
+   "https://globalenergyobservatory.org/geoid/44620",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "sathanur",
+  "name": "Sathanur Dam Power House",
+  "aliases": [
+   "Sathanur Dam PH",
+   "Sathanur Power House",
+   "SATHANUR",
+   "Sathanur Dam Hydroelectric Power Plant"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Tiruvannamalai",
+  "lat": 12.18266,
+  "lon": 78.85137,
+  "loc_quality": "exact",
+  "capacity_mw": 7.5,
+  "units": [
+   {
+    "no": 1,
+    "mw": 7.5,
+    "commissioned": "1999-03",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Sathanur dam",
+     "kind": "reservoir",
+     "lat": 12.1832,
+     "lon": 78.8503,
+     "share": null
+    }
+   ],
+   "route": [
+    "Sathanur dam -> dam-toe PH"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Sathanur reservoir (Thenpennai river, irrigation)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": 36.28,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "1x7.5 MW irrigation hydel at Sathanur dam (Chengam taluk), commissioned 10.03.1999. Dam height from GEO. TNGECL Generation Circle: Erode.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005901/http://www.tangedco.gov.in/hydroerode.html",
+   "https://www.openstreetmap.org/way/995868195",
+   "https://globalenergyobservatory.org/geoid/41244"
+  ]
+ },
+ {
+  "id": "lower-bhavani-micro",
+  "name": "Lower Bhavani Micro Hydel Power House (Bhavanisagar)",
+  "aliases": [
+   "Lower Bhavani Micro Hydel PH",
+   "Micro Hydel Power Hosue/ Bhavani Sagar",
+   "LOWER BHAVANI -1/Micro Hydel PH/Bhavani Sagar",
+   "BhavaniSagar Micro PH",
+   "Bhavanisagar hydroelectric power station",
+   "LB Micro"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Erode",
+  "lat": 11.47084,
+  "lon": 77.11513,
+  "loc_quality": "exact",
+  "capacity_mw": 8,
+  "units": [
+   {
+    "no": 1,
+    "mw": 2,
+    "commissioned": "1990-05",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 2,
+    "commissioned": "1990-04",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 3,
+    "mw": 2,
+    "commissioned": "1990-04",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 4,
+    "mw": 2,
+    "commissioned": "1990-04",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Bhavanisagar dam",
+     "kind": "reservoir",
+     "lat": 11.4739,
+     "lon": 77.106,
+     "share": null
+    }
+   ],
+   "route": [
+    "Bhavanisagar dam -> dam-toe micro PH"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Bhavanisagar (Lower Bhavani) reservoir - irrigation releases",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "110 kV substation 'BhavaniSagar Micro PH' (OSM way 336571787)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "4x2 MW micro hydel at Bhavanisagar dam commissioned April-May 1990. The OSM relation tags 32 MW, which does not match any official figure. TNGECL Generation Circle: Erode.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005901/http://www.tangedco.gov.in/hydroerode.html",
+   "https://www.openstreetmap.org/relation/13876404",
+   "https://www.openstreetmap.org/way/336571787"
+  ]
+ },
+ {
+  "id": "lower-bhavani-rbc",
+  "name": "Lower Bhavani Right Bank Canal Power House",
+  "aliases": [
+   "Lower Bhavani RBC",
+   "LBRBC",
+   "RBC Power Hosue/ Bhavani Sagar",
+   "LOWER BHAVANI RBC",
+   "Lower Bhavani Right Bank Canal PH"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Erode",
+  "lat": 11.4739,
+  "lon": 77.106,
+  "loc_quality": "approx",
+  "capacity_mw": 8,
+  "units": [
+   {
+    "no": 1,
+    "mw": 4,
+    "commissioned": "1998-02",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 4,
+    "commissioned": "1998-02",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Bhavanisagar dam",
+     "kind": "reservoir",
+     "lat": 11.4739,
+     "lon": 77.106,
+     "share": null
+    }
+   ],
+   "route": [
+    "Bhavanisagar dam -> Right Bank Canal head -> canal PH"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Bhavanisagar reservoir - Right Bank Canal releases",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "2x4 MW canal-head powerhouse at Bhavanisagar (18 km from Sathyamangalam), commissioned Feb 1998. TNGECL Generation Circle: Erode. Location note: Placed at Bhavanisagar dam centre (OSM way 164744315); canal-head powerhouse not individually mapped.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005901/http://www.tangedco.gov.in/hydroerode.html",
+   "https://www.openstreetmap.org/way/164744315"
+  ]
+ },
+ {
+  "id": "bhavani-barrage-1",
+  "name": "Bhavani Barrage Power House 1 (Samayapuram)",
+  "aliases": [
+   "Bhavani Barrage 1 PH",
+   "BB Power Hosue 1/ Samayapuram",
+   "Bhavani Barrage PH-I"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Coimbatore",
+  "lat": 11.31654,
+  "lon": 76.94553,
+  "loc_quality": "approx",
+  "capacity_mw": 10,
+  "units": [
+   {
+    "no": 1,
+    "mw": 5,
+    "commissioned": null,
+    "make": "bulb turbines (SSEB EPC)",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 5,
+    "commissioned": null,
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "run-of-river (barrage)",
+   "sources": [
+    {
+     "name": "Bhavani river barrage pondage",
+     "kind": "reservoir",
+     "lat": 11.31654,
+     "lon": 76.94553,
+     "share": null
+    }
+   ],
+   "route": [
+    "Bhavani river barrage -> bulb units"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Bhavani river pondage (downstream of Pillur/Kundah releases, near Mettupalayam)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "2x5 MW bulb-turbine barrage powerhouse on the Bhavani near Mettupalayam (Samayapuram). Commissioning dates not found (post-2012; not on 2011-12 TANGEDCO pages). TNGECL Generation Circle: Erode. Location note: Two unnamed OSM hydro plant polygons on the Bhavani near Mettupalayam; satellite imagery shows a barrage with an attached powerhouse at each. Which is PH-1 (Samayapuram) and which PH-2 (Umaipalayam) is inferred, not confirmed.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://www.openstreetmap.org/way/1468887801",
+   "https://www.sseb.in/projects/completed-projects/bhavani-barrage-1.php"
+  ]
+ },
+ {
+  "id": "bhavani-barrage-2",
+  "name": "Bhavani Barrage Power House 2 (Umaipalayam)",
+  "aliases": [
+   "Bhavani Barrage 2 PH",
+   "BB Power Hosue 2/ Umaipalayam",
+   "Bhavani Barrage PH-II"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Coimbatore",
+  "lat": 11.30703,
+  "lon": 76.90003,
+  "loc_quality": "approx",
+  "capacity_mw": 10,
+  "units": [
+   {
+    "no": 1,
+    "mw": 5,
+    "commissioned": null,
+    "make": "bulb turbines",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 5,
+    "commissioned": null,
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "run-of-river (barrage)",
+   "sources": [
+    {
+     "name": "Bhavani river barrage pondage",
+     "kind": "reservoir",
+     "lat": 11.30703,
+     "lon": 76.90003,
+     "share": null
+    }
+   ],
+   "route": [
+    "Bhavani river barrage -> bulb units"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Bhavani river pondage (downstream of Pillur/Kundah releases, near Mettupalayam)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "2x5 MW bulb-turbine barrage powerhouse on the Bhavani near Mettupalayam (Umaipalayam). Commissioning dates not found (post-2012; not on 2011-12 TANGEDCO pages). TNGECL Generation Circle: Erode. Location note: Two unnamed OSM hydro plant polygons on the Bhavani near Mettupalayam; satellite imagery shows a barrage with an attached powerhouse at each. Which is PH-1 (Samayapuram) and which PH-2 (Umaipalayam) is inferred, not confirmed.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://www.openstreetmap.org/way/1470127960",
+   "https://www.sseb.in/projects/completed-projects/bhavani-barrage-1.php"
+  ]
+ },
+ {
+  "id": "kodayar-1",
+  "name": "Kodayar Power House I",
+  "aliases": [
+   "Kodayar PH I",
+   "Kodayar Power Hosue 1",
+   "KODAYAR POWER HOUSE – I",
+   "Kodayar I Hydroelectric Power Plant",
+   "KODAYAR-I HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Kanyakumari",
+  "lat": 8.52249,
+  "lon": 77.35688,
+  "loc_quality": "approx",
+  "capacity_mw": 60,
+  "units": [
+   {
+    "no": 1,
+    "mw": 60,
+    "commissioned": "1970-12",
+    "make": "Vevey Engineering (vertical Pelton) / Alstom",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Upper Kodayar dam (Kodayar Dam-I)",
+     "kind": "reservoir",
+     "lat": 8.5221,
+     "lon": 77.3596,
+     "share": null
+    }
+   ],
+   "route": [
+    "Upper Kodayar -> PH-I",
+    "tailrace -> Lower Kodayar (Kodayar Dam-II) reservoir -> Kodayar PH-II"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Upper Kodayar reservoir (Kodayar Dam-I)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "1x60 MW unit commissioned 09.12.1970. TNGECL Generation Circle: Tirunelveli. Location note: Sources disagree. Placed at an unnamed OSM hydro plant polygon (way 1431930232) just below Upper Kodayar dam, which fits the DRIP statement that Kodayar Dam-II receives PH-I tail water. OSM 'KODAYAR-I&II' and GEO 'Kodayar I' (8.532, 77.312) sit on Kodayar Dam-II instead. NPP (8.486, 77.280) is ~9 km away.",
+  "links": {
+   "npp_station_id": 100761,
+   "dgr_name": "KODAYAR-I HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005912/http://www.tangedco.gov.in/hydrokoday.html",
+   "https://www.openstreetmap.org/way/1431930232",
+   "https://www.openstreetmap.org/way/204957247",
+   "https://globalenergyobservatory.org/geoid/3878",
+   "file:raw/pages/npp_tn.json#station_details",
+   "https://www.tngecl.org/media/filer_public/68/b0/68b06a66-d91d-4b66-bb2e-f0c33bd4ee80/kodayar_ii_dam.pdf"
+  ]
+ },
+ {
+  "id": "kodayar-2",
+  "name": "Kodayar Power House II",
+  "aliases": [
+   "Kodayar PH II",
+   "Kodayar Power Hosue 2",
+   "KODAYAR POWER HOUSE – II",
+   "Kodayar II Hydroelectric Power Plant",
+   "KODAYAR-II HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Kanyakumari",
+  "lat": 8.5032,
+  "lon": 77.3122,
+  "loc_quality": "approx",
+  "capacity_mw": 40,
+  "units": [
+   {
+    "no": 1,
+    "mw": 40,
+    "commissioned": "1971-11",
+    "make": "Litostroj (vertical Francis) / Rade Koncar",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Kodayar Dam-II (Lower Kodayar)",
+     "kind": "reservoir",
+     "lat": 8.5294,
+     "lon": 77.3117,
+     "share": null
+    }
+   ],
+   "route": [
+    "Kodayar Dam-II forebay -> tunnel/penstock (~2.7 km) -> PH-II",
+    "tailrace -> Pechiparai reservoir"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Lower Kodayar reservoir (Kodayar Dam-II, forebay)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": 61,
+   "dam_len_m": 152,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "1x40 MW unit commissioned 17.11.1971 (elev. 340.8 m). Kodayar Dam-II (61 m high, 152 m long) is its forebay. TNGECL Generation Circle: Tirunelveli. Location note: GEO point only (2.9 km south of Dam-II, consistent with GEO's 2672 m from dam); not verified on OSM. NPP coordinate (11.226, 79.426) is in Cuddalore district; ignored.",
+  "links": {
+   "npp_station_id": 100819,
+   "dgr_name": "KODAYAR-II HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005912/http://www.tangedco.gov.in/hydrokoday.html",
+   "https://globalenergyobservatory.org/geoid/41257",
+   "file:raw/pages/npp_tn.json#station_details",
+   "https://www.tngecl.org/media/filer_public/68/b0/68b06a66-d91d-4b66-bb2e-f0c33bd4ee80/kodayar_ii_dam.pdf"
+  ]
+ },
+ {
+  "id": "servalar",
+  "name": "Servalar Power House",
+  "aliases": [
+   "Servalar PH",
+   "Servalar Power Hosue",
+   "SERVALAR POWER HOUSE",
+   "Servalar Hydroelectric Power Plant"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Tirunelveli",
+  "lat": 8.68939,
+  "lon": 77.30483,
+  "loc_quality": "exact",
+  "capacity_mw": 20,
+  "units": [
+   {
+    "no": 1,
+    "mw": 20,
+    "commissioned": "1986-03",
+    "make": "BHEL Haridwar (vertical Kaplan)",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Servalar dam",
+     "kind": "reservoir",
+     "lat": 8.6895,
+     "lon": 77.3048,
+     "share": null
+    },
+    {
+     "name": "Karaiyar (Papanasam upper) reservoir",
+     "kind": "reservoir",
+     "lat": 8.645,
+     "lon": 77.3064,
+     "share": null
+    }
+   ],
+   "route": [
+    "Karaiyar -> tunnel -> Servalar dam -> dam-toe PH (head 22-55 m)",
+    "tailrace -> Papanasam forebay"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Servalar dam (interlinked with Karaiyar dam by 3.3 km tunnel)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": 57.1,
+   "dam_len_m": 88,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "110 kV substation 'Servalar' (OSM way 1199229609)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "1x20 MW Kaplan unit at the toe of Servalar dam, commissioned 23.03.1986. TNGECL Generation Circle: Tirunelveli. Location note: The DRIP ESMP gives Servalar dam at 8°41'40\"N 77°08'10\"E; the longitude is ~18 km off (probably a typo for 77°18'); OSM/GEO used.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005912/http://www.tangedco.gov.in/hydrokoday.html",
+   "https://www.openstreetmap.org/way/1463910407",
+   "https://www.openstreetmap.org/way/1199229609",
+   "https://globalenergyobservatory.org/geoid/41263",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/ESDD%20Servalar%20Dam.pdf"
+  ]
+ },
+ {
+  "id": "papanasam",
+  "name": "Papanasam Power House",
+  "aliases": [
+   "Papanasam PH",
+   "Papanasam Power Hosue",
+   "PAPANASAM POWER HOUSE",
+   "Papanasam Hydroelectric Power Plant",
+   "PAPANASAM HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Tirunelveli",
+  "lat": 8.70658,
+  "lon": 77.36265,
+  "loc_quality": "exact",
+  "capacity_mw": 32,
+  "units": [
+   {
+    "no": 1,
+    "mw": 8,
+    "commissioned": "1944-07",
+    "make": "English Electric (vertical Francis); renovated 2004-02",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 8,
+    "commissioned": "1944-12",
+    "make": "English Electric; renovated 2004-06",
+    "status": "operating"
+   },
+   {
+    "no": 3,
+    "mw": 8,
+    "commissioned": "1945-06",
+    "make": "English Electric; renovated 2005-07",
+    "status": "operating"
+   },
+   {
+    "no": 4,
+    "mw": 8,
+    "commissioned": "1951-07",
+    "make": "English Electric; renovated 2005-10",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Papanasam dam",
+     "kind": "reservoir",
+     "lat": 8.6507,
+     "lon": 77.3115,
+     "share": null
+    },
+    {
+     "name": "Karaiyar reservoir",
+     "kind": "reservoir",
+     "lat": 8.645,
+     "lon": 77.3064,
+     "share": null
+    }
+   ],
+   "route": [
+    "Papanasam/Karaiyar -> forebay -> penstock -> PH",
+    "tailrace -> Thamirabarani (irrigation)"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Papanasam (Karaiyar) reservoir, Thamirabarani river",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "110 kV substation 'Papanasam' (OSM way 309492199)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "4x8 MW units 1944-51, renovated 2004-05; irrigation station on the Thamirabarani. TNGECL Generation Circle: Tirunelveli. Location note: NPP coordinate (8.712, 77.393) is 3.4 km east; OSM polygon + substation + GEO agree.",
+  "links": {
+   "npp_station_id": 100447,
+   "dgr_name": "PAPANASAM HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005912/http://www.tangedco.gov.in/hydrokoday.html",
+   "https://www.openstreetmap.org/way/1463910408",
+   "https://www.openstreetmap.org/way/309492199",
+   "https://globalenergyobservatory.org/geoid/41261",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "suruliyar",
+  "name": "Suruliyar Power House",
+  "aliases": [
+   "Suruliyar PH",
+   "Suruliyar Power Hosue",
+   "SURULIYAR POWER HOUSE",
+   "Suruliyar Hydroelectric Power Plant",
+   "SURULIYAR HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Theni",
+  "lat": 9.62023,
+  "lon": 77.27265,
+  "loc_quality": "exact",
+  "capacity_mw": 35,
+  "units": [
+   {
+    "no": 1,
+    "mw": 35,
+    "commissioned": "1978-08",
+    "make": "Voith Austria (horizontal Pelton) / Elin Union",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Manalar dam",
+     "kind": "reservoir",
+     "lat": 9.638,
+     "lon": 77.3459,
+     "share": null
+    },
+    {
+     "name": "Vennirar dam",
+     "kind": "reservoir",
+     "lat": 9.6081,
+     "lon": 77.3008,
+     "share": null
+    }
+   ],
+   "route": [
+    "High Wavys dams -> tunnel/penstock (rated head 979 m) -> PH",
+    "tailrace -> Suruli river"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Suruliyar (tributary of Vaigai): Eravangalar, Vennirar and Manalar dams",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "110 kV substation 'Suruliyar' (OSM way 310070120)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "1x35 MW Pelton unit commissioned 27.08.1978 with a rated head of 979 m. TNGECL Generation Circle: Tirunelveli.",
+  "links": {
+   "npp_station_id": 100527,
+   "dgr_name": "SURULIYAR HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005912/http://www.tangedco.gov.in/hydrokoday.html",
+   "https://www.openstreetmap.org/way/310070120",
+   "https://globalenergyobservatory.org/geoid/41264",
+   "file:raw/pages/npp_tn.json#station_details",
+   "https://www.tngecl.org/media/filer_public/4f/d2/4fd2b734-ac89-42fd-bef8-d5d21e02076d/manalar_dam.pdf",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/esddvenirardam(270121).pdf"
+  ]
+ },
+ {
+  "id": "periyar",
+  "name": "Periyar Power House",
+  "aliases": [
+   "Periyar PH",
+   "Periyar Power Hosue",
+   "PERIYAR POWER HOUSE",
+   "Periyar hydro power station",
+   "Periyar Hydroelectric Power Project",
+   "Lower Camp Power House",
+   "PERIYAR HPS"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Theni",
+  "lat": 9.6267,
+  "lon": 77.19052,
+  "loc_quality": "exact",
+  "capacity_mw": 168,
+  "units": [
+   {
+    "no": 1,
+    "mw": 42,
+    "commissioned": "1958-10",
+    "make": "J.M. Voith (vertical Francis) / AEG; renovated 2011-07",
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 42,
+    "commissioned": "1959-02",
+    "make": "J.M. Voith / AEG; renovated and uprated 2012-09",
+    "status": "operating"
+   },
+   {
+    "no": 3,
+    "mw": 42,
+    "commissioned": "1959-06",
+    "make": "J.M. Voith / AEG; uprated 35->42 MW",
+    "status": "operating"
+   },
+   {
+    "no": 4,
+    "mw": 42,
+    "commissioned": "1965-12",
+    "make": "Litostroj / Rade Koncar; uprated 35->42 MW",
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Periyar forebay dam",
+     "kind": "reservoir",
+     "lat": 9.6464,
+     "lon": 77.2148,
+     "share": null
+    }
+   ],
+   "route": [
+    "Mullaperiyar -> tunnel -> Periyar forebay dam -> penstocks (rated head 373 m) -> PH at Lower Camp",
+    "tailrace -> Periyar-Vaigai canal -> Vaigai dam"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Mullaperiyar reservoir (Kerala) via tunnel and Periyar forebay dam",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": 37.8,
+   "dam_len_m": 88,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "110 kV substation 'Periyar PH' (OSM way 310070102)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "Units commissioned 1958-65 at Lower Camp (elev. 1574 ft); after renovation and uprating all four units are 42 MW (168 MW). Older sources list 140 MW (4x35), 154 MW or 161 MW. dam_h/dam_len refer to the forebay dam. TNGECL Generation Circle: Tirunelveli. Location note: NPP coordinate (9.6461, 77.2148) is the Periyar forebay dam (OSM way 842918866), 3.4 km NE of the powerhouse. NPP capacity 126 MW is stale.",
+  "links": {
+   "npp_station_id": 100454,
+   "dgr_name": "PERIYAR HPS",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005912/http://www.tangedco.gov.in/hydrokoday.html",
+   "https://www.openstreetmap.org/way/310070118",
+   "https://www.openstreetmap.org/way/310070102",
+   "https://www.openstreetmap.org/way/831548783",
+   "https://globalenergyobservatory.org/geoid/4756",
+   "https://www.tngecl.org/static/greenenergy/assets/files/drip/ESDDPeriyaarDam010221.pdf",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "vaigai-micro",
+  "name": "Vaigai Small Power House",
+  "aliases": [
+   "Vaigai Small PH",
+   "Vaigai MPH",
+   "Vaigai Power House",
+   "VAIGAI POWER HOUSE",
+   "VAIGAI DAM"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Theni",
+  "lat": 10.05377,
+  "lon": 77.5906,
+  "loc_quality": "exact",
+  "capacity_mw": 6,
+  "units": [
+   {
+    "no": 1,
+    "mw": 3,
+    "commissioned": "1990-03",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 3,
+    "commissioned": "1990-03",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Vaigai dam",
+     "kind": "reservoir",
+     "lat": 10.0463,
+     "lon": 77.5858,
+     "share": null
+    }
+   ],
+   "route": [
+    "Vaigai dam -> dam-toe PH (rated head 27.5 m)"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Vaigai reservoir (irrigation releases)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [
+   "110 kV substation 'Vaigai Dam' (OSM way 310099513)"
+  ],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "2x3 MW irrigation hydel at Vaigai dam, commissioned 04.03.1990. TNGECL Generation Circle: Tirunelveli.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005912/http://www.tangedco.gov.in/hydrokoday.html",
+   "https://www.openstreetmap.org/way/1463910405",
+   "https://www.openstreetmap.org/way/310099513"
+  ]
+ },
+ {
+  "id": "perunchani",
+  "name": "Perunchani Mini Power House",
+  "aliases": [
+   "Perunchani MPH",
+   "Perunchani PH",
+   "PERUNCHANI"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Kanyakumari",
+  "lat": 8.3644,
+  "lon": 77.3577,
+  "loc_quality": "approx",
+  "capacity_mw": 1.3,
+  "units": [
+   {
+    "no": 1,
+    "mw": 0.65,
+    "commissioned": "2005-12",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 0.65,
+    "commissioned": "2006-01",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage",
+   "sources": [
+    {
+     "name": "Perunchani dam",
+     "kind": "reservoir",
+     "lat": 8.3644,
+     "lon": 77.3577,
+     "share": null
+    }
+   ],
+   "route": [
+    "Perunchani dam -> irrigation outlet mini PH"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Perunchani reservoir (Paralayar, irrigation)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "2x0.65 MW mini hydel commissioned Dec 2005 and Jan 2006. TNGECL Generation Circle: Tirunelveli. Location note: Placed at Perunchani dam (OSM way 104710227); powerhouse not mapped.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005912/http://www.tangedco.gov.in/hydrokoday.html",
+   "https://www.openstreetmap.org/way/104710227"
+  ]
+ },
+ {
+  "id": "periyar-vaigai-mini-1",
+  "name": "Periyar Vaigai Mini Power House I",
+  "aliases": [
+   "Periyar Vaigai Mini PH-I",
+   "PVSHEP-I",
+   "Periyar Vaigai Small Hydro Electric Project I",
+   "PERIYAR VAGAI MINI I"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Theni",
+  "lat": 9.64914,
+  "lon": 77.24392,
+  "loc_quality": "approx",
+  "capacity_mw": 4,
+  "units": [
+   {
+    "no": 1,
+    "mw": 2,
+    "commissioned": "2010-10",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 2,
+    "commissioned": "2011-01",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "run-of-river (canal/weir)",
+   "sources": [
+    {
+     "name": "Periyar PH tailrace",
+     "kind": "reservoir",
+     "lat": 9.6267,
+     "lon": 77.19052,
+     "share": null
+    }
+   ],
+   "route": [
+    "Periyar PH tailrace -> Periyar/Suruli river -> weir -> mini PH -> Vaigai dam"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Periyar water released from Periyar PH (Periyar-Vaigai canal/river system)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "Periyar-Vaigai small hydro scheme I (2x2 MW). Commissioning dates from the 2012 TANGEDCO page, which wrongly gives the district as Kanyakumari. TNGECL Generation Circle: Tirunelveli. Location note: Unnamed OSM hydro plant (way 1468094721) on the river near Gudalur/Kuruvanuthu; satellite imagery shows a small weir powerhouse. A tender notice places PVSHEP-I near Kuruvanathu bridge. Identification is inferred.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005912/http://www.tangedco.gov.in/hydrokoday.html",
+   "https://www.openstreetmap.org/way/1468094721",
+   "https://tenderkart.in/tender/21814716-b76e-452f-994c-271b0b009c67"
+  ]
+ },
+ {
+  "id": "periyar-vaigai-mini-2",
+  "name": "Periyar Vaigai Mini Power House II",
+  "aliases": [
+   "Periyar Vaigai Mini PH-II",
+   "PVSHEP-II",
+   "Periyar Vaigai Small Hydro Electric Project II",
+   "PERIYAR VAGAI MINI II"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Theni",
+  "lat": null,
+  "lon": null,
+  "loc_quality": "approx",
+  "capacity_mw": 2.5,
+  "units": [
+   {
+    "no": 1,
+    "mw": 1.25,
+    "commissioned": "2012-01",
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 1.25,
+    "commissioned": "2012-01",
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "run-of-river (canal/weir)",
+   "sources": [
+    {
+     "name": "Periyar PH tailrace",
+     "kind": "reservoir",
+     "lat": 9.6267,
+     "lon": 77.19052,
+     "share": null
+    }
+   ],
+   "route": [
+    "Periyar PH tailrace -> Periyar/Suruli river -> weir -> mini PH -> Vaigai dam"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Periyar water released from Periyar PH (Periyar-Vaigai canal/river system)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "Periyar-Vaigai small hydro scheme II (2x1.25 MW). Commissioning dates from the 2012 TANGEDCO page, which wrongly gives the district as Kanyakumari. TNGECL Generation Circle: Tirunelveli. Location note: Location unknown (Periyar-Vaigai system, Theni district).",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://web.archive.org/web/20121013005912/http://www.tangedco.gov.in/hydrokoday.html",
+   "https://tenderkart.in/tender/21814716-b76e-452f-994c-271b0b009c67"
+  ]
+ },
+ {
+  "id": "periyar-vaigai-mini-3",
+  "name": "Periyar Vaigai Mini Power House III",
+  "aliases": [
+   "Periyar Vaigai Mini PH-III",
+   "PVSHEP-III",
+   "Periyar Vaigai Small Hydro Electric Project III",
+   "PERIYAR VAGAI MINI III"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Theni",
+  "lat": null,
+  "lon": null,
+  "loc_quality": "approx",
+  "capacity_mw": 4,
+  "units": [
+   {
+    "no": 1,
+    "mw": 2,
+    "commissioned": null,
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 2,
+    "commissioned": null,
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "run-of-river (canal/weir)",
+   "sources": [
+    {
+     "name": "Periyar PH tailrace",
+     "kind": "reservoir",
+     "lat": 9.6267,
+     "lon": 77.19052,
+     "share": null
+    }
+   ],
+   "route": [
+    "Periyar PH tailrace -> Periyar/Suruli river -> weir -> mini PH -> Vaigai dam"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Periyar water released from Periyar PH (Periyar-Vaigai canal/river system)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "Periyar-Vaigai small hydro scheme III (2x2 MW). TNGECL Generation Circle: Tirunelveli. Location note: Location unknown; a tender notice places PVSHEP-III at Vettukadu, Theni district (not geocoded).",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://tenderkart.in/tender/21814716-b76e-452f-994c-271b0b009c67"
+  ]
+ },
+ {
+  "id": "periyar-vaigai-mini-4",
+  "name": "Periyar Vaigai Mini Power House IV",
+  "aliases": [
+   "Periyar Vaigai Mini PH-IV",
+   "PVSHEP-IV",
+   "Periyar Vaigai Small Hydro Electric Project IV",
+   "PERIYAR VAGAI MINI IV"
+  ],
+  "type": "hydro",
+  "status": "operating",
+  "state": "Tamil Nadu",
+  "district": "Theni",
+  "lat": null,
+  "lon": null,
+  "loc_quality": "approx",
+  "capacity_mw": 2.5,
+  "units": [
+   {
+    "no": 1,
+    "mw": 1.25,
+    "commissioned": null,
+    "make": null,
+    "status": "operating"
+   },
+   {
+    "no": 2,
+    "mw": 1.25,
+    "commissioned": null,
+    "make": null,
+    "status": "operating"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "run-of-river (canal/weir)",
+   "sources": [
+    {
+     "name": "Periyar PH tailrace",
+     "kind": "reservoir",
+     "lat": 9.6267,
+     "lon": 77.19052,
+     "share": null
+    }
+   ],
+   "route": [
+    "Periyar PH tailrace -> Periyar/Suruli river -> weir -> mini PH -> Vaigai dam"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Periyar water released from Periyar PH (Periyar-Vaigai canal/river system)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": 0.0,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "Periyar-Vaigai small hydro scheme IV (2x1.25 MW). TNGECL Generation Circle: Tirunelveli. Location note: Location unknown (Periyar-Vaigai system, Theni district).",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p7-8",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/trenew/hydro-generation/hydro-stations/",
+   "https://tenderkart.in/tender/21814716-b76e-452f-994c-271b0b009c67"
+  ]
+ },
+ {
+  "id": "kundah-psp",
+  "name": "Kundah Pumped Storage Hydro-electric Project",
+  "aliases": [
+   "Kundah PSP",
+   "Kundah Pumped Storage Hydro Electric Project",
+   "KUNDAH PSP",
+   "Kundah (Stage I,II&III)"
+  ],
+  "type": "pumped_storage",
+  "status": "under_construction",
+  "state": "Tamil Nadu",
+  "district": "Nilgiris",
+  "lat": 11.3205,
+  "lon": 76.6247,
+  "loc_quality": "approx",
+  "capacity_mw": 500,
+  "units": [
+   {
+    "no": 1,
+    "mw": 125,
+    "commissioned": null,
+    "make": "GE Renewable Energy (pump-turbines, via MEIL)",
+    "status": "under_construction"
+   },
+   {
+    "no": 2,
+    "mw": 125,
+    "commissioned": null,
+    "make": "GE Renewable Energy (pump-turbines, via MEIL)",
+    "status": "under_construction"
+   },
+   {
+    "no": 3,
+    "mw": 125,
+    "commissioned": null,
+    "make": "GE Renewable Energy (pump-turbines, via MEIL)",
+    "status": "under_construction"
+   },
+   {
+    "no": 4,
+    "mw": 125,
+    "commissioned": null,
+    "make": "GE Renewable Energy (pump-turbines, via MEIL)",
+    "status": "under_construction"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "pumped storage",
+   "sources": [
+    {
+     "name": "Porthimund reservoir (upper)",
+     "kind": "reservoir",
+     "lat": null,
+     "lon": null,
+     "share": null
+    },
+    {
+     "name": "Emerald reservoir (lower)",
+     "kind": "reservoir",
+     "lat": null,
+     "lon": null,
+     "share": null
+    }
+   ],
+   "route": [
+    "generation: Porthimund -> underground PH -> Emerald",
+    "pumping: Emerald -> Porthimund"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Porthimund reservoir (upper) / Emerald reservoir (lower)",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "4x125 MW pumped storage under construction since 2018 (zero date 15.02.2018; EPC Phase I Patel Engineering / Kundah PSP Consortium; E&M later MEIL with GE pump-turbines). Cost estimates: Rs 1831 cr (2019), 3,522 cr (DC 2023-24), 3,926 cr (DC 2025-26). CEA (Feb 2026) expects commissioning in 2026-27 (Sept 2026). NPP/DGR already list 'KUNDAH PSP' with a generation programme but zero actual generation. TNGECL Generation Circle: Kundah. Location note: Underground powerhouse location not published; placed at Emerald village (OSM node 910344193) on the lower reservoir.",
+  "links": {
+   "npp_station_id": 100874,
+   "dgr_name": "KUNDAH PSP",
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p11-12",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/renew/hydro-generation/hydro-projects/",
+   "https://cea.nic.in/wp-content/uploads/hpi/2026/02/PSP_Annex_VI_PSP_Status_of_development_-1.pdf",
+   "https://web.archive.org/web/2024/https://www.tangedco.gov.in/linkpdf/Kundahpump.pdf",
+   "https://www.smec.com/project/kundah-pumped-storage-hydroelectric-project/",
+   "https://www.renewableenergyworld.com/energy-storage/pumped-storage/meil-names-ge-renewable-energy-to-supply-turbines-for-500-mw-kundah-pumped-storage/",
+   "file:raw/pages/npp_tn.json#station_details"
+  ]
+ },
+ {
+  "id": "kollimalai-hep",
+  "name": "Kollimalai Hydro Electric Project",
+  "aliases": [
+   "Kollimalai HEP",
+   "Kollimalai Hydro Electric Project (1 X 20 MW)"
+  ],
+  "type": "hydro",
+  "status": "under_construction",
+  "state": "Tamil Nadu",
+  "district": "Namakkal",
+  "lat": null,
+  "lon": null,
+  "loc_quality": "approx",
+  "capacity_mw": 20,
+  "units": [
+   {
+    "no": 1,
+    "mw": 20,
+    "commissioned": null,
+    "make": null,
+    "status": "under_construction"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "storage/diversion",
+   "sources": [],
+   "route": [
+    "intake on Kolli hills -> power tunnel -> PH at Puliancholai foothills"
+   ],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": "Kolli hills streams (Aiyaru), Puliancholai village",
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "1x20 MW project at Puliancholai village (Namakkal/Tiruchirappalli border). LoI 21.09.2016 to a K. Rajagopalan & Co-led consortium; originally due April 2021. Cost Rs 338.79 cr (2016), 591.20 cr (DC 2023-24), 595.46 cr (DC 2025-26). Wikipedia reports ~67% progress. Website lists it as 200 MW, which looks like a typo for 20 MW. Location note: Puliancholai village not geocoded; coordinates null.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p11-12",
+   "https://www.tngecl.org/static/greenenergy/assets/files/linkpdf/datacard/datacard.pdf:p6-7",
+   "https://www.tngecl.org/en/greenenergy/renew/hydro-generation/hydro-projects/",
+   "https://en.wikipedia.org/wiki/Tamil_Nadu_Green_Energy_Corporation_Limited",
+   "https://web.archive.org/web/2024/https://www.tangedco.gov.in/linkpdf/kollimalaiH.pdf"
+  ]
+ },
+ {
+  "id": "upper-bhavani-psp",
+  "name": "Upper Bhavani PSHEP",
+  "aliases": [
+   "Upper Bhavani Pumped Storage Hydro Electric Project",
+   "Upper Bhavani PSP",
+   "Upper Bhavani Pumped Storage Project"
+  ],
+  "type": "pumped_storage",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Nilgiris",
+  "lat": null,
+  "lon": null,
+  "loc_quality": "approx",
+  "capacity_mw": 1000,
+  "units": [
+   {
+    "no": 1,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 2,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 3,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 4,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   }
+  ],
+  "operator": "NTECL (NTPC-TNGECL JV)",
+  "owner_sector": "jv",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "pumped storage (proposed)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of 15 new pumped-storage projects listed by TNPGCL/TNGECL (DC 2025-26: 1000 MW; unit configuration per Wikipedia 4x250). Upper reservoir Upper Bhavani, lower Avalanche-Emerald (CEA). Allotted to NTECL (NTPC-TANGEDCO JV) under G.O.(Ms) No.33 dt 11.03.2024; DPR due 06/26 (CEA, S&I stage). Location note: Site coordinates unknown.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p11-12",
+   "https://www.tngecl.org/en/greenenergy/renew/hydro-generation/hydro-projects/",
+   "https://en.wikipedia.org/wiki/Tamil_Nadu_Green_Energy_Corporation_Limited",
+   "https://cea.nic.in/wp-content/uploads/hpi/2026/02/PSP_Annex_VI_PSP_Status_of_development_-1.pdf"
+  ]
+ },
+ {
+  "id": "sandynallah-psp",
+  "name": "Sandy Nalla PSHEP",
+  "aliases": [
+   "Sandy Nalla Pumped Storage Hydro Electric Project",
+   "Sandy Nalla PSP",
+   "Sandy Nalla Pumped Storage Project"
+  ],
+  "type": "pumped_storage",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Nilgiris",
+  "lat": 11.4422,
+  "lon": 76.6536,
+  "loc_quality": "approx",
+  "capacity_mw": 1200,
+  "units": [
+   {
+    "no": 1,
+    "mw": 300.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 2,
+    "mw": 300.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 3,
+    "mw": 300.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 4,
+    "mw": 300.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "pumped storage (proposed)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of 15 new pumped-storage projects listed by TNPGCL/TNGECL (DC 2025-26: 1200 MW; unit configuration per Wikipedia 4x300). IFC engaged as transaction advisor (G.O. 139 & 140 dt 14.03.24). Placed at the existing Sandynallah dam (DRIP) - project layout unknown. Location note: Coordinates are the existing reservoir named after the project, not the project site.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p11-12",
+   "https://www.tngecl.org/en/greenenergy/renew/hydro-generation/hydro-projects/",
+   "https://en.wikipedia.org/wiki/Tamil_Nadu_Green_Energy_Corporation_Limited"
+  ]
+ },
+ {
+  "id": "sigur-psp",
+  "name": "Sigur PSHEP",
+  "aliases": [
+   "Sigur Pumped Storage Hydro Electric Project",
+   "Sigur PSP",
+   "Sigur Pumped Storage Project"
+  ],
+  "type": "pumped_storage",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Nilgiris",
+  "lat": null,
+  "lon": null,
+  "loc_quality": "approx",
+  "capacity_mw": 800,
+  "units": [
+   {
+    "no": 1,
+    "mw": 200.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 2,
+    "mw": 200.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 3,
+    "mw": 200.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 4,
+    "mw": 200.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "pumped storage (proposed)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of 15 new pumped-storage projects listed by TNPGCL/TNGECL (DC 2025-26: 800 MW; unit configuration per Wikipedia 4x200). IFC transaction advisor; Sigur plateau (Nilgiris). Location note: Site coordinates unknown.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p11-12",
+   "https://www.tngecl.org/en/greenenergy/renew/hydro-generation/hydro-projects/",
+   "https://en.wikipedia.org/wiki/Tamil_Nadu_Green_Energy_Corporation_Limited"
+  ]
+ },
+ {
+  "id": "vellimalai-psp",
+  "name": "Vellimalai PSHEP",
+  "aliases": [
+   "Vellimalai Pumped Storage Hydro Electric Project",
+   "Vellimalai PSP",
+   "Vellimalai Pumped Storage Project"
+  ],
+  "type": "pumped_storage",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Kanyakumari",
+  "lat": null,
+  "lon": null,
+  "loc_quality": "approx",
+  "capacity_mw": 1000,
+  "units": [],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "pumped storage (proposed)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of 15 new pumped-storage projects listed by TNPGCL/TNGECL (DC 2025-26: 1000 MW; unit configuration per Wikipedia 4x275). Project cost Rs 5320 cr; ToR approved by MoEF&CC 25.02.2026; PPP developer tender to open 17.06.2026; G.O.(Ms) No.43 dt 14.03.2026. The website lists 1100 MW, DC 2025-26 lists 1000 MW. Location note: Site coordinates unknown.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p11-12",
+   "https://www.tngecl.org/en/greenenergy/renew/hydro-generation/hydro-projects/",
+   "https://en.wikipedia.org/wiki/Tamil_Nadu_Green_Energy_Corporation_Limited"
+  ]
+ },
+ {
+  "id": "sillahalla-psp-1",
+  "name": "Sillahalla PSHEP Stage-I",
+  "aliases": [
+   "Sillahalla Pumped Storage Hydro Electric Project Stage-I",
+   "Sillahalla PSP Stage-I",
+   "Sillahalla Pumped Storage Project Stage-I"
+  ],
+  "type": "pumped_storage",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Nilgiris",
+  "lat": null,
+  "lon": null,
+  "loc_quality": "approx",
+  "capacity_mw": 1000,
+  "units": [
+   {
+    "no": 1,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 2,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 3,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 4,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "pumped storage (proposed)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of 15 new pumped-storage projects listed by TNPGCL/TNGECL (DC 2025-26: 1000 MW; unit configuration per Wikipedia 4x250). State sector per Wikipedia; DPR preparation. Location note: Site coordinates unknown.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p11-12",
+   "https://www.tngecl.org/en/greenenergy/renew/hydro-generation/hydro-projects/",
+   "https://en.wikipedia.org/wiki/Tamil_Nadu_Green_Energy_Corporation_Limited"
+  ]
+ },
+ {
+  "id": "sillahalla-psp-2",
+  "name": "Sillahalla PSHEP Stage-II",
+  "aliases": [
+   "Sillahalla Pumped Storage Hydro Electric Project Stage-II",
+   "Sillahalla PSP Stage-II",
+   "Sillahalla Pumped Storage Project Stage-II"
+  ],
+  "type": "pumped_storage",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Nilgiris",
+  "lat": null,
+  "lon": null,
+  "loc_quality": "approx",
+  "capacity_mw": 1000,
+  "units": [
+   {
+    "no": 1,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 2,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 3,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 4,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "pumped storage (proposed)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of 15 new pumped-storage projects listed by TNPGCL/TNGECL (DC 2025-26: 1000 MW; unit configuration per Wikipedia 4x250). PPP; DPR preparation. Location note: Site coordinates unknown.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p11-12",
+   "https://www.tngecl.org/en/greenenergy/renew/hydro-generation/hydro-projects/",
+   "https://en.wikipedia.org/wiki/Tamil_Nadu_Green_Energy_Corporation_Limited"
+  ]
+ },
+ {
+  "id": "palar-poranthalar-psp",
+  "name": "Palar-Poranthalar PSHEP",
+  "aliases": [
+   "Palar-Poranthalar Pumped Storage Hydro Electric Project",
+   "Palar-Poranthalar PSP",
+   "Palar-Poranthalar Pumped Storage Project"
+  ],
+  "type": "pumped_storage",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Dindigul",
+  "lat": null,
+  "lon": null,
+  "loc_quality": "approx",
+  "capacity_mw": 1100,
+  "units": [
+   {
+    "no": 1,
+    "mw": 275.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 2,
+    "mw": 275.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 3,
+    "mw": 275.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 4,
+    "mw": 275.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "pumped storage (proposed)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of 15 new pumped-storage projects listed by TNPGCL/TNGECL (DC 2025-26: 1100 MW; unit configuration per Wikipedia 4x275). PPP, in-principle approval G.O.(Ms) No.106 dt 13.12.2023. Location note: Site coordinates unknown.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p11-12",
+   "https://www.tngecl.org/en/greenenergy/renew/hydro-generation/hydro-projects/",
+   "https://en.wikipedia.org/wiki/Tamil_Nadu_Green_Energy_Corporation_Limited"
+  ]
+ },
+ {
+  "id": "manjalar-psp",
+  "name": "Manjalar PSHEP",
+  "aliases": [
+   "Manjalar Pumped Storage Hydro Electric Project",
+   "Manjalar PSP",
+   "Manjalar Pumped Storage Project"
+  ],
+  "type": "pumped_storage",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Theni",
+  "lat": 10.196,
+  "lon": 77.6338,
+  "loc_quality": "approx",
+  "capacity_mw": 500,
+  "units": [
+   {
+    "no": 1,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 2,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "pumped storage (proposed)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of 15 new pumped-storage projects listed by TNPGCL/TNGECL (DC 2025-26: 500 MW; unit configuration per Wikipedia 2x250). PPP. Placed at existing Manjalar dam (OSM way 339268071) - layout unknown. DC 2025-26 lists Theni district; the Manjalar dam is in Dindigul/Theni border area. Location note: Coordinates are the existing reservoir named after the project, not the project site.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p11-12",
+   "https://www.tngecl.org/en/greenenergy/renew/hydro-generation/hydro-projects/",
+   "https://en.wikipedia.org/wiki/Tamil_Nadu_Green_Energy_Corporation_Limited"
+  ]
+ },
+ {
+  "id": "kodayar-psp",
+  "name": "Kodayar PSHEP",
+  "aliases": [
+   "Kodayar Pumped Storage Hydro Electric Project",
+   "Kodayar PSP",
+   "Kodayar Pumped Storage Project"
+  ],
+  "type": "pumped_storage",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Kanyakumari",
+  "lat": 8.5221,
+  "lon": 77.3596,
+  "loc_quality": "approx",
+  "capacity_mw": 1500,
+  "units": [
+   {
+    "no": 1,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 2,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 3,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 4,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 5,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 6,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "pumped storage (proposed)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of 15 new pumped-storage projects listed by TNPGCL/TNGECL (DC 2025-26: 1500 MW; unit configuration per Wikipedia 6x250). PPP; cost Rs 10,838 cr (Wikipedia). Placed at Upper Kodayar dam (OSM way 204957247) - layout unknown. Location note: Coordinates are the existing reservoir named after the project, not the project site.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p11-12",
+   "https://www.tngecl.org/en/greenenergy/renew/hydro-generation/hydro-projects/",
+   "https://en.wikipedia.org/wiki/Tamil_Nadu_Green_Energy_Corporation_Limited"
+  ]
+ },
+ {
+  "id": "manalar-psp",
+  "name": "Manalar PSHEP",
+  "aliases": [
+   "Manalar Pumped Storage Hydro Electric Project",
+   "Manalar PSP",
+   "Manalar Pumped Storage Project"
+  ],
+  "type": "pumped_storage",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Theni",
+  "lat": 9.638,
+  "lon": 77.3459,
+  "loc_quality": "approx",
+  "capacity_mw": 1200,
+  "units": [
+   {
+    "no": 1,
+    "mw": 200.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 2,
+    "mw": 200.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 3,
+    "mw": 200.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 4,
+    "mw": 200.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 5,
+    "mw": 200.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 6,
+    "mw": 200.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "pumped storage (proposed)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of 15 new pumped-storage projects listed by TNPGCL/TNGECL (DC 2025-26: 1200 MW; unit configuration per Wikipedia 6x200). PPP; cost Rs 9,887 cr (Wikipedia). Placed at existing Manalar dam (OSM way 842918875) - layout unknown. Location note: Coordinates are the existing reservoir named after the project, not the project site.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p11-12",
+   "https://www.tngecl.org/en/greenenergy/renew/hydro-generation/hydro-projects/",
+   "https://en.wikipedia.org/wiki/Tamil_Nadu_Green_Energy_Corporation_Limited"
+  ]
+ },
+ {
+  "id": "aliyar-psp",
+  "name": "Aliyar PSHEP",
+  "aliases": [
+   "Aliyar Pumped Storage Hydro Electric Project",
+   "Aliyar PSP",
+   "Aliyar Pumped Storage Project"
+  ],
+  "type": "pumped_storage",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Coimbatore",
+  "lat": 10.4828,
+  "lon": 76.9709,
+  "loc_quality": "approx",
+  "capacity_mw": 1800,
+  "units": [],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "pumped storage (proposed)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of 15 new pumped-storage projects listed by TNPGCL/TNGECL (DC 2025-26: 1800 MW; unit configuration per Wikipedia 4x175 (700 MW per website/Wikipedia)). Capacity conflict: 1800 MW in DC 2025-26 vs 700 MW on the TNGECL hydro-projects page and Wikipedia. Placed at Aliyar dam - layout unknown. Location note: Coordinates are the existing reservoir named after the project, not the project site.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p11-12",
+   "https://www.tngecl.org/en/greenenergy/renew/hydro-generation/hydro-projects/",
+   "https://en.wikipedia.org/wiki/Tamil_Nadu_Green_Energy_Corporation_Limited"
+  ]
+ },
+ {
+  "id": "mettur-psp",
+  "name": "Mettur PSHEP",
+  "aliases": [
+   "Mettur Pumped Storage Hydro Electric Project",
+   "Mettur PSP",
+   "Mettur Pumped Storage Project"
+  ],
+  "type": "pumped_storage",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Salem",
+  "lat": 11.8035,
+  "lon": 77.8063,
+  "loc_quality": "approx",
+  "capacity_mw": 1000,
+  "units": [
+   {
+    "no": 1,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 2,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 3,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 4,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "pumped storage (proposed)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of 15 new pumped-storage projects listed by TNPGCL/TNGECL (DC 2025-26: 1000 MW; unit configuration per Wikipedia 4x250). PPP; placed at Mettur dam - layout unknown. Location note: Coordinates are the existing reservoir named after the project, not the project site.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p11-12",
+   "https://www.tngecl.org/en/greenenergy/renew/hydro-generation/hydro-projects/",
+   "https://en.wikipedia.org/wiki/Tamil_Nadu_Green_Energy_Corporation_Limited"
+  ]
+ },
+ {
+  "id": "karaiyar-psp",
+  "name": "Karaiyar PSHEP",
+  "aliases": [
+   "Karaiyar Pumped Storage Hydro Electric Project",
+   "Karaiyar PSP",
+   "Karaiyar Pumped Storage Project"
+  ],
+  "type": "pumped_storage",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Tirunelveli",
+  "lat": 8.645,
+  "lon": 77.3064,
+  "loc_quality": "approx",
+  "capacity_mw": 1000,
+  "units": [
+   {
+    "no": 1,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 2,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 3,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 4,
+    "mw": 250.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "pumped storage (proposed)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of 15 new pumped-storage projects listed by TNPGCL/TNGECL (DC 2025-26: 1000 MW; unit configuration per Wikipedia 4x250). PPP; area falls within a wildlife sanctuary (DC 2025-26). Placed at Karaiyar reservoir - layout unknown. Location note: Coordinates are the existing reservoir named after the project, not the project site.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p11-12",
+   "https://www.tngecl.org/en/greenenergy/renew/hydro-generation/hydro-projects/",
+   "https://en.wikipedia.org/wiki/Tamil_Nadu_Green_Energy_Corporation_Limited"
+  ]
+ },
+ {
+  "id": "chattar-psp",
+  "name": "Chattar PSHEP",
+  "aliases": [
+   "Chattar Pumped Storage Hydro Electric Project",
+   "Chattar PSP",
+   "Chattar Pumped Storage Project"
+  ],
+  "type": "pumped_storage",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Kanyakumari",
+  "lat": 8.4354,
+  "lon": 77.2859,
+  "loc_quality": "approx",
+  "capacity_mw": 1100,
+  "units": [
+   {
+    "no": 1,
+    "mw": 275.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 2,
+    "mw": 275.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 3,
+    "mw": 275.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 4,
+    "mw": 275.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "pumped storage (proposed)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of 15 new pumped-storage projects listed by TNPGCL/TNGECL (DC 2025-26: 1100 MW; unit configuration per Wikipedia 4x275). PPP; area falls within a wildlife sanctuary. Placed at Chittar Dam-1 (OSM) assuming 'Chattar' = Chittar - unverified. Location note: Coordinates are the existing reservoir named after the project, not the project site.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p11-12",
+   "https://www.tngecl.org/en/greenenergy/renew/hydro-generation/hydro-projects/",
+   "https://en.wikipedia.org/wiki/Tamil_Nadu_Green_Energy_Corporation_Limited"
+  ]
+ },
+ {
+  "id": "athur-psp",
+  "name": "Athur PSHEP",
+  "aliases": [
+   "Athur Pumped Storage Hydro Electric Project",
+   "Athur PSP",
+   "Athur Pumped Storage Project"
+  ],
+  "type": "pumped_storage",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": "Dindigul",
+  "lat": null,
+  "lon": null,
+  "loc_quality": "approx",
+  "capacity_mw": 300,
+  "units": [
+   {
+    "no": 1,
+    "mw": 150.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   },
+   {
+    "no": 2,
+    "mw": 150.0,
+    "commissioned": null,
+    "make": null,
+    "status": "planned"
+   }
+  ],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "water",
+   "grade_or_kind": "pumped storage (proposed)",
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": "hydro: no combustion emissions"
+  },
+  "history": "One of 15 new pumped-storage projects listed by TNPGCL/TNGECL (DC 2025-26: 300 MW; unit configuration per Wikipedia 2x150). PPP; DPR preparation. Location note: Site coordinates unknown.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://www.tnpgcl.org/static/tnpdcl/assets/files/linkpdf/datacard/datacard.pdf:p11-12",
+   "https://www.tngecl.org/en/greenenergy/renew/hydro-generation/hydro-projects/",
+   "https://en.wikipedia.org/wiki/Tamil_Nadu_Green_Energy_Corporation_Limited"
+  ]
+ },
+ {
+  "id": "tngecl-wind-mullaikadu",
+  "name": "Mullaikadu Demonstration Wind Farm (TNEB)",
+  "aliases": [
+   "Mullakadu wind farm",
+   "Mullaikadu"
+  ],
+  "type": "wind",
+  "status": "retired",
+  "state": "Tamil Nadu",
+  "district": "Thoothukudi",
+  "lat": 8.7367,
+  "lon": 78.1201,
+  "loc_quality": "approx",
+  "capacity_mw": 1.1,
+  "units": [],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "wind",
+   "grade_or_kind": null,
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "India's first demonstration wind farm: 20 WEGs x 55 kW = 1.1 MW, erected in 1986. Not among the sites listed for repowering in 2025, so presumed retired. TNEB demonstration wind farm (TEDA/MNES-aided, Danida technical collaboration). TNEB erected 120 WEGs totalling 19.355 MW at Mullaikadu, Kayathar, Muppandal, Puliyankulam and Kethanur in 1986-93 (TEDA, 2011: 111 WEGs / 17.55 MW). As of 2025 only 15 of 110 machines (17.355 MW) were operational and 95 had been condemned. Per-site capacity was not found. Placed at the village/substation, not the turbines.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://web.archive.org/web/2022/https://www.tangedco.gov.in/linkpdf/windnces.pdf",
+   "https://web.archive.org/web/20141129211716/http://teda.in/achievements/wind-energy-2/",
+   "https://www.downtoearth.org.in/energy/tamil-nadu-advances-1500-mwh-storage-wind-repowering-initiatives-to-build-a-resilient-renewable-grid",
+   "https://www.openstreetmap.org/node/13620204814"
+  ]
+ },
+ {
+  "id": "tngecl-wind-kayathar",
+  "name": "Kayathar I & II Demonstration Wind Farms (TNGECL)",
+  "aliases": [
+   "Kayathar wind farm",
+   "Kayathar I",
+   "Kayathar II"
+  ],
+  "type": "wind",
+  "status": "mothballed",
+  "state": "Tamil Nadu",
+  "district": "Thoothukudi",
+  "lat": 8.9479,
+  "lon": 77.7724,
+  "loc_quality": "approx",
+  "capacity_mw": null,
+  "units": [],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "wind",
+   "grade_or_kind": null,
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "TNEB demonstration wind farm (TEDA/MNES-aided, Danida technical collaboration). TNEB erected 120 WEGs totalling 19.355 MW at Mullaikadu, Kayathar, Muppandal, Puliyankulam and Kethanur in 1986-93 (TEDA, 2011: 111 WEGs / 17.55 MW). As of 2025 only 15 of 110 machines (17.355 MW) were operational and 95 had been condemned. Per-site capacity was not found. Placed at the village/substation, not the turbines.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://web.archive.org/web/2022/https://www.tangedco.gov.in/linkpdf/windnces.pdf",
+   "https://web.archive.org/web/20141129211716/http://teda.in/achievements/wind-energy-2/",
+   "https://www.downtoearth.org.in/energy/tamil-nadu-advances-1500-mwh-storage-wind-repowering-initiatives-to-build-a-resilient-renewable-grid",
+   "https://www.openstreetmap.org/node/648672820"
+  ]
+ },
+ {
+  "id": "tngecl-wind-puliyankulam",
+  "name": "Puliyankulam Demonstration Wind Farm (TNGECL)",
+  "aliases": [
+   "Puliankulam wind farm"
+  ],
+  "type": "wind",
+  "status": "mothballed",
+  "state": "Tamil Nadu",
+  "district": "Tirunelveli",
+  "lat": 8.6286,
+  "lon": 77.8649,
+  "loc_quality": "approx",
+  "capacity_mw": null,
+  "units": [],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "wind",
+   "grade_or_kind": null,
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "TNEB demonstration wind farm (TEDA/MNES-aided, Danida technical collaboration). TNEB erected 120 WEGs totalling 19.355 MW at Mullaikadu, Kayathar, Muppandal, Puliyankulam and Kethanur in 1986-93 (TEDA, 2011: 111 WEGs / 17.55 MW). As of 2025 only 15 of 110 machines (17.355 MW) were operational and 95 had been condemned. Per-site capacity was not found. Placed at the village/substation, not the turbines. Which of several Puliyankulam villages is meant is uncertain.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://web.archive.org/web/2022/https://www.tangedco.gov.in/linkpdf/windnces.pdf",
+   "https://web.archive.org/web/20141129211716/http://teda.in/achievements/wind-energy-2/",
+   "https://www.downtoearth.org.in/energy/tamil-nadu-advances-1500-mwh-storage-wind-repowering-initiatives-to-build-a-resilient-renewable-grid",
+   "https://www.openstreetmap.org/node/3591775233"
+  ]
+ },
+ {
+  "id": "tngecl-wind-muppandal",
+  "name": "Muppandal Demonstration Wind Farm (TNGECL)",
+  "aliases": [
+   "Muppandal TNEB wind farm"
+  ],
+  "type": "wind",
+  "status": "mothballed",
+  "state": "Tamil Nadu",
+  "district": "Kanyakumari",
+  "lat": 8.2593,
+  "lon": 77.554,
+  "loc_quality": "approx",
+  "capacity_mw": null,
+  "units": [],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "wind",
+   "grade_or_kind": null,
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "TNEB demonstration wind farm (TEDA/MNES-aided, Danida technical collaboration). TNEB erected 120 WEGs totalling 19.355 MW at Mullaikadu, Kayathar, Muppandal, Puliyankulam and Kethanur in 1986-93 (TEDA, 2011: 111 WEGs / 17.55 MW). As of 2025 only 15 of 110 machines (17.355 MW) were operational and 95 had been condemned. Per-site capacity was not found. Placed at the village/substation, not the turbines. Coordinate is the Muppandal 110 kV substation.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://web.archive.org/web/2022/https://www.tangedco.gov.in/linkpdf/windnces.pdf",
+   "https://web.archive.org/web/20141129211716/http://teda.in/achievements/wind-energy-2/",
+   "https://www.downtoearth.org.in/energy/tamil-nadu-advances-1500-mwh-storage-wind-repowering-initiatives-to-build-a-resilient-renewable-grid",
+   "https://www.openstreetmap.org/way/309123860"
+  ]
+ },
+ {
+  "id": "tngecl-wind-kethanur",
+  "name": "Kethanur Demonstration Wind Farm (TNGECL)",
+  "aliases": [
+   "Kethanoor wind farm"
+  ],
+  "type": "wind",
+  "status": "mothballed",
+  "state": "Tamil Nadu",
+  "district": "Tiruppur",
+  "lat": 10.9155,
+  "lon": 77.2656,
+  "loc_quality": "approx",
+  "capacity_mw": null,
+  "units": [],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "wind",
+   "grade_or_kind": null,
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "TNEB demonstration wind farm (TEDA/MNES-aided, Danida technical collaboration). TNEB erected 120 WEGs totalling 19.355 MW at Mullaikadu, Kayathar, Muppandal, Puliyankulam and Kethanur in 1986-93 (TEDA, 2011: 111 WEGs / 17.55 MW). As of 2025 only 15 of 110 machines (17.355 MW) were operational and 95 had been condemned. Per-site capacity was not found. Placed at the village/substation, not the turbines. Kethanur is in present-day Tiruppur district (formerly Coimbatore).",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://web.archive.org/web/2022/https://www.tangedco.gov.in/linkpdf/windnces.pdf",
+   "https://web.archive.org/web/20141129211716/http://teda.in/achievements/wind-energy-2/",
+   "https://www.downtoearth.org.in/energy/tamil-nadu-advances-1500-mwh-storage-wind-repowering-initiatives-to-build-a-resilient-renewable-grid",
+   "https://www.openstreetmap.org/node/11808991808"
+  ]
+ },
+ {
+  "id": "tngecl-repowering-hybrid",
+  "name": "TNGECL Wind-Solar Hybrid Repowering Project (Kayathar, Puliyankulam, Muppandal)",
+  "aliases": [
+   "34.75 MW hybrid repowering"
+  ],
+  "type": "wind",
+  "status": "planned",
+  "state": "Tamil Nadu",
+  "district": null,
+  "lat": null,
+  "lon": null,
+  "loc_quality": "approx",
+  "capacity_mw": 34.75,
+  "units": [],
+  "operator": "TNGECL",
+  "owner_sector": "state",
+  "fuel": {
+   "primary": "wind",
+   "grade_or_kind": null,
+   "sources": [],
+   "route": [],
+   "annual_requirement": null
+  },
+  "water": {
+   "source": null,
+   "cooling": null
+  },
+  "structure": {
+   "stacks": [],
+   "cooling_towers": 0,
+   "boiler_units": 0,
+   "coal_yard": false,
+   "ash_pond": null,
+   "dam_h_m": null,
+   "dam_len_m": null,
+   "hub_h_m": null,
+   "rotor_d_m": null,
+   "turbines": null,
+   "area_ha": null
+  },
+  "evacuation": [],
+  "emissions": {
+   "fgd": null,
+   "co2_t_per_mwh": null,
+   "notes": ""
+  },
+  "history": "TNERC (Oct 2025) approved a TNGECL tariff-based bid for a 34.75 MW hybrid (18.75 MW wind + 16 MW solar) on the legacy demonstration wind-farm sites at Kayathar I & II, Puliyankulam and Muppandal. BOO model; land leased from TEDA for 30 years and sub-leased for 27; discovered tariff Rs 2.93/kWh. Spread across several sites, so no single coordinate.",
+  "links": {
+   "npp_station_id": null,
+   "dgr_name": null,
+   "cea_coal_name": null,
+   "sldc_item": null
+  },
+  "sources": [
+   "https://web.archive.org/web/2022/https://www.tangedco.gov.in/linkpdf/windnces.pdf",
+   "https://web.archive.org/web/20141129211716/http://teda.in/achievements/wind-energy-2/",
+   "https://www.downtoearth.org.in/energy/tamil-nadu-advances-1500-mwh-storage-wind-repowering-initiatives-to-build-a-resilient-renewable-grid",
+   "https://solarquarter.com/2025/10/22/tamil-nadus-first-repowering-based-wind-solar-hybrid-project-receives-tnerc-approval/"
+  ]
+ }
+]

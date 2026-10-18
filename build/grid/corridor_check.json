@@ -1,0 +1,841 @@
+{
+ "hvdc_by_name": {
+  "Raigarh-Pugalur +-800kV": {
+   "segments": 12,
+   "km": 1923,
+   "voltages": [
+    800,
+    320
+   ]
+  },
+  "Pugalur-Thrissur +-320kV VSC": {
+   "segments": 3,
+   "km": 163,
+   "voltages": [
+    320
+   ]
+  },
+  "Talcher-Kolar +-500kV": {
+   "segments": 5,
+   "km": 1361,
+   "voltages": [
+    500
+   ]
+  },
+  "Champa-Kurukshetra +-800kV": {
+   "segments": 4,
+   "km": 1285,
+   "voltages": [
+    800
+   ]
+  },
+  "Biswanath Chariali-Agra +-800kV": {
+   "segments": 7,
+   "km": 1772,
+   "voltages": [
+    800
+   ]
+  },
+  "Rihand-Dadri +-500kV": {
+   "segments": 3,
+   "km": 813,
+   "voltages": [
+    500
+   ]
+  },
+  "Mundra-Mohindergarh +-500kV": {
+   "segments": 5,
+   "km": 987,
+   "voltages": [
+    500
+   ]
+  },
+  "Balia-Bhiwadi +-500kV": {
+   "segments": 3,
+   "km": 790,
+   "voltages": [
+    500
+   ]
+  },
+  "Chandrapur-Padghe +-500kV": {
+   "segments": 6,
+   "km": 746,
+   "voltages": [
+    500
+   ]
+  }
+ },
+ "hvdc_all": {
+  "segments": 145,
+  "km": 9948,
+  "named": [
+   "Agra HVDC Line",
+   "Alipurdur to Agra HVDC Line",
+   "Biswanath Charai to Alipurdur HVDC Line",
+   "Champa-Kurukshetra HVDC line",
+   "Chandrapur - Padghe HVDC line",
+   "HVDC Ballia - Bhiwadi Line",
+   "HVDC Pugalur - Trichur",
+   "HVDC Raigarh - Pugalur",
+   "HVDC Sileru–Barsoor",
+   "HVDC Talcher - Kolar Line",
+   "Mundra - Mahendragarh HVDC line",
+   "Rihand - Dadri HVDC Line"
+  ]
+ },
+ "hvdc_terminals": [
+  {
+   "check": "Pugalur HVDC",
+   "found": true,
+   "substations": [
+    {
+     "name": "Pugalur HVDC Station",
+     "voltages": [
+      400,
+      320
+     ],
+     "osm_id": "way/657435006",
+     "lonlat": [
+      77.53793,
+      10.82392
+     ],
+     "line_ends_within_1_5km": {
+      "400": 4,
+      "hvdc": 2
+     }
+    }
+   ]
+  },
+  {
+   "check": "Raigarh HVDC",
+   "found": true,
+   "substations": [
+    {
+     "name": "Raigarh",
+     "voltages": [
+      400,
+      220
+     ],
+     "osm_id": "way/203167977",
+     "lonlat": [
+      83.30249,
+      21.86034
+     ],
+     "line_ends_within_1_5km": {
+      "400": 8,
+      "220": 2
+     }
+    },
+    {
+     "name": "Adani Raigarh",
+     "voltages": [
+      400
+     ],
+     "osm_id": "way/779725654",
+     "lonlat": [
+      83.2713,
+      21.74384
+     ],
+     "line_ends_within_1_5km": {
+      "400": 1
+     }
+    }
+   ]
+  },
+  {
+   "check": "Kolar HVDC",
+   "found": true,
+   "substations": [
+    {
+     "name": "HVDC Kolar Converter station",
+     "voltages": [
+      500,
+      400
+     ],
+     "osm_id": "way/126688582",
+     "lonlat": [
+      78.11667,
+      13.17673
+     ],
+     "line_ends_within_1_5km": {
+      "400": 18,
+      "220": 3,
+      "hvdc": 1
+     }
+    }
+   ]
+  },
+  {
+   "check": "Talcher HVDC",
+   "found": true,
+   "substations": [
+    {
+     "name": "Talcher",
+     "voltages": [
+      400,
+      220
+     ],
+     "osm_id": "way/151103746",
+     "lonlat": [
+      85.06812,
+      21.09646
+     ],
+     "line_ends_within_1_5km": {
+      "400": 147,
+      "220": 50,
+      "hvdc": 11
+     }
+    },
+    {
+     "name": "HVDC Talcher Converter Station",
+     "voltages": [
+      500,
+      400
+     ],
+     "osm_id": "way/151103750",
+     "lonlat": [
+      85.06321,
+      21.09914
+     ],
+     "line_ends_within_1_5km": {
+      "400": 147,
+      "220": 50,
+      "hvdc": 11
+     }
+    }
+   ]
+  },
+  {
+   "check": "Thrissur/Madakkathara",
+   "found": true,
+   "substations": [
+    {
+     "name": "Madakkathara Substation",
+     "voltages": [
+      400
+     ],
+     "osm_id": "way/258067712",
+     "lonlat": [
+      76.27286,
+      10.56256
+     ],
+     "line_ends_within_1_5km": {
+      "400": 3,
+      "220": 3,
+      "hvdc": 1
+     }
+    },
+    {
+     "name": "Trichur HVDC Converter Station",
+     "voltages": [
+      400,
+      320
+     ],
+     "osm_id": "way/803427262",
+     "lonlat": [
+      76.26346,
+      10.55297
+     ],
+     "line_ends_within_1_5km": {
+      "400": 3,
+      "220": 5,
+      "hvdc": 1
+     }
+    }
+   ]
+  }
+ ],
+ "tn_nodes": [
+  {
+   "check": "Kudankulam NPP switchyard",
+   "found": true,
+   "substations": [
+    {
+     "name": "Kudankulam Nuclear Power Plant",
+     "voltages": [
+      400,
+      230
+     ],
+     "osm_id": "way/323661902",
+     "lonlat": [
+      77.71281,
+      8.17133
+     ],
+     "line_ends_within_1_5km": {
+      "400": 25,
+      "220": 6
+     }
+    },
+    {
+     "name": "Kudankulam Nuclear Power Plant",
+     "voltages": [
+      400,
+      230
+     ],
+     "osm_id": "way/1429814486",
+     "lonlat": [
+      77.70352,
+      8.16928
+     ],
+     "line_ends_within_1_5km": {
+      "400": 25,
+      "220": 6
+     }
+    }
+   ]
+  },
+  {
+   "check": "Tirunelveli (PGCIL Abishekapatti)",
+   "found": true,
+   "substations": [
+    {
+     "name": "Thirunelveli",
+     "voltages": [
+      400,
+      230
+     ],
+     "osm_id": "way/309413114",
+     "lonlat": [
+      77.64091,
+      8.76623
+     ],
+     "line_ends_within_1_5km": {
+      "400": 19,
+      "220": 12
+     }
+    }
+   ]
+  },
+  {
+   "check": "Tuticorin pooling 765/400",
+   "found": true,
+   "substations": [
+    {
+     "name": "Tuticorin Pooling Station",
+     "voltages": [
+      765,
+      400
+     ],
+     "osm_id": "way/425401901",
+     "lonlat": [
+      78.00005,
+      9.12794
+     ],
+     "line_ends_within_1_5km": {
+      "765": 1,
+      "400": 7
+     }
+    }
+   ]
+  },
+  {
+   "check": "Virudhunagar 765",
+   "found": true,
+   "substations": [
+    {
+     "name": "Virudhunagar",
+     "voltages": [
+      765,
+      400
+     ],
+     "osm_id": "way/1206014676",
+     "lonlat": [
+      78.00042,
+      9.45107
+     ],
+     "line_ends_within_1_5km": {
+      "765": 1,
+      "400": 1
+     }
+    }
+   ]
+  },
+  {
+   "check": "Salem 765 (Dharmapuri)",
+   "found": true,
+   "substations": [
+    {
+     "name": "Dharmapuri",
+     "voltages": [
+      765,
+      400
+     ],
+     "osm_id": "way/386153973",
+     "lonlat": [
+      78.03069,
+      12.13319
+     ],
+     "line_ends_within_1_5km": {
+      "765": 5,
+      "400": 4
+     }
+    }
+   ]
+  },
+  {
+   "check": "Thiruvalam 765/400",
+   "found": true,
+   "substations": [
+    {
+     "name": "Thiruvalam",
+     "voltages": [
+      765,
+      400,
+      220
+     ],
+     "osm_id": "way/342204888",
+     "lonlat": [
+      79.24481,
+      13.04289
+     ],
+     "line_ends_within_1_5km": {
+      "765": 10,
+      "400": 27,
+      "220": 5
+     }
+    }
+   ]
+  },
+  {
+   "check": "Ariyalur 765",
+   "found": true,
+   "substations": [
+    {
+     "name": "Ariyalur",
+     "voltages": [
+      765,
+      400
+     ],
+     "osm_id": "way/751947947",
+     "lonlat": [
+      78.99295,
+      11.91232
+     ],
+     "line_ends_within_1_5km": {
+      "765": 9,
+      "400": 12
+     }
+    }
+   ]
+  },
+  {
+   "check": "North Chennai Pooling 765",
+   "found": true,
+   "substations": [
+    {
+     "name": "NCPS",
+     "voltages": [
+      765,
+      400
+     ],
+     "osm_id": "way/910151268",
+     "lonlat": [
+      80.2948,
+      13.20996
+     ],
+     "line_ends_within_1_5km": {
+      "765": 2,
+      "400": 3,
+      "220": 2
+     }
+    }
+   ]
+  },
+  {
+   "check": "Nagapattinam 765",
+   "found": true,
+   "substations": [
+    {
+     "name": "Nagapattinam",
+     "voltages": [
+      765,
+      400
+     ],
+     "osm_id": "way/545571850",
+     "lonlat": [
+      79.48355,
+      11.27426
+     ],
+     "line_ends_within_1_5km": {
+      "765": 1,
+      "400": 3
+     }
+    }
+   ]
+  },
+  {
+   "check": "Madurai (Chekkanurani) 400",
+   "found": true,
+   "substations": [
+    {
+     "name": "Madurai (Cheackanurani)",
+     "voltages": [
+      400,
+      230
+     ],
+     "osm_id": "way/309572245",
+     "lonlat": [
+      77.96858,
+      9.92108
+     ],
+     "line_ends_within_1_5km": {
+      "400": 21,
+      "220": 12
+     }
+    }
+   ]
+  },
+  {
+   "check": "Udumalpet 400",
+   "found": true,
+   "substations": [
+    {
+     "name": "Udumalpet",
+     "voltages": [
+      400,
+      230
+     ],
+     "osm_id": "way/310834703",
+     "lonlat": [
+      77.32712,
+      10.59527
+     ],
+     "line_ends_within_1_5km": {
+      "400": 17,
+      "220": 24
+     }
+    }
+   ]
+  }
+ ],
+ "chennai_400kv_ring": [
+  {
+   "check": "Alamathy",
+   "found": true,
+   "substations": [
+    {
+     "name": "Alamathi Substation",
+     "voltages": [
+      400,
+      220,
+      110
+     ],
+     "osm_id": "way/34654567",
+     "lonlat": [
+      80.099,
+      13.20667
+     ],
+     "line_ends_within_1_5km": {
+      "400": 29,
+      "220": 15
+     }
+    }
+   ]
+  },
+  {
+   "check": "Manali",
+   "found": true,
+   "substations": [
+    {
+     "name": "Manali",
+     "voltages": [
+      400,
+      230,
+      110
+     ],
+     "osm_id": "way/102565511",
+     "lonlat": [
+      80.27308,
+      13.17505
+     ],
+     "line_ends_within_1_5km": {
+      "400": 2,
+      "220": 3
+     }
+    }
+   ]
+  },
+  {
+   "check": "Sriperumbudur (PGCIL)",
+   "found": true,
+   "substations": [
+    {
+     "name": "Sriperumbudur",
+     "voltages": [
+      400
+     ],
+     "osm_id": "way/38424061",
+     "lonlat": [
+      79.97506,
+      12.98088
+     ],
+     "line_ends_within_1_5km": {
+      "400": 18,
+      "220": 34
+     }
+    }
+   ]
+  },
+  {
+   "check": "Pennalur/Sriperumbudur (TANTRANSCO)",
+   "found": true,
+   "substations": [
+    {
+     "name": "Pennalur TNEB Substation",
+     "voltages": [
+      400,
+      220,
+      110
+     ],
+     "osm_id": "way/30814111",
+     "lonlat": [
+      79.97681,
+      12.9829
+     ],
+     "line_ends_within_1_5km": {
+      "400": 18,
+      "220": 34
+     }
+    }
+   ]
+  },
+  {
+   "check": "Tiruvalam",
+   "found": true,
+   "substations": [
+    {
+     "name": "Thiruvalam",
+     "voltages": [
+      765,
+      400,
+      220
+     ],
+     "osm_id": "way/342204888",
+     "lonlat": [
+      79.24481,
+      13.04289
+     ],
+     "line_ends_within_1_5km": {
+      "765": 10,
+      "400": 27,
+      "220": 5
+     }
+    }
+   ]
+  },
+  {
+   "check": "NCTPS",
+   "found": true,
+   "substations": [
+    {
+     "name": "North Chennai TPS Stage III",
+     "voltages": [
+      765
+     ],
+     "osm_id": "way/1074489047",
+     "lonlat": [
+      80.32122,
+      13.24599
+     ],
+     "line_ends_within_1_5km": {
+      "765": 1,
+      "400": 15,
+      "220": 19
+     }
+    },
+    {
+     "name": "North Chennai Stg2",
+     "voltages": [
+      400
+     ],
+     "osm_id": "way/1499563248",
+     "lonlat": [
+      80.32606,
+      13.25763
+     ],
+     "line_ends_within_1_5km": {
+      "765": 1,
+      "400": 16,
+      "220": 19
+     }
+    }
+   ]
+  },
+  {
+   "check": "Vallur",
+   "found": true,
+   "substations": [
+    {
+     "name": "VallurTPS",
+     "voltages": [
+      400
+     ],
+     "osm_id": "way/245547226",
+     "lonlat": [
+      80.30226,
+      13.24006
+     ],
+     "line_ends_within_1_5km": {
+      "400": 19,
+      "220": 1
+     }
+    }
+   ]
+  },
+  {
+   "check": "Kalivanthapattu",
+   "found": true,
+   "substations": [
+    {
+     "name": "Kalivanthapattu",
+     "voltages": [
+      400,
+      230
+     ],
+     "osm_id": "way/247571173",
+     "lonlat": [
+      80.07584,
+      12.78934
+     ],
+     "line_ends_within_1_5km": {
+      "400": 16,
+      "220": 20
+     }
+    }
+   ]
+  },
+  {
+   "check": "Pulianthope 400 kV GIS",
+   "found": true,
+   "substations": [
+    {
+     "name": "Pulianthope Substation",
+     "voltages": [
+      400,
+      230
+     ],
+     "osm_id": "way/1116254830",
+     "lonlat": [
+      80.26708,
+      13.09971
+     ],
+     "line_ends_within_1_5km": {
+      "400": 2,
+      "220": 3
+     }
+    }
+   ]
+  },
+  {
+   "check": "Sunguvarchatram",
+   "found": true,
+   "substations": [
+    {
+     "name": "Sungavarchatram",
+     "voltages": [
+      400,
+      230,
+      110
+     ],
+     "osm_id": "way/245726156",
+     "lonlat": [
+      79.87746,
+      12.90345
+     ],
+     "line_ends_within_1_5km": {
+      "400": 4,
+      "220": 2
+     }
+    }
+   ]
+  },
+  {
+   "check": "Ottiyambakkam (Sholinganallur)",
+   "found": true,
+   "substations": [
+    {
+     "name": "Ottiyambakkam Substation",
+     "voltages": [
+      400,
+      220,
+      110
+     ],
+     "osm_id": "way/1066036368",
+     "lonlat": [
+      80.19353,
+      12.85282
+     ],
+     "line_ends_within_1_5km": {
+      "400": 15,
+      "220": 16
+     }
+    }
+   ]
+  },
+  {
+   "check": "Thervoy Kandigai",
+   "found": true,
+   "substations": [
+    {
+     "name": "Thervoi Kandigai",
+     "voltages": [
+      400,
+      230
+     ],
+     "osm_id": "way/1355309900",
+     "lonlat": [
+      79.98058,
+      13.36528
+     ],
+     "line_ends_within_1_5km": {
+      "400": 1,
+      "220": 3
+     }
+    }
+   ]
+  },
+  {
+   "check": "Ennore SEZ",
+   "found": true,
+   "substations": [
+    {
+     "name": "Ennore SEZ TPP",
+     "voltages": [
+      400
+     ],
+     "osm_id": "way/1473546114",
+     "lonlat": [
+      80.3081,
+      13.29403
+     ],
+     "line_ends_within_1_5km": {
+      "400": 5
+     }
+    }
+   ]
+  },
+  {
+   "check": "NCPS 765/400",
+   "found": true,
+   "substations": [
+    {
+     "name": "NCPS",
+     "voltages": [
+      765,
+      400
+     ],
+     "osm_id": "way/910151268",
+     "lonlat": [
+      80.2948,
+      13.20996
+     ],
+     "line_ends_within_1_5km": {
+      "765": 2,
+      "400": 3,
+      "220": 2
+     }
+    }
+   ]
+  }
+ ]
+}

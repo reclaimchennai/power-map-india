@@ -1,0 +1,3296 @@
+[
+ {
+  "name": "ARIYALUR",
+  "voltage_class_kv": 765,
+  "voltage_ratio": "765/400",
+  "commissioned": "28-12-2023",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/751947947",
+  "osm_name": "Ariyalur",
+  "osm_voltages": [
+   765,
+   400
+  ],
+  "tngis_name": null,
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.99295,
+   11.91232
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/765/"
+  ]
+ },
+ {
+  "name": "NORTH CHENNAI POOLING 765 kV GIS",
+  "voltage_class_kv": 765,
+  "voltage_ratio": "765/400",
+  "commissioned": "02-02-2024",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/910151268",
+  "osm_name": "NCPS",
+  "osm_voltages": [
+   765,
+   400
+  ],
+  "tngis_name": null,
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.2948,
+   13.20996
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/765/"
+  ]
+ },
+ {
+  "name": "ALAMATHY",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230-110",
+  "commissioned": "25-05-2006",
+  "operation_circle": "Chennai Operation/ North Circle",
+  "status": "in_osm",
+  "osm_id": "way/34654567",
+  "osm_name": "Alamathi Substation",
+  "osm_voltages": [
+   400,
+   220,
+   110
+  ],
+  "tngis_name": "400/230/110 KV ALAMATHY",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.099,
+   13.20667
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "ANAIKADAVU",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230-110",
+  "commissioned": "06-11-2017",
+  "operation_circle": "Coimbatore Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/417399737",
+  "osm_name": "Anaikadavu",
+  "osm_voltages": [
+   400,
+   230
+  ],
+  "tngis_name": "400KV Anikkadavu SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.19359,
+   10.74375
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "DHARMAPURI (PAALAVADY)",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230-110",
+  "commissioned": "15-03-2017",
+  "operation_circle": "Thiruvalam Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/425335457",
+  "osm_name": "Palavadi",
+  "osm_voltages": [
+   400,
+   220,
+   110
+  ],
+  "tngis_name": "PALAVADI 400/230-110 KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.05826,
+   12.16455
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "K.R.THOPPUR",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230-110",
+  "commissioned": "20-03-1988",
+  "operation_circle": "Salem Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/340337117",
+  "osm_name": "K R Thoppur",
+  "osm_voltages": [
+   400,
+   230,
+   110
+  ],
+  "tngis_name": "K.R.THOPPUR",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.00509,
+   11.67028
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "KAMUDHI",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230-110",
+  "commissioned": "08-09-2016",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/510509746",
+  "osm_name": "Kamudi",
+  "osm_voltages": [
+   400,
+   220,
+   110
+  ],
+  "tngis_name": null,
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.3956,
+   9.34969
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/"
+  ]
+ },
+ {
+  "name": "KANARPATTY",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230-110",
+  "commissioned": "09-01-2017",
+  "operation_circle": "Tirunelveli Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/421884729",
+  "osm_name": "Kanarpatti",
+  "osm_voltages": [
+   400,
+   230,
+   110
+  ],
+  "tngis_name": "Kanarpatti 400/230/110 KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.64595,
+   8.88696
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "KARAMADAI",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230-110",
+  "commissioned": "24-08-2016",
+  "operation_circle": "Coimbatore Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/337239209",
+  "osm_name": "Karamadai",
+  "osm_voltages": [
+   400,
+   220,
+   110
+  ],
+  "tngis_name": "400/230/110  KV KARAMADAI SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.00642,
+   11.29679
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "KAYATHAR",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230-110",
+  "commissioned": "04-07-2014",
+  "operation_circle": "Tirunelveli Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/618762309",
+  "osm_name": "Kayathar",
+  "osm_voltages": [
+   400,
+   230,
+   110
+  ],
+  "tngis_name": "400 KV Kayatar 400/230 KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.72634,
+   8.95636
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "MANALI",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230-110/33/11",
+  "commissioned": "25-07-2017",
+  "operation_circle": "Chennai Operation/ North Circle",
+  "status": "in_osm",
+  "osm_id": "way/102565511",
+  "osm_name": "Manali",
+  "osm_voltages": [
+   400,
+   230,
+   110
+  ],
+  "tngis_name": "400KV MANALI GIS SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.27308,
+   13.17505
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "OTTAPIDARAM",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230-110",
+  "commissioned": "22-03-2023",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/1182706895",
+  "osm_name": "Ottapidaram",
+  "osm_voltages": [
+   400,
+   230,
+   110
+  ],
+  "tngis_name": null,
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.04961,
+   8.89616
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/"
+  ]
+ },
+ {
+  "name": "PULIANTHOPE (GIS)",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230",
+  "commissioned": "24-03-2023",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/1116254830",
+  "osm_name": "Pulianthope Substation",
+  "osm_voltages": [
+   400,
+   230
+  ],
+  "tngis_name": null,
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.26708,
+   13.09971
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/"
+  ]
+ },
+ {
+  "name": "RASIPALAYAM",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230-110",
+  "commissioned": "31-08-2017",
+  "operation_circle": "Coimbatore Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/508747385",
+  "osm_name": "Rasipalayam",
+  "osm_voltages": [
+   400,
+   110
+  ],
+  "tngis_name": "400/230/110KV RASIPALAYAM SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.49552,
+   10.83524
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "SHOLINGANALLUR",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230-110",
+  "commissioned": "27-12-2017",
+  "operation_circle": "Chennai Operation/ South Circle",
+  "status": "in_osm",
+  "osm_id": "way/1066036368",
+  "osm_name": "Ottiyambakkam Substation",
+  "osm_voltages": [
+   400,
+   220,
+   110
+  ],
+  "tngis_name": "OTTIYAMBAKKAM 400KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.19353,
+   12.85282
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "SRIPERUMBUDUR",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230-110",
+  "commissioned": "13-03-1987",
+  "operation_circle": "Sriperumpudur Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/38424061",
+  "osm_name": "Sriperumbudur",
+  "osm_voltages": [
+   400
+  ],
+  "tngis_name": "400KV SRIPERUMPUDUR",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.97506,
+   12.98088
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "SUNGUVARCHATRAM",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230-110",
+  "commissioned": "16-08-2011",
+  "operation_circle": "Sriperumpudur Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/245726156",
+  "osm_name": "Sungavarchatram",
+  "osm_voltages": [
+   400,
+   230,
+   110
+  ],
+  "tngis_name": "400KV SUNGUVACHATHIRAM",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.87746,
+   12.90345
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "THAPPAKUNDU",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230",
+  "commissioned": "23-10-2018",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/508747392",
+  "osm_name": "Thapagundu",
+  "osm_voltages": [
+   400,
+   110
+  ],
+  "tngis_name": null,
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.46648,
+   9.89582
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/"
+  ]
+ },
+ {
+  "name": "THENNAMPATTY (PAVOORCHATRAM)",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230-110",
+  "commissioned": "05-11-2019",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/618762295",
+  "osm_name": "Thennampatti",
+  "osm_voltages": [
+   400,
+   230,
+   110
+  ],
+  "tngis_name": "400 KV  THENNAMPATTI SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.86987,
+   8.90733
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/"
+  ]
+ },
+ {
+  "name": "THIRUVALAM",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230",
+  "commissioned": "27-07-2014",
+  "operation_circle": "Thiruvalam Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/342204888",
+  "osm_name": "Thiruvalam",
+  "osm_voltages": [
+   765,
+   400,
+   220
+  ],
+  "tngis_name": "THIRUVALAM 400KV",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.24481,
+   13.04289
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "Thervoikandigai",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230-110",
+  "commissioned": null,
+  "operation_circle": "Chennai Operation/ North Circle",
+  "status": "in_osm",
+  "osm_id": "way/1355309900",
+  "osm_name": "Thervoi Kandigai",
+  "osm_voltages": [
+   400,
+   230
+  ],
+  "tngis_name": "THERVOIKANDIGAI SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.98058,
+   13.36528
+  ],
+  "sources": [
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "VELLALAVIDUTHI",
+  "voltage_class_kv": 400,
+  "voltage_ratio": "400/230",
+  "commissioned": "04-10-2023",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/1198555727",
+  "osm_name": "Vellalaviduthi",
+  "osm_voltages": [
+   400,
+   230
+  ],
+  "tngis_name": null,
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.09896,
+   10.51011
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/"
+  ]
+ },
+ {
+  "name": "ACHARAPAKKAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "28-12-2001",
+  "operation_circle": "Sriperumpudur Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/1197664957",
+  "osm_name": "Acharapakkam",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230KV ACHARAPAKKAM",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.81165,
+   12.41181
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "ALAGARKOVIL",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "31-05-1999",
+  "operation_circle": "Madurai Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/309653600",
+  "osm_name": "Alagarkoil",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "ALAGARKOIL SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.18815,
+   10.05261
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "ALANDUR CMRL GIS",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110-33",
+  "commissioned": "29-05-2015",
+  "operation_circle": "Chennai Operation/ South Circle",
+  "status": "missing_from_osm",
+  "osm_id": null,
+  "osm_name": null,
+  "osm_voltages": null,
+  "tngis_name": "ALANDUR 230 KV GIS SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.2016,
+   13.0028
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "ALIYAR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "20-05-2013",
+  "operation_circle": "Coimbatore Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/373398416",
+  "osm_name": "Aliyar",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230KV Aliyar SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.00705,
+   10.45553
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "ALUNDUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "20-12-1993",
+  "operation_circle": "Trichy Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/323713912",
+  "osm_name": "Alundur",
+  "osm_voltages": [
+   400,
+   230
+  ],
+  "tngis_name": "ALUNDUR 230/110 KV SUBSTAION",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.61273,
+   10.69275
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "AMBATTUR 3RD MAIN ROAD",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/33-11",
+  "commissioned": "30-03-2017",
+  "operation_circle": "Chennai Operation/ North Circle",
+  "status": "missing_from_osm",
+  "osm_id": null,
+  "osm_name": null,
+  "osm_voltages": null,
+  "tngis_name": "230/110 KV AMBATTUR IIIRD MAIN ROAD",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.1624,
+   13.0945
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "AMUTHAPURAM WF",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/33",
+  "commissioned": "01-12-2008",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/309492186",
+  "osm_name": "Amuthapuram",
+  "osm_voltages": [
+   230,
+   33
+  ],
+  "tngis_name": "Amuthapuram 230/110 KV SS (NCES SS)",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.55116,
+   9.07714
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "ANTHIYUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "14-01-2015",
+  "operation_circle": "Salem Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/337856910",
+  "osm_name": "Anthiyur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "ANTHIYUR 230KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.60011,
+   11.56696
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "ANUPPANKULAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/11",
+  "commissioned": "09-09-1991",
+  "operation_circle": "Tirunelveli Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/309564808",
+  "osm_name": "Anuppankulam",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110 KV ANUPPNKULAM SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.8264,
+   9.41982
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "ARANI",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "16-03-1983",
+  "operation_circle": "Villupuram Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/342523696",
+  "osm_name": "Arani",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "ARANI",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.27486,
+   12.64956
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "ARASUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "11-11-1992",
+  "operation_circle": "Coimbatore Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/337239140",
+  "osm_name": "Arasur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110 KV ARASUR",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.12565,
+   11.09363
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "ATHIPATTU",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/33",
+  "commissioned": "09-10-2012",
+  "operation_circle": "Chennai Operation/ North Circle",
+  "status": "in_osm",
+  "osm_id": "way/245697697",
+  "osm_name": "Athipattu",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110 KV ATHIPATTU SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.31169,
+   13.26782
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "BASIN BRIDGE",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "28-10-2009",
+  "operation_circle": "Chennai Operation/ South Circle",
+  "status": "in_osm",
+  "osm_id": "way/1320691208",
+  "osm_name": "TNEB HQ",
+  "osm_voltages": [
+   220
+  ],
+  "tngis_name": "230/110 KV Basin bridge SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.26919,
+   13.10132
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "CENTRAL (CMRL)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "24-08-2018",
+  "operation_circle": "Chennai Operation/ South Circle",
+  "status": "missing_from_osm",
+  "osm_id": null,
+  "osm_name": null,
+  "osm_voltages": null,
+  "tngis_name": "230/110 KV CMRL Central",
+  "nearest_osm_substation_within_1km_of_tngis_point": {
+   "osm_id": "way/892117511",
+   "name": null,
+   "voltages": [],
+   "dist_m": 14
+  },
+  "lonlat": [
+   80.2712,
+   13.0801
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "COIMBATORE",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "16-07-2014",
+  "operation_circle": "Coimbatore Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/337248233",
+  "osm_name": "Coimbatore",
+  "osm_voltages": [
+   230
+  ],
+  "tngis_name": "230/110 KV COIMBATORE SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   76.95913,
+   11.01809
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "CUDDALORE",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/22",
+  "commissioned": "28-02-1998",
+  "operation_circle": "Villupuram Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/441455208",
+  "osm_name": "Cuddalore",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "CUDDALORE",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.73274,
+   11.72697
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "Checkkanoorani",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230",
+  "commissioned": null,
+  "operation_circle": "Madurai Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/309572245",
+  "osm_name": "Madurai (Cheackanurani)",
+  "osm_voltages": [
+   400,
+   230
+  ],
+  "tngis_name": "CHECKANURNANI SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.96858,
+   9.92108
+  ],
+  "sources": [
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "DEVIAKURCHY",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "05-12-1991",
+  "operation_circle": "Salem Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/341037782",
+  "osm_name": "Deviyakurichi",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "DEVIYAKURICHI SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.72396,
+   11.58349
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "EACHANGADU",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "07-02-1997",
+  "operation_circle": "Trichy Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/340697999",
+  "osm_name": "Eachangadu",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110KV EACHANGADU SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.21709,
+   11.34989
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "ECHUR (PURISAI)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "08-08-2016",
+  "operation_circle": "Villupuram Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/958872453",
+  "osm_name": "Echur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "ECHUR",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.58073,
+   12.54559
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "ERODE UG",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/22",
+  "commissioned": "07-11-2022",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/508747400",
+  "osm_name": "Erode",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": null,
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.71683,
+   11.33746
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "GOBI",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "27-03-1995",
+  "operation_circle": "Salem Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/336571825",
+  "osm_name": "Gobi",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "GOBI 230 KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.43567,
+   11.39962
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "GUINDY(GIS)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "16-04-2015",
+  "operation_circle": "Chennai Operation/ South Circle",
+  "status": "in_osm_no_voltage_tag",
+  "osm_id": "way/1136394921",
+  "osm_name": "Guindy Substation",
+  "osm_voltages": [],
+  "tngis_name": "GUINDY 230KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.21191,
+   13.01184
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "GUMMIDIPOONDI",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "06-10-1993",
+  "operation_circle": "Chennai Operation/ North Circle",
+  "status": "in_osm",
+  "osm_id": "way/245547236",
+  "osm_name": "Gummidipoondi",
+  "osm_voltages": [
+   230
+  ],
+  "tngis_name": "230KV GUMMIDIPOONDI SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.10342,
+   13.40319
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "GURUBARAPALLY",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/33-11",
+  "commissioned": "20-02-2016",
+  "operation_circle": "Thiruvalam Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/1198535268",
+  "osm_name": "Gurubarapalli",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "GURUBARAPALLY 230/110/33-11 KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.14953,
+   12.57643
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "HOSUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/33-11",
+  "commissioned": "29-03-1987",
+  "operation_circle": "Thiruvalam Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/316186939",
+  "osm_name": "Hosur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "HOSUR 230/110/33-11 KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.81352,
+   12.72793
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "INGUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "24-11-1980",
+  "operation_circle": "Salem Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/337856764",
+  "osm_name": "Ingur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "INGUR 230KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.57758,
+   11.24385
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "JAMBUNATHAPURAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "22-11-2017",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/1197004098",
+  "osm_name": "Jambunathapuram",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "JAMBUNATHAPURAM 230/110 KV SUBSTATION",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.49774,
+   11.03707
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "KADALANGUDI",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "09-07-2001",
+  "operation_circle": "Trichy Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/341791011",
+  "osm_name": "Kadalangudi",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "KADALANGUDY",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.57516,
+   11.08824
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "KADAPPERI",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/11",
+  "commissioned": "12-08-1985",
+  "operation_circle": "Chennai Operation/ South Circle",
+  "status": "in_osm",
+  "osm_id": "way/30787653",
+  "osm_name": "Kadaperi",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110-11 KV KADAPERI SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.13094,
+   12.94668
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "KANCHIPURAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "07-09-2018",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/714756190",
+  "osm_name": "Kanchipuram",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": null,
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.64525,
+   12.88277
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "KARAIKUDI",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "04-10-1980",
+  "operation_circle": "Madurai Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/323681780",
+  "osm_name": "Karaikudi",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": null,
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.7344,
+   10.07824
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "KARIMANGALAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "21-12-2005",
+  "operation_circle": "Thiruvalam Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/386095150",
+  "osm_name": "Kariamangalam",
+  "osm_voltages": [
+   220,
+   110
+  ],
+  "tngis_name": "KARIMANGALAM 230 /110 KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.21135,
+   12.3041
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "KARUPPUR AT JAGIRAMMAPALAYAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "16-10-2023",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/1236758521",
+  "osm_name": "Karuppur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": null,
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.10763,
+   11.7028
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "KARUVALUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "03-03-2016",
+  "operation_circle": "Coimbatore Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/1198021317",
+  "osm_name": "Karuvalur Power station",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110 KV KARUVALUR",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.15915,
+   11.21482
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "KAYATHAR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/66/11",
+  "commissioned": "19-07-2011",
+  "operation_circle": "Tirunelveli Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/309492156",
+  "osm_name": "Kayathar",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230 KV Kayatar 230/110 KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.77089,
+   8.88866
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "KILPAUK",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "27-01-2006",
+  "operation_circle": "Chennai Operation/ North Circle",
+  "status": "in_osm",
+  "osm_id": "way/1320696033",
+  "osm_name": "Kilpauk Sub Station",
+  "osm_voltages": [
+   220
+  ],
+  "tngis_name": "230/110 KV KILPAUK",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.23271,
+   13.08797
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "KINNIMANGALAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "12-01-2017",
+  "operation_circle": "Madurai Operation Circle",
+  "status": "missing_from_osm",
+  "osm_id": null,
+  "osm_name": null,
+  "osm_voltages": null,
+  "tngis_name": "KINNIMANGALAM SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": {
+   "osm_id": "way/309572245",
+   "name": "Madurai (Cheackanurani)",
+   "voltages": [
+    400,
+    230
+   ],
+   "dist_m": 26
+  },
+  "lonlat": [
+   77.9688,
+   9.921
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "KITS PARK (SHOLINGANALLUR)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/33-11",
+  "commissioned": "13-05-2010",
+  "operation_circle": "Chennai Operation/ South Circle",
+  "status": "in_osm",
+  "osm_id": "way/247545803",
+  "osm_name": "KITZ Park",
+  "osm_voltages": [
+   220,
+   110
+  ],
+  "tngis_name": "230/110/33-11 KV KITS PARK SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.21421,
+   12.90476
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "KODIKURCHI (AYIKUDI)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "05-10-2005",
+  "operation_circle": "Tirunelveli Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/309492230",
+  "osm_name": "Ananthapuram,Ayikudi",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110-11 KV KODIKURICHI SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.32302,
+   9.00203
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "KORATTUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/33-11",
+  "commissioned": "1949/1961",
+  "operation_circle": "Chennai Operation/ North Circle",
+  "status": "in_osm",
+  "osm_id": "way/247337906",
+  "osm_name": "Korattur Sub Station",
+  "osm_voltages": [
+   220
+  ],
+  "tngis_name": "230/110/33/11  KV KORATTUR",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.18126,
+   13.09988
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "KOYAMBEDU CMRL",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "11-07-2013",
+  "operation_circle": "Chennai Operation/ North Circle",
+  "status": "in_osm",
+  "osm_id": "way/1021334136",
+  "osm_name": "Koyambedu Substation",
+  "osm_voltages": [
+   220
+  ],
+  "tngis_name": "230/110 KV KOYAMBEDU CMRL",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.19428,
+   13.07168
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "KUMBAKONAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "05-10-2017",
+  "operation_circle": "Trichy Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/1197005497",
+  "osm_name": "Kumbakonam",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": null,
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.35075,
+   10.92546
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "KURUKATHI",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "31-03-2017",
+  "operation_circle": "Coimbatore Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/337856896",
+  "osm_name": "Kurkathi",
+  "osm_voltages": [
+   230
+  ],
+  "tngis_name": "230/110 KV KURUKKATHI SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.69884,
+   10.99408
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "MAMBALAM UG",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/33/11",
+  "commissioned": "24-09-2021",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/1327505682",
+  "osm_name": "MAMBALAM",
+  "osm_voltages": [
+   230,
+   33
+  ],
+  "tngis_name": "230 /33KV MAMBALAM SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.23962,
+   13.03933
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "METTUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/33",
+  "commissioned": "27-04-1979",
+  "operation_circle": "Salem Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/340479062",
+  "osm_name": "Mettur Auto Sub Station",
+  "osm_voltages": [
+   220
+  ],
+  "tngis_name": "METTUR 230KV",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.82975,
+   11.81649
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "MONDIPATTY (TNPL)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "03-09-2017",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/1197021315",
+  "osm_name": "Mandipatti",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "MONDIPATTI 230/110 KV SUBSTATION",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.43488,
+   10.68042
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "MOSUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "24-06-1999",
+  "operation_circle": "Thiruvalam Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/247337922",
+  "osm_name": "Mosur Substation",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "MOSUR 230KV",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.6866,
+   13.097
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "MYLAPORE I",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/11 & 33/11",
+  "commissioned": "01-01-1998",
+  "operation_circle": "Chennai Operation/ South Circle",
+  "status": "missing_from_osm",
+  "osm_id": null,
+  "osm_name": null,
+  "osm_voltages": null,
+  "tngis_name": "MYLAPORE 230/33 KV GIS SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.2661,
+   13.0452
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "MYLAPORE II (GIS)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/33",
+  "commissioned": "26-02-2014",
+  "operation_circle": null,
+  "status": "missing_from_osm",
+  "osm_id": null,
+  "osm_name": null,
+  "osm_voltages": null,
+  "tngis_name": "MYLAPORE 230/110KV GIS SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.2659,
+   13.045
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "Myvadi",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230",
+  "commissioned": null,
+  "operation_circle": "Coimbatore Operation Circle",
+  "status": "missing_from_osm",
+  "osm_id": null,
+  "osm_name": null,
+  "osm_voltages": null,
+  "tngis_name": "230KV Myvadi SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": {
+   "osm_id": "way/310834703",
+   "name": "Udumalpet",
+   "voltages": [
+    400,
+    230
+   ],
+   "dist_m": 183
+  },
+  "lonlat": [
+   77.3284,
+   10.5942
+  ],
+  "sources": [
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "NALLAMANAICKENPATTY",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/11",
+  "commissioned": "29-01-2014",
+  "operation_circle": "Tirunelveli Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/309492166",
+  "osm_name": "Nallamanaickenpatti",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110 KV NALLAMANAICKENPATTY SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.56502,
+   9.39734
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "NEMMELITHIPPIAKUDI (KARAMBAYAM)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "26-09-2012",
+  "operation_circle": "Trichy Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/341305275",
+  "osm_name": "Karambayam",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": null,
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.26254,
+   10.55065
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "NEYVELI",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "29-10-2018",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/751947937",
+  "osm_name": "Neyveli TNEB",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "NEYVELI",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.44631,
+   11.59829
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "NOKIA",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/33-11",
+  "commissioned": "30-03-2009",
+  "operation_circle": "Sriperumpudur Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/1427092748",
+  "osm_name": "Nokia East Substation",
+  "osm_voltages": [
+   230
+  ],
+  "tngis_name": "NOKIA",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.93575,
+   12.94389
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "OMEGA INDL.ESTATE",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "22-01-2016",
+  "operation_circle": "Sriperumpudur Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/396980813",
+  "osm_name": "Omega",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "OMEGA",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.15689,
+   12.6419
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "ORAGADAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/33-11",
+  "commissioned": "06-08-2008",
+  "operation_circle": "Sriperumpudur Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/245726104",
+  "osm_name": "Oragadam",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "ORAGUDAM",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.94133,
+   12.86371
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "OTHAKKALMANDAPAM (MALUMICHAMPATTY)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "02-09-2005",
+  "operation_circle": "Coimbatore Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/594819617",
+  "osm_name": "TNEB Power Station-Othakalmandapam",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110 KV OTTHAKKAL MANDAPAM",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.002,
+   10.89161
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "PALLADAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "28-05-2008",
+  "operation_circle": "Coimbatore Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/337856921",
+  "osm_name": "Palladam",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230 /110KV PALLADAM SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.3116,
+   11.00423
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "PALLAKKAPALAYAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "14-08-2014",
+  "operation_circle": "Salem Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/337856763",
+  "osm_name": "Palkapalayam",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "PALLAKKAPALAYAM",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.77218,
+   11.45335
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "PARAMAKUDI (KAVANOOR)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "15-09-1997",
+  "operation_circle": "Madurai Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/310156652",
+  "osm_name": "TNEB / TANTRANSCO 220KV/110KV Substation - Kavanur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110/11KV KAVANOOR",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.56312,
+   9.48408
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "PASUMALAI",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "30-08-1963",
+  "operation_circle": "Madurai Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/56860702",
+  "osm_name": "Pasumalai",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "PASUMALAI SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.08239,
+   9.90588
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "PERAMBALUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "31-03-1986",
+  "operation_circle": "Trichy Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/340479254",
+  "osm_name": "Perambalur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110KV PERAMBALUR SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.89278,
+   11.23873
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "PONNAPURAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110-33",
+  "commissioned": "10-06-2007",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/337856889",
+  "osm_name": "Ponnapuram",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110KV PONNAPURAM(WF) SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.39923,
+   10.70201
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "PORUR GIS",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "30-07-2018",
+  "operation_circle": null,
+  "status": "missing_from_osm",
+  "osm_id": null,
+  "osm_name": null,
+  "osm_voltages": null,
+  "tngis_name": "230 KV PORUR GIS SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": {
+   "osm_id": "way/409304631",
+   "name": null,
+   "voltages": [],
+   "dist_m": 27
+  },
+  "lonlat": [
+   80.1537,
+   13.0313
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "POYYUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "30-03-2017",
+  "operation_circle": "Trichy Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/1198019812",
+  "osm_name": "Poiyur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110KV POYYUR SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.0982,
+   11.06374
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "PUDANCHANDAI",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "18-05-2006",
+  "operation_circle": "Salem Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/340337120",
+  "osm_name": "Puthansanthai",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "PUDANSANTHAI 230/110 KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.17651,
+   11.31886
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "PUDUKOTTAI",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "03-07-2000",
+  "operation_circle": "Trichy Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/310578484",
+  "osm_name": "Pudukkottai",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": null,
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.78535,
+   10.43248
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "PUGALUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "07-02-1997",
+  "operation_circle": "Trichy Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/338030194",
+  "osm_name": "Pugalur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "Pugalur 230",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.98908,
+   11.05448
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "R.A.PURAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/33",
+  "commissioned": "21-04-2017",
+  "operation_circle": "Chennai Operation/ South Circle",
+  "status": "missing_from_osm",
+  "osm_id": null,
+  "osm_name": null,
+  "osm_voltages": null,
+  "tngis_name": "R.A.PURAM 230/33 KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.2533,
+   13.0222
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "RENGANATHAPURAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "31-03-2008",
+  "operation_circle": "Madurai Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/323845076",
+  "osm_name": "Renganathapuram",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230 KV Renganathapuram",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.93357,
+   10.60195
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "SADAYAPALAYAM(WF)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/33",
+  "commissioned": "28-10-2009",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/337856891",
+  "osm_name": "Sadayapalayam",
+  "osm_voltages": [
+   230,
+   33
+  ],
+  "tngis_name": "230/33KV SADAYAPALAYAM(WF) SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.34729,
+   10.81345
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "SALEM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/22",
+  "commissioned": "04-08-2005",
+  "operation_circle": "Salem Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/340479231",
+  "osm_name": "Salem",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": null,
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.13204,
+   11.63469
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "SAMAYANALLUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "21-10-2020",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/1049860887",
+  "osm_name": "Samayanallur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "SAMAYANALLUR 230/110 KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.04438,
+   9.97203
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "SANKANERI(WF)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110-33",
+  "commissioned": "13-09-2004",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/157807176",
+  "osm_name": "Sanganeri",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "sanganeri (NCES SS)",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.67095,
+   8.21
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "SANKARAPURAM AT KATTUVANNANJUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "15-07-2020",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/958872469",
+  "osm_name": "Sankarapuram",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "SANKARAPURAM",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.90706,
+   11.87513
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "SAVASAPURAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "31-03-2018",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/618569335",
+  "osm_name": "Savasapuram",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110 KV SAVVASPURAM SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.13969,
+   9.48663
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "SELVAPURAM (DAIS)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "05-07-2024",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/1467379868",
+  "osm_name": "Selvapuram",
+  "osm_voltages": [
+   230
+  ],
+  "tngis_name": null,
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   76.93543,
+   10.97885
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "SEMBATTY",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "22-09-1996",
+  "operation_circle": "Madurai Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/310156650",
+  "osm_name": "Sembatti",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110 KV Sembatty SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.87241,
+   10.28446
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "SENBAGARAMANPUDUR (S.R.PUDUR)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "18-06-1998",
+  "operation_circle": "Tirunelveli Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/650912396",
+  "osm_name": "230/110 KV S.R.Pudur Substation",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110 KV SHENBAGARAMANPUDUR SS SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.48659,
+   8.24999
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "SHENBAGAPUDUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "26-02-2021",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/336571711",
+  "osm_name": "Shenbagapudur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "SHENBAGAPUDUR 230KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.21593,
+   11.45691
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "SINGAPERUMALKOIL",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "04-07-1977",
+  "operation_circle": "Sriperumpudur Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/247545826",
+  "osm_name": "Singaperumalkovil",
+  "osm_voltages": [
+   220,
+   110
+  ],
+  "tngis_name": "SPKOIL",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.99636,
+   12.74535
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "SINGAPURAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "02-05-2016",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/340479211",
+  "osm_name": "Singipuram",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "SINGAPURAM 230 KVSS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.4073,
+   11.63831
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "SINGARAPET",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "14-02-1966",
+  "operation_circle": "Thiruvalam Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/386718644",
+  "osm_name": "Singarapettai",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110 KV SINGARAPET SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.59739,
+   12.22708
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "SIRUSERI",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/33",
+  "commissioned": "29-03-2007",
+  "operation_circle": "Chennai Operation/ South Circle",
+  "status": "in_osm",
+  "osm_id": "way/247545781",
+  "osm_name": "Siruseri",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110KV SIRUSERI SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.21059,
+   12.82054
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "SRIPERUMBUDUR SIPCOT (MAMBAKKAM)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/33-11",
+  "commissioned": "07-07-2008",
+  "operation_circle": "Sriperumpudur Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/1426163519",
+  "osm_name": "Araneri Substation",
+  "osm_voltages": [
+   230
+  ],
+  "tngis_name": "SIPCOT MAMBAKKAM",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.90683,
+   12.92033
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "TARAMANI",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/33",
+  "commissioned": "08-02-1995",
+  "operation_circle": "Chennai Operation/ South Circle",
+  "status": "in_osm",
+  "osm_id": "way/131425319",
+  "osm_name": "Taramani",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110KV THARAMANI SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.24225,
+   12.9757
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "THANJAVUR (THIRUKANURPATTY)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/66",
+  "commissioned": "31-03-2000",
+  "operation_circle": "Trichy Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/341305245",
+  "osm_name": "Thanjavur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "Thanjavur 230 KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.07233,
+   10.71553
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "THATCHANKURCHI (SAMAYAPURAM)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "20-09-2002",
+  "operation_circle": "Trichy Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/323713895",
+  "osm_name": "Samayapuram",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "THATCHANKURICHI 230/110 KV SUBSTATION",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.82457,
+   10.94393
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "THENI",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "27-03-1989",
+  "operation_circle": "Madurai Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/310070105",
+  "osm_name": "Theni",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": null,
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.46674,
+   10.0035
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "THINGALUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "05-12-2015",
+  "operation_circle": "Salem Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/508747379",
+  "osm_name": "Thingalur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "THINGALORE 230KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.49391,
+   11.31481
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "THIRUPATHUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "06-08-2021",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/1193518139",
+  "osm_name": "Tirupattur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110KV Thirupathur SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.47478,
+   12.52525
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "THIRUVALAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "04-05-1969",
+  "operation_circle": "Thiruvalam Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/344876951",
+  "osm_name": "Thiruvalam 230 KV Substation",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "THIRUVALAM 230KV",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.24326,
+   12.99992
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "THIRUVANNAMALAI",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "29-11-1997",
+  "operation_circle": "Villupuram Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/342136809",
+  "osm_name": "Tiruvannamalai",
+  "osm_voltages": [
+   220,
+   110
+  ],
+  "tngis_name": "TIRUVANNAMALAI",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.03907,
+   12.20465
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "THIRUVARUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/66-33-11",
+  "commissioned": "25-10-1980",
+  "operation_circle": "Trichy Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/341599770",
+  "osm_name": "Thiruvarur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110KV THIRUVARUR SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.6138,
+   10.78637
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "THIRUVERKADU (HYBRID)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/33-11",
+  "commissioned": "08-10-2015",
+  "operation_circle": "Chennai Operation/ North Circle",
+  "status": "in_osm",
+  "osm_id": "way/409304579",
+  "osm_name": "Thiruverkadu",
+  "osm_voltages": [
+   230
+  ],
+  "tngis_name": "230/110 KV THIRUVERKADU",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.11488,
+   13.06888
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "THUDIYALUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "29-08-1963",
+  "operation_circle": "Coimbatore Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/337239244",
+  "osm_name": "Thudiyalur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110 KV THUDIALUR  SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   76.93582,
+   11.08522
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "THUVAKUDY",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "24-10-2021",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/1197016882",
+  "osm_name": "Thuvakudi",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "THUVAKUDY 230KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.79936,
+   10.75531
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "TIRUCHULI (NEAR MUTHURAMALINGAPURAM)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "20-02-2017",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/590858790",
+  "osm_name": "Tiruchuli",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110 KV TIRUCHULI SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.22422,
+   9.51918
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "TIRUPPUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "01-03-2020",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/336535467",
+  "osm_name": "Thirupur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110 KV TIRUPUR",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.3342,
+   11.11906
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "TNEB HEAD QUARTERS GIS",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/33",
+  "commissioned": "26-04-2021",
+  "operation_circle": null,
+  "status": "missing_from_osm",
+  "osm_id": null,
+  "osm_name": null,
+  "osm_voltages": null,
+  "tngis_name": "230/33 TNEB HEAD  QUARTERS GIS SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.2642,
+   13.0659
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "TONDAIYARPET",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/33",
+  "commissioned": "27-03-1988",
+  "operation_circle": "Chennai Operation/ North Circle",
+  "status": "in_osm",
+  "osm_id": "way/1494908176",
+  "osm_name": "Tondiarpet",
+  "osm_voltages": [
+   230
+  ],
+  "tngis_name": "230KV TONDIARPET SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.27562,
+   13.12859
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "TRICHY (PIRATTUR)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "22-10-1963",
+  "operation_circle": "Trichy Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/323713955",
+  "osm_name": "Trichy",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "PIRATIYUR 230/110 KV SUBSTATION",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.64489,
+   10.78847
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "TUTICORIN AUTO",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "17-08-2007",
+  "operation_circle": "Tirunelveli Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/309279898",
+  "osm_name": "Tuticorin Auto",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": null,
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.1467,
+   8.7432
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "TUTICORIN SIPCOT",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "19-02-2002",
+  "operation_circle": "Tirunelveli Operation Circle",
+  "status": "missing_from_osm",
+  "osm_id": null,
+  "osm_name": null,
+  "osm_voltages": null,
+  "tngis_name": "230/110KV SIPCOT SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": {
+   "osm_id": "way/310578484",
+   "name": "Pudukkottai",
+   "voltages": [
+    230,
+    110
+   ],
+   "dist_m": 99
+  },
+  "lonlat": [
+   78.7849,
+   10.4317
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "UDAYATHUR (WF)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/33",
+  "commissioned": "09-02-2007",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/309138384",
+  "osm_name": "Udayathur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "Udhayathur 230/110 KV SS (NCES SS)",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.75179,
+   8.25444
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "UDDANAPALLY",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "23-06-2019",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/1202786164",
+  "osm_name": "Uddanapalli",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "UDDANAPALLY 230/110",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.93389,
+   12.5831
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "UDUMALPET",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "25-01-1982",
+  "operation_circle": "Coimbatore Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/310834702",
+  "osm_name": "Udumalpet Substation",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230KV Udumalpet SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.27966,
+   10.57599
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "ULUNDURPET",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "18-01-2016",
+  "operation_circle": "Villupuram Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/618803822",
+  "osm_name": "Ulundurpet",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "ULUNDURPET",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.254,
+   11.66234
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "UNJANAI",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "11-03-1994",
+  "operation_circle": "Salem Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/340337093",
+  "osm_name": "Unjanai",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "UNJANAI 230/110 KV KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.95424,
+   11.35433
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "VALAYAPATTY",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "15-07-2017",
+  "operation_circle": "Salem Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/340337107",
+  "osm_name": "Valayapatti",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "VALAYAPATTY 230/110 KV SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.22351,
+   11.13393
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "VALUTHUR",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "10-09-2007",
+  "operation_circle": "Madurai Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/310430101",
+  "osm_name": "Valathur",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "Valuthur",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.92555,
+   9.35199
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "VEERANAM (WF)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/33",
+  "commissioned": "28-09-2005",
+  "operation_circle": null,
+  "status": "in_osm",
+  "osm_id": "way/309492224",
+  "osm_name": "Veeranam",
+  "osm_voltages": [
+   230
+  ],
+  "tngis_name": "230/110-33 KV KEELAVEERANAM SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   77.49279,
+   8.95278
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+  ]
+ },
+ {
+  "name": "VEERAPURAM (MAHINDRA IND. PARK)",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110/33",
+  "commissioned": "19-05-2008",
+  "operation_circle": "Sriperumpudur Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/247545784",
+  "osm_name": "Veerapuram",
+  "osm_voltages": [
+   220,
+   110
+  ],
+  "tngis_name": "230KV VEERAPURAM",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.00261,
+   12.73992
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "VILLUPURAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "15-04-1982",
+  "operation_circle": "Villupuram Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/342154839",
+  "osm_name": "Villupuram",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "VILLUPURAM AUTO SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   79.48182,
+   11.98891
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "VINNAMANGALAM",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "04-05-1969",
+  "operation_circle": "Thiruvalam Operation Circle",
+  "status": "in_osm",
+  "osm_id": "way/386718646",
+  "osm_name": "Vinnamangalam",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230/110 KV VINNAMANGALAM SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   78.68041,
+   12.73391
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ },
+ {
+  "name": "VYASARPADI",
+  "voltage_class_kv": 230,
+  "voltage_ratio": "230/110",
+  "commissioned": "19-02-2016",
+  "operation_circle": "Chennai Operation/ North Circle",
+  "status": "in_osm",
+  "osm_id": "way/35283414",
+  "osm_name": "Vyasarpadi",
+  "osm_voltages": [
+   230,
+   110
+  ],
+  "tngis_name": "230KV VYSARPADI SS",
+  "nearest_osm_substation_within_1km_of_tngis_point": null,
+  "lonlat": [
+   80.26895,
+   13.10866
+  ],
+  "sources": [
+   "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+   "https://tnebsldc.org/Sslist.aspx"
+  ]
+ }
+]

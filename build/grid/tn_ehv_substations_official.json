@@ -1,0 +1,2286 @@
+{
+ "tantransco_network_as_on_2025_03_31": {
+  "substations": {
+   "765": 2,
+   "400": 19,
+   "230": 116,
+   "110": 962,
+   "66": 3,
+   "total": 1102
+  },
+  "line_ckm": {
+   "765": 733,
+   "400": 5215,
+   "230": 11985,
+   "110": 21281,
+   "66": 83,
+   "total": 39297
+  },
+  "sources": [
+   "https://www.tantransco.org/static/tantransco/assets/files/tantranscopdf/networkason31032025.pdf",
+   "file:raw/grid/tantransco_network_as_on_31032025.pdf"
+  ]
+ },
+ "counts": {
+  "tantransco": 137,
+  "sldc": 105,
+  "merged": 139
+ },
+ "substations": [
+  {
+   "name": "ARIYALUR",
+   "key": "ARIYALUR",
+   "voltage_class_kv": 765,
+   "voltage_ratio": "765/400",
+   "commissioned": "28-12-2023",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/765/"
+   ]
+  },
+  {
+   "name": "NORTH CHENNAI POOLING 765 kV GIS",
+   "key": "NORTH CHENNAI POOLING",
+   "voltage_class_kv": 765,
+   "voltage_ratio": "765/400",
+   "commissioned": "02-02-2024",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/765/"
+   ]
+  },
+  {
+   "name": "ALAMATHY",
+   "key": "ALAMATHY",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230-110",
+   "commissioned": "25-05-2006",
+   "operation_circle": "Chennai Operation/ North Circle",
+   "edc": "Chennai West",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Alamathy 400/230-110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "ANAIKADAVU",
+   "key": "ANAIKADAVU",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230-110",
+   "commissioned": "06-11-2017",
+   "operation_circle": "Coimbatore Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Anaikadavu 400 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "DHARMAPURI (PAALAVADY)",
+   "key": "DHARMAPURI",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230-110",
+   "commissioned": "15-03-2017",
+   "operation_circle": "Thiruvalam Operation Circle",
+   "edc": "Dharmapuri",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Dharmapuri ( Palvadi ) 400/230-110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "K.R.THOPPUR",
+   "key": "K R THOPPUR",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230-110",
+   "commissioned": "20-03-1988",
+   "operation_circle": "Salem Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "KR Thoppur 400/230-110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "KAMUDHI",
+   "key": "KAMUDHI",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230-110",
+   "commissioned": "08-09-2016",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/"
+   ]
+  },
+  {
+   "name": "KANARPATTY",
+   "key": "KANARPATTY",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230-110",
+   "commissioned": "09-01-2017",
+   "operation_circle": "Tirunelveli Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Kanarpatty 400 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "KARAMADAI",
+   "key": "KARAMADAI",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230-110",
+   "commissioned": "24-08-2016",
+   "operation_circle": "Coimbatore Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Karamadai 400 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "KAYATHAR",
+   "key": "KAYATHAR",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230-110",
+   "commissioned": "04-07-2014",
+   "operation_circle": "Tirunelveli Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Kayathar 400/230-110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "MANALI",
+   "key": "MANALI",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230-110/33/11",
+   "commissioned": "25-07-2017",
+   "operation_circle": "Chennai Operation/ North Circle",
+   "edc": "Chennai North",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Manali 400/230-110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "OTTAPIDARAM",
+   "key": "OTTAPIDARAM",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230-110",
+   "commissioned": "22-03-2023",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/"
+   ]
+  },
+  {
+   "name": "PULIANTHOPE (GIS)",
+   "key": "PULIANTHOPE",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230",
+   "commissioned": "24-03-2023",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/"
+   ]
+  },
+  {
+   "name": "RASIPALAYAM",
+   "key": "RASIPALAYAM",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230-110",
+   "commissioned": "31-08-2017",
+   "operation_circle": "Coimbatore Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Rasipalayam 400 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "SHOLINGANALLUR",
+   "key": "SHOLINGANALLUR",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230-110",
+   "commissioned": "27-12-2017",
+   "operation_circle": "Chennai Operation/ South Circle",
+   "edc": "Chennai South",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Ottiyambakkam 400/230-110 kV SS",
+   "switching_station": false
+  },
+  {
+   "name": "SRIPERUMBUDUR",
+   "key": "SRIPERUMBUDUR",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230-110",
+   "commissioned": "13-03-1987",
+   "operation_circle": "Sriperumpudur Operation Circle",
+   "edc": "Chengalpattu",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Sriperumpudur 400/230-110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "SUNGUVARCHATRAM",
+   "key": "SUNGUVARCHATRAM",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230-110",
+   "commissioned": "16-08-2011",
+   "operation_circle": "Sriperumpudur Operation Circle",
+   "edc": "Chengalpattu",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Sunguvarchatram 400/230-110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "THAPPAKUNDU",
+   "key": "THAPPAKUNDU",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230",
+   "commissioned": "23-10-2018",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/"
+   ]
+  },
+  {
+   "name": "THENNAMPATTY (PAVOORCHATRAM)",
+   "key": "THENNAMPATTY",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230-110",
+   "commissioned": "05-11-2019",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/"
+   ]
+  },
+  {
+   "name": "THIRUVALAM",
+   "key": "TIRUVALAM",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230",
+   "commissioned": "27-07-2014",
+   "operation_circle": "Thiruvalam Operation Circle",
+   "edc": "Vellore",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Thiruvalam 400/230 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "Thervoikandigai",
+   "key": "THERVOIKANDIGAI",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230-110",
+   "commissioned": null,
+   "in_tantransco_list": false,
+   "sources": [
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "operation_circle": "Chennai Operation/ North Circle",
+   "edc": "Chennai North",
+   "in_sldc_list": true,
+   "sldc_name": "Thervoikandigai 400/230-110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "VELLALAVIDUTHI",
+   "key": "VELLALAVIDUTHI",
+   "voltage_class_kv": 400,
+   "voltage_ratio": "400/230",
+   "commissioned": "04-10-2023",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/400/"
+   ]
+  },
+  {
+   "name": "ACHARAPAKKAM",
+   "key": "ACHARAPAKKAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "28-12-2001",
+   "operation_circle": "Sriperumpudur Operation Circle",
+   "edc": "Chengalpattu",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Acharapakkam 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "ALAGARKOVIL",
+   "key": "ALAGARKOVIL",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "31-05-1999",
+   "operation_circle": "Madurai Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Alagarkoil 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "ALANDUR CMRL GIS",
+   "key": "ALANDUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110-33",
+   "commissioned": "29-05-2015",
+   "operation_circle": "Chennai Operation/ South Circle",
+   "edc": "Chennai South",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "CMRL Alandur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "ALIYAR",
+   "key": "ALIYAR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "20-05-2013",
+   "operation_circle": "Coimbatore Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Aliyar 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "ALUNDUR",
+   "key": "ALUNDUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "20-12-1993",
+   "operation_circle": "Trichy Operation Circle",
+   "edc": "Trichy Metro",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Alundur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "AMBATTUR 3RD MAIN ROAD",
+   "key": "AMBATTUR RD MAIN ROAD",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/33-11",
+   "commissioned": "30-03-2017",
+   "operation_circle": "Chennai Operation/ North Circle",
+   "edc": "Chennai West",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Ambattur 3rd Main Road 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "AMUTHAPURAM WF",
+   "key": "AMUTHAPURAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/33",
+   "commissioned": "01-12-2008",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "ANTHIYUR",
+   "key": "ANTHIYUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "14-01-2015",
+   "operation_circle": "Salem Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Anthiyur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "ANUPPANKULAM",
+   "key": "ANUPPANKULAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/11",
+   "commissioned": "09-09-1991",
+   "operation_circle": "Tirunelveli Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Anuppankulam 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "ARANI",
+   "key": "ARANI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "16-03-1983",
+   "operation_circle": "Villupuram Operation Circle",
+   "edc": "Tiruvannamalai",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Arani 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "ARASUR",
+   "key": "ARASUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "11-11-1992",
+   "operation_circle": "Coimbatore Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Arasur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "ATHIPATTU",
+   "key": "ATHIPATTU",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/33",
+   "commissioned": "09-10-2012",
+   "operation_circle": "Chennai Operation/ North Circle",
+   "edc": "Chennai North",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Athipattu 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "BASIN BRIDGE",
+   "key": "BASIN BRIDGE",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "28-10-2009",
+   "operation_circle": "Chennai Operation/ South Circle",
+   "edc": "Chennai Central",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Basin Bridge 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "CENTRAL (CMRL)",
+   "key": "CENTRAL",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "24-08-2018",
+   "operation_circle": "Chennai Operation/ South Circle",
+   "edc": "Chennai Central",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "CMRL Central 230/110 kV SS",
+   "switching_station": false
+  },
+  {
+   "name": "COIMBATORE",
+   "key": "COIMBATORE",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "16-07-2014",
+   "operation_circle": "Coimbatore Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Coimbatore 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "CUDDALORE",
+   "key": "CUDDALORE",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/22",
+   "commissioned": "28-02-1998",
+   "operation_circle": "Villupuram Operation Circle",
+   "edc": "Cuddalore",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Cuddalore 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "Checkkanoorani",
+   "key": "CHECKKANOORANI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230",
+   "commissioned": null,
+   "in_tantransco_list": false,
+   "sources": [
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "operation_circle": "Madurai Operation Circle",
+   "edc": null,
+   "in_sldc_list": true,
+   "sldc_name": "Checkkanoorani 230 KV Switching station",
+   "switching_station": true
+  },
+  {
+   "name": "DEVIAKURCHY",
+   "key": "DEVIAKURCHY",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "05-12-1991",
+   "operation_circle": "Salem Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Deviakurichi 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "EACHANGADU",
+   "key": "EACHANGADU",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "07-02-1997",
+   "operation_circle": "Trichy Operation Circle",
+   "edc": "Perambalur",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Eachangadu 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "ECHUR (PURISAI)",
+   "key": "ECHUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "08-08-2016",
+   "operation_circle": "Villupuram Operation Circle",
+   "edc": "Tiruvannamalai",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Echur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "ERODE UG",
+   "key": "ERODE",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/22",
+   "commissioned": "07-11-2022",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "GOBI",
+   "key": "GOBI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "27-03-1995",
+   "operation_circle": "Salem Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Gobi 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "GUINDY(GIS)",
+   "key": "GUINDY",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "16-04-2015",
+   "operation_circle": "Chennai Operation/ South Circle",
+   "edc": "Chennai South",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Guindy 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "GUMMIDIPOONDI",
+   "key": "GUMMIDIPOONDI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "06-10-1993",
+   "operation_circle": "Chennai Operation/ North Circle",
+   "edc": "Chennai North",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Gummidipoondi 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "GURUBARAPALLY",
+   "key": "GURUBARAPALLY",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/33-11",
+   "commissioned": "20-02-2016",
+   "operation_circle": "Thiruvalam Operation Circle",
+   "edc": "Krishnagiri",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Gurubarapally 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "HOSUR",
+   "key": "HOSUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/33-11",
+   "commissioned": "29-03-1987",
+   "operation_circle": "Thiruvalam Operation Circle",
+   "edc": "Krishnagiri",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Hosur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "INGUR",
+   "key": "INGUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "24-11-1980",
+   "operation_circle": "Salem Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Ingur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "JAMBUNATHAPURAM",
+   "key": "JAMBUNATHAPURAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "22-11-2017",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "KADALANGUDI",
+   "key": "KADALANGUDI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "09-07-2001",
+   "operation_circle": "Trichy Operation Circle",
+   "edc": "Nagapattinam",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Kadalangudi 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "KADAPPERI",
+   "key": "KADAPPERI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/11",
+   "commissioned": "12-08-1985",
+   "operation_circle": "Chennai Operation/ South Circle",
+   "edc": "Chennai South",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Kadapperi 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "KANCHIPURAM",
+   "key": "KANCHIPURAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "07-09-2018",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "KARAIKUDI",
+   "key": "KARAIKUDI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "04-10-1980",
+   "operation_circle": "Madurai Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Karaikudi 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "KARIMANGALAM",
+   "key": "KARIMANGALAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "21-12-2005",
+   "operation_circle": "Thiruvalam Operation Circle",
+   "edc": "Dharmapuri",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Karimangalam 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "KARUPPUR AT JAGIRAMMAPALAYAM",
+   "key": "KARUPPUR AT JAGIRAMMAPALAYAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "16-10-2023",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "KARUVALUR",
+   "key": "KARUVALUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "03-03-2016",
+   "operation_circle": "Coimbatore Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Karuvalur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "KAYATHAR",
+   "key": "KAYATHAR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/66/11",
+   "commissioned": "19-07-2011",
+   "operation_circle": "Tirunelveli Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Kayathar 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "KILPAUK",
+   "key": "KILPAUK",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "27-01-2006",
+   "operation_circle": "Chennai Operation/ North Circle",
+   "edc": "Chennai West",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Kilpauk Water works 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "KINNIMANGALAM",
+   "key": "KINNIMANGALAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "12-01-2017",
+   "operation_circle": "Madurai Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Kinnimangalam 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "KITS PARK (SHOLINGANALLUR)",
+   "key": "KITS PARK",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/33-11",
+   "commissioned": "13-05-2010",
+   "operation_circle": "Chennai Operation/ South Circle",
+   "edc": "Chennai South",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "KITS Park 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "KODIKURCHI (AYIKUDI)",
+   "key": "KODIKURCHI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "05-10-2005",
+   "operation_circle": "Tirunelveli Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Kodikurichi 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "KORATTUR",
+   "key": "KORATTUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/33-11",
+   "commissioned": "1949/1961",
+   "operation_circle": "Chennai Operation/ North Circle",
+   "edc": "Chennai West",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Korattur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "KOYAMBEDU CMRL",
+   "key": "KOYAMBEDU",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "11-07-2013",
+   "operation_circle": "Chennai Operation/ North Circle",
+   "edc": "Chennai West",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "CMRL Koyambedu 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "KUMBAKONAM",
+   "key": "KUMBAKONAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "05-10-2017",
+   "operation_circle": "Trichy Operation Circle",
+   "edc": "Thanjavur",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Kumbakonam 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "KURUKATHI",
+   "key": "KURUKATHI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "31-03-2017",
+   "operation_circle": "Coimbatore Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Kurukathi 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "MAMBALAM UG",
+   "key": "MAMBALAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/33/11",
+   "commissioned": "24-09-2021",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "METTUR",
+   "key": "METTUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/33",
+   "commissioned": "27-04-1979",
+   "operation_circle": "Salem Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Mettur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "MONDIPATTY (TNPL)",
+   "key": "MONDIPATTY",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "03-09-2017",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "MOSUR",
+   "key": "MOSUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "24-06-1999",
+   "operation_circle": "Thiruvalam Operation Circle",
+   "edc": "Vellore",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Mosur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "MYLAPORE I",
+   "key": "MYLAPORE I",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/11 & 33/11",
+   "commissioned": "01-01-1998",
+   "operation_circle": "Chennai Operation/ South Circle",
+   "edc": "Chennai Central",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Mylapore 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "MYLAPORE II (GIS)",
+   "key": "MYLAPORE II",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/33",
+   "commissioned": "26-02-2014",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "Myvadi",
+   "key": "MYVADI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230",
+   "commissioned": null,
+   "in_tantransco_list": false,
+   "sources": [
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "operation_circle": "Coimbatore Operation Circle",
+   "edc": null,
+   "in_sldc_list": true,
+   "sldc_name": "Myvadi 230 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "NALLAMANAICKENPATTY",
+   "key": "NALLAMANAICKENPATTY",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/11",
+   "commissioned": "29-01-2014",
+   "operation_circle": "Tirunelveli Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Nallamanaickanpatty 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "NEMMELITHIPPIAKUDI (KARAMBAYAM)",
+   "key": "NEMMELITHIPPIAKUDI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "26-09-2012",
+   "operation_circle": "Trichy Operation Circle",
+   "edc": "Thanjavur",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Nemmeli Thippiyakudi 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "NEYVELI",
+   "key": "NEYVELI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "29-10-2018",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "NOKIA",
+   "key": "NOKIA",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/33-11",
+   "commissioned": "30-03-2009",
+   "operation_circle": "Sriperumpudur Operation Circle",
+   "edc": "Chengalpattu",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Nokia 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "OMEGA INDL.ESTATE",
+   "key": "OMEGA INDL ESTATE",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "22-01-2016",
+   "operation_circle": "Sriperumpudur Operation Circle",
+   "edc": "Chengalpattu",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Omega 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "ORAGADAM",
+   "key": "ORAGADAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/33-11",
+   "commissioned": "06-08-2008",
+   "operation_circle": "Sriperumpudur Operation Circle",
+   "edc": "Chengalpattu",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Oragadam 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "OTHAKKALMANDAPAM (MALUMICHAMPATTY)",
+   "key": "OTHAKKALMANDAPAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "02-09-2005",
+   "operation_circle": "Coimbatore Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Othakalmandabam 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "PALLADAM",
+   "key": "PALLADAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "28-05-2008",
+   "operation_circle": "Coimbatore Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Palladam 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "PALLAKKAPALAYAM",
+   "key": "PALLAKKAPALAYAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "14-08-2014",
+   "operation_circle": "Salem Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Pallakapalayam 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "PARAMAKUDI (KAVANOOR)",
+   "key": "PARAMAKUDI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "15-09-1997",
+   "operation_circle": "Madurai Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Kavanoor 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "PASUMALAI",
+   "key": "PASUMALAI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "30-08-1963",
+   "operation_circle": "Madurai Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Pasumalai 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "PERAMBALUR",
+   "key": "PERAMBALUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "31-03-1986",
+   "operation_circle": "Trichy Operation Circle",
+   "edc": "Perambalur",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Perambalur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "PONNAPURAM",
+   "key": "PONNAPURAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110-33",
+   "commissioned": "10-06-2007",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "PORUR GIS",
+   "key": "PORUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "30-07-2018",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "POYYUR",
+   "key": "POYYUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "30-03-2017",
+   "operation_circle": "Trichy Operation Circle",
+   "edc": "Perambalur",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Poiyur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "PUDANCHANDAI",
+   "key": "PUDANCHANDAI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "18-05-2006",
+   "operation_circle": "Salem Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Pudansandai 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "PUDUKOTTAI",
+   "key": "PUDUKOTTAI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "03-07-2000",
+   "operation_circle": "Trichy Operation Circle",
+   "edc": "Pudukottai",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Pudukottai 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "PUGALUR",
+   "key": "PUGALUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "07-02-1997",
+   "operation_circle": "Trichy Operation Circle",
+   "edc": "Karur",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Pugalur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "R.A.PURAM",
+   "key": "R A PURAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/33",
+   "commissioned": "21-04-2017",
+   "operation_circle": "Chennai Operation/ South Circle",
+   "edc": "Chennai Central",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "RA Puram 230/33 kV SS",
+   "switching_station": false
+  },
+  {
+   "name": "RENGANATHAPURAM",
+   "key": "RENGANATHAPURAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "31-03-2008",
+   "operation_circle": "Madurai Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Renganathapuram 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "SADAYAPALAYAM(WF)",
+   "key": "SADAYAPALAYAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/33",
+   "commissioned": "28-10-2009",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "SALEM",
+   "key": "SALEM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/22",
+   "commissioned": "04-08-2005",
+   "operation_circle": "Salem Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Salem 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "SAMAYANALLUR",
+   "key": "SAMAYANALLUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "21-10-2020",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "SANKANERI(WF)",
+   "key": "SANKANERI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110-33",
+   "commissioned": "13-09-2004",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "SANKARAPURAM AT KATTUVANNANJUR",
+   "key": "SANKARAPURAM AT KATTUVANNANJUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "15-07-2020",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "SAVASAPURAM",
+   "key": "SAVASAPURAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "31-03-2018",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "SELVAPURAM (DAIS)",
+   "key": "SELVAPURAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "05-07-2024",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "SEMBATTY",
+   "key": "SEMBATTY",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "22-09-1996",
+   "operation_circle": "Madurai Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Sembatty 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "SENBAGARAMANPUDUR (S.R.PUDUR)",
+   "key": "SENBAGARAMANPUDUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "18-06-1998",
+   "operation_circle": "Tirunelveli Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "SR Pudur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "SHENBAGAPUDUR",
+   "key": "SHENBAGAPUDUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "26-02-2021",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "SINGAPERUMALKOIL",
+   "key": "SINGAPERUMALKOIL",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "04-07-1977",
+   "operation_circle": "Sriperumpudur Operation Circle",
+   "edc": "Chengalpattu",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "SP Koil 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "SINGAPURAM",
+   "key": "SINGAPURAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "02-05-2016",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "SINGARAPET",
+   "key": "SINGARAPET",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "14-02-1966",
+   "operation_circle": "Thiruvalam Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Singarapet 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "SIRUSERI",
+   "key": "SIRUSERI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/33",
+   "commissioned": "29-03-2007",
+   "operation_circle": "Chennai Operation/ South Circle",
+   "edc": "Chennai South",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Siruseri 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "SRIPERUMBUDUR SIPCOT (MAMBAKKAM)",
+   "key": "SRIPERUMBUDUR SIPCOT",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/33-11",
+   "commissioned": "07-07-2008",
+   "operation_circle": "Sriperumpudur Operation Circle",
+   "edc": "Chengalpattu",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Sriperumpudur SIPCOT 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "TARAMANI",
+   "key": "TARAMANI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/33",
+   "commissioned": "08-02-1995",
+   "operation_circle": "Chennai Operation/ South Circle",
+   "edc": "Chennai South",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Tharamani 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "THANJAVUR (THIRUKANURPATTY)",
+   "key": "THANJAVUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/66",
+   "commissioned": "31-03-2000",
+   "operation_circle": "Trichy Operation Circle",
+   "edc": "Thanjavur",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Thanjavur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "THATCHANKURCHI (SAMAYAPURAM)",
+   "key": "THATCHANKURCHI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "20-09-2002",
+   "operation_circle": "Trichy Operation Circle",
+   "edc": "Trichy Metro",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Samayapuram 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "THENI",
+   "key": "THENI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "27-03-1989",
+   "operation_circle": "Madurai Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Theni 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "THINGALUR",
+   "key": "THINGALUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "05-12-2015",
+   "operation_circle": "Salem Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Thingalur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "THIRUPATHUR",
+   "key": "THIRUPATHUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "06-08-2021",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "THIRUVALAM",
+   "key": "TIRUVALAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "04-05-1969",
+   "operation_circle": "Thiruvalam Operation Circle",
+   "edc": "Vellore",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Thiruvalam 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "THIRUVANNAMALAI",
+   "key": "THIRUVANNAMALAI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "29-11-1997",
+   "operation_circle": "Villupuram Operation Circle",
+   "edc": "Tiruvannamalai",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Tiruvannamalai 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "THIRUVARUR",
+   "key": "THIRUVARUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/66-33-11",
+   "commissioned": "25-10-1980",
+   "operation_circle": "Trichy Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Thiruvarur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "THIRUVERKADU (HYBRID)",
+   "key": "THIRUVERKADU",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/33-11",
+   "commissioned": "08-10-2015",
+   "operation_circle": "Chennai Operation/ North Circle",
+   "edc": "Chennai West",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Thiruverkkadu 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "THUDIYALUR",
+   "key": "THUDIYALUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "29-08-1963",
+   "operation_circle": "Coimbatore Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Thudiyalur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "THUVAKUDY",
+   "key": "THUVAKUDY",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "24-10-2021",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "TIRUCHULI (NEAR MUTHURAMALINGAPURAM)",
+   "key": "TIRUCHULI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "20-02-2017",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "TIRUPPUR",
+   "key": "TIRUPPUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "01-03-2020",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "TNEB HEAD QUARTERS GIS",
+   "key": "TNEB HEAD QUARTERS",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/33",
+   "commissioned": "26-04-2021",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "TONDAIYARPET",
+   "key": "TONDAIYARPET",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/33",
+   "commissioned": "27-03-1988",
+   "operation_circle": "Chennai Operation/ North Circle",
+   "edc": "Chennai North",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Tondiarpet 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "TRICHY (PIRATTUR)",
+   "key": "TRICHY",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "22-10-1963",
+   "operation_circle": "Trichy Operation Circle",
+   "edc": "Trichy Metro",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Trichy 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "TUTICORIN AUTO",
+   "key": "TUTICORIN",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "17-08-2007",
+   "operation_circle": "Tirunelveli Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Muthiahpuram (Auto) 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "TUTICORIN SIPCOT",
+   "key": "TUTICORIN SIPCOT",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "19-02-2002",
+   "operation_circle": "Tirunelveli Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Tuticorin SIPCOT 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "UDAYATHUR (WF)",
+   "key": "UDAYATHUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/33",
+   "commissioned": "09-02-2007",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "UDDANAPALLY",
+   "key": "UDDANAPALLY",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "23-06-2019",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "UDUMALPET",
+   "key": "UDUMALPET",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "25-01-1982",
+   "operation_circle": "Coimbatore Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Udumalpet 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "ULUNDURPET",
+   "key": "ULUNDURPET",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "18-01-2016",
+   "operation_circle": "Villupuram Operation Circle",
+   "edc": "Kallakurichi",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Ulundurpet 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "UNJANAI",
+   "key": "UNJANAI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "11-03-1994",
+   "operation_circle": "Salem Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Unjanai 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "VALAYAPATTY",
+   "key": "VALAYAPATTY",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "15-07-2017",
+   "operation_circle": "Salem Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Valayapatty 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "VALUTHUR",
+   "key": "VALUTHUR",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "10-09-2007",
+   "operation_circle": "Madurai Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Valuthur 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "VEERANAM (WF)",
+   "key": "VEERANAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/33",
+   "commissioned": "28-09-2005",
+   "operation_circle": null,
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": false,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/"
+   ]
+  },
+  {
+   "name": "VEERAPURAM (MAHINDRA IND. PARK)",
+   "key": "VEERAPURAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110/33",
+   "commissioned": "19-05-2008",
+   "operation_circle": "Sriperumpudur Operation Circle",
+   "edc": "Chengalpattu",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Veerapuram 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "VILLUPURAM",
+   "key": "VILLUPURAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "15-04-1982",
+   "operation_circle": "Villupuram Operation Circle",
+   "edc": "Villupuram",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Villupuram 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "VINNAMANGALAM",
+   "key": "VINNAMANGALAM",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "04-05-1969",
+   "operation_circle": "Thiruvalam Operation Circle",
+   "edc": null,
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Vinnamanagalam 230/110 KV SS",
+   "switching_station": false
+  },
+  {
+   "name": "VYASARPADI",
+   "key": "VYASARPADI",
+   "voltage_class_kv": 230,
+   "voltage_ratio": "230/110",
+   "commissioned": "19-02-2016",
+   "operation_circle": "Chennai Operation/ North Circle",
+   "edc": "Chennai North",
+   "in_tantransco_list": true,
+   "in_sldc_list": true,
+   "sources": [
+    "https://www.tantransco.org/en/tantransco/infrastructure/list-substations/230/",
+    "https://tnebsldc.org/Sslist.aspx"
+   ],
+   "sldc_name": "Vyasarpadi 230/110 KV SS",
+   "switching_station": false
+  }
+ ]
+}
