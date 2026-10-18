@@ -8,5 +8,5 @@ data/power.db-*
 data/weather_now.json
 web/data/live/
 web/posters/
-raw/
-!raw/icons/
+/raw/*
+!/raw/icons/
