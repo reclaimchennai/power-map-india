@@ -1,0 +1,55 @@
+{
+ "lines": {
+  "765": {
+   "file": "lines_765.geojson",
+   "n": 1357,
+   "bytes": 776033
+  },
+  "400": {
+   "file": "lines_400.geojson",
+   "n": 10177,
+   "bytes": 3219743
+  },
+  "220": {
+   "file": "lines_220.geojson",
+   "n": 11251,
+   "bytes": 3572022
+  },
+  "110": {
+   "file": "lines_110.geojson",
+   "n": 19020,
+   "bytes": 6009231
+  },
+  "hvdc": {
+   "file": "lines_hvdc.geojson",
+   "n": 145,
+   "bytes": 151058
+  },
+  "dist": {
+   "file": "lines_dist.geojson",
+   "n": 1123,
+   "bytes": 163636
+  }
+ },
+ "substations": {
+  "file": "substations.geojson",
+  "n": 10907,
+  "bytes": 1853715
+ },
+ "turbines": {
+  "file": "turbines.json",
+  "n": 12807
+ },
+ "towers": null,
+ "schematic": false,
+ "solar_arrays": {
+  "file": "solar_arrays.geojson",
+  "n": 476,
+  "bytes": 969867
+ },
+ "footprints": {
+  "file": "footprints.geojson",
+  "n": 4033,
+  "bytes": 2676626
+ }
+}

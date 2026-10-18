@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Power Map of India · Tamil Nadu live grid</title>
+<meta name="description" content="Every power station in India on a live pixel-art 3D map: where it really is, what it generated yesterday, how much coal it has left, where its fuel comes from, what it emits, and the transmission lines and substations that carry it — Tamil Nadu and Chennai in the most detail, with the TN grid's live figures from the State Load Despatch Centre.">
+<meta name="theme-color" content="#f4f1ea">
+<meta name="color-scheme" content="light dark">
+<script>
+  // theme before first paint: light unless the viewer chose dark (the button, remembered per browser)
+  try { if (localStorage.getItem('pw-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) { /* private mode */ }
+</script>
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Pixelify+Sans:wght@600;700&display=swap">
+<link rel="stylesheet" href="css/style.css?v=6">
+<!-- MapLibre 5 UMD: inlines its worker (the v6 ESM build loads a cross-origin module worker, which browsers block from a CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#panel-body">Skip to map controls</a>
+<div id="map" role="region" aria-label="3D map of India's power stations, transmission lines and substations. Use the Find box to open a power station by name."></div>
+<div id="labels" aria-hidden="true"></div>
+<div id="watermark" aria-hidden="true"><b id="wm-clock">--:--</b><em id="wm-sun"></em><span>Power Map of India · power.reclaimchennai.city</span></div>
+
+<div id="loading" role="status" aria-live="polite"><svg class="pw-loader" viewBox="0 0 32 32" width="96" height="96" shape-rendering="crispEdges" aria-hidden="true">
+  <!-- a chimney whose smoke puffs up in steps, and a pylon with a spark running along the line -->
+  <g class="pw-smoke"><rect x="9" y="4" width="3" height="2" fill="#9aa3ad"/><rect x="11" y="2" width="4" height="2" fill="#c9ced3"/><rect x="14" y="0" width="3" height="2" fill="#e6e9ec"/></g>
+  <rect x="8" y="6" width="3" height="16" fill="#b9b2a4"/><rect x="8" y="7" width="3" height="2" fill="#c0392b"/><rect x="8" y="11" width="3" height="2" fill="#f5f1e6"/>
+  <rect x="3" y="18" width="12" height="8" fill="#5d6873"/><rect x="5" y="20" width="2" height="2" class="pw-win" fill="#ffd84a"/><rect x="9" y="20" width="2" height="2" class="pw-win" fill="#ffd84a"/>
+  <rect x="23" y="8" width="2" height="18" fill="#8d949b"/><rect x="19" y="10" width="10" height="1" fill="#8d949b"/><rect x="20" y="14" width="8" height="1" fill="#8d949b"/>
+  <rect x="21" y="18" width="1" height="8" fill="#8d949b"/><rect x="26" y="18" width="1" height="8" fill="#8d949b"/>
+  <rect x="15" y="12" width="4" height="1" fill="#3d4047"/><rect class="pw-spark" x="15" y="11" width="2" height="2" fill="#ffe27a"/>
+  <rect x="0" y="26" width="32" height="2" fill="#3d4047"/>
+</svg><span id="loading-text">Loading the grid…</span><div class="load-bar" role="progressbar" aria-label="Loading" aria-valuemin="0" aria-valuemax="100" aria-valuenow="4"><i></i></div><span class="load-pct" aria-hidden="true">4%</span></div>
+<script>
+(function () {
+  var bar = document.querySelector('#loading .load-bar'), pct = document.querySelector('#loading .load-pct'),
+      txt = document.getElementById('loading-text'), p = 4, target = 30;
+  function paint() { bar.style.setProperty('--p', p.toFixed(1) + '%'); bar.setAttribute('aria-valuenow', Math.round(p)); pct.textContent = Math.round(p) + '%'; }
+  window.__pwLoad = function (v, t) { if (t) txt.textContent = t; target = Math.max(target, Math.min(100, v)); if (v >= 100) { p = 100; paint(); } };
+  (function tick() { if (p < 100) { var gap = target - p; if (gap > 0) { p += Math.max(0.08, gap * 0.06); if (p > target) p = target; paint(); } setTimeout(tick, 70); } })();
+  paint();
+})();
+</script>
+
+<a id="home" href="https://reclaimchennai.city/" title="All Reclaim Chennai apps" aria-label="All Reclaim Chennai apps">
+  <svg class="i" aria-hidden="true"><use href="icons.svg?v=2#back"/></svg>Reclaim
+</a>
+
+<button id="theme-toggle" type="button" aria-pressed="false" title="Dark mode" aria-label="Dark mode"><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#moon"/></svg></button>
+
+<aside id="panel" class="panel" aria-label="Live grid, layers and search">
+  <header>
+    <button id="panel-toggle" class="panel-toggle" aria-expanded="true" aria-controls="panel-body" title="Hide panel">
+      <svg class="i" aria-hidden="true"><use href="icons.svg?v=2#down"/></svg>
+    </button>
+    <small>India · Tamil Nadu · Chennai</small>
+    <h1>Power Map</h1>
+    <p class="peek" id="peek" aria-live="polite"></p>
+    <p class="sub">Every power station, line and substation, with live output.</p>
+    <a class="guide-link" href="guide.html"><svg class="i sm" aria-hidden="true"><use href="icons.svg?v=2#info"/></svg>Guide</a>
+    <a class="guide-link" href="coal/"><svg class="i sm" aria-hidden="true"><use href="icons.svg?v=2#coal"/></svg>Coal Tracker</a>
+  </header>
+
+  <div id="panel-body">
+    <canvas class="scene hero" id="hero-scene" aria-hidden="true"></canvas>
+
+    <section class="group" aria-labelledby="tn-h">
+      <h2 id="tn-h"><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#bolt"/></svg>Tamil Nadu grid <span class="hint" id="tn-when"></span></h2>
+      <div class="stats" id="tn-stats"></div>
+      <div class="seg" id="tn-moment" role="radiogroup" aria-label="Moment of the day">
+        <button data-v="min_mw" role="radio" aria-checked="false">Night min</button>
+        <button data-v="morning_mw" class="on" role="radio" aria-checked="true">Morning</button>
+        <button data-v="lighting_mw" role="radio" aria-checked="false">Evening peak</button>
+      </div>
+      <div id="tn-mix" class="mix" role="img"></div>
+      <div class="legend" id="tn-legend"></div>
+      <p class="note fine" id="tn-note"></p>
+      <div id="tn-today" class="sp-list"></div>
+      <div id="tn-readings" class="sp-list"></div>
+      <details class="more"><summary><svg class="i sm" aria-hidden="true"><use href="icons.svg?v=2#list"/></svg>Every line of the SLDC statement</summary><div id="tn-table"></div></details>
+    </section>
+
+    <section class="group" aria-labelledby="find-h">
+      <h2 id="find-h"><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#search"/></svg>Find</h2>
+      <label class="visually-hidden" for="search">Power station name</label>
+      <input id="search" type="search" placeholder="Power station name" list="names" autocomplete="off">
+      <datalist id="names"></datalist>
+      <div class="grid2" id="fly"></div>
+    </section>
+
+    <section class="group" aria-labelledby="fuel-h">
+      <h2 id="fuel-h"><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#palette"/></svg>Stations <span class="hint" id="fleet-count"></span></h2>
+      <div class="fuels" id="fuels" role="group" aria-label="Show stations by fuel"></div>
+      <p class="note fine">Pillar height = installed capacity. Bright part = yesterday's average output. Smoke drifts with the live wind.</p>
+    </section>
+
+    <section class="group">
+      <h2><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#layers"/></svg>Show</h2>
+      <div class="cells">
+        <label class="row"><svg class="i lead t-line" aria-hidden="true"><use href="icons.svg?v=2#pylon"/></svg><span class="lbl">Transmission lines<small id="lines-note">765 · 400 · 230/220 · 110 kV</small></span><input type="checkbox" class="switch" role="switch" id="l-lines" checked></label>
+        <label class="row"><svg class="i lead" aria-hidden="true"><use href="icons.svg?v=2#substation"/></svg><span class="lbl">Substations<small id="subs-note"></small></span><input type="checkbox" class="switch" role="switch" id="l-subs" checked></label>
+        <label class="row"><svg class="i lead t-smoke" aria-hidden="true"><use href="icons.svg?v=2#smoke"/></svg><span class="lbl">Smoke &amp; emissions<small>sized by output, blown by the wind</small></span><input type="checkbox" class="switch" role="switch" id="l-smoke" checked></label>
+        <label class="row"><svg class="i lead t-ship" aria-hidden="true"><use href="icons.svg?v=2#ship"/></svg><span class="lbl">Fuel supply chains<small id="feed-note">mines, ports, ships, trains, pipelines</small></span><input type="checkbox" class="switch" role="switch" id="l-feed" checked></label>
+        <label class="row"><svg class="i lead" aria-hidden="true"><use href="icons.svg?v=2#cube"/></svg><span class="lbl">3D stations &amp; turbines<small>zoom in to a station</small></span><input type="checkbox" class="switch" role="switch" id="l-models" checked></label>
+        <label class="row"><svg class="i lead" aria-hidden="true"><use href="icons.svg?v=2#sun"/></svg><span class="lbl">Map follows the sun<small id="sun-note">light by day, dark by night, dusk sweeping west</small></span><input type="checkbox" class="switch" role="switch" id="l-sun" checked></label>
+        <label class="row"><svg class="i lead" aria-hidden="true"><use href="icons.svg?v=2#places"/></svg><span class="lbl">Satellite ground<small>Sentinel-2 cloudless</small></span><input type="checkbox" class="switch" role="switch" id="l-sat"></label>
+        <label class="row"><svg class="i lead" aria-hidden="true"><use href="icons.svg?v=2#compass"/></svg><span class="lbl">3D terrain<small>hills and dams in relief</small></span><input type="checkbox" class="switch" role="switch" id="l-terrain"></label>
+        <label class="row"><svg class="i lead" aria-hidden="true"><use href="icons.svg?v=2#tag"/></svg><span class="lbl">3D buildings<small id="base-status">OpenStreetMap, close up</small></span><input type="checkbox" class="switch" role="switch" id="l-base" checked></label>
+      </div>
+      <div class="legend" id="line-legend"></div>
+    </section>
+
+    <section class="group" aria-labelledby="tm-h">
+      <h2 id="tm-h"><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#history"/></svg>Time machine <span class="hint" id="tm-day">yesterday</span></h2>
+      <div class="timeline">
+        <button id="tm-play" class="btn icon" aria-label="Play the last year day by day" title="Play the year"><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#play"/></svg></button>
+        <input type="range" id="tm" min="0" max="1" step="1" value="1" aria-label="Day">
+      </div>
+      <p class="note fine" id="tm-note">Drag to replay any day of the last year: every pillar shows that day's output from CEA's daily reports.</p>
+    </section>
+
+    <section class="group" aria-labelledby="india-h">
+      <h2 id="india-h"><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#chart"/></svg>India <span class="hint" id="india-when"></span></h2>
+      <div class="stats" id="india-stats"></div>
+      <p class="note" id="india-now-h"></p>
+      <div id="india-mix" class="mix" role="img"></div>
+      <div class="legend" id="india-legend"></div>
+      <div id="india-today" class="sp-list"></div>
+      <div id="india-regions" class="bars"></div>
+      <div id="india-history" class="sp-list"></div>
+      <p class="note fine">Conventional generation (coal, lignite, gas, diesel, nuclear, large hydro) reported to the National Power Portal. Bar = actual, tick = programme.</p>
+    </section>
+
+    <section class="group" aria-labelledby="nfms-h">
+      <h2 id="nfms-h"><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#clock"/></svg>Supply to consumers <span class="hint" id="nfms-when"></span></h2>
+      <div class="stats" id="nfms-stats"></div>
+      <p class="note">Average hours of supply per day by state (all feeders, including farm feeders that are rationed by design). Tap a bar for the breakdown.</p>
+      <div id="nfms-states" class="bars"></div>
+      <details class="more"><summary><svg class="i sm" aria-hidden="true"><use href="icons.svg?v=2#list"/></svg>Major cities: interruptions this month</summary><div id="nfms-cities" class="tbl-wrap"></div></details>
+      <p class="note fine">National Feeder Monitoring System (Ministry of Power / REC): meters on 2.4 lakh feeders report every outage. SAIFI = interruptions per consumer, SAIDI = hours of interruption per consumer.</p>
+    </section>
+
+    <section class="group" aria-labelledby="coal-h">
+      <h2 id="coal-h"><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#coal"/></svg>Coal stock watch <span class="hint" id="coal-when"></span></h2>
+      <div id="coal-list" class="coal-list"></div>
+      <p class="note fine">CEA daily coal report: stock as a share of the normative stock each plant should hold. Critical = below 25% of normative.</p>
+    </section>
+
+    <section class="group" aria-labelledby="poster-h">
+      <h2 id="poster-h"><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#doc"/></svg>Posters</h2>
+      <div class="posters">
+        <a href="posters/power_india_en.png" target="_blank" rel="noopener"><img src="posters/power_india_en_preview.jpg" alt="Poster: every power station in India with supply chains, installed capacity and generation right now" loading="lazy" width="600" height="825"><span>India</span></a>
+        <a href="posters/power_tn_en.png" target="_blank" rel="noopener"><img src="posters/power_tn_en_preview.jpg" alt="Poster: every power station in Tamil Nadu with the grid, wind turbines and supply chains" loading="lazy" width="600" height="825"><span>Tamil Nadu</span></a>
+      </div>
+      <p class="note fine">Print-ready, 12 × 16.5 in at 300 dpi, redrawn every evening from the day's data.</p>
+    </section>
+
+    <footer class="sources">
+      <h2><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#book"/></svg>Sources</h2>
+      <ul>
+        <li><a href="https://tnebsldc.org/reports1/peakdet.pdf" target="_blank" rel="noopener">TANTRANSCO State Load Despatch Centre</a>, Grid Details (Instantaneous), polled every 15 minutes and archived at every re-issue.</li>
+        <li><a href="https://npp.gov.in/dashBoard/gc-map-dashboard" target="_blank" rel="noopener">National Power Portal</a> (CEA, Ministry of Power): station map, daily generation, <a href="https://npp.gov.in/dgrReports" target="_blank" rel="noopener">daily generation report</a> and <a href="https://npp.gov.in/dailyCoalReports" target="_blank" rel="noopener">daily coal report</a>.</li>
+        <li><a href="https://www.tnpgcl.org/en/generation/" target="_blank" rel="noopener">TNPGCL</a>, <a href="https://www.tngecl.org/en/greenenergy/" target="_blank" rel="noopener">TNGECL</a>, <a href="https://www.tantransco.org/en/tantransco/" target="_blank" rel="noopener">TANTRANSCO</a>; TN Environment Department, <a href="https://environment.tn.gov.in/assets/report/Database%20on%20Energy%20Resources%20in%20Tamil%20Nadu.pdf" target="_blank" rel="noopener">Database on Energy Resources in Tamil Nadu</a>; TNGIS substation layer.</li>
+        <li><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors (ODbL): lines, substations, plant footprints, wind turbines; basemap via <a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a>.</li>
+        <li><a href="https://s2maps.eu" target="_blank" rel="noopener">Sentinel-2 cloudless</a> by EOX IT Services GmbH (contains modified Copernicus Sentinel data 2016, CC BY 4.0); terrain from <a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noopener">AWS Terrain Tiles</a>; weather from <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> (CC BY 4.0).</li>
+        <li>India outline and states: <a href="https://github.com/datameet/maps" target="_blank" rel="noopener">DataMeet</a> (CC BY 4.0). Built with <a href="https://maplibre.org/" target="_blank" rel="noopener">MapLibre GL JS</a>, <a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a> and <a href="https://pixelarticons.com" target="_blank" rel="noopener">pixelarticons</a>; fonts Pixelify Sans and Silkscreen (OFL).</li>
+      </ul>
+      <p class="method">Station positions from the National Power Portal were checked against their state and against OpenStreetMap and the Tamil Nadu dossiers; copied or out-of-state points were corrected or left off (listed in the guide). Output shown per station is the previous day's average (energy ÷ 24 h), because stations' instantaneous output is not published; Tamil Nadu's statewide figures are the SLDC's instantaneous readings. <span id="built"></span></p>
+    </footer>
+  </div>
+</aside>
+
+<section id="card" class="card" hidden role="dialog" aria-modal="false" aria-labelledby="card-title"></section>
+<div id="tip" class="tip" hidden></div>
+
+<script type="module" src="js/app.js?v=5"></script>
+</body>
+</html>

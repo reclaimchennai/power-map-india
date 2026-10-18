@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voxel Models Test</title>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.0/examples/jsm/"
+} }
+</script>
+<style>
+  :root { --bg: #1b1d22; --panel: #262930; --ink: #e8e4da; --dim: #9a968c; --edge: #3a3e47; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 13px/1.35 ui-monospace, Menlo, Consolas, monospace; }
+  #gl { position: fixed; inset: 0; width: 100vw; height: 100vh; image-rendering: pixelated; z-index: 0; pointer-events: none; }
+  header { position: sticky; top: 0; z-index: 3; display: flex; gap: 16px; align-items: center; flex-wrap: wrap; padding: 8px 16px; background: #111317ee; border-bottom: 2px solid #000; }
+  header h1 { font-size: 14px; margin: 0; letter-spacing: .05em; }
+  header label { display: flex; gap: 6px; align-items: center; color: var(--dim); }
+  main { position: relative; z-index: 1; padding: 12px 16px 40px; }
+  h2 { font-size: 13px; color: var(--dim); margin: 18px 0 8px; text-transform: uppercase; letter-spacing: .08em; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }
+  .cell { position: relative; height: 240px; border: 2px solid var(--edge); background: transparent; cursor: grab; }
+  .cell .lab { position: absolute; left: 0; top: 0; padding: 3px 6px; background: #000a; font-size: 11px; pointer-events: none; }
+  .cell .cnt { position: absolute; right: 0; bottom: 0; padding: 2px 6px; background: #000a; font-size: 10px; color: var(--dim); pointer-events: none; }
+  body.one .grid { grid-template-columns: 1fr; }
+  body.one .cell { height: calc(100vh - 80px); }
+  body.one .scenes { grid-template-columns: repeat(auto-fill, minmax(576px, 1fr)); }
+  .scenes { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 10px; }
+  .scene { background: var(--panel); border: 2px solid var(--edge); padding: 4px; }
+  .scene canvas { width: 100%; aspect-ratio: 96 / 54; image-rendering: pixelated; display: block; background: #000; }
+  .scene div { font-size: 11px; color: var(--dim); padding-top: 3px; }
+</style>
+</head>
+<body>
+<canvas id="gl"></canvas>
+<header>
+  <h1>VOXEL POWER · models test</h1>
+  <label>load <input id="load" type="range" min="0" max="1" step="0.01" value="0.8"> <span id="lv">0.80</span></label>
+  <label>IST hour <input id="hour" type="range" min="-1" max="23.5" step="0.5" value="-1"> <span id="hv">live</span></label>
+  <label><input id="spin" type="checkbox"> auto-rotate</label>
+  <span id="stats" style="color:var(--dim)"></span>
+</header>
+<main>
+  <h2>Models</h2>
+  <div class="grid" id="grid"></div>
+  <h2 id="sh">Scenes (96×54, 15 fps)</h2>
+  <div class="scenes" id="scenes"></div>
+</main>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { ARCHETYPES, archetypeFor, buildAsset, buildPylon } from './js/models.js';
+import { mountScene } from './js/scenes.js';
+
+const Q = new URLSearchParams(location.search);
+const only = Q.get('only');
+const noScenes = Q.has('noscenes'), noModels = Q.has('nomodels');
+
+// Sample records, shaped like build/SCHEMA.md plant records (nulls where the dossier would have them).
+const S = (o) => ({ structure: {}, units: [], ...o });
+const U = (n, mw) => Array.from({ length: n }, (_, i) => ({ no: i + 1, mw }));
+const SAMPLES = [
+  ['North Chennai TPS St-II', S({ type: 'coal', name: 'North Chennai Thermal Power Station Stage II', capacity_mw: 1200, units: U(2, 600), water: { cooling: 'once-through seawater' }, structure: { stacks: [{ h_m: 275, flues: 2 }], cooling_towers: 0 } })],
+  ['Mettur TPS', S({ type: 'coal', name: 'Mettur Thermal Power Station', capacity_mw: 840, units: U(4, 210), structure: { stacks: [{ h_m: 220 }, { h_m: 220 }], cooling_towers: 2 } })],
+  ['Tuticorin TPS', S({ type: 'coal', name: 'Tuticorin Thermal Power Station', capacity_mw: 1050, units: U(5, 210), structure: { stacks: [{ h_m: 150 }, { h_m: 150 }] } })],
+  ['Vallur TPP', S({ type: 'coal', name: 'Vallur Thermal Power Project', capacity_mw: 1500, units: U(3, 500), structure: { stacks: [{ h_m: 275, flues: 3 }] } })],
+  ['Neyveli TS-II', S({ type: 'thermal', name: 'Neyveli TS II', capacity_mw: 1470 })],
+  ['Kudankulam', S({ type: 'nuclear', name: 'Kudankulam NPP 1&2', capacity_mw: 2000, units: U(2, 1000) })],
+  ['MAPS Kalpakkam', S({ type: 'nuclear', name: 'Madras Atomic Power Station (MAPS)', capacity_mw: 440, units: U(2, 220) })],
+  ['PFBR Kalpakkam', S({ type: 'nuclear', name: 'PFBR Kalpakkam (under construction)', capacity_mw: 500 })],
+  ['Mettur Dam HEP', S({ type: 'hydro', name: 'Mettur Dam HEP', capacity_mw: 50, units: U(4, 12.5), structure: { dam_h_m: 65, dam_len_m: 1700 } })],
+  ['Pykara HEP', S({ type: 'hydro', name: 'Pykara HEP', capacity_mw: 59, units: U(3, 19.7) })],
+  ['Kadamparai PSP', S({ type: 'hydro', name: 'Kadamparai HEP', capacity_mw: 400, units: U(4, 100) })],
+  ['Muppandal turbine', S({ type: 'wind', name: 'Suzlon S64 WTG', capacity_mw: 1.25, structure: { hub_h_m: 65, rotor_d_m: 64 } })],
+  ['Muppandal wind farm', S({ type: 'wind', name: 'Muppandal Wind Farm', capacity_mw: 1500 })],
+  ['Kamuthi Solar', S({ type: 'solar', name: 'Kamuthi Solar Park', capacity_mw: 648 })],
+  ['Basin Bridge GT', S({ type: 'gas', name: 'Basin Bridge GTPS (open cycle)', capacity_mw: 120, units: U(4, 30) })],
+  ['Kovilkalappal CCPP', S({ type: 'gas', name: 'Kovilkalappal GT', capacity_mw: 108 })],
+  ['Samalpatti diesel', S({ type: 'diesel', name: 'Samalpatti Diesel Power Plant', capacity_mw: 106, units: U(7, 15.1) })],
+  ['Sugar mill cogen', S({ type: 'cogen', name: 'Sakthi Sugars cogen', capacity_mw: 22, fuel: { primary: 'bagasse' } })],
+  ['Alamathy 400 kV SS', { type: 'substation', name: 'Alamathy 400 kV', voltage_kv: 400 }],
+  ['Pylon 765 kV', { type: 'pylon', voltage_kv: 765 }],
+  ['Pylon 400 kV', { type: 'pylon', voltage_kv: 400 }],
+  ['Pylon 230 kV', { type: 'pylon', voltage_kv: 230 }],
+  ['Pylon 110 kV', { type: 'pylon', voltage_kv: 110 }],
+  ['Coal ship (Panamax)', { type: 'coal_ship' }],
+  ['Coal train (BOXN rake)', { type: 'coal_train', wagons: 12 }],
+  ['LNG tanker (Moss)', { type: 'lng_tanker' }],
+  ['Open-cast coal mine', { type: 'mine', name: 'MCL Talcher', fuel: { primary: 'coal' } }],
+];
+
+const lv = document.getElementById('load'), hv = document.getElementById('hour');
+if (Q.has('load')) { lv.value = Q.get('load'); document.getElementById('lv').textContent = (+lv.value).toFixed(2); }
+if (Q.has('hour')) { hv.value = Q.get('hour'); document.getElementById('hv').textContent = hv.value; }
+const state = { load: +lv.value };
+lv.oninput = () => { state.load = +lv.value; document.getElementById('lv').textContent = state.load.toFixed(2); };
+hv.oninput = () => { document.getElementById('hv').textContent = +hv.value < 0 ? 'live' : hv.value; };
+// simulated clock: epoch seconds whose IST hour is the slider value (or undefined = wall clock)
+const clock = () => {
+  const now = performance.now() / 1000;
+  if (+hv.value < 0) return now;
+  const d = new Date(); d.setUTCHours(0, 0, 0, 0);
+  return d.getTime() / 1000 + (+hv.value - 5.5) * 3600 + (now % 60);
+};
+
+const canvas = document.getElementById('gl');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: false });
+renderer.setPixelRatio(0.5);
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.setScissorTest(true);
+
+const grid = document.getElementById('grid');
+const views = [];
+let total = 0;
+if (only) document.body.classList.add('one');
+if (Q.get('cols')) grid.style.gridTemplateColumns = `repeat(${Q.get('cols')}, 1fr)`;
+if (!noModels) for (const [label, rec] of SAMPLES) {
+  const arch = archetypeFor(rec);
+  if (only && only !== arch && only !== label) continue;
+  const t0 = performance.now();
+  const model = arch === 'pylon' ? buildPylon(rec.voltage_kv) : buildAsset(arch, rec);
+  const ms = performance.now() - t0;
+  const el = document.createElement('div');
+  el.className = 'cell';
+  el.innerHTML = `<div class="lab">${label} → <b>${arch}</b></div><div class="cnt">${model.userData.instances} inst · h ${model.userData.h.toFixed(0)} m · r ${model.userData.radius.toFixed(0)} m · ${ms.toFixed(0)} ms</div>`;
+  grid.appendChild(el);
+  total += model.userData.instances;
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x9fc3dc);
+  scene.add(new THREE.HemisphereLight(0xdfe9f5, 0x6b5d4a, 1.4));
+  const sun = new THREE.DirectionalLight(0xfff1d8, 2.4);
+  sun.position.set(-0.5, 1, 0.35);
+  scene.add(sun);
+  const R = Math.max(model.userData.radius, model.userData.h * 0.7, 10);
+  const ground = new THREE.Mesh(new THREE.BoxGeometry(R * 4, 0.2, R * 4), new THREE.MeshStandardMaterial({ color: arch.includes('ship') || arch === 'lng_tanker' ? 0x2f6688 : 0x7d8a5e, roughness: 1 }));
+  ground.position.y = -0.2;
+  scene.add(ground);
+  scene.add(model);
+  const cam = new THREE.PerspectiveCamera(32, 1.4, R * 0.02, R * 20);
+  const k = Q.get('zoom') ? +Q.get('zoom') : 1;
+  const az = Q.get('az') ? +Q.get('az') * Math.PI / 180 : 0.75;
+  const el_ = Q.get('el') ? +Q.get('el') * Math.PI / 180 : 0.55;
+  const tall = model.userData.h > model.userData.radius * 1.5;
+  const dist = (tall ? model.userData.h * 2.1 : R * 2.3) / k;
+  const ty = tall ? model.userData.h * 0.5 : Math.min(model.userData.h * 0.25, R * 0.3);
+  cam.position.set(Math.sin(az) * Math.cos(el_) * dist, Math.sin(el_) * dist * (tall ? 0.4 : 1) + ty, Math.cos(az) * Math.cos(el_) * dist);
+  const controls = new OrbitControls(cam, el);
+  controls.target.set(0, ty, 0);
+  controls.update();
+  views.push({ el, scene, cam, controls, model });
+}
+document.getElementById('stats').textContent = `${views.length} models · ${total.toLocaleString()} instances`;
+
+function resize() { renderer.setSize(innerWidth, innerHeight, false); }
+addEventListener('resize', resize); resize();
+
+function frame() {
+  requestAnimationFrame(frame);
+  const t = clock();
+  renderer.setScissorTest(false); renderer.setClearColor(0x1b1d22); renderer.clear(); renderer.setScissorTest(true);
+  const H = canvas.clientHeight;
+  for (const v of views) {
+    const r = v.el.getBoundingClientRect();
+    if (r.bottom < 0 || r.top > H || r.right < 0 || r.left > innerWidth) continue;
+    v.model.userData.anim(t, state.load);
+    if (document.getElementById('spin').checked) v.model.rotation.y += 0.003;
+    v.cam.aspect = r.width / r.height; v.cam.updateProjectionMatrix();
+    renderer.setViewport(r.left, H - r.bottom, r.width, r.height);
+    renderer.setScissor(r.left, H - r.bottom, r.width, r.height);
+    renderer.render(v.scene, v.cam);
+  }
+}
+frame();
+
+// pixel scenes
+const box = document.getElementById('scenes');
+if (noScenes) document.getElementById('sh').remove();
+else for (const a of ARCHETYPES) {
+  if (only && ARCHETYPES.includes(only) && only !== a) continue;
+  const d = document.createElement('div');
+  d.className = 'scene';
+  d.innerHTML = `<canvas></canvas><div>${a}</div>`;
+  box.appendChild(d);
+  mountScene(d.querySelector('canvas'), a, () => ({ load: state.load, t: +hv.value < 0 ? undefined : clock() }));
+}
+window.__ready = true;
+</script>
+</body>
+</html>

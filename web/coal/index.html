@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Coal Tracker · India</title>
+<meta name="description" content="India's coal supply chain, tracked every day: production, dispatch, rail rakes, imports and ships, the stock and daily burn at every coal power station, and the mines, ports and routes that connect them.">
+<meta name="theme-color" content="#f4f1ea">
+<meta name="color-scheme" content="light dark">
+<script>
+  try { if (localStorage.getItem('pw-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) { /* private mode */ }
+</script>
+<link rel="icon" href="../favicon.svg">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Pixelify+Sans:wght@600;700&display=swap">
+<link rel="stylesheet" href="coal.css?v=2">
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
+</head>
+<body>
+<header class="bar">
+  <a class="back" href="../"><svg class="i sm" aria-hidden="true"><use href="../icons.svg?v=2#back"/></svg>Power map</a>
+  <span class="brand">Coal Tracker</span>
+  <button id="theme" class="icon-btn" type="button" aria-pressed="false" title="Dark mode" aria-label="Dark mode"></button>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="kicker">India · coal, from mine to boiler</p>
+    <h1>Is India running short of coal?</h1>
+    <p class="lede" id="lede">Loading the latest reports…</p>
+  </section>
+
+  <section id="alert" class="alert" hidden></section>
+
+  <section class="giants" aria-label="Headline figures">
+    <article class="giant" id="g-prod"></article>
+    <article class="giant" id="g-cons"></article>
+    <article class="giant" id="g-stock"></article>
+    <article class="giant" id="g-res"></article>
+  </section>
+
+  <section class="rates" id="rates" aria-label="Rates"></section>
+
+  <section class="block">
+    <h2><svg class="i sm" aria-hidden="true"><use href="../icons.svg?v=2#chart"/></svg>Coal in the yards of India's power stations</h2>
+    <p class="note" id="stock-note"></p>
+    <div class="chart" id="c-stock"></div>
+    <div class="chart short" id="c-crit"></div>
+  </section>
+
+  <section class="block">
+    <h2><svg class="i sm" aria-hidden="true"><use href="../icons.svg?v=2#train"/></svg>Arriving and burnt, every day</h2>
+    <p class="note" id="flow-note"></p>
+    <div class="chart" id="c-flow"></div>
+  </section>
+
+  <section class="block">
+    <h2><svg class="i sm" aria-hidden="true"><use href="../icons.svg?v=2#route"/></svg>The supply chain</h2>
+    <p class="note">Mines and coalfields, the ports that ship coal, the rail, sea and conveyor routes, and every coal power station coloured by the coal it has left. Tap anything for details.</p>
+    <div class="map-wrap"><div id="map" role="region" aria-label="Map of mines, ports, routes and power stations"></div></div>
+    <div class="legend" id="map-legend"></div>
+  </section>
+
+  <section class="block" id="supply-block">
+    <h2><svg class="i sm" aria-hidden="true"><use href="../icons.svg?v=2#mine"/></svg>Mines, rail and ships, month by month</h2>
+    <p class="note" id="supply-note"></p>
+    <div class="multiples" id="supply"></div>
+  </section>
+
+  <section class="block">
+    <h2><svg class="i sm" aria-hidden="true"><use href="../icons.svg?v=2#list"/></svg>Every coal power station</h2>
+    <div class="filters">
+      <label class="search"><svg class="i sm" aria-hidden="true"><use href="../icons.svg?v=2#search"/></svg><input id="q" type="search" placeholder="Station, state or company" aria-label="Search stations"></label>
+      <select id="f-state" aria-label="State"><option value="">All states</option></select>
+      <select id="f-status" aria-label="Status">
+        <option value="">Any stock level</option>
+        <option value="crit">Critical only</option>
+        <option value="low">Under 50% of normative</option>
+      </select>
+    </div>
+    <p class="note" id="table-note"></p>
+    <div class="table-wrap"><table class="plants" id="plants">
+      <thead><tr>
+        <th data-k="n" scope="col">Station</th>
+        <th data-k="days" scope="col" class="num">Days left</th>
+        <th data-k="pct" scope="col" class="num">Stock vs normative</th>
+        <th data-k="stock" scope="col" class="num">Stock, kt</th>
+        <th data-k="r7" scope="col" class="num">In / day, kt</th>
+        <th data-k="c7" scope="col" class="num">Burnt / day, kt</th>
+        <th scope="col">90 days</th>
+        <th data-k="gen" scope="col" class="num">Generated, MU</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <section class="block">
+    <h2><svg class="i sm" aria-hidden="true"><use href="../icons.svg?v=2#places"/></svg>What is still in the ground</h2>
+    <p class="note" id="res-note"></p>
+    <div class="res-grid">
+      <div class="chart" id="c-res"></div>
+      <div class="chart" id="c-res-hist"></div>
+    </div>
+  </section>
+
+  <footer class="sources" id="sources"></footer>
+</main>
+
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<script type="module" src="coal.js?v=5"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Power Map Guide</title>
+<meta name="description" content="How the Power Map of India works: what every pillar, puff of smoke, line and model shows, where the live figures come from, how station positions were checked, and what the map cannot tell you.">
+<meta name="theme-color" content="#f4f1ea">
+<meta name="color-scheme" content="light dark">
+<script>try { if (localStorage.getItem('pw-theme') === 'dark') document.documentElement.dataset.theme = 'dark'; } catch (e) {}</script>
+<link rel="icon" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Pixelify+Sans:wght@600;700&display=swap">
+<link rel="stylesheet" href="css/style.css?v=3">
+<style>
+  body.doc{overflow:auto;height:auto}
+  .doc main{max-width:760px;margin:0 auto;padding:calc(20px + var(--safe-t)) 16px calc(40px + var(--safe-b))}
+  .doc h1{font-family:var(--title);font-size:30px;margin:14px 0 6px;text-shadow:3px 3px 0 #000}
+  .doc h2{font-family:var(--font);font-size:13px;color:var(--accent);margin:30px 0 10px;display:flex;gap:8px;align-items:center}
+  .doc h2 .i{color:var(--accent)}
+  .doc p,.doc li{font-size:16px;line-height:1.55;color:var(--text)}
+  .doc .lede{color:var(--text-2);font-size:17px}
+  .doc ul{padding-left:20px}
+  .doc li{margin:0 0 8px}
+  .doc .box{background:var(--panel);border:3px solid var(--edge);box-shadow:var(--bevel);padding:12px 14px;margin:12px 0}
+  .doc code{font-family:var(--font);font-size:13px;color:var(--accent)}
+  .doc .back{display:inline-flex;align-items:center;gap:6px;font-family:var(--font);font-size:12px;min-height:44px;padding:0 12px;background:var(--stone);color:#fff;border:3px solid var(--edge);
+    box-shadow:inset 3px 3px 0 var(--stone-hi),inset -3px -3px 0 var(--stone-lo);text-decoration:none}
+  .doc table{width:100%;border-collapse:collapse;font-size:14px}
+  .doc th,.doc td{text-align:left;padding:6px 8px;border-bottom:2px solid var(--lo);vertical-align:top}
+  .doc th{font-family:var(--font);font-size:10px;color:var(--text-2);font-weight:400}
+  .doc .fuels-key{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px}
+  .doc .fuels-key span{display:flex;align-items:center;gap:8px;font-size:14px}
+  .doc .fuels-key i{width:20px;height:20px;display:grid;place-items:center;background:var(--c);border:2px solid var(--edge)}
+  .doc .fuels-key i .i{width:14px;height:14px;color:#05060a}
+</style>
+</head>
+<body class="doc">
+<main>
+  <a class="back" href="./"><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#back"/></svg>Back to the map</a>
+  <h1>Power Map guide</h1>
+  <p class="lede">Every power station in India on one live map: where it is, how much it made yesterday, how much coal is in its yard, where its fuel comes from, what comes out of its chimneys, and the lines and substations that carry the power away. Tamil Nadu and Chennai have the most detail.</p>
+
+  <h2><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#bolt"/></svg>What you're looking at</h2>
+  <ul>
+    <li><b>Pillars.</b> Every station is a voxel pillar. The translucent shell is its <b>installed capacity</b>. The bright core is <b>yesterday's average output</b>, the energy it reported for the day divided by 24 hours. A tall shell with a short core is a plant standing idle, on outage or short of coal.</li>
+    <li><b>Smoke.</b> Stations burning coal, lignite, gas, diesel or bagasse puff square pixel smoke. The amount and size of the smoke follow their output, and it drifts in the direction the wind is blowing at that site right now (Open-Meteo, refreshed hourly). An idle plant has no smoke.</li>
+    <li><b>Models.</b> Zoom into a station (below about 5 km) and the pillar becomes a voxel model of that type of plant. Coal plants have their boilers, chimney count and height, cooling towers or sea-water canals, coal yard and conveyors. The models are Kudankulam's VVER domes, MAPS and PFBR at Kalpakkam, Mettur's dam and spillway, Kadamparai's pumped storage, and Neyveli with its open-cast lignite mine. Each runs at the station's load: smoke, steam, lit windows, water over the spillway.</li>
+    <li><b>Wind turbines.</b> Each of the 12,807 turbines OpenStreetMap maps in Tamil Nadu stands where it really is. They turn at the state's current wind output (the SLDC reading) and face into the live wind.</li>
+    <li><b>Lines and substations.</b> Transmission lines are coloured by voltage, brightest for the highest. Up close, lattice pylons stand along each route with conductors sagging between their arms. Substations are rings coloured by their highest voltage. Tamil Nadu has 1,872 substations from TNGIS, with voltage ratio, MVA and circle.</li>
+    <li><b>Fuel supply.</b> Tap a route, or a chain in a station's card, to see its schematic: mine, each rail junction, port, ship, port, conveyor, station, with distances and shares. Dashed routes show how fuel reaches each plant: coal by sea from Paradip, Vizag and Indonesia to Ennore (Kamarajar) and Tuticorin, by rail from the mines, and gas by pipeline. Ships and trains move along them at one simulated hour per second. Opening a station lights up its own chain in gold.</li>
+  </ul>
+  <div class="fuels-key" id="fuels-key"></div>
+
+  <h2><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#sun"/></svg>Day and night</h2>
+  <p>The map follows the real sun. By day it uses CARTO's light Positron basemap; the night side of the map is drawn in blocks for civil twilight, nautical twilight and night, recomputed every minute, so dusk sweeps across India from the north-east to Gujarat in about two hours. Once the whole view is past dusk the map switches to CARTO's Dark Matter. The 3D stations are lit from the sun's real direction. Turn off "Map follows the sun" to let the map follow the page's light/dark button instead. Add <code>?sun=18:15</code> to the address to preview any time of day.</p>
+
+  <h2><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#clock"/></svg>How live is it?</h2>
+  <table>
+    <thead><tr><th>Figure</th><th>Source</th><th>How often</th></tr></thead>
+    <tbody>
+      <tr><td>Tamil Nadu demand, frequency and the full source mix (hydro, thermal, gas, IPPs, captive, cogen, biomass, wind, solar, central-station share, open access, exchange, REMC, DSM)</td><td>TANTRANSCO SLDC <em>Grid Details (Instantaneous)</em>, <code>peakdet.pdf</code></td><td>Issued about once a day, around noon IST, with the night minimum, morning peak and previous evening's lighting peak. Checked every 15 minutes; every new issue is archived, because the SLDC keeps no history.</td></tr>
+      <tr><td>Demand met right now: Tamil Nadu, every state and all India</td><td>Vidyut Pravah (Ministry of Power)</td><td>Every 15-minute time block. Tamil Nadu and India are refreshed on every pass, all states hourly; Tamil Nadu's blocks build up into today's demand curve.</td></tr>
+      <tr><td>Each station's generation yesterday, programme vs actual, since 1 April, same day last year</td><td>National Power Portal map dashboard and CEA daily generation report (DGR)</td><td>Daily. History goes back a year from the DGR archive.</td></tr>
+      <tr><td>Coal stock, days of burn, receipt and consumption, critical flag</td><td>CEA daily coal report</td><td>Daily</td></tr>
+      <tr><td>Capacity under outage, with CEA's remark</td><td>CEA DGR</td><td>Daily</td></tr>
+      <tr><td>Wind, cloud and temperature at the sites</td><td>Open-Meteo</td><td>Hourly</td></tr>
+    </tbody>
+  </table>
+  <p>The page checks for new figures every 5 minutes. <b>Station-level instantaneous output is not published</b> in India, so each station shows yesterday's average. Only Tamil Nadu's statewide figures are instantaneous. Wind, solar and hydro stations in Tamil Nadu without their own figure run at the statewide load factor, and the card says so.</p>
+
+  <h2><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#pin"/></svg>Where the stations are</h2>
+  <p>Positions start from the National Power Portal, which has many errors: a latitude typed as 3.29° instead of 13.29° (Ennore SCTPP), stations pasted onto a neighbour's point (Kudankulam onto P.Nallur, North Chennai onto Vallur), and hill hydro stations dropped into the plains. A point is kept only if all of these hold:</p>
+  <ul>
+    <li>it lies inside (or within 8 km of) its own state</li>
+    <li>it is not the same point as a differently named station</li>
+    <li>it agrees with the Tamil Nadu dossiers where one exists</li>
+  </ul>
+  <p>Otherwise the station moves to its footprint in OpenStreetMap. A station with no trustworthy position is left off rather than guessed. The card says where each position came from.</p>
+
+  <h2><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#smoke"/></svg>Emissions</h2>
+  <p>CO₂ for yesterday is the station's generation times its emission factor. The factor is the CEA CO₂ Baseline Database figure for the station where it has been joined, otherwise a fuel average (coal 0.98, lignite 1.27, gas 0.46, diesel 0.75 t/MWh), marked <span class="est">ESTIMATE</span>. SO₂ scrubber (FGD) status, fly-ash figures and nearby air-quality monitors come from CEA and CPCB/TNPCB where available. Smoke on the map shows how hard a plant is running and where the wind takes its plume. It is not a dispersion model.</p>
+
+  <h2><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#alert"/></svg>What the map can't tell you</h2>
+  <ul>
+    <li>Which way power is flowing on a line: the shimmer only means the line is mapped as energised.</li>
+    <li>Rooftop and small solar, or wind farm by wind farm output: Tamil Nadu publishes these statewide only.</li>
+    <li>The exact routes of trains and ships. Sea lanes are drawn between the documented ports and are illustrative.</li>
+    <li>OpenStreetMap's grid is volunteer-mapped and incomplete in places, especially 110 kV and below outside Tamil Nadu.</li>
+  </ul>
+
+  <h2><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#book"/></svg>Sources</h2>
+  <ul>
+    <li>TANTRANSCO State Load Despatch Centre (tnebsldc.org); TNPGCL, TNGECL and TANTRANSCO station and substation pages; TN Environment Department, <em>Database on Energy Resources in Tamil Nadu</em>; TNGIS substation layer.</li>
+    <li>Central Electricity Authority via the National Power Portal (npp.gov.in): station map, daily generation reports, daily coal reports, CO₂ Baseline Database, FGD status, fly-ash reports.</li>
+    <li>Coal India / Ministry of Coal, NPCIL, NLC India, port authorities (Kamarajar, V.O. Chidambaranar, Paradip), CPCB/TNPCB CAAQMS.</li>
+    <li>© OpenStreetMap contributors (ODbL): lines, substations, pylons, plant footprints, wind turbines; basemap by OpenFreeMap / OpenMapTiles.</li>
+    <li>Sentinel-2 cloudless 2016 by EOX IT Services (CC BY 4.0); AWS Terrain Tiles; Open-Meteo (CC BY 4.0); DataMeet India boundaries (CC BY 4.0).</li>
+  </ul>
+  <p class="method">Built for Reclaim Chennai. All the code and data pipelines are in the project repository; every raw source file is archived.</p>
+</main>
+<script type="module">
+  import { FUELS, FUEL_ORDER } from './js/fuels.js?v=3';
+  document.getElementById('fuels-key').innerHTML = FUEL_ORDER.map(t => `<span><i style="--c:${FUELS[t].color}"><svg class="i" aria-hidden="true"><use href="icons.svg?v=2#${FUELS[t].icon}"/></svg></i>${FUELS[t].label}</span>`).join('');
+</script>
+</body>
+</html>
