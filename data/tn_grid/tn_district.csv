@@ -1,0 +1,71 @@
+source_table,district,item,capacity_mw,year,value_mu
+41_atomic_gen,Kancheepuram,MAPS capacity,440.0,,
+41_atomic_gen,Tirunelveli,Kudankulam capacity,2000.0,,
+41_atomic_gen,Kancheepuram,nuclear generation,,2007-2008,1064.119
+41_atomic_gen,Kancheepuram,nuclear generation,,2008-2009,903.0
+41_atomic_gen,Kancheepuram,nuclear generation,,2009-2010,1259.166
+41_atomic_gen,Kancheepuram,nuclear generation,,2010-2011,1398.218
+41_atomic_gen,Kancheepuram,nuclear generation,,2011-2012,1604.076
+41_atomic_gen,Kancheepuram,nuclear generation,,2012-2013,1774.498
+41_atomic_gen,Kancheepuram,nuclear generation,,2014-2015,1672.288
+41_atomic_gen,Tirunelveli,nuclear generation,,2014-2015,2071.336
+41_atomic_gen,Kancheepuram,nuclear generation,,2015-2016,2092.262
+41_atomic_gen,Tirunelveli,nuclear generation,,2015-2016,1037.274
+41_atomic_gen,Kancheepuram,nuclear generation,,2016-2017,2059.197
+41_atomic_gen,Tirunelveli,nuclear generation,,2016-2017,4374.256
+44_wind_cap,Tirunelveli,wind installed capacity,3700.0,,
+44_wind_cap,Thoothukudi,wind installed capacity,245.97,,
+44_wind_cap,Kanyakumari,wind installed capacity,118.81,,
+44_wind_cap,Ramanathapuram,wind installed capacity,2.15,,
+44_wind_cap,Coimbatore,wind installed capacity,355.25,,
+44_wind_cap,Tirupur,wind installed capacity,2264.98,,
+44_wind_cap,Dindigul,wind installed capacity,420.0,,
+44_wind_cap,Theni,wind installed capacity,534.7,,
+44_wind_cap,Chennai,wind installed capacity,0.22,,
+45_solar_cap,Sivagangai,solar installed capacity,11.55,,
+45_solar_cap,Nagapattinam,solar installed capacity,1.0,,
+45_solar_cap,Madurai,solar installed capacity,1.0,,
+45_solar_cap,Thoothukudi,solar installed capacity,28.0,,
+45_solar_cap,Coimbatore,solar installed capacity,7.0,,
+45_solar_cap,Tirupur,solar installed capacity,37.26,,
+45_solar_cap,Erode,solar installed capacity,4.0,,
+45_solar_cap,Viruthunagar,solar installed capacity,199.4,,
+45_solar_cap,Dindigul,solar installed capacity,59.6,,
+45_solar_cap,Tirunelveli,solar installed capacity,9.36,,
+45_solar_cap,Tiruchirappalli,solar installed capacity,166.0,,
+45_solar_cap,Vellore,solar installed capacity,5.0,,
+45_solar_cap,Karur,solar installed capacity,151.49,,
+45_solar_cap,Krishnagiri,solar installed capacity,0.75,,
+45_solar_cap,Ramanathapuram,solar installed capacity,348.0,,
+45_solar_cap,Perambalur,solar installed capacity,10.0,,
+45_solar_cap,Cuddalore,solar installed capacity,10.0,,
+45_solar_cap,Thiruvannamalai,solar installed capacity,30.0,,
+45_solar_cap,Pudukkottai,solar installed capacity,20.0,,
+45_solar_cap,Kanyakumari,solar installed capacity,1.0,,
+43_hydro_gen,House,hydro: 2008,,2016-2017,2017.0
+43_hydro_gen,PUSHEP,hydro: 2005,,2016-2017,191.753
+43_hydro_gen,Moyar,hydro: 1953,,2016-2017,48.973
+43_hydro_gen,Kundah,hydro: 1964,,2016-2017,156.81
+43_hydro_gen,Kundah,hydro: 1964,,2016-2017,406.077
+43_hydro_gen,Kundah,hydro: 1978,,2016-2017,213.42
+43_hydro_gen,Kundah,hydro: 1978,,2016-2017,47.171
+43_hydro_gen,House,hydro: 2008,,2016-2017,2017.0
+43_hydro_gen,Kundah,hydro: 1988,,2016-2017,43.215
+43_hydro_gen,Mettur,hydro: 1946,,2016-2017,44.162
+43_hydro_gen,Mettur,hydro: 1966,,2016-2017,80.35
+43_hydro_gen,House,hydro: 2008,,2016-2017,2017.0
+43_hydro_gen,Lower,hydro: 2002,,2016-2017,0.013
+43_hydro_gen,Amaravathy,hydro: 2006,,2016-2017,0.77
+43_hydro_gen,Perunchani,hydro: 2006,,2016-2017,0.013
+43_hydro_gen,Periyar,hydro: 1965,,2016-2017,93.091
+43_hydro_gen,House,hydro: 2008,,2016-2017,2017.0
+43_hydro_gen,Suruliyar,hydro: 1986,,2016-2017,41.918
+43_hydro_gen,Papanasam,hydro: 1951,,2016-2017,65.709
+43_hydro_gen,Servalar,hydro: 1987,,2016-2017,11.862
+43_hydro_gen,Sakarapathy,hydro: 1966,,2016-2017,63.188
+43_hydro_gen,Aliyar,hydro: 1970,,2016-2017,61.221
+43_hydro_gen,Kadamparai,hydro: 1988,,2016-2017,286.74
+43_hydro_gen,Sholayar,hydro: 1971,,2016-2017,183.806
+43_hydro_gen,Sholayar,hydro: 1971,,2016-2017,42.577
+43_hydro_gen,Kodayar,hydro: 1971,,2016-2017,126.797
+43_hydro_gen,Kodayar,hydro: 1971,,2016-2017,42.011

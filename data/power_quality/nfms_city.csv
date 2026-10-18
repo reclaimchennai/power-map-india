@@ -1,0 +1,92 @@
+month,state,discom,city,saifi,saidi
+2026-09,Uttar Pradesh,DVVNL,Agra,0.075,23.25
+2026-09,Gujarat,UGVCL,Ahmedabad,0.037,0.75
+2026-09,Gujarat,TPLAHMD,Ahmedabad,0.005,0.15
+2026-09,Madhya Pradesh,MPMKVVCL,Bhopal,1.278,31.1
+2026-09,Maharashtra,MSEDCL,Ch. Sambhajinagar,0.248,14.26
+2026-09,Tamil Nadu,TANGEDCO,Chennai,0.012,0.54
+2026-09,Tamil Nadu,TANGEDCO,Coimbatore,0.0,0.0
+2026-09,Odisha,TPCODL,Cuttack,0.345,39.14
+2026-09,Delhi,BRPL,Delhi,0.045,1.8
+2026-09,Delhi,BYPL,Delhi,0.075,3.42
+2026-09,Jharkhand,JBVNL,Dhanbad,39.647,1381.22
+2026-09,Tamil Nadu,TANGEDCO,Erode,0.0,0.0
+2026-09,Haryana,DHBVNL,Faridabad,0.71,26.63
+2026-09,Uttar Pradesh,PVVNL,Ghaziabad,2.675,62.62
+2026-09,Haryana,DHBVNL,Gurugram-Ii,0.875,31.86
+2026-09,Madhya Pradesh,MPPKVVCL,Indore City,2.684,51.86
+2026-09,Rajasthan,JVVNL,Jaipur,0.293,36.25
+2026-09,Gujarat,PGVCL,Jamnagar,0.674,14.15
+2026-09,Madhya Pradesh,MPPOKVVCL,Jabalpur Cc,2.247,61.42
+2026-09,West Bengal,CESC,Kolkata,0.027,2.16
+2026-09,Uttar Pradesh,MVVNL,Lucknow,8.515,206.05
+2026-09,Punjab,PSPCL,Ludhiana,2.964,254.92
+2026-09,Tamil Nadu,TANGEDCO,Madurai,0.0,0.0
+2026-09,Uttar Pradesh,PVVNL,Meerut,5.62,165.93
+2026-09,Maharashtra,MSEDCL,Nashik,0.592,12.99
+2026-09,Uttar Pradesh,PVVNL,Noida,2.051,47.93
+2026-09,Bihar,SBPDCL,Patna City,5.182,103.73
+2026-09,Chhattisgarh,CSPDCL,Raipur City,1.081,27.87
+2026-09,Gujarat,PGVCL,Rajkot,0.103,1.84
+2026-09,Tamil Nadu,TANGEDCO,Salem,0.0,0.0
+2026-09,Gujarat,DGVCL,Surat,0.229,5.11
+2026-09,Tamil Nadu,TANGEDCO,Trichy,0.0,0.0
+2026-09,Gujarat,MGVCL,Vadodara,0.069,2.06
+2026-09,Uttar Pradesh,PUVVNL,Varanasi,4.505,90.1
+2026-09,Andhra Pradesh,APEPDCL,Visakhapatnam,0.752,15.49
+2026-09,Andhra Pradesh,APCPDCL,Vijayawada,0.496,33.95
+2026-10,Tripura,TSECL,Udaipur,1.525,71.16
+2026-10,Gujarat,UGVCL,Ahmedabad,0.099,4.12
+2026-10,Gujarat,TPLAHMD,Ahmedabad,0.008,0.14
+2026-10,Rajasthan,JVVNL,Alwar,0.849,105.29
+2026-10,Punjab,PSPCL,Amritsar,0.869,90.52
+2026-10,Himachal Pradesh,HPSEBL,Baddi,1.108,38.45
+2026-10,Chhattisgarh,CSPDCL,Bhilai City,0.981,38.68
+2026-10,Madhya Pradesh,MPMKVVCL,Bhopal,0.944,17.11
+2026-10,Meghalaya,MEPDCL,Byrnihat,19.272,662.35
+2026-10,Tamil Nadu,TANGEDCO,Chennai,0.062,2.4
+2026-10,Tamil Nadu,TANGEDCO,Coimbatore,0.085,5.32
+2026-10,Himachal Pradesh,HPSEBL,Damtal,11.905,490.12
+2026-10,Uttarakhand,UPCL,Dehradun,1.075,16.24
+2026-10,Delhi,BYPL,Delhi,0.055,2.22
+2026-10,Delhi,BRPL,Delhi,0.04,1.73
+2026-10,Madhya Pradesh,MPPKVVCL,Dewas City,1.364,72.0
+2026-10,Punjab,PSPCL,Derabassi,0.0,0.0
+2026-10,Tamil Nadu,TANGEDCO,Erode,0.0,0.0
+2026-10,Haryana,DHBVNL,Faridabad,0.518,15.99
+2026-10,Haryana,DHBVNL,Gurugram-Ii,0.758,22.01
+2026-10,Madhya Pradesh,MPMKVVCL,Gwalior,1.524,27.41
+2026-10,Madhya Pradesh,MPPKVVCL,Indore City,1.788,44.9
+2026-10,Rajasthan,JVVNL,Jaipur,0.321,40.4
+2026-10,Punjab,PSPCL,Jalandhar,0.924,75.84
+2026-10,Gujarat,PGVCL,Jamnagar,0.961,27.15
+2026-10,Rajasthan,JDVVNL,Jodhpur,2.587,172.87
+2026-10,Madhya Pradesh,MPPOKVVCL,Jabalpur Cc,3.507,101.46
+2026-10,Himachal Pradesh,HPSEBL,Kala Amb,2.504,56.36
+2026-10,Uttarakhand,UPCL,Kashipur,3.841,248.16
+2026-10,Chhattisgarh,CSPDCL,Korba City,1.619,26.26
+2026-10,Punjab,PSPCL,Khanna,0.0,0.0
+2026-10,Punjab,PSPCL,Ludhiana,1.823,181.47
+2026-10,Tamil Nadu,TANGEDCO,Madurai,0.028,0.56
+2026-10,Himachal Pradesh,HPSEBL,Nalagarh,0.993,11.35
+2026-10,Punjab,PSPCL,Nayanagal,0.983,32.43
+2026-10,Andhra Pradesh,APCPDCL,Ongole City,1.669,93.83
+2026-10,Himachal Pradesh,HPSEBL,Paonta,1.442,44.09
+2026-10,Himachal Pradesh,HPSEBL,Parwanoo,0.0,0.0
+2026-10,Punjab,PSPCL,Pathankot,0.0,0.0
+2026-10,Bihar,SBPDCL,Patna City,13.006,443.04
+2026-10,Chhattisgarh,CSPDCL,Raipur City,0.0,0.0
+2026-10,Gujarat,PGVCL,Rajkot,0.124,2.12
+2026-10,Uttarakhand,UPCL,Rishikesh,0.978,43.42
+2026-10,Tamil Nadu,TANGEDCO,Salem,0.09,1.61
+2026-10,Himachal Pradesh,HPSEBL,Sundernagar,6.295,150.07
+2026-10,Gujarat,DGVCL,Surat,0.172,4.28
+2026-10,Madhya Pradesh,MPPOKVVCL,Sagar City Dn,3.145,90.66
+2026-10,Tamil Nadu,TANGEDCO,Trichy,0.008,1.0
+2026-10,Tamil Nadu,TANGEDCO,Tuticorin,0.112,1.12
+2026-10,Rajasthan,AVVNL,Udaipur,3.521,255.53
+2026-10,Madhya Pradesh,MPPKVVCL,Ujjain City,1.423,78.49
+2026-10,Gujarat,MGVCL,Vadodara,0.091,1.61
+2026-10,Tamil Nadu,TANGEDCO,Vellore,0.0,0.53
+2026-10,Andhra Pradesh,APEPDCL,Visakhapatnam,0.115,4.34
+2026-10,Andhra Pradesh,APCPDCL,Vijayawada,0.53,11.74

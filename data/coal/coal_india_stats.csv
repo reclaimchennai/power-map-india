@@ -1,0 +1,41 @@
+source,key,value,ts
+production,CIL,"[875.0, 453.54, 470.98, -3.71, 900.0, 479.73, 493.11, -2.71]",2026-09-30 07:38:24
+production,SCCL,"[72.0, 37.98, 40.15, -5.42, 72.0, 38.5, 40.4, -4.69]",2026-09-30 07:38:24
+production,Captive & Others,"[210.0, 127.908, 117.231, 9.11, 210.0, 133.5405, 125.261, 6.61]",2026-09-30 07:38:24
+production,Total,"[1157.0, 619.4, 628.37, -1.43, 1182.0, 651.78, 658.77, -1.06]",2026-09-30 07:38:24
+reserve_history_coal,1st April 2020,"[163.46, 150.39, 30.17, 344.02]",2026-09-30 07:38:25
+reserve_history_coal,1st April 2021,"[177.18, 146.95, 28.0, 352.13]",2026-09-30 07:38:25
+reserve_history_coal,1st April 2022,"[187.11, 147.25, 27.05, 361.41]",2026-09-30 07:38:25
+reserve_history_coal,1st April 2023,"[199.9, 151.68, 26.62, 378.21]",2026-09-30 07:38:25
+reserve_history_coal,1st April 2024,"[212.21, 148.72, 28.5, 389.42]",2026-09-30 07:38:25
+reserve_history_coal,1st April 2025,"[220.41, 149.05, 31.26, 400.72]",2026-09-30 07:38:25
+reserve_history_lignite,1st April 2020,"[6.97, 26.06, 12.99, 46.02]",2026-09-30 07:38:25
+reserve_history_lignite,1st April 2021,"[7.37, 25.65, 12.99, 46.2]",2026-09-30 07:38:25
+reserve_history_lignite,1st April 2022,"[7.5, 25.7, 14.15, 47.36]",2026-09-30 07:38:25
+reserve_history_lignite,1st April 2023,"[7.51, 25.7, 14.15, 47.36]",2026-09-30 07:38:25
+reserve_history_lignite,1st April 2024,"[7.96, 25.23, 14.09, 47.29]",2026-09-30 07:38:25
+reserve_history_lignite,1st April 2025,"[7.96, 25.3, 14.09, 47.37]",2026-09-30 07:38:25
+reserves_coal,Odisha,"[55.01, 38.78, 7.19, 100.99]",2026-09-30 07:38:25
+reserves_coal,Jharkhand,"[60.29, 27.12, 5.84, 93.25]",2026-09-30 07:38:25
+reserves_coal,Chhattisgarh,"[45.46, 38.34, 1.46, 85.26]",2026-09-30 07:38:25
+reserves_coal,West Bengal,"[18.75, 11.42, 4.21, 34.39]",2026-09-30 07:38:25
+reserves_coal,Madhya Pradesh,"[16.41, 11.8, 5.35, 33.56]",2026-09-30 07:38:25
+reserves_coal,Telangana,"[11.26, 8.63, 3.4, 23.29]",2026-09-30 07:38:25
+reserves_coal,Maharashtra,"[8.34, 3.26, 1.98, 13.59]",2026-09-30 07:38:25
+reserves_coal,Bihar,"[2.35, 6.97, 0.04, 9.35]",2026-09-30 07:38:25
+reserves_coal,Andhra Pradesh,"[1.02, 2.37, 0.78, 4.17]",2026-09-30 07:38:25
+reserves_coal,Uttar Pradesh,"[0.88, 0.18, 0.0, 1.06]",2026-09-30 07:38:25
+reserves_coal,Meghalaya,"[0.1, 0.02, 0.47, 0.58]",2026-09-30 07:38:25
+reserves_coal,Assam,"[0.0, 0.01, 0.0, 0.01]",2026-09-30 07:38:25
+reserves_coal,Nagaland,"[0.01, 0.02, 0.48, 0.51]",2026-09-30 07:38:25
+reserves_coal,Sikkim,"[0.0, 0.06, 0.04, 0.1]",2026-09-30 07:38:25
+reserves_coal,Arunachal Pradesh,"[0.06, 0.02, 0.01, 0.09]",2026-09-30 07:38:25
+reserves_lignite,Tamilnadu,"[5.023, 21.885, 10.688, 37.597]",2026-09-30 07:38:25
+reserves_lignite,Rajasthan,"[1.204, 3.109, 2.274, 6.586]",2026-09-30 07:38:25
+reserves_lignite,Gujrat,"[1.279, 0.284, 1.16, 2.722]",2026-09-30 07:38:25
+reserves_lignite,Jammu&Kashmir,"[0.0, 0.02, 0.007, 0.028]",2026-09-30 07:38:25
+reserves_lignite,West Bengal,"[0.0, 0.001, 0.003, 0.004]",2026-09-30 07:38:25
+reserves_lignite,Odisha,"[0.006, 0.0, 0.0, 0.006]",2026-09-30 07:38:25
+reserves_total,coal_bt,400.715,2026-09-30 07:38:25
+reserves_total,lignite_bt,47.37,2026-09-30 07:38:25
+monthly_stats,latest_links,"['/sites/default/files/2026-07/msg-june26.pdf', '/sites/default/files/2026-08/msg-july26.pdf', '/sites/default/files/2026-09/msg-Aug26.pdf']",2026-09-30 07:38:25

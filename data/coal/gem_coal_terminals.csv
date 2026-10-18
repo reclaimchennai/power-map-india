@@ -1,0 +1,62 @@
+id,project_id,name,phase,port,owner,status,type,capacity_mtpa,start_year,end_year,state,lat,lon,url
+T01383,T1383,Adani Hazira Port Coal Terminal,,Hazira Port,Adani Group,proposed,,,,,Gujarat,21.08234,72.62723,https://www.gem.wiki/Hazira_Port_(Adani)
+T01180,T1180,Bedi Port Coal Terminal,,Bedi Port,Gujarat Maritime Board,operating,,6.0,,,Gujarat,22.51527,70.02932,https://www.gem.wiki/Bedi_Port
+T01183,T1183,Cochin Port Coal Terminal,,Cochin Port,Cochin Port Trust,operating,,35.0,,,Kerala,9.96132,76.26521,https://www.gem.wiki/Cochin_Port
+T01022,T1022,Cochin Port Terminal,,Cochin Port,Adani Group,cancelled,,4.25,,,Kerala,9.96132,76.26521,https://www.gem.wiki/Cochin_Port
+T01019,T1019,Dahanu Port Terminal,,Dahanu Port,Maharashtra Maritime Board,cancelled,,,,,Maharashtra,19.97,72.73,https://www.gem.wiki/Dahanu_Port
+T01155,T1155,Dahej Port Coal Terminal,,Dahej Port,Adani Group,operating,,20.0,,,Gujarat,21.69244,72.53406,https://www.gem.wiki/Dahej_Port
+T01054,T1054,Dhamra Port Coal Terminal,Phase II,Dhamra Port,Adani Group,construction,,144.5,,,Odisha,20.82328,86.9646,https://www.gem.wiki/Dhamra_Port
+T01154,T1054,Dhamra Port Coal Terminal,,Dhamra Port,Adani Group,operating,,25.0,,,Odisha,20.82328,86.9646,https://www.gem.wiki/Dhamra_Port
+T01376,T1054,Dhamra Port Coal Terminal,Phase III,Dhamra Port,Adani Group,proposed,,144.5,,,Odisha,20.82328,86.9646,https://www.gem.wiki/Dhamra_Port
+T01162,T1162,East Quay Coal Terminal,,Paradip Port,JSW Infrastructure,operating,,30.0,2022.0,,Odisha,20.2787,86.67179,https://www.gem.wiki/Paradip_Port
+T01178,T1178,Gangavaram Port Coal Terminal,,Gangavaram Port,Gangavaram Port Ltd.,operating,,20.0,,,Andhra Pradesh,17.61667,83.23333,https://www.gem.wiki/Gangavaram_Port
+T01414,T1414,Haji Bunder Port Coal Terminal,,Haji Bunder Port,Mumbai Port Trust (MbPT),retired,,1.8,,,Maharashtra,19.59,73.41,https://www.gem.wiki/Haji_Bunder_Port
+T01384,T1384,Haldia Port APSEZ Coal Terminal,,Haldia Port,Adani Group,proposed,,3.7,,,West Bengal,22.03765,88.0914,https://www.gem.wiki/Haldia_Port
+T01181,T1181,Haldia Port Coal Terminal,,Haldia Port,Government of India,operating,,20.0,,,West Bengal,22.03765,88.0914,https://www.gem.wiki/Haldia_Port
+T01175,T1175,Hazira Port (Essar) Coal Terminal,,Hazira Port (Essar),Essar Group (74%); AM/NS (26%),operating,,50.0,,,Gujarat,21.09226,72.65725,https://www.gem.wiki/Hazira_Port_(Essar)
+T01171,T1171,JSW Dharamtar Port Coal Terminal,,JSW Dharamtar Port,JSW Group,operating,,8.0,2012.0,,Maharashtra,18.70495,73.02715,https://www.gem.wiki/JSW_Dharamtar_Port
+T11171,T1171,JSW Dharamtar Port Coal Terminal,,JSW Dharamtar Port,JSW Group,proposed,,26.0,2021.0,,Maharashtra,18.70495,73.02715,https://www.gem.wiki/JSW_Dharamtar_Port
+T11172,T1171,JSW Dharamtar Port Coal Terminal,,JSW Dharamtar Port,JSW Group,proposed,,21.0,,,Maharashtra,18.70495,73.02715,https://www.gem.wiki/JSW_Dharamtar_Port
+T01059,T1059,Jaigarh Port Coal Terminal,Phase I,Jaigarh Port,JSW Group,operating,,5.0,2021.0,,Maharashtra,17.30394,73.20843,https://www.gem.wiki/Jaigarh_Port
+T01184,T1059,Jaigarh Port Coal Terminal,,Jaigarh Port,JSW Group,operating,,55.0,,,Maharashtra,17.30394,73.20843,https://www.gem.wiki/Jaigarh_Port
+T11402,T1059,Jaigarh Port Coal Terminal,Phase II,Jaigarh Port,JSW Group,proposed,,20.0,2027.0,,Maharashtra,17.30394,73.20843,https://www.gem.wiki/Jaigarh_Port
+T01056,T1056,Kakinada Coal Terminal,,Paradip Port,Kakinada Seaport,construction,,10.0,2025.0,,Odisha,20.27824,86.67675,https://www.gem.wiki/Paradip_Port
+T01160,T1160,Kakinada Port Coal Terminal,,Kakinada Port,"Kakinada Seaports, Bothra Group",operating,,14.0,,,Andhra Pradesh,16.97128,82.28169,https://www.gem.wiki/Kakinada_Port
+T01055,T1055,Kamarajar Port Berths 3 & 4,Ennore Port,Kamarajar Port,TANGEDCO,construction,,18.0,,,Tamil Nadu,13.25862,80.34073,https://www.gem.wiki/Kamarajar_Port
+T01157,T1157,Kamarajar Port Coal Terminal,Ennore Port,Kamarajar Port,TANGEDCO,operating,,26.0,,,Tamil Nadu,13.25862,80.34073,https://www.gem.wiki/Kamarajar_Port
+T01377,T1377,Kamarajar Port Iron to Coal Terminal,Ennore Port,Kamarajar Port,Kamarajar Port,proposed,,6.0,,,Tamil Nadu,13.25862,80.34073,https://www.gem.wiki/Kamarajar_Port
+T01182,T1182,Karaikal Port Coal Terminal,,Karaikal Port,,operating,,20.0,,,Puducherry,10.84241,79.84348,https://www.gem.wiki/Karaikal_Port
+T01156,T1156,Kattupalli Port Coal Terminal,,Kattupalli Port,Adani Group,operating,,18.0,,,Tamil Nadu,13.31459,80.34694,https://www.gem.wiki/Kattupalli_Port
+T01378,T1156,Kattupalli Port Coal Terminal,,Kattupalli Port,Adani Group,proposed,,71.0,,,Tamil Nadu,13.31459,80.34694,https://www.gem.wiki/Kattupalli_Port
+T01179,T1179,Kolkata Dock System Coal Terminal,,,Kolkata Port Trust,operating,,3.0,,,West Bengal,22.53258,88.3111,https://www.gem.wiki/Kolkata_Dock_System
+T01170,T1170,Krishnapatnam Port Coal Terminal,,Krishnapatnam Port,Adani Group,operating,,64.0,,,Andhra Pradesh,14.25193,80.12576,https://www.gem.wiki/Krishnapatnam_Port
+T01380,T1170,Krishnapatnam Port Coal Terminal,2025 Expansion,Krishnapatnam Port,Adani Group,proposed,,36.0,2025.0,,Andhra Pradesh,14.25193,80.12576,https://www.gem.wiki/Krishnapatnam_Port
+T01381,T1170,Krishnapatnam Port Coal Terminal,Phase 2,Krishnapatnam Port,Adani Group,proposed,,200.0,,,Andhra Pradesh,14.25193,80.12576,https://www.gem.wiki/Krishnapatnam_Port
+T01174,T1174,Magadalla Port Coal Terminal,,Magadalla Port,Gujarat Maritime Board,operating,,6.5,,,Gujarat,21.14054,72.7364,https://www.gem.wiki/Magdalla_Port
+T01173,T1173,Mormugao Port Coal Terminal,,Mormugao Port,Mormugao Port Trust (MPT),operating,,12.5,,,Goa,15.41316,73.79666,https://www.gem.wiki/Mormugao_Port
+T01020,T1020,Mormugao Port Terminal,,Mormugao Port,Mormugao Port Trust (MPT),cancelled,,6.99,,,Goa,15.40981,73.80139,https://www.gem.wiki/Mormugao_Port
+T01161,T1161,Muldwarka Port Coal Terminal,,Muldwarka Port,Gujarat Maritime Board,operating,,2.2,,,Gujarat,20.77583,70.60861,https://www.gem.wiki/Muldwarka_Port
+T01166,T1166,Mundra Port Coal Terminal,,Mundra Port,Adani Group,operating,,60.0,,,Gujarat,22.75487,69.55996,https://www.gem.wiki/Mundra_Port
+T01168,T1168,Navlakhi Port Coal Terminal,,Navlakhi Port,Gujarat Maritime Board,operating,,8.0,,,Gujarat,22.9573,70.4493,https://www.gem.wiki/Navlakhi_Port
+T11379,T1168,Navlakhi Port Coal Terminal,,Navlakhi Port,Gujarat Maritime Board,proposed,,12.0,,,Gujarat,22.9573,70.4493,https://www.gem.wiki/Navlakhi_Port
+T01167,T1167,New Mangalore Port Coal Terminal,,New Mangalore Port,New Mangalore Port Trust (NMPT); JSW Infrastructure Ltd.,operating,,21.0,,,Karnataka,12.92209,74.81518,https://www.gem.wiki/New_Mangalore_Port
+T01158,T1158,Okha Port Coal Terminal,,Okha Port,Gujarat Maritime Board,operating,,5.0,,,Gujarat,22.47023,69.08169,https://www.gem.wiki/Okha_Port
+T01018,T1018,Panjim (Panaji) Port Terminal,,Panjim (Panaji) Port,Government of Goa,cancelled,,,,,Goa,15.49222,73.81611,https://www.gem.wiki/Panjim_(Panaji)_Port
+T01163,T1163,Paradip Port Coal Terminal,,Paradip Port,Paradip Port Trust (PPT),operating,,25.0,,,Odisha,20.2787,86.67179,https://www.gem.wiki/Paradip_Port
+T01057,T1057,Paradip Port Dry Bulk Terminal,,Paradip Port,,construction,,25.0,2025.0,,Odisha,20.2787,86.67179,https://www.gem.wiki/Paradip_Port
+T01153,T1153,Pipavav Port Coal Terminal,,Pipavav Port,APM Terminals,operating,,4.0,,,Gujarat,20.92244,71.50748,https://www.gem.wiki/Pipavav_Port
+T01016,T1016,Pipavav Port Terminal,,Pipavav Port,APM Terminals,cancelled,,5.0,,,Gujarat,20.92244,71.50748,https://www.gem.wiki/Pipavav_Port
+T01172,T1172,Porbandar Port Coal Terminal,,Porbandar Port,Gujarat Maritime Board,operating,,3.0,,,Gujarat,21.64044,69.59377,https://www.gem.wiki/Porbandar_Port
+T01413,T1413,Port of Chennai Coal Terminal,,Port of Chennai,Chennai Port Trust,retired,,8.0,,,Tamil Nadu,13.08546,80.29628,https://www.gem.wiki/Port_of_Chennai
+T01432,T1432,Rewas Port Coal Terminal,Revas Port,Rewas Port,"Jawaharlal Nehru Port Trust, Maharashtra Maritime Board",shelved,,66.0,,,Maharashtra,18.79178,72.915,https://www.gem.wiki/Rewas_Port
+T01159,T1159,Salaya Port Coal Terminal,,Salaya Port,Essar Group,operating,,7.5,,,Gujarat,22.36717,69.62153,https://www.gem.wiki/Salaya_port
+T01164,T1164,Sikka Port Coal Terminal,,Sikka Port,Shree Cement,operating,,3.0,,,Gujarat,22.43372,69.8202,https://www.gem.wiki/Sikka_Port
+T01017,T1017,Trombay Coal Terminal,,Trombay Port,Tata Group,cancelled,,2.0,,,Maharashtra,18.99161,72.90823,https://www.gem.wiki/Trombay_Coal_Terminal
+T01169,T1017,Trombay Coal Terminal,,Trombay Port,Tata Group,operating,,2.4,,,Maharashtra,18.99161,72.90823,https://www.gem.wiki/Trombay_Coal_Terminal
+T01165,T1165,Tuna Tekra Port Coal Terminal,,Tuna Tekra Port,Adani Group,operating,,20.0,2015.0,,Gujarat,22.90765,70.10436,https://www.gem.wiki/Tuna_Tekra_Port
+T01058,T1058,Tuticorin Port Coal Terminal,,Tuticorin Port,V.O. Chidambaranar Port Trust,construction,,23.0,,,Tamil Nadu,8.75677,78.212,https://www.gem.wiki/Tuticorin_Port
+T01176,T1058,Tuticorin Port Coal Terminal,,Tuticorin Port,V.O. Chidambaranar Port Trust,operating,,29.0,,,Tamil Nadu,8.75677,78.212,https://www.gem.wiki/Tuticorin_Port
+T01415,T1415,Visakhapatnam Port Adani Terminal,,Visakhapatnam Port,Adani Group,retired,,6.4,,2017.0,Andhra Pradesh,17.68333,83.2833,https://www.gem.wiki/Visakhapatnam_Port
+T01177,T1177,Visakhapatnam Port Coal Terminal,,Visakhapatnam Port,Visakhapatnam Port Trust (VPT),operating,,19.7,,,Andhra Pradesh,17.68333,83.2833,https://www.gem.wiki/Visakhapatnam_Port
+T01021,T1021,Visakhapatnam Port Terminal,,Visakhapatnam Port,"SEW Infrastructure, ALBA",cancelled,,13.36,,,Andhra Pradesh,17.68333,83.2833,https://www.gem.wiki/Visakhapatnam_Port
+T01382,T1382,Wadhwan Port Coal Terminal,Vadhavan Port,Wadhwan Port,"Jawaharlal Nehru Port Trust, Maharashtra Maritime Board",proposed,,25.0,,,Maharashtra,19.93335,72.66427,https://www.gem.wiki/Wadhwan_Port

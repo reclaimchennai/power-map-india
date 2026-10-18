@@ -1,0 +1,6 @@
+id,name,country,lat,lon,loc_precision,sources
+fport-kalimantan-south,"South Kalimantan coal anchorages (Taboneo / Banjarmasin), Indonesia",Indonesia,-3.32,114.5925,approx: Banjarmasin city point (Wikipedia); Taboneo transhipment anchorage lies offshore to the SW,"[""https://en.wikipedia.org/wiki/Banjarmasin""]"
+fport-kalimantan-east,"East Kalimantan coal ports (Samarinda / Balikpapan area), Indonesia",Indonesia,-1.2768,116.8277,approx: Balikpapan city point (Wikipedia),"[""https://en.wikipedia.org/wiki/Balikpapan"", ""https://en.wikipedia.org/wiki/Samarinda""]"
+fport-newcastle,"Port of Newcastle (NSW), Australia",Australia,-32.9167,151.8,port reference point (Wikipedia),"[""https://en.wikipedia.org/wiki/Port_of_Newcastle""]"
+fport-hay-point,"Hay Point / Dalrymple Bay (Queensland), Australia",Australia,-21.3027,149.2636,locality point (Wikipedia),"[""https://en.wikipedia.org/wiki/Hay_Point,_Queensland""]"
+fport-richards-bay,"Richards Bay Coal Terminal, South Africa",South Africa,-28.818,32.052,port reference point (Wikipedia),"[""https://en.wikipedia.org/wiki/Port_of_Richards_Bay""]"

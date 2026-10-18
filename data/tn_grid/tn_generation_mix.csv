@@ -1,0 +1,40 @@
+date,section,item,capacity_mw,inst_mw,min_mw,morning_mw,mu
+2026-09-17,TNEB own,1 TNPGCL/TNGECL,2325.9,1062.0,419.0,443.0,17.359
+2026-09-17,TNEB own,b) Thermal,5120.0,3092.0,3735.0,3812.0,81.39
+2026-09-17,TNEB own,c) Gas,408.0,173.0,178.0,178.0,4.4
+2026-09-17,TNEB own,2 Independent Power Plant,330.5,0.0,0.0,0.0,0.0
+2026-09-17,TNEB own,TAQA,250.0,249.0,244.0,246.0,5.22
+2026-09-17,TNEB own,SEPC,525.0,536.0,448.0,514.0,10.32
+2026-09-17,TNEB own,Captive Power Plant(Intra state,,662.0,509.0,663.0,
+2026-09-17,TNEB own,CPP (Purchase) - TNPDCL,,205.0,229.0,227.0,
+2026-09-17,TNEB own,CPP Wheeling / Third-Party OA consumers,223.02,0.0,458.0,279.0,4.078
+2026-09-17,TNEB own,Non-Conventional Energy Schemes,,117.0,269.0,157.0,
+2026-09-17,TNEB own,Co-Generation,,676.9,117.0,233.0,117.0
+2026-09-17,TNEB own,Bio mass,,206.79,0.0,37.0,40.0
+2026-09-17,TNEB own,Wind,9546.145,1742.0,1115.0,1110.0,21.764
+2026-09-17,TNEB own,Solar,14369.03,0.0,0.0,1557.0,55.956
+2026-09-17,CGS share,5 CGS (capacity) - Share for TNPDCL,522.6,,,,55.956
+2026-09-17,CGS share,Ramagundam Stage,130.8,,,,
+2026-09-17,CGS share,Talcher Stage,496.9,,,,
+2026-09-17,CGS share,Simhadri Stage,209.7,,,,
+2026-09-17,CGS share,Kudgi Stage,361.2,,,,
+2026-09-17,CGS share,NTECL Vallur,1062.4,,,,
+2026-09-17,CGS share,ER Power,35.0,,,,
+2026-09-17,CGS share,Neyveli TS2 Stage,617.4,,,,
+2026-09-17,CGS share,Neyveli TS1 Exp,205.4,,,,
+2026-09-17,CGS share,New Neyveli,654.4,,,,
+2026-09-17,CGS share,NTPL,410.0,,,,
+2026-09-17,CGS share,MAPS,330.5,,,,
+2026-09-17,CGS share,Kaiga 1 to,221.6,,,,
+2026-09-17,CGS share,Kudankulam 1 &,1125.0,,,,
+2026-09-17,CGS share,NTPC stations - TS,40.8,,,,
+2026-09-17,OA,LTOA,2830.0,2134.0,2345.0,2153.0,50.737
+2026-09-17,OA,MTOA,,,,,35.481
+2026-09-17,OA,TNPDCL,2814.0,1067.0,1067.0,1145.0,35.166
+2026-09-17,OA,Others,,,,,0.315
+2026-09-17,OA,STOA & SWAP,,2107.0,288.0,168.0,14.134
+2026-09-17,OA,Exchange ('+' Import / '-' Export,,,,,25.124
+2026-09-17,CGS share,URS Power - availed from CGS,,0.0,0.0,0.0,
+2026-09-17,CGS share,11 Station,21271.05,20040.0,17001.0,17564.0,425.837
+2026-09-17,CGS share,(i) Load Shedding,,0.0,0.0,0.0,0.0
+2026-09-17,CGS share,HT Relief & R&C,,0.0,0.0,0.0,0.0
