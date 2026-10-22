@@ -6,6 +6,7 @@ Table coal_supply (series, period, value, unit, source): period is 'YYYY-MM-DD' 
   prod_mtd:MCL      month to date, Mt
   prod_ytd:Captive  financial year to date, Mt
   offtake_d:SECL    dispatch (offtake) on the day, '000 t
+  ks_imports_fytd:Total  coal + coke imports this financial year to that month, Mt (Koyla Shakti)
 Other modules (coal_msg, cea_monthly, ports_coal, tradestat, coal_rakes) write their own series through put().
 
     python -m scrapers.coal_supply                 # yesterday and the day before (collect.py, hourly)
@@ -154,6 +155,30 @@ def npp_stock_buckets():
     return len(rows)
 
 
+KS = "https://koylashakti.coal.gov.in/api/scad-gateway/api/"
+MON = {m: i for i, m in enumerate(["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], 1)}
+
+
+def ks_imports():
+    """Koyla Shakti (Ministry of Coal's analytics dashboard, public JSON): coal + coke imports this financial year to
+    the latest month, and last year's monthly figures. Same basis as TradeStat HS 2701 + 2704, but it keeps
+    publishing while TradeStat shows 0 for 2026 months (since Oct 2026), so it extends the import series."""
+    src = "Koyla Shakti, Ministry of Coal (koylashakti.coal.gov.in)"
+    rows = []
+    j = requests.get(KS + "coal-production/current-fy/import-domestic-share", headers=UA, timeout=60).json()
+    mon = j.get("currentFyImportDataMonth")                       # e.g. "Aug-26"
+    if mon and "-" in mon:
+        m, yy = mon.split("-")
+        per = f"20{yy}-{MON[m[:3].title()]:02d}"
+        rows += [("ks_imports_fytd:Total", per, j.get("currentFyImportVolumeMillion"), "Mt", src),
+                 ("ks_domestic_fytd:Total", per, j.get("currentFyDomesticVolumeMillion"), "Mt", src)]
+    d = requests.get(KS + "coal-imports/dashboard", headers=UA, timeout=60).json().get("data") or {}
+    for x in d.get("financialYearImports") or []:
+        rows.append(("ks_imports_m:Total", x["monthSort"][:7], x["millionTonnes"], "Mt", src))
+    put([r for r in rows if r[2] is not None])
+    return len(rows)
+
+
 def run(back=2, start=None):
     n, days = 0, 0
     d = date.today() - timedelta(days=1)
@@ -175,7 +200,7 @@ def run(back=2, start=None):
             time.sleep(1.2)
         d -= timedelta(days=1)
     if back <= 3:
-        for f in (ncp_snapshot, npp_stock_buckets):
+        for f in (ncp_snapshot, npp_stock_buckets, ks_imports):
             try:
                 n += f()
             except Exception as e:

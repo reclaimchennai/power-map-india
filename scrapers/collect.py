@@ -162,8 +162,14 @@ def job_ports_trade():
     if not due("ports_coal", 24 * 60):
         return
     from scrapers import ports_coal, tradestat
-    print("ports_coal", ports_coal.run())
-    print("tradestat", tradestat.run())
+    # both run() functions return counts without logging; without a log line due() never sees a success
+    # and the job re-ran (and re-fetched shipmin.gov.in) on every 15-minute pass
+    n, done, failed = ports_coal.run()
+    log("ports_coal", "ok" if n else "error", f"{n} rows, {len(done)} reports, {len(failed)} failed")
+    tn, tf = tradestat.run()
+    log("tradestat", "ok" if tn else "info", f"{tn} rows, {len(tf)} months failed"
+        + ("" if tn else "; TradeStat shows 0 for recent months, imports extended from Koyla Shakti"))
+    print("ports_coal", n, len(done), "tradestat", tn)
 
 
 def job_gas_power():

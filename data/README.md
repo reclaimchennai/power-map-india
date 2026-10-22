@@ -44,7 +44,12 @@ lines = gpd.read_file("data/geo/power_map_india.gpkg", layer="grid_lines_400")
 ## Refreshing
 
 The collector runs every 15 minutes on the live site (`scrapers/collect.py`) into SQLite (`data/power.db`, not in git).
-`python tools/export_open_data.py` and `python tools/export_geo.py` regenerate every file here from it. Snapshot date of this export: **2026-10-18**.
+`python tools/export_open_data.py` and `python tools/export_geo.py` regenerate every file here from it. Snapshot date of the tables in this folder: **2026-10-22**.
+
+**Daily updates.** [`latest/`](latest/README.md) holds plain CSVs of the series that move every day (national coal stock and days of coal,
+coal trains per day, production and offtake per day, every monthly supply series, reservoir storage), committed daily. The full tables
+and the SQLite database are replaced daily on the [`data-latest` release](https://github.com/reclaimchennai/power-map-india/releases/tag/data-latest)
+(`power-map-india-tables.zip`, `power-map-india-sqlite.zip`), so they do not pile up in git history. `tools/publish_daily.sh` does both.
 
 ## Known gaps
 

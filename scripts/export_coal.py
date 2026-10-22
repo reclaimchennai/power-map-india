@@ -137,7 +137,8 @@ DERIVED = [
     ("offtake", "Coal dispatched from the mines, all India", "Mt a month", (["dispatch_m:Total"], 1), "Ministry of Coal, Monthly Coal Statistics", ""),
     ("dispatch_power", "Coal dispatched to power stations", "Mt a month", (["dispatch_power_m:Total"], 1), "Ministry of Coal, Monthly Coal Statistics", ""),
     ("rakes_power", "Coal trains to power stations", "rakes a day", (["rakes_power_m:Total"], 1), "Ministry of Coal, Monthly Coal Statistics", "monthly average"),
-    ("imports", "Coal imports, all uses", "Mt a month", (["imports_m:Total"], 1), "Ministry of Commerce TradeStat (HS 2701)", ""),
+    ("imports", "Coal and coke imports, all uses", "Mt a month", (["imports_m:Total", "imports_m:Coke"], 1),
+     "Ministry of Commerce TradeStat (HS 2701 + 2704)", "latest months from Koyla Shakti when TradeStat lags"),
     ("imports_thermal", "Steam (thermal) coal imports", "Mt a month", (["imports_m:Thermal"], 1), "Ministry of Commerce TradeStat (HS 27011920)", ""),
     ("import_power", "Imported coal received by power stations", "Mt a month", (["import_power_m:Total"], 1), "CEA monthly import report", ""),
     ("port_coal", "Thermal coal handled at ports", "Mt a month", (["port_coal_m:Total-Thermal"], 1), "Ministry of Ports, Shipping and Waterways", "major and non-major ports"),
@@ -148,6 +149,24 @@ DERIVED = [
     ("hydro_storage", "Water in India's reservoirs", "% of capacity", (["cwc_pct_w:AllIndia"], 1), "Central Water Commission weekly bulletin", ""),
     ("hydro_normal", "Reservoirs, 10-year normal", "% of capacity", (["cwc_pct_normal_w:AllIndia"], 1), "Central Water Commission weekly bulletin", ""),
 ]
+
+
+def extend_imports(out, raw):
+    """TradeStat has shown 0 for 2026 months since Oct 2026; Koyla Shakti publishes this financial year's coal + coke
+    imports to date (same HS 2701 + 2704 basis; Apr-Jul 2026 agree to 0.01 Mt). A month TradeStat lacks is the
+    year-to-date minus the months already in the series, when every earlier month of that year is there."""
+    ser = dict(out.get("imports") or [])
+    for per, ytd in sorted((raw.get("ks_imports_fytd:Total") or {}).items()):
+        if per in ser or ytd is None:
+            continue
+        y, m = int(per[:4]), int(per[5:7])
+        fy = y if m >= 4 else y - 1
+        months = [f"{fy + (mm < 4)}-{mm:02d}" for mm in list(range(4, 13)) + list(range(1, 4))]
+        before = months[:months.index(per)]
+        if all(b in ser for b in before):
+            ser[per] = round(ytd - sum(ser[b] for b in before), 4)
+    if ser:
+        out["imports"] = sorted([p, v] for p, v in ser.items())
 
 
 def supply(con):
@@ -172,6 +191,7 @@ def supply(con):
         out[key] = vals
         un[key] = unit
         meta[key] = {"label": label, "source": src, "note": note}
+    extend_imports(out, raw)
     full = {"generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "series": {k: sorted([[p, v] for p, v in d.items()]) for k, d in raw.items()}, "units": units, "sources": srcs}
     return {"series": out, "units": un, "meta": meta}, full

@@ -61,9 +61,16 @@ class Rakes:
         kw = {"headless": True, "args": ["--no-sandbox"]}
         if Path(CHROME).exists():
             kw["executable_path"] = CHROME
-        self.browser = self._p.chromium.launch(**kw)
-        self.page = None
-        self.reload()
+        self.browser = None
+        try:
+            self.browser = self._p.chromium.launch(**kw)
+            self.page = None
+            self.reload()
+        except Exception:
+            # the CoYLA page often times out; stop Playwright here, or its event loop stays alive and every later
+            # sync_playwright() in the same collect pass (cwc_reservoirs) fails with "Sync API inside the asyncio loop"
+            self.close()
+            raise
 
     def reload(self):
         if self.page:
@@ -77,7 +84,8 @@ class Rakes:
 
     def close(self):
         try:
-            self.browser.close()
+            if self.browser:
+                self.browser.close()
         finally:
             self._p.stop()
 

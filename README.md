@@ -16,7 +16,7 @@ in CSV, Parquet, GeoJSON, GeoPackage, Shapefile and SQLite, with licences and a 
 | `scrapers/`, `store.py` | Backend collectors (CEA, NPP, MERIT, SLDC, Vidyut Pravah, CWC, PPAC, ports...) writing to SQLite |
 | `scripts/`, `api/` | Build scripts (site, grid, feedstock, emissions, posters) and a small FastAPI service |
 | `build/` | Research intermediates with `sources` per record (dossier, feedstock, grid, emissions); contract in `build/SCHEMA.md` |
-| `tools/` | Regenerate `data/` from the database |
+| `tools/` | Regenerate `data/` from the database; `publish_daily.sh` refreshes `data/latest/` and the `data-latest` release every day |
 | `docs/ARCHITECTURE.md` | How it all fits together |
 
 ## Run it

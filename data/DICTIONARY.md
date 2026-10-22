@@ -39,7 +39,7 @@ NPCIL nuclear units: type, capacity, commercial operation, cumulative generation
 ### `generation/npp_station_daily`
 NPP per-station daily generation: programme vs actual (MU), same day last year, FY cumulative.
 
-7,518 rows
+8,592 rows
 
 | column | type |
 |---|---|
@@ -58,7 +58,7 @@ NPP per-station daily generation: programme vs actual (MU), same day last year, 
 ### `generation/npp_state_daily`
 NPP per-state daily generation totals.
 
-476 rows
+544 rows
 
 | column | type |
 |---|---|
@@ -74,7 +74,7 @@ NPP per-state daily generation totals.
 ### `generation/dgr_stations`
 CEA Daily Generation Report (DGR) per station and day: capacity, programme/actual MU, YTD, coal stock days, outage MW.
 
-238,533 rows
+239,699 rows
 
 | column | type |
 |---|---|
@@ -132,7 +132,7 @@ MERIT state-wise daily energy by source.
 ### `generation/merit_rt`
 MERIT India near-real-time generation by source (MW) time series.
 
-970,389 rows
+981,785 rows
 
 | column | type |
 |---|---|
@@ -169,7 +169,7 @@ NPP installed capacity by source per state (payload is JSON text).
 ### `coal/coal_plants_daily`
 CEA daily coal stock report per thermal plant: stock (indigenous/import), days of stock, receipt, consumption, critical flag.
 
-475,315 rows
+476,270 rows
 
 | column | type |
 |---|---|
@@ -241,7 +241,7 @@ Imported coal receipts of power plants by month and entity.
 ### `coal/coal_supply`
 Generic supply-chain time series: '<measure>:<entity>' (coal production/despatch/offtake, rakes, ports, imports, gas, ...).
 
-142,935 rows
+143,459 rows
 
 | column | type |
 |---|---|
@@ -330,7 +330,7 @@ CEA annual gas consumption per gas-based plant.
 ### `hydro/cwc_reservoir_weekly`
 CWC weekly reservoir storage bulletin per reservoir (live storage, level, % of capacity, normal).
 
-72,192 rows
+72,370 rows
 
 | column | type |
 |---|---|
@@ -355,7 +355,7 @@ CWC weekly reservoir storage bulletin per reservoir (live storage, level, % of c
 ### `tn_grid/sldc_versions`
 Tamil Nadu SLDC instantaneous statement: one row per issued version (peaks, minimum, frequency).
 
-12 rows
+17 rows
 
 | column | type |
 |---|---|
@@ -379,7 +379,7 @@ Tamil Nadu SLDC instantaneous statement: one row per issued version (peaks, mini
 ### `tn_grid/sldc_rows`
 Tamil Nadu SLDC statement rows per source (capacity, lighting-peak/min/morning MW, MU).
 
-564 rows
+799 rows
 
 | column | type |
 |---|---|
@@ -426,7 +426,7 @@ Tamil Nadu district-wise capacity/generation tables.
 ### `tn_grid/vp_blocks`
 Vidyut Pravah 15-minute demand/exchange/price per state (rolling latest day).
 
-16,922 rows
+19,814 rows
 
 | column | type |
 |---|---|
@@ -443,7 +443,7 @@ Vidyut Pravah 15-minute demand/exchange/price per state (rolling latest day).
 ### `power_quality/nfms_state`
 National Feeder Monitoring System: hours of supply and feeder integration per state.
 
-840 rows
+980 rows
 
 | column | type |
 |---|---|
@@ -480,7 +480,7 @@ NFMS reliability (SAIFI/SAIDI) per city/discom/month.
 ### `power_quality/nfms_national`
 NFMS national snapshot (payload is JSON text).
 
-24 rows
+28 rows
 
 | column | type |
 |---|---|
