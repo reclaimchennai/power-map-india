@@ -5005,6 +5005,7 @@ gas_power_m:Domestic,2026-05,522.7264,MMSCM,PPAC sectoral natural gas consumptio
 gas_power_m:Domestic,2026-06,424.9606,MMSCM,PPAC sectoral natural gas consumption
 gas_power_m:Domestic,2026-07,445.2013,MMSCM,PPAC sectoral natural gas consumption
 gas_power_m:Domestic,2026-08,433.0,MMSCM,PPAC sectoral natural gas consumption
+gas_power_m:Domestic,2026-09,414.7092,MMSCM,PPAC sectoral natural gas consumption
 gas_power_m:RLNG,2015-04,91.61,MMSCM,PPAC sectoral natural gas consumption
 gas_power_m:RLNG,2015-05,44.723,MMSCM,PPAC sectoral natural gas consumption
 gas_power_m:RLNG,2015-06,177.83,MMSCM,PPAC sectoral natural gas consumption
@@ -5142,6 +5143,7 @@ gas_power_m:RLNG,2026-05,118.8926,MMSCM,PPAC sectoral natural gas consumption
 gas_power_m:RLNG,2026-06,215.558,MMSCM,PPAC sectoral natural gas consumption
 gas_power_m:RLNG,2026-07,163.6398,MMSCM,PPAC sectoral natural gas consumption
 gas_power_m:RLNG,2026-08,137.0,MMSCM,PPAC sectoral natural gas consumption
+gas_power_m:RLNG,2026-09,504.0297,MMSCM,PPAC sectoral natural gas consumption
 gas_power_m:Total,2015-04,795.452,MMSCM,PPAC sectoral natural gas consumption
 gas_power_m:Total,2015-05,816.347,MMSCM,PPAC sectoral natural gas consumption
 gas_power_m:Total,2015-06,878.52,MMSCM,PPAC sectoral natural gas consumption
@@ -5279,11 +5281,13 @@ gas_power_m:Total,2026-05,641.619,MMSCM,PPAC sectoral natural gas consumption
 gas_power_m:Total,2026-06,640.5186,MMSCM,PPAC sectoral natural gas consumption
 gas_power_m:Total,2026-07,608.8411,MMSCM,PPAC sectoral natural gas consumption
 gas_power_m:Total,2026-08,570.0,MMSCM,PPAC sectoral natural gas consumption
+gas_power_m:Total,2026-09,918.739,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:ANDHRA PRADESH,2026-04,13.3703,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:ANDHRA PRADESH,2026-05,8.8946,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:ANDHRA PRADESH,2026-06,13.3265,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:ANDHRA PRADESH,2026-07,13.6159,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:ANDHRA PRADESH,2026-08,9.6285,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:ANDHRA PRADESH,2026-09,9.9544,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:ARUNACHAL PRADESH,2026-04,0.7458,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:ARUNACHAL PRADESH,2026-05,0.8198,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:ARUNACHAL PRADESH,2026-06,0.4227,MMSCM,PPAC sectoral natural gas consumption
@@ -5294,37 +5298,45 @@ gas_power_state_m:ASSAM,2026-05,68.4571,MMSCM,PPAC sectoral natural gas consumpt
 gas_power_state_m:ASSAM,2026-06,65.6421,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:ASSAM,2026-07,70.8741,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:ASSAM,2026-08,69.4201,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:ASSAM,2026-09,74.1645,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:BIHAR,2026-05,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:BIHAR,2026-06,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:BIHAR,2026-07,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:BIHAR,2026-08,0.0,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:BIHAR,2026-09,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:CHANDIGARH,2026-05,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:CHANDIGARH,2026-06,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:CHANDIGARH,2026-07,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:CHANDIGARH,2026-08,0.0,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:CHANDIGARH,2026-09,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:DADRA & NAGAR HAVELI AND DAMAN & DIU,2026-05,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:DADRA & NAGAR HAVELI AND DAMAN & DIU,2026-06,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:DADRA & NAGAR HAVELI AND DAMAN & DIU,2026-07,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:DADRA & NAGAR HAVELI AND DAMAN & DIU,2026-08,0.0,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:DADRA & NAGAR HAVELI AND DAMAN & DIU,2026-09,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:DELHI,2026-04,66.16,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:DELHI,2026-05,72.9794,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:DELHI,2026-06,93.4467,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:DELHI,2026-07,97.9682,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:DELHI,2026-08,76.204,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:DELHI,2026-09,103.4442,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:EASTERN OFFSHORE,2026-04,1.4989,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:EASTERN OFFSHORE,2026-05,1.5323,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:EASTERN OFFSHORE,2026-06,0.7078,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:EASTERN OFFSHORE,2026-07,1.5724,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:EASTERN OFFSHORE,2026-08,0.8543,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:EASTERN OFFSHORE,2026-09,0.8429,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:GOA,2026-05,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:GOA,2026-06,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:GOA,2026-07,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:GOA,2026-08,0.0,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:GOA,2026-09,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:GUJARAT,2026-04,95.3505,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:GUJARAT,2026-05,88.3862,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:GUJARAT,2026-06,113.8586,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:GUJARAT,2026-07,74.1505,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:GUJARAT,2026-08,66.4355,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:GUJARAT,2026-09,224.857,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:GUJARAT OFFSHORE,2026-04,0.39,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:GUJARAT OFFSHORE,2026-05,0.43,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:HARYANA,2026-04,4.1175,MMSCM,PPAC sectoral natural gas consumption
@@ -5332,85 +5344,103 @@ gas_power_state_m:HARYANA,2026-05,5.6705,MMSCM,PPAC sectoral natural gas consump
 gas_power_state_m:HARYANA,2026-06,5.9315,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:HARYANA,2026-07,2.7784,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:HARYANA,2026-08,4.2706,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:HARYANA,2026-09,15.525,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:JHARKHAND,2026-04,0.88,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:JHARKHAND,2026-05,0.94,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:JHARKHAND,2026-06,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:JHARKHAND,2026-07,0.003,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:JHARKHAND,2026-08,0.0045,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:JHARKHAND,2026-09,0.0043,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:KARNATAKA,2026-05,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:KARNATAKA,2026-06,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:KARNATAKA,2026-07,3.4998,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:KARNATAKA,2026-08,1.5793,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:KARNATAKA,2026-09,25.519,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:KERALA,2026-05,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:KERALA,2026-06,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:KERALA,2026-07,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:KERALA,2026-08,0.0,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:KERALA,2026-09,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:MADHYA PRADESH,2026-04,0.84,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:MADHYA PRADESH,2026-05,0.9,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:MADHYA PRADESH,2026-06,0.8488,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:MADHYA PRADESH,2026-07,0.8635,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:MADHYA PRADESH,2026-08,0.8818,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:MADHYA PRADESH,2026-09,0.8474,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:MAHARASHTRA,2026-04,109.9877,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:MAHARASHTRA,2026-05,112.0381,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:MAHARASHTRA,2026-06,89.4492,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:MAHARASHTRA,2026-07,85.9263,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:MAHARASHTRA,2026-08,83.39,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:MAHARASHTRA,2026-09,158.4166,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:NOT ASSIGNED,2026-04,7.09,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:NOT ASSIGNED,2026-05,7.3,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:NOT ASSIGNED,2026-06,7.0113,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:NOT ASSIGNED,2026-07,6.4414,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:NOT ASSIGNED,2026-09,10.8058,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:ODISHA,2026-05,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:ODISHA,2026-06,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:ODISHA,2026-07,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:ODISHA,2026-08,0.0,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:ODISHA,2026-09,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:PUDUCHERRY,2026-04,4.6674,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:PUDUCHERRY,2026-05,3.3542,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:PUDUCHERRY,2026-06,4.0819,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:PUDUCHERRY,2026-07,4.6972,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:PUDUCHERRY,2026-08,4.6474,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:PUDUCHERRY,2026-09,4.5516,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:PUNJAB,2026-05,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:PUNJAB,2026-06,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:PUNJAB,2026-07,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:PUNJAB,2026-08,0.0,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:PUNJAB,2026-09,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:RAJASTHAN,2026-04,58.0637,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:RAJASTHAN,2026-05,79.6627,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:RAJASTHAN,2026-06,51.5168,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:RAJASTHAN,2026-07,52.3927,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:RAJASTHAN,2026-08,49.5376,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:RAJASTHAN,2026-09,60.2881,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:TAMIL NADU,2026-04,29.6298,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:TAMIL NADU,2026-05,25.2333,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:TAMIL NADU,2026-06,29.132,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:TAMIL NADU,2026-07,28.6609,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:TAMIL NADU,2026-08,28.7725,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:TAMIL NADU,2026-09,28.0117,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:TELANGANA,2026-05,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:TELANGANA,2026-06,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:TELANGANA,2026-07,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:TELANGANA,2026-08,0.0,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:TELANGANA,2026-09,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:TRIPURA,2026-04,79.0327,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:TRIPURA,2026-05,80.2424,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:TRIPURA,2026-06,77.135,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:TRIPURA,2026-07,87.7923,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:TRIPURA,2026-08,93.7527,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:TRIPURA,2026-09,85.6369,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:UTTAR PRADESH,2026-04,12.0236,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:UTTAR PRADESH,2026-05,14.88,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:UTTAR PRADESH,2026-06,15.5236,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:UTTAR PRADESH,2026-07,8.2025,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:UTTAR PRADESH,2026-08,13.7394,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:UTTAR PRADESH,2026-09,54.7953,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:UTTARAKHAND,2026-04,1.9056,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:UTTARAKHAND,2026-05,1.2495,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:UTTARAKHAND,2026-06,5.9251,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:UTTARAKHAND,2026-07,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:UTTARAKHAND,2026-08,0.3168,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:UTTARAKHAND,2026-09,1.8006,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:WEST BENGAL,2026-04,1.64,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:WEST BENGAL,2026-05,0.89,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:WEST BENGAL,2026-06,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:WEST BENGAL,2026-07,0.84,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:WEST BENGAL,2026-08,1.5772,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:WEST BENGAL,2026-09,1.5545,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:WESTERN OFFSHORE,2026-04,65.305,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:WESTERN OFFSHORE,2026-05,67.7589,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:WESTERN OFFSHORE,2026-06,66.559,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:WESTERN OFFSHORE,2026-07,67.5248,MMSCM,PPAC sectoral natural gas consumption
 gas_power_state_m:WESTERN OFFSHORE,2026-08,64.3043,MMSCM,PPAC sectoral natural gas consumption
+gas_power_state_m:WESTERN OFFSHORE,2026-09,57.7192,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Agriculture,2015-04,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Agriculture,2015-05,0.0,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Agriculture,2015-06,0.0,MMSCM,PPAC sectoral natural gas consumption
@@ -5548,6 +5578,7 @@ gas_sector_m:Agriculture,2026-05,13.352,MMSCM,PPAC sectoral natural gas consumpt
 gas_sector_m:Agriculture,2026-06,15.8011,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Agriculture,2026-07,15.4848,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Agriculture,2026-08,17.0,MMSCM,PPAC sectoral natural gas consumption
+gas_sector_m:Agriculture,2026-09,19.3356,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:CGD,2015-04,415.097,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:CGD,2015-05,417.824,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:CGD,2015-06,398.711,MMSCM,PPAC sectoral natural gas consumption
@@ -5685,6 +5716,7 @@ gas_sector_m:CGD,2026-05,1733.6463,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:CGD,2026-06,1747.6874,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:CGD,2026-07,1780.1062,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:CGD,2026-08,1667.0,MMSCM,PPAC sectoral natural gas consumption
+gas_sector_m:CGD,2026-09,1573.3377,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Fertilizer,2015-04,1260.592,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Fertilizer,2015-05,1295.709,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Fertilizer,2015-06,1260.217,MMSCM,PPAC sectoral natural gas consumption
@@ -5822,6 +5854,7 @@ gas_sector_m:Fertilizer,2026-05,1648.4474,MMSCM,PPAC sectoral natural gas consum
 gas_sector_m:Fertilizer,2026-06,1655.2453,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Fertilizer,2026-07,1773.6969,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Fertilizer,2026-08,1714.0,MMSCM,PPAC sectoral natural gas consumption
+gas_sector_m:Fertilizer,2026-09,1682.94,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Industrial,2015-04,32.749,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Industrial,2015-05,30.28,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Industrial,2015-06,20.224,MMSCM,PPAC sectoral natural gas consumption
@@ -5959,6 +5992,7 @@ gas_sector_m:Industrial,2026-05,55.6863,MMSCM,PPAC sectoral natural gas consumpt
 gas_sector_m:Industrial,2026-06,38.1058,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Industrial,2026-07,44.1234,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Industrial,2026-08,65.0,MMSCM,PPAC sectoral natural gas consumption
+gas_sector_m:Industrial,2026-09,60.9373,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:LPG Shrinkage,2015-04,66.22,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:LPG Shrinkage,2015-05,63.03,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:LPG Shrinkage,2015-06,74.31,MMSCM,PPAC sectoral natural gas consumption
@@ -6096,6 +6130,7 @@ gas_sector_m:LPG Shrinkage,2026-05,78.2772,MMSCM,PPAC sectoral natural gas consu
 gas_sector_m:LPG Shrinkage,2026-06,79.928,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:LPG Shrinkage,2026-07,77.9407,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:LPG Shrinkage,2026-08,79.55,MMSCM,PPAC sectoral natural gas consumption
+gas_sector_m:LPG Shrinkage,2026-09,83.8854,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Manufacturing,2015-04,11.696,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Manufacturing,2015-05,21.838,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Manufacturing,2015-06,18.742,MMSCM,PPAC sectoral natural gas consumption
@@ -6233,6 +6268,7 @@ gas_sector_m:Manufacturing,2026-05,128.7082,MMSCM,PPAC sectoral natural gas cons
 gas_sector_m:Manufacturing,2026-06,108.3001,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Manufacturing,2026-07,117.8165,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Manufacturing,2026-08,118.0,MMSCM,PPAC sectoral natural gas consumption
+gas_sector_m:Manufacturing,2026-09,108.7873,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Other/Misc,2015-04,385.891,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Other/Misc,2015-05,362.5251,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Other/Misc,2015-06,357.7259,MMSCM,PPAC sectoral natural gas consumption
@@ -6370,6 +6406,7 @@ gas_sector_m:Other/Misc,2026-05,699.7263,MMSCM,PPAC sectoral natural gas consump
 gas_sector_m:Other/Misc,2026-06,711.9942,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Other/Misc,2026-07,731.7045,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Other/Misc,2026-08,789.0,MMSCM,PPAC sectoral natural gas consumption
+gas_sector_m:Other/Misc,2026-09,691.6805,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Petrochemical,2015-04,232.354,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Petrochemical,2015-05,240.1384,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Petrochemical,2015-06,294.171,MMSCM,PPAC sectoral natural gas consumption
@@ -6507,6 +6544,7 @@ gas_sector_m:Petrochemical,2026-05,175.2931,MMSCM,PPAC sectoral natural gas cons
 gas_sector_m:Petrochemical,2026-06,199.624,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Petrochemical,2026-07,286.8047,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Petrochemical,2026-08,286.76,MMSCM,PPAC sectoral natural gas consumption
+gas_sector_m:Petrochemical,2026-09,281.6969,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Pipeline I/C,2015-04,24.48,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Pipeline I/C,2015-05,26.13,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Pipeline I/C,2015-06,28.81,MMSCM,PPAC sectoral natural gas consumption
@@ -6644,6 +6682,7 @@ gas_sector_m:Pipeline I/C,2026-05,112.0779,MMSCM,PPAC sectoral natural gas consu
 gas_sector_m:Pipeline I/C,2026-06,217.3994,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Pipeline I/C,2026-07,45.712,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Pipeline I/C,2026-08,157.0,MMSCM,PPAC sectoral natural gas consumption
+gas_sector_m:Pipeline I/C,2026-09,156.117,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Power,2015-04,795.452,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Power,2015-05,816.347,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Power,2015-06,878.52,MMSCM,PPAC sectoral natural gas consumption
@@ -6781,6 +6820,7 @@ gas_sector_m:Power,2026-05,641.619,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Power,2026-06,640.5186,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Power,2026-07,608.8411,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Power,2026-08,570.0,MMSCM,PPAC sectoral natural gas consumption
+gas_sector_m:Power,2026-09,918.739,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Refinery,2015-04,396.482,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Refinery,2015-05,470.4923,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Refinery,2015-06,471.9805,MMSCM,PPAC sectoral natural gas consumption
@@ -6918,6 +6958,7 @@ gas_sector_m:Refinery,2026-05,371.771,MMSCM,PPAC sectoral natural gas consumptio
 gas_sector_m:Refinery,2026-06,439.0527,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Refinery,2026-07,482.0899,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Refinery,2026-08,339.0,MMSCM,PPAC sectoral natural gas consumption
+gas_sector_m:Refinery,2026-09,219.3386,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Sponge Iron/Steel,2015-04,62.976,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Sponge Iron/Steel,2015-05,66.867,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Sponge Iron/Steel,2015-06,53.482,MMSCM,PPAC sectoral natural gas consumption
@@ -7055,6 +7096,7 @@ gas_sector_m:Sponge Iron/Steel,2026-05,54.9381,MMSCM,PPAC sectoral natural gas c
 gas_sector_m:Sponge Iron/Steel,2026-06,53.1773,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Sponge Iron/Steel,2026-07,54.81,MMSCM,PPAC sectoral natural gas consumption
 gas_sector_m:Sponge Iron/Steel,2026-08,54.02,MMSCM,PPAC sectoral natural gas consumption
+gas_sector_m:Sponge Iron/Steel,2026-09,45.5406,MMSCM,PPAC sectoral natural gas consumption
 gas_total_m:Domestic,2015-04,2148.689,MMSCM,PPAC sectoral natural gas consumption
 gas_total_m:Domestic,2015-05,2249.441,MMSCM,PPAC sectoral natural gas consumption
 gas_total_m:Domestic,2015-06,2134.955,MMSCM,PPAC sectoral natural gas consumption
@@ -7192,6 +7234,7 @@ gas_total_m:Domestic,2026-05,2708.268,MMSCM,PPAC sectoral natural gas consumptio
 gas_total_m:Domestic,2026-06,2613.7371,MMSCM,PPAC sectoral natural gas consumption
 gas_total_m:Domestic,2026-07,2683.2709,MMSCM,PPAC sectoral natural gas consumption
 gas_total_m:Domestic,2026-08,2786.0,MMSCM,PPAC sectoral natural gas consumption
+gas_total_m:Domestic,2026-09,2636.7255,MMSCM,PPAC sectoral natural gas consumption
 gas_total_m:RLNG,2015-04,1535.3,MMSCM,PPAC sectoral natural gas consumption
 gas_total_m:RLNG,2015-05,1561.7398,MMSCM,PPAC sectoral natural gas consumption
 gas_total_m:RLNG,2015-06,1721.9384,MMSCM,PPAC sectoral natural gas consumption
@@ -7329,6 +7372,7 @@ gas_total_m:RLNG,2026-05,3005.2749,MMSCM,PPAC sectoral natural gas consumption
 gas_total_m:RLNG,2026-06,3293.0968,MMSCM,PPAC sectoral natural gas consumption
 gas_total_m:RLNG,2026-07,3335.86,MMSCM,PPAC sectoral natural gas consumption
 gas_total_m:RLNG,2026-08,3071.0,MMSCM,PPAC sectoral natural gas consumption
+gas_total_m:RLNG,2026-09,3205.6104,MMSCM,PPAC sectoral natural gas consumption
 gas_total_m:Total,2015-04,3683.989,MMSCM,PPAC sectoral natural gas consumption
 gas_total_m:Total,2015-05,3811.1808,MMSCM,PPAC sectoral natural gas consumption
 gas_total_m:Total,2015-06,3856.8934,MMSCM,PPAC sectoral natural gas consumption
@@ -7466,6 +7510,7 @@ gas_total_m:Total,2026-05,5713.5429,MMSCM,PPAC sectoral natural gas consumption
 gas_total_m:Total,2026-06,5906.8339,MMSCM,PPAC sectoral natural gas consumption
 gas_total_m:Total,2026-07,6019.1308,MMSCM,PPAC sectoral natural gas consumption
 gas_total_m:Total,2026-08,5856.93,MMSCM,PPAC sectoral natural gas consumption
+gas_total_m:Total,2026-09,5842.3359,MMSCM,PPAC sectoral natural gas consumption
 import_power_m:Blending,2015-03,3.9,Mt,"CEA monthly import coal report (cea.nic.in PDF), Mar 2015"
 import_power_m:Blending,2017-03,1.257,Mt,"CEA monthly import coal report (cea.nic.in PDF), Mar 2017"
 import_power_m:Blending,2017-04,1.078,Mt,"CEA monthly import coal report (cea.nic.in PDF), Apr 2017"
@@ -7923,6 +7968,7 @@ imports_m:Anthracite,2026-04,0.179596,Mt,Ministry of Commerce TradeStat (HS 2701
 imports_m:Anthracite,2026-05,0.196074,Mt,Ministry of Commerce TradeStat (HS 27011100)
 imports_m:Anthracite,2026-06,0.155753,Mt,Ministry of Commerce TradeStat (HS 27011100)
 imports_m:Anthracite,2026-07,0.15715,Mt,Ministry of Commerce TradeStat (HS 27011100)
+imports_m:Anthracite,2026-08,0.208773,Mt,Ministry of Commerce TradeStat (HS 27011100)
 imports_m:Coke,2017-01,0.223204,Mt,Ministry of Commerce TradeStat (HS 2704) [year-earlier column]
 imports_m:Coke,2017-02,0.215803,Mt,Ministry of Commerce TradeStat (HS 2704) [year-earlier column]
 imports_m:Coke,2017-03,0.243433,Mt,Ministry of Commerce TradeStat (HS 2704) [year-earlier column]
@@ -8038,6 +8084,7 @@ imports_m:Coke,2026-04,0.615469,Mt,Ministry of Commerce TradeStat (HS 2704)
 imports_m:Coke,2026-05,0.334738,Mt,Ministry of Commerce TradeStat (HS 2704)
 imports_m:Coke,2026-06,0.482386,Mt,Ministry of Commerce TradeStat (HS 2704)
 imports_m:Coke,2026-07,0.57154,Mt,Ministry of Commerce TradeStat (HS 2704)
+imports_m:Coke,2026-08,0.590118,Mt,Ministry of Commerce TradeStat (HS 2704)
 imports_m:Coking,2017-01,3.357919,Mt,Ministry of Commerce TradeStat (HS 27011910) [year-earlier column]
 imports_m:Coking,2017-02,3.539542,Mt,Ministry of Commerce TradeStat (HS 27011910) [year-earlier column]
 imports_m:Coking,2017-03,3.204857,Mt,Ministry of Commerce TradeStat (HS 27011910) [year-earlier column]
@@ -8153,6 +8200,7 @@ imports_m:Coking,2026-04,5.765049,Mt,Ministry of Commerce TradeStat (HS 27011910
 imports_m:Coking,2026-05,5.974089,Mt,Ministry of Commerce TradeStat (HS 27011910)
 imports_m:Coking,2026-06,4.895721,Mt,Ministry of Commerce TradeStat (HS 27011910)
 imports_m:Coking,2026-07,5.683188,Mt,Ministry of Commerce TradeStat (HS 27011910)
+imports_m:Coking,2026-08,4.572036,Mt,Ministry of Commerce TradeStat (HS 27011910)
 imports_m:Lignite,2017-06,1e-06,Mt,Ministry of Commerce TradeStat (HS 2702) [year-earlier column]
 imports_m:Lignite,2017-07,1.8e-05,Mt,Ministry of Commerce TradeStat (HS 2702) [year-earlier column]
 imports_m:Lignite,2018-03,9.6e-05,Mt,Ministry of Commerce TradeStat (HS 2702)
@@ -8338,6 +8386,7 @@ imports_m:Other,2026-04,1.246132,Mt,Ministry of Commerce TradeStat (HS 27011990)
 imports_m:Other,2026-05,1.699751,Mt,Ministry of Commerce TradeStat (HS 27011990)
 imports_m:Other,2026-06,2.02375,Mt,Ministry of Commerce TradeStat (HS 27011990)
 imports_m:Other,2026-07,1.608641,Mt,Ministry of Commerce TradeStat (HS 27011990)
+imports_m:Other,2026-08,1.787361,Mt,Ministry of Commerce TradeStat (HS 27011990)
 imports_m:Thermal,2017-01,9.385884,Mt,Ministry of Commerce TradeStat (HS 27011920) [year-earlier column]
 imports_m:Thermal,2017-02,9.722522,Mt,Ministry of Commerce TradeStat (HS 27011920) [year-earlier column]
 imports_m:Thermal,2017-03,11.587386,Mt,Ministry of Commerce TradeStat (HS 27011920) [year-earlier column]
@@ -8453,6 +8502,7 @@ imports_m:Thermal,2026-04,13.288959,Mt,Ministry of Commerce TradeStat (HS 270119
 imports_m:Thermal,2026-05,13.275264,Mt,Ministry of Commerce TradeStat (HS 27011920)
 imports_m:Thermal,2026-06,12.123824,Mt,Ministry of Commerce TradeStat (HS 27011920)
 imports_m:Thermal,2026-07,16.777959,Mt,Ministry of Commerce TradeStat (HS 27011920)
+imports_m:Thermal,2026-08,11.406269,Mt,Ministry of Commerce TradeStat (HS 27011920)
 imports_m:Total,2017-01,14.069982,Mt,Ministry of Commerce TradeStat (HS 2701) [year-earlier column]
 imports_m:Total,2017-02,14.127106,Mt,Ministry of Commerce TradeStat (HS 2701) [year-earlier column]
 imports_m:Total,2017-03,16.46049,Mt,Ministry of Commerce TradeStat (HS 2701) [year-earlier column]
@@ -8568,6 +8618,7 @@ imports_m:Total,2026-04,21.125696,Mt,Ministry of Commerce TradeStat (HS 2701)
 imports_m:Total,2026-05,21.565792,Mt,Ministry of Commerce TradeStat (HS 2701)
 imports_m:Total,2026-06,19.201008,Mt,Ministry of Commerce TradeStat (HS 2701)
 imports_m:Total,2026-07,24.543588,Mt,Ministry of Commerce TradeStat (HS 2701)
+imports_m:Total,2026-08,18.139049,Mt,Ministry of Commerce TradeStat (HS 2701)
 imports_usd_m:Anthracite,2017-01,16.54,USD mn,Ministry of Commerce TradeStat (HS 27011100) [year-earlier column]
 imports_usd_m:Anthracite,2017-02,9.32,USD mn,Ministry of Commerce TradeStat (HS 27011100) [year-earlier column]
 imports_usd_m:Anthracite,2017-03,22.11,USD mn,Ministry of Commerce TradeStat (HS 27011100) [year-earlier column]
@@ -8683,6 +8734,7 @@ imports_usd_m:Anthracite,2026-04,24.07,USD mn,Ministry of Commerce TradeStat (HS
 imports_usd_m:Anthracite,2026-05,30.39,USD mn,Ministry of Commerce TradeStat (HS 27011100)
 imports_usd_m:Anthracite,2026-06,25.02,USD mn,Ministry of Commerce TradeStat (HS 27011100)
 imports_usd_m:Anthracite,2026-07,24.22,USD mn,Ministry of Commerce TradeStat (HS 27011100)
+imports_usd_m:Anthracite,2026-08,33.64,USD mn,Ministry of Commerce TradeStat (HS 27011100)
 imports_usd_m:Coke,2017-01,59.24,USD mn,Ministry of Commerce TradeStat (HS 2704) [year-earlier column]
 imports_usd_m:Coke,2017-02,56.99,USD mn,Ministry of Commerce TradeStat (HS 2704) [year-earlier column]
 imports_usd_m:Coke,2017-03,64.98,USD mn,Ministry of Commerce TradeStat (HS 2704) [year-earlier column]
@@ -8798,6 +8850,7 @@ imports_usd_m:Coke,2026-04,156.89,USD mn,Ministry of Commerce TradeStat (HS 2704
 imports_usd_m:Coke,2026-05,90.06,USD mn,Ministry of Commerce TradeStat (HS 2704)
 imports_usd_m:Coke,2026-06,138.59,USD mn,Ministry of Commerce TradeStat (HS 2704)
 imports_usd_m:Coke,2026-07,166.36,USD mn,Ministry of Commerce TradeStat (HS 2704)
+imports_usd_m:Coke,2026-08,180.95,USD mn,Ministry of Commerce TradeStat (HS 2704)
 imports_usd_m:Coking,2017-01,810.63,USD mn,Ministry of Commerce TradeStat (HS 27011910) [year-earlier column]
 imports_usd_m:Coking,2017-02,821.87,USD mn,Ministry of Commerce TradeStat (HS 27011910) [year-earlier column]
 imports_usd_m:Coking,2017-03,690.81,USD mn,Ministry of Commerce TradeStat (HS 27011910) [year-earlier column]
@@ -8913,6 +8966,7 @@ imports_usd_m:Coking,2026-04,1163.68,USD mn,Ministry of Commerce TradeStat (HS 2
 imports_usd_m:Coking,2026-05,1248.25,USD mn,Ministry of Commerce TradeStat (HS 27011910)
 imports_usd_m:Coking,2026-06,1053.44,USD mn,Ministry of Commerce TradeStat (HS 27011910)
 imports_usd_m:Coking,2026-07,1229.65,USD mn,Ministry of Commerce TradeStat (HS 27011910)
+imports_usd_m:Coking,2026-08,992.07,USD mn,Ministry of Commerce TradeStat (HS 27011910)
 imports_usd_m:Lignite,2017-07,0.01,USD mn,Ministry of Commerce TradeStat (HS 2702) [year-earlier column]
 imports_usd_m:Lignite,2018-03,0.01,USD mn,Ministry of Commerce TradeStat (HS 2702)
 imports_usd_m:Lignite,2018-06,0.01,USD mn,Ministry of Commerce TradeStat (HS 2702)
@@ -9091,6 +9145,7 @@ imports_usd_m:Other,2026-04,201.97,USD mn,Ministry of Commerce TradeStat (HS 270
 imports_usd_m:Other,2026-05,262.84,USD mn,Ministry of Commerce TradeStat (HS 27011990)
 imports_usd_m:Other,2026-06,324.68,USD mn,Ministry of Commerce TradeStat (HS 27011990)
 imports_usd_m:Other,2026-07,262.82,USD mn,Ministry of Commerce TradeStat (HS 27011990)
+imports_usd_m:Other,2026-08,292.39,USD mn,Ministry of Commerce TradeStat (HS 27011990)
 imports_usd_m:Thermal,2017-01,646.04,USD mn,Ministry of Commerce TradeStat (HS 27011920) [year-earlier column]
 imports_usd_m:Thermal,2017-02,658.38,USD mn,Ministry of Commerce TradeStat (HS 27011920) [year-earlier column]
 imports_usd_m:Thermal,2017-03,764.17,USD mn,Ministry of Commerce TradeStat (HS 27011920) [year-earlier column]
@@ -9206,6 +9261,7 @@ imports_usd_m:Thermal,2026-04,1143.68,USD mn,Ministry of Commerce TradeStat (HS 
 imports_usd_m:Thermal,2026-05,1223.81,USD mn,Ministry of Commerce TradeStat (HS 27011920)
 imports_usd_m:Thermal,2026-06,1230.93,USD mn,Ministry of Commerce TradeStat (HS 27011920)
 imports_usd_m:Thermal,2026-07,1318.61,USD mn,Ministry of Commerce TradeStat (HS 27011920)
+imports_usd_m:Thermal,2026-08,1051.6,USD mn,Ministry of Commerce TradeStat (HS 27011920)
 imports_usd_m:Total,2017-01,1612.01,USD mn,Ministry of Commerce TradeStat (HS 2701) [year-earlier column]
 imports_usd_m:Total,2017-02,1585.15,USD mn,Ministry of Commerce TradeStat (HS 2701) [year-earlier column]
 imports_usd_m:Total,2017-03,1638.48,USD mn,Ministry of Commerce TradeStat (HS 2701) [year-earlier column]
@@ -9321,6 +9377,7 @@ imports_usd_m:Total,2026-04,2617.59,USD mn,Ministry of Commerce TradeStat (HS 27
 imports_usd_m:Total,2026-05,2818.83,USD mn,Ministry of Commerce TradeStat (HS 2701)
 imports_usd_m:Total,2026-06,2634.34,USD mn,Ministry of Commerce TradeStat (HS 2701)
 imports_usd_m:Total,2026-07,2878.74,USD mn,Ministry of Commerce TradeStat (HS 2701)
+imports_usd_m:Total,2026-08,2392.26,USD mn,Ministry of Commerce TradeStat (HS 2701)
 ks_domestic_fytd:Total,2026-08,303.19,Mt,"Koyla Shakti, Ministry of Coal (koylashakti.coal.gov.in)"
 ks_imports_fytd:Total,2026-08,107.18,Mt,"Koyla Shakti, Ministry of Coal (koylashakti.coal.gov.in)"
 ks_imports_m:Total,2025-04,21.35,Mt,"Koyla Shakti, Ministry of Coal (koylashakti.coal.gov.in)"
