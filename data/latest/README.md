@@ -1,12 +1,12 @@
 # Latest daily series
 
-Updated 2026-10-30 (UTC) from the live collector. Plain CSV, one row per day / week / month, sorted, so each day's commit shows only the new rows. Full tables in CSV.gz / Parquet and the whole SQLite database: the [`data-latest` release](https://github.com/reclaimchennai/power-map-india/releases/tag/data-latest), refreshed daily.
+Updated 2026-10-31 (UTC) from the live collector. Plain CSV, one row per day / week / month, sorted, so each day's commit shows only the new rows. Full tables in CSV.gz / Parquet and the whole SQLite database: the [`data-latest` release](https://github.com/reclaimchennai/power-map-india/releases/tag/data-latest), refreshed daily.
 
 | File | Rows |
 |---|---|
 | [`coal_stock_national_daily.csv`](coal_stock_national_daily.csv) | 2,944 |
-| [`coal_rakes_daily.csv`](coal_rakes_daily.csv) | 13,553 |
-| [`coal_production_daily.csv`](coal_production_daily.csv) | 10,436 |
+| [`coal_rakes_daily.csv`](coal_rakes_daily.csv) | 13,561 |
+| [`coal_production_daily.csv`](coal_production_daily.csv) | 10,445 |
 | [`coal_supply_monthly.csv`](coal_supply_monthly.csv) | 15,455 |
 | [`reservoirs_weekly.csv`](reservoirs_weekly.csv) | 4,685 |
 
