@@ -10886,6 +10886,7 @@ port_coal_fytd:Major-All,2026-06,51.7657,Mt,"MoPSW Transport Research, Major Por
 port_coal_fytd:Major-All,2026-07,68.3972,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-07 (Cargo_handled_at_Major_Ports_July_2026.pdf)"
 port_coal_fytd:Major-All,2026-08,83.6974,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-08 (Report_Cargo_handled_at_Major_Ports_August_2026.pdf)"
 port_coal_fytd:Major-All,2026-09,100.359,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-09 (Cargo_handled_at_Major_Ports_Sep_2026.pdf)"
+port_coal_fytd:Major-All,2026-10,119.0415,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-10 (Cargo_handled_at_Major_Ports_October_2026.pdf)"
 port_coal_fytd:Major-Coking,2017-12,24.528,Mt,derived from MoPSW FY-cumulative and monthly columns
 port_coal_fytd:Major-Coking,2018-01,28.209,Mt,"MoPSW Transport Research, Major Ports cargo report 2019-01 (Monthly_cargo_traffic_handled_at_Major_Ports_during_and_upto_January_2019.pdf) [year-earlier column]"
 port_coal_fytd:Major-Coking,2018-02,30.577,Mt,"MoPSW Transport Research, Major Ports cargo report 2019-02 (Monthly_cargo_traffic_handled_at_Major_Ports_during_and_upto_February_2019.pdf) [year-earlier column]"
@@ -10977,6 +10978,7 @@ port_coal_fytd:Major-Coking,2026-06,10.7936,Mt,"MoPSW Transport Research, Major 
 port_coal_fytd:Major-Coking,2026-07,15.2281,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-07 (Cargo_handled_at_Major_Ports_July_2026.pdf)"
 port_coal_fytd:Major-Coking,2026-08,18.6061,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-08 (Report_Cargo_handled_at_Major_Ports_August_2026.pdf)"
 port_coal_fytd:Major-Coking,2026-09,22.0297,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-09 (Cargo_handled_at_Major_Ports_Sep_2026.pdf)"
+port_coal_fytd:Major-Coking,2026-10,25.5002,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-10 (Cargo_handled_at_Major_Ports_October_2026.pdf)"
 port_coal_fytd:Major-Other,2017-12,16.218,Mt,derived from MoPSW FY-cumulative and monthly columns
 port_coal_fytd:Major-Other,2018-01,18.734,Mt,"MoPSW Transport Research, Major Ports cargo report 2019-01 (Monthly_cargo_traffic_handled_at_Major_Ports_during_and_upto_January_2019.pdf) [year-earlier column]"
 port_coal_fytd:Major-Other,2018-02,21.107,Mt,"MoPSW Transport Research, Major Ports cargo report 2019-02 (Monthly_cargo_traffic_handled_at_Major_Ports_during_and_upto_February_2019.pdf) [year-earlier column]"
@@ -11069,6 +11071,7 @@ port_coal_fytd:Major-Other,2026-06,7.8859,Mt,"MoPSW Transport Research, Major Po
 port_coal_fytd:Major-Other,2026-07,10.4872,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-07 (Cargo_handled_at_Major_Ports_July_2026.pdf)"
 port_coal_fytd:Major-Other,2026-08,12.4465,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-08 (Report_Cargo_handled_at_Major_Ports_August_2026.pdf)"
 port_coal_fytd:Major-Other,2026-09,14.9167,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-09 (Cargo_handled_at_Major_Ports_Sep_2026.pdf)"
+port_coal_fytd:Major-Other,2026-10,18.4042,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-10 (Cargo_handled_at_Major_Ports_October_2026.pdf)"
 port_coal_fytd:Major-Thermal,2017-12,60.466,Mt,derived from MoPSW FY-cumulative and monthly columns
 port_coal_fytd:Major-Thermal,2018-01,69.161,Mt,"MoPSW Transport Research, Major Ports cargo report 2019-01 (Monthly_cargo_traffic_handled_at_Major_Ports_during_and_upto_January_2019.pdf) [year-earlier column]"
 port_coal_fytd:Major-Thermal,2018-02,76.626,Mt,"MoPSW Transport Research, Major Ports cargo report 2019-02 (Monthly_cargo_traffic_handled_at_Major_Ports_during_and_upto_February_2019.pdf) [year-earlier column]"
@@ -11160,6 +11163,7 @@ port_coal_fytd:Major-Thermal,2026-06,33.0862,Mt,"MoPSW Transport Research, Major
 port_coal_fytd:Major-Thermal,2026-07,42.6819,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-07 (Cargo_handled_at_Major_Ports_July_2026.pdf)"
 port_coal_fytd:Major-Thermal,2026-08,52.6448,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-08 (Report_Cargo_handled_at_Major_Ports_August_2026.pdf)"
 port_coal_fytd:Major-Thermal,2026-09,63.4125,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-09 (Cargo_handled_at_Major_Ports_Sep_2026.pdf)"
+port_coal_fytd:Major-Thermal,2026-10,75.1371,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-10 (Cargo_handled_at_Major_Ports_October_2026.pdf)"
 port_coal_fytd:NonMajor-All,2017-12,100.736,Mt,derived from MoPSW FY-cumulative and monthly columns
 port_coal_fytd:NonMajor-All,2018-01,111.734,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-01 (April-January_2018-19_Non_major_Ports-compressed.pdf) [year-earlier column]"
 port_coal_fytd:NonMajor-All,2018-02,121.733,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-02 (Writeup_Monthly_cargo_traffic_handled_at_Non-Major_Ports_during_and_upto_February_2019.pdf) [year-earlier column]"
@@ -11252,6 +11256,7 @@ port_coal_fytd:NonMajor-All,2026-06,50.7281,Mt,"MoPSW Transport Research, Non-Ma
 port_coal_fytd:NonMajor-All,2026-07,67.4947,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-07 (Non-Major_Cargo_Report_July_2026.pdf)"
 port_coal_fytd:NonMajor-All,2026-08,84.5049,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-08 (Non-Major_Cargo_report_August_2026_0.pdf)"
 port_coal_fytd:NonMajor-All,2026-09,99.4219,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-09 (Cargo_handled_at_Non-Major_Ports_Sep_2026.pdf)"
+port_coal_fytd:NonMajor-All,2026-10,117.9584,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-10 (Cargo_handled_at_Non-Major_Ports_October_2026.pdf)"
 port_coal_fytd:NonMajor-Coking,2017-12,19.602,Mt,derived from MoPSW FY-cumulative and monthly columns
 port_coal_fytd:NonMajor-Coking,2018-01,21.93,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-01 (April-January_2018-19_Non_major_Ports-compressed.pdf) [year-earlier column]"
 port_coal_fytd:NonMajor-Coking,2018-02,24.063,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-02 (Writeup_Monthly_cargo_traffic_handled_at_Non-Major_Ports_during_and_upto_February_2019.pdf) [year-earlier column]"
@@ -11331,12 +11336,14 @@ port_coal_fytd:NonMajor-Coking,2025-06,13.1446,Mt,"MoPSW Transport Research, Non
 port_coal_fytd:NonMajor-Coking,2025-07,17.8686,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-07 (Cargo_handled_at_Non-Major_Ports_July_2026.pdf) [year-earlier column]"
 port_coal_fytd:NonMajor-Coking,2025-08,22.2151,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-08 (Non-Major_Cargo_report_August_2026.pdf) [year-earlier column]"
 port_coal_fytd:NonMajor-Coking,2025-09,26.499,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-09 (Cargo_handled_at_Non-Major_Ports_Sep_2026.pdf) [year-earlier column]"
+port_coal_fytd:NonMajor-Coking,2025-10,30.6647,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-10 (Cargo_handled_at_Non-Major_Ports_October_2026.pdf) [year-earlier column]"
 port_coal_fytd:NonMajor-Coking,2026-04,3.1684,Mt,derived from MoPSW FY-cumulative and monthly columns
 port_coal_fytd:NonMajor-Coking,2026-05,7.5321,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-05 (Cargo_handled_at_Non-_Major_Ports_May_2026.pdf)"
 port_coal_fytd:NonMajor-Coking,2026-06,11.0424,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-06 (Cargo_handled_at_Non-Major_Ports_June_2026.pdf)"
 port_coal_fytd:NonMajor-Coking,2026-07,15.0266,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-07 (Non-Major_Cargo_Report_July_2026.pdf)"
 port_coal_fytd:NonMajor-Coking,2026-08,18.1645,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-08 (Non-Major_Cargo_report_August_2026_0.pdf)"
 port_coal_fytd:NonMajor-Coking,2026-09,21.3068,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-09 (Cargo_handled_at_Non-Major_Ports_Sep_2026.pdf)"
+port_coal_fytd:NonMajor-Coking,2026-10,25.2186,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-10 (Cargo_handled_at_Non-Major_Ports_October_2026.pdf)"
 port_coal_fytd:NonMajor-Other,2017-12,36.13,Mt,derived from MoPSW FY-cumulative and monthly columns
 port_coal_fytd:NonMajor-Other,2018-01,40.176,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-01 (April-January_2018-19_Non_major_Ports-compressed.pdf) [year-earlier column]"
 port_coal_fytd:NonMajor-Other,2018-02,44.213,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-02 (Writeup_Monthly_cargo_traffic_handled_at_Non-Major_Ports_during_and_upto_February_2019.pdf) [year-earlier column]"
@@ -11416,12 +11423,14 @@ port_coal_fytd:NonMajor-Other,2025-06,31.0912,Mt,"MoPSW Transport Research, Non-
 port_coal_fytd:NonMajor-Other,2025-07,38.6122,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-07 (Cargo_handled_at_Non-Major_Ports_July_2026.pdf) [year-earlier column]"
 port_coal_fytd:NonMajor-Other,2025-08,46.7413,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-08 (Non-Major_Cargo_report_August_2026.pdf) [year-earlier column]"
 port_coal_fytd:NonMajor-Other,2025-09,53.123,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-09 (Cargo_handled_at_Non-Major_Ports_Sep_2026.pdf) [year-earlier column]"
+port_coal_fytd:NonMajor-Other,2025-10,60.2372,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-10 (Cargo_handled_at_Non-Major_Ports_October_2026.pdf) [year-earlier column]"
 port_coal_fytd:NonMajor-Other,2026-04,6.0836,Mt,derived from MoPSW FY-cumulative and monthly columns
 port_coal_fytd:NonMajor-Other,2026-05,12.1525,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-05 (Cargo_handled_at_Non-_Major_Ports_May_2026.pdf)"
 port_coal_fytd:NonMajor-Other,2026-06,18.162,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-06 (Cargo_handled_at_Non-Major_Ports_June_2026.pdf)"
 port_coal_fytd:NonMajor-Other,2026-07,23.2747,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-07 (Non-Major_Cargo_Report_July_2026.pdf)"
 port_coal_fytd:NonMajor-Other,2026-08,29.8342,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-08 (Non-Major_Cargo_report_August_2026_0.pdf)"
 port_coal_fytd:NonMajor-Other,2026-09,36.9448,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-09 (Cargo_handled_at_Non-Major_Ports_Sep_2026.pdf)"
+port_coal_fytd:NonMajor-Other,2026-10,41.5127,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-10 (Cargo_handled_at_Non-Major_Ports_October_2026.pdf)"
 port_coal_fytd:NonMajor-Thermal,2017-12,45.004,Mt,derived from MoPSW FY-cumulative and monthly columns
 port_coal_fytd:NonMajor-Thermal,2018-01,49.628,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-01 (April-January_2018-19_Non_major_Ports-compressed.pdf) [year-earlier column]"
 port_coal_fytd:NonMajor-Thermal,2018-02,53.457,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-02 (Writeup_Monthly_cargo_traffic_handled_at_Non-Major_Ports_during_and_upto_February_2019.pdf) [year-earlier column]"
@@ -11501,12 +11510,14 @@ port_coal_fytd:NonMajor-Thermal,2025-06,12.3971,Mt,"MoPSW Transport Research, No
 port_coal_fytd:NonMajor-Thermal,2025-07,15.4445,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-07 (Cargo_handled_at_Non-Major_Ports_July_2026.pdf) [year-earlier column]"
 port_coal_fytd:NonMajor-Thermal,2025-08,19.9582,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-08 (Non-Major_Cargo_report_August_2026.pdf) [year-earlier column]"
 port_coal_fytd:NonMajor-Thermal,2025-09,26.3508,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-09 (Cargo_handled_at_Non-Major_Ports_Sep_2026.pdf) [year-earlier column]"
+port_coal_fytd:NonMajor-Thermal,2025-10,30.2996,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-10 (Cargo_handled_at_Non-Major_Ports_October_2026.pdf) [year-earlier column]"
 port_coal_fytd:NonMajor-Thermal,2026-04,6.2434,Mt,derived from MoPSW FY-cumulative and monthly columns
 port_coal_fytd:NonMajor-Thermal,2026-05,14.0009,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-05 (Cargo_handled_at_Non-_Major_Ports_May_2026.pdf)"
 port_coal_fytd:NonMajor-Thermal,2026-06,21.5237,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-06 (Cargo_handled_at_Non-Major_Ports_June_2026.pdf)"
 port_coal_fytd:NonMajor-Thermal,2026-07,29.1934,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-07 (Non-Major_Cargo_Report_July_2026.pdf)"
 port_coal_fytd:NonMajor-Thermal,2026-08,36.5062,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-08 (Non-Major_Cargo_report_August_2026_0.pdf)"
 port_coal_fytd:NonMajor-Thermal,2026-09,41.1703,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-09 (Cargo_handled_at_Non-Major_Ports_Sep_2026.pdf)"
+port_coal_fytd:NonMajor-Thermal,2026-10,51.2271,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-10 (Cargo_handled_at_Non-Major_Ports_October_2026.pdf)"
 port_coal_m:Major-All,2016-04,12.796,Mt,"MoPSW Transport Research, Major Ports cargo report 2018-03 (Cargo_Traffic_Handled_at_Major_Ports_during_and_upto_March_2018_0.pdf) [monthly table, previous FY]"
 port_coal_m:Major-All,2016-05,13.818,Mt,"MoPSW Transport Research, Major Ports cargo report 2018-03 (Cargo_Traffic_Handled_at_Major_Ports_during_and_upto_March_2018_0.pdf) [monthly table, previous FY]"
 port_coal_m:Major-All,2016-06,13.57,Mt,"MoPSW Transport Research, Major Ports cargo report 2018-03 (Cargo_Traffic_Handled_at_Major_Ports_during_and_upto_March_2018_0.pdf) [monthly table, previous FY]"
@@ -11626,6 +11637,7 @@ port_coal_m:Major-All,2026-06,16.1995,Mt,"MoPSW Transport Research, Major Ports 
 port_coal_m:Major-All,2026-07,16.6315,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-07 (Cargo_handled_at_Major_Ports_July_2026.pdf)"
 port_coal_m:Major-All,2026-08,15.3002,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-08 (Report_Cargo_handled_at_Major_Ports_August_2026.pdf)"
 port_coal_m:Major-All,2026-09,16.6616,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-09 (Cargo_handled_at_Major_Ports_Sep_2026.pdf)"
+port_coal_m:Major-All,2026-10,18.6825,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-10 (Cargo_handled_at_Major_Ports_October_2026.pdf)"
 port_coal_m:Major-Coking,2018-01,3.681,Mt,"MoPSW Transport Research, Major Ports cargo report 2019-01 (Monthly_cargo_traffic_handled_at_Major_Ports_during_and_upto_January_2019.pdf) [year-earlier column]"
 port_coal_m:Major-Coking,2018-02,2.368,Mt,"MoPSW Transport Research, Major Ports cargo report 2019-02 (Monthly_cargo_traffic_handled_at_Major_Ports_during_and_upto_February_2019.pdf) [year-earlier column]"
 port_coal_m:Major-Coking,2019-01,2.708,Mt,"MoPSW Transport Research, Major Ports cargo report 2019-01 (Monthly_cargo_traffic_handled_at_Major_Ports_during_and_upto_January_2019.pdf)"
@@ -11714,6 +11726,7 @@ port_coal_m:Major-Coking,2026-06,3.2654,Mt,"MoPSW Transport Research, Major Port
 port_coal_m:Major-Coking,2026-07,4.4345,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-07 (Cargo_handled_at_Major_Ports_July_2026.pdf)"
 port_coal_m:Major-Coking,2026-08,3.378,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-08 (Report_Cargo_handled_at_Major_Ports_August_2026.pdf)"
 port_coal_m:Major-Coking,2026-09,3.4236,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-09 (Cargo_handled_at_Major_Ports_Sep_2026.pdf)"
+port_coal_m:Major-Coking,2026-10,3.4705,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-10 (Cargo_handled_at_Major_Ports_October_2026.pdf)"
 port_coal_m:Major-Other,2018-01,2.516,Mt,"MoPSW Transport Research, Major Ports cargo report 2019-01 (Monthly_cargo_traffic_handled_at_Major_Ports_during_and_upto_January_2019.pdf) [year-earlier column]"
 port_coal_m:Major-Other,2018-02,2.373,Mt,"MoPSW Transport Research, Major Ports cargo report 2019-02 (Monthly_cargo_traffic_handled_at_Major_Ports_during_and_upto_February_2019.pdf) [year-earlier column]"
 port_coal_m:Major-Other,2018-04,1.587,Mt,"MoPSW Transport Research, Major Ports cargo report 2019-04 (Cargo_Traffic_handled_at_Major_ports_during_and_upto_April-19_compressed.pdf) [scan, OCR text layer: used only where nothing better exists] [year-earlier column]"
@@ -11803,6 +11816,7 @@ port_coal_m:Major-Other,2026-06,2.2389,Mt,"MoPSW Transport Research, Major Ports
 port_coal_m:Major-Other,2026-07,2.6013,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-07 (Cargo_handled_at_Major_Ports_July_2026.pdf)"
 port_coal_m:Major-Other,2026-08,1.9593,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-08 (Report_Cargo_handled_at_Major_Ports_August_2026.pdf)"
 port_coal_m:Major-Other,2026-09,2.4703,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-09 (Cargo_handled_at_Major_Ports_Sep_2026.pdf)"
+port_coal_m:Major-Other,2026-10,3.4874,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-10 (Cargo_handled_at_Major_Ports_October_2026.pdf)"
 port_coal_m:Major-Thermal,2018-01,8.695,Mt,"MoPSW Transport Research, Major Ports cargo report 2019-01 (Monthly_cargo_traffic_handled_at_Major_Ports_during_and_upto_January_2019.pdf) [year-earlier column]"
 port_coal_m:Major-Thermal,2018-02,7.465,Mt,"MoPSW Transport Research, Major Ports cargo report 2019-02 (Monthly_cargo_traffic_handled_at_Major_Ports_during_and_upto_February_2019.pdf) [year-earlier column]"
 port_coal_m:Major-Thermal,2019-01,7.484,Mt,"MoPSW Transport Research, Major Ports cargo report 2019-01 (Monthly_cargo_traffic_handled_at_Major_Ports_during_and_upto_January_2019.pdf)"
@@ -11891,6 +11905,7 @@ port_coal_m:Major-Thermal,2026-06,10.6952,Mt,"MoPSW Transport Research, Major Po
 port_coal_m:Major-Thermal,2026-07,9.5956,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-07 (Cargo_handled_at_Major_Ports_July_2026.pdf)"
 port_coal_m:Major-Thermal,2026-08,9.963,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-08 (Report_Cargo_handled_at_Major_Ports_August_2026.pdf)"
 port_coal_m:Major-Thermal,2026-09,10.7677,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-09 (Cargo_handled_at_Major_Ports_Sep_2026.pdf)"
+port_coal_m:Major-Thermal,2026-10,11.7246,Mt,"MoPSW Transport Research, Major Ports cargo report 2026-10 (Cargo_handled_at_Major_Ports_October_2026.pdf)"
 port_coal_m:NonMajor-All,2018-01,10.998,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-01 (April-January_2018-19_Non_major_Ports-compressed.pdf) [year-earlier column]"
 port_coal_m:NonMajor-All,2018-02,10.0,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-02 (Writeup_Monthly_cargo_traffic_handled_at_Non-Major_Ports_during_and_upto_February_2019.pdf) [year-earlier column]"
 port_coal_m:NonMajor-All,2019-01,13.0603,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-01 (April-January_2018-19_Non_major_Ports-compressed.pdf)"
@@ -11980,6 +11995,7 @@ port_coal_m:NonMajor-All,2026-06,17.0426,Mt,"MoPSW Transport Research, Non-Major
 port_coal_m:NonMajor-All,2026-07,16.7666,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-07 (Non-Major_Cargo_Report_July_2026.pdf)"
 port_coal_m:NonMajor-All,2026-08,17.0102,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-08 (Non-Major_Cargo_report_August_2026_0.pdf)"
 port_coal_m:NonMajor-All,2026-09,14.917,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-09 (Cargo_handled_at_Non-Major_Ports_Sep_2026.pdf)"
+port_coal_m:NonMajor-All,2026-10,18.5365,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-10 (Cargo_handled_at_Non-Major_Ports_October_2026.pdf)"
 port_coal_m:NonMajor-Coking,2018-01,2.328,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-01 (April-January_2018-19_Non_major_Ports-compressed.pdf) [year-earlier column]"
 port_coal_m:NonMajor-Coking,2018-02,2.133,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-02 (Writeup_Monthly_cargo_traffic_handled_at_Non-Major_Ports_during_and_upto_February_2019.pdf) [year-earlier column]"
 port_coal_m:NonMajor-Coking,2019-01,2.8594,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-01 (April-January_2018-19_Non_major_Ports-compressed.pdf)"
@@ -12056,12 +12072,14 @@ port_coal_m:NonMajor-Coking,2025-06,4.7009,Mt,"MoPSW Transport Research, Non-Maj
 port_coal_m:NonMajor-Coking,2025-07,4.724,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-07 (Cargo_handled_at_Non-Major_Ports_July_2026.pdf) [year-earlier column]"
 port_coal_m:NonMajor-Coking,2025-08,4.3466,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-08 (Non-Major_Cargo_report_August_2026.pdf) [year-earlier column]"
 port_coal_m:NonMajor-Coking,2025-09,4.2838,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-09 (Cargo_handled_at_Non-Major_Ports_Sep_2026.pdf) [year-earlier column]"
+port_coal_m:NonMajor-Coking,2025-10,4.1658,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-10 (Cargo_handled_at_Non-Major_Ports_October_2026.pdf) [year-earlier column]"
 port_coal_m:NonMajor-Coking,2026-04,3.1684,Mt,derived from MoPSW FY-cumulative columns
 port_coal_m:NonMajor-Coking,2026-05,4.3637,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-05 (Cargo_handled_at_Non-_Major_Ports_May_2026.pdf)"
 port_coal_m:NonMajor-Coking,2026-06,3.5103,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-06 (Cargo_handled_at_Non-Major_Ports_June_2026.pdf)"
 port_coal_m:NonMajor-Coking,2026-07,3.9842,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-07 (Non-Major_Cargo_Report_July_2026.pdf)"
 port_coal_m:NonMajor-Coking,2026-08,3.1379,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-08 (Non-Major_Cargo_report_August_2026_0.pdf)"
 port_coal_m:NonMajor-Coking,2026-09,3.1423,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-09 (Cargo_handled_at_Non-Major_Ports_Sep_2026.pdf)"
+port_coal_m:NonMajor-Coking,2026-10,3.4204,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-10 (Cargo_handled_at_Non-Major_Ports_October_2026.pdf)"
 port_coal_m:NonMajor-Other,2018-01,4.046,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-01 (April-January_2018-19_Non_major_Ports-compressed.pdf) [year-earlier column]"
 port_coal_m:NonMajor-Other,2018-02,4.037,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-02 (Writeup_Monthly_cargo_traffic_handled_at_Non-Major_Ports_during_and_upto_February_2019.pdf) [year-earlier column]"
 port_coal_m:NonMajor-Other,2019-01,4.6314,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-01 (April-January_2018-19_Non_major_Ports-compressed.pdf)"
@@ -12138,12 +12156,14 @@ port_coal_m:NonMajor-Other,2025-06,9.6322,Mt,"MoPSW Transport Research, Non-Majo
 port_coal_m:NonMajor-Other,2025-07,7.521,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-07 (Cargo_handled_at_Non-Major_Ports_July_2026.pdf) [year-earlier column]"
 port_coal_m:NonMajor-Other,2025-08,8.1291,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-08 (Non-Major_Cargo_report_August_2026.pdf) [year-earlier column]"
 port_coal_m:NonMajor-Other,2025-09,6.3817,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-09 (Cargo_handled_at_Non-Major_Ports_Sep_2026.pdf) [year-earlier column]"
+port_coal_m:NonMajor-Other,2025-10,7.1142,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-10 (Cargo_handled_at_Non-Major_Ports_October_2026.pdf) [year-earlier column]"
 port_coal_m:NonMajor-Other,2026-04,6.0836,Mt,derived from MoPSW FY-cumulative columns
 port_coal_m:NonMajor-Other,2026-05,6.0689,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-05 (Cargo_handled_at_Non-_Major_Ports_May_2026.pdf)"
 port_coal_m:NonMajor-Other,2026-06,6.0095,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-06 (Cargo_handled_at_Non-Major_Ports_June_2026.pdf)"
 port_coal_m:NonMajor-Other,2026-07,5.1127,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-07 (Non-Major_Cargo_Report_July_2026.pdf)"
 port_coal_m:NonMajor-Other,2026-08,6.5595,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-08 (Non-Major_Cargo_report_August_2026_0.pdf)"
 port_coal_m:NonMajor-Other,2026-09,7.1106,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-09 (Cargo_handled_at_Non-Major_Ports_Sep_2026.pdf)"
+port_coal_m:NonMajor-Other,2026-10,7.0626,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-10 (Cargo_handled_at_Non-Major_Ports_October_2026.pdf)"
 port_coal_m:NonMajor-Thermal,2018-01,4.624,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-01 (April-January_2018-19_Non_major_Ports-compressed.pdf) [year-earlier column]"
 port_coal_m:NonMajor-Thermal,2018-02,3.83,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-02 (Writeup_Monthly_cargo_traffic_handled_at_Non-Major_Ports_during_and_upto_February_2019.pdf) [year-earlier column]"
 port_coal_m:NonMajor-Thermal,2019-01,5.5695,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2019-01 (April-January_2018-19_Non_major_Ports-compressed.pdf)"
@@ -12220,12 +12240,14 @@ port_coal_m:NonMajor-Thermal,2025-06,4.1568,Mt,"MoPSW Transport Research, Non-Ma
 port_coal_m:NonMajor-Thermal,2025-07,3.0474,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-07 (Cargo_handled_at_Non-Major_Ports_July_2026.pdf) [year-earlier column]"
 port_coal_m:NonMajor-Thermal,2025-08,4.5137,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-08 (Non-Major_Cargo_report_August_2026.pdf) [year-earlier column]"
 port_coal_m:NonMajor-Thermal,2025-09,6.3925,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-09 (Cargo_handled_at_Non-Major_Ports_Sep_2026.pdf) [year-earlier column]"
+port_coal_m:NonMajor-Thermal,2025-10,3.9488,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-10 (Cargo_handled_at_Non-Major_Ports_October_2026.pdf) [year-earlier column]"
 port_coal_m:NonMajor-Thermal,2026-04,6.2434,Mt,derived from MoPSW FY-cumulative columns
 port_coal_m:NonMajor-Thermal,2026-05,7.7575,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-05 (Cargo_handled_at_Non-_Major_Ports_May_2026.pdf)"
 port_coal_m:NonMajor-Thermal,2026-06,7.5228,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-06 (Cargo_handled_at_Non-Major_Ports_June_2026.pdf)"
 port_coal_m:NonMajor-Thermal,2026-07,7.6697,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-07 (Non-Major_Cargo_Report_July_2026.pdf)"
 port_coal_m:NonMajor-Thermal,2026-08,7.3128,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-08 (Non-Major_Cargo_report_August_2026_0.pdf)"
 port_coal_m:NonMajor-Thermal,2026-09,4.6641,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-09 (Cargo_handled_at_Non-Major_Ports_Sep_2026.pdf)"
+port_coal_m:NonMajor-Thermal,2026-10,8.0535,Mt,"MoPSW Transport Research, Non-Major Ports cargo report 2026-10 (Cargo_handled_at_Non-Major_Ports_October_2026.pdf)"
 port_coal_m:Total-All,2018-01,26.158,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-All,2018-02,22.372,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-All,2019-01,26.1963,Mt,sum of MoPSW major + non-major port reports
@@ -12315,6 +12337,7 @@ port_coal_m:Total-All,2026-06,33.2421,Mt,sum of MoPSW major + non-major port rep
 port_coal_m:Total-All,2026-07,33.3981,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-All,2026-08,32.3104,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-All,2026-09,31.5786,Mt,sum of MoPSW major + non-major port reports
+port_coal_m:Total-All,2026-10,37.219,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Coking,2018-01,6.009,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Coking,2018-02,4.501,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Coking,2019-01,5.5674,Mt,sum of MoPSW major + non-major port reports
@@ -12391,12 +12414,14 @@ port_coal_m:Total-Coking,2025-06,8.2268,Mt,sum of MoPSW major + non-major port r
 port_coal_m:Total-Coking,2025-07,8.39,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Coking,2025-08,7.2511,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Coking,2025-09,7.5683,Mt,sum of MoPSW major + non-major port reports
+port_coal_m:Total-Coking,2025-10,7.8839,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Coking,2026-04,6.3481,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Coking,2026-05,8.7122,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Coking,2026-06,6.7757,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Coking,2026-07,8.4187,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Coking,2026-08,6.5159,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Coking,2026-09,6.5659,Mt,sum of MoPSW major + non-major port reports
+port_coal_m:Total-Coking,2026-10,6.8909,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Other,2018-01,6.562,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Other,2018-02,6.41,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Other,2019-01,7.5754,Mt,sum of MoPSW major + non-major port reports
@@ -12473,12 +12498,14 @@ port_coal_m:Total-Other,2025-06,12.6591,Mt,sum of MoPSW major + non-major port r
 port_coal_m:Total-Other,2025-07,9.6248,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Other,2025-08,10.1598,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Other,2025-09,9.0779,Mt,sum of MoPSW major + non-major port reports
+port_coal_m:Total-Other,2025-10,9.6338,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Other,2026-04,9.1739,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Other,2026-05,8.6255,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Other,2026-06,8.2484,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Other,2026-07,7.714,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Other,2026-08,8.5188,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Other,2026-09,9.5809,Mt,sum of MoPSW major + non-major port reports
+port_coal_m:Total-Other,2026-10,10.55,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Thermal,2018-01,13.319,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Thermal,2018-02,11.295,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Thermal,2019-01,13.0535,Mt,sum of MoPSW major + non-major port reports
@@ -12555,12 +12582,14 @@ port_coal_m:Total-Thermal,2025-06,13.9084,Mt,sum of MoPSW major + non-major port
 port_coal_m:Total-Thermal,2025-07,11.5006,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Thermal,2025-08,13.1636,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Thermal,2025-09,15.8529,Mt,sum of MoPSW major + non-major port reports
+port_coal_m:Total-Thermal,2025-10,14.9166,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Thermal,2026-04,17.1233,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Thermal,2026-05,19.2686,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Thermal,2026-06,18.218,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Thermal,2026-07,17.2653,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Thermal,2026-08,17.2758,Mt,sum of MoPSW major + non-major port reports
 port_coal_m:Total-Thermal,2026-09,15.4318,Mt,sum of MoPSW major + non-major port reports
+port_coal_m:Total-Thermal,2026-10,19.7781,Mt,sum of MoPSW major + non-major port reports
 prod_m:BCCL,2019-08,1.81,Mt,"Ministry of Coal, Monthly Coal Statistics at a Glance, Aug 2021 (2-years-earlier column)"
 prod_m:BCCL,2020-04,1.7,Mt,"Ministry of Coal, Monthly Coal Statistics at a Glance, Apr 2021 (prior-year column)"
 prod_m:BCCL,2020-05,1.56,Mt,"Ministry of Coal, Monthly Coal Statistics at a Glance, May 2021 (prior-year column)"
