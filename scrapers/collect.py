@@ -33,6 +33,7 @@ from store import connect, log
 urllib3.disable_warnings()
 ROOT = Path(__file__).resolve().parent.parent
 DL = ROOT / "raw" / "downloads"
+LOOKBACK = 14  # days the dated CEA reports (DGR, daily coal) are retried
 UA = {"User-Agent": "Mozilla/5.0 (reclaimchennai power map; +https://power.reclaimchennai.city)"}
 
 
@@ -80,16 +81,20 @@ def job_npp():
 def job_dgr():
     from scrapers import npp_dgr
     DL.mkdir(parents=True, exist_ok=True)
-    for back in (1, 2, 3):
+    # look back two weeks: NPP drops requests for hours at a time, and a day missed by a short window was lost for good
+    for back in range(1, LOOKBACK + 1):
         day = date.today() - timedelta(days=back)
         if have("dgr_stations", "date", day.isoformat()):
             continue
         url = npp_dgr.DGR2.format(d=day.strftime("%d-%m-%Y"), f=f"dgr2-{day:%Y-%m-%d}.xls")
         try:
             data = get(url)
-        except Exception as e:
+        except requests.HTTPError as e:
             print("dgr", day, "not yet:", e)
             continue
+        except requests.RequestException as e:  # NPP down: don't sit through a timeout for every day of the window
+            print("dgr", day, "unreachable, retry next pass:", e)
+            break
         p = DL / f"dgr2-{day:%Y-%m-%d}.xls"
         p.write_bytes(data)
         d, rows = npp_dgr.parse(p)
@@ -100,20 +105,29 @@ def job_dgr():
 
 def job_coal():
     from scrapers import cea_coal
-    for back in (0, 1, 2):
+    # keyed on the database, not the downloaded file: a pass killed between download and save (30 Oct 2026) left the PDF
+    # on disk and the day was never parsed
+    for back in range(0, LOOKBACK + 1):
         day = date.today() - timedelta(days=back)
+        if have("coal_plants_daily", "date", day.isoformat()):
+            continue
         p = DL / f"dailyCoal1-{day:%Y-%m-%d}.pdf"
-        if p.exists():
-            continue
-        url = f"https://npp.gov.in/public-reports/cea/daily/fuel/{day:%d-%m-%Y}/dailyCoal1-{day:%Y-%m-%d}.pdf"
-        try:
-            data = get(url)
-            if not data.startswith(b"%PDF"):
-                raise ValueError("not a pdf")
-        except Exception as e:
-            print("coal", day, "not yet:", e)
-            continue
-        p.write_bytes(data)
+        if not (p.exists() and p.read_bytes().startswith(b"%PDF")):
+            url = f"https://npp.gov.in/public-reports/cea/daily/fuel/{day:%d-%m-%Y}/dailyCoal1-{day:%Y-%m-%d}.pdf"
+            try:
+                data = get(url)
+                if not data.startswith(b"%PDF"):
+                    raise ValueError("not a pdf")
+            except requests.RequestException as e:
+                if not isinstance(e, requests.HTTPError):
+                    print("coal", day, "unreachable, retry next pass:", e)
+                    break
+                print("coal", day, "not yet:", e)
+                continue
+            except ValueError as e:
+                print("coal", day, "not yet:", e)
+                continue
+            p.write_bytes(data)
         d, rows = cea_coal.parse_pdf(p)
         cea_coal.save(d, rows)
         log("cea_coal", "ok", f"{d}: {len(rows)} plants")

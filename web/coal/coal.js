@@ -47,6 +47,11 @@ const ago30 = last && near(last.t - 30 * DAY);
 const peak = NAT.reduce((a, p) => (!a || p.stock > a.stock ? p : a), null);
 const lowSince = last && [...NAT].reverse().find(p => p.t < last.t - 20 * DAY && p.stock <= last.stock);   // last time it was this low
 const lowSinceD = last?.dreq && [...NAT].reverse().find(p => p.t < last.t - 20 * DAY && p.dreq != null && p.dreq <= last.dreq);
+// the lowest point of the last 90 days: when stock has climbed more than 5% above it, the story is the recovery from that low
+const recentLow = last?.dreq && NAT.filter(p => p.t > last.t - 90 * DAY && p.dreq != null).reduce((a, p) => (!a || p.dreq < a.dreq ? p : a), null);
+const recovering = !!(recentLow && last.dreq > recentLow.dreq * 1.05);
+const lowOfLow = recovering && [...NAT].reverse().find(p => p.t < recentLow.t - 20 * DAY && p.dreq != null && p.dreq <= recentLow.dreq);
+const in2021 = p => p && new Date(p.t).getUTCFullYear() === 2021;
 const yearPeak = last && NAT.filter(p => p.t > last.t - 365 * DAY).reduce((a, p) => (!a || p.stock > a.stock ? p : a), null);
 // CEA widened the daily report on 14 Nov 2021 (no-linkage, coal-block and imported-coal plants): a step in the totals, not in stocks
 const BREAKS = [{ t: tOf('2021-11-14'), label: 'Report widened' }];
@@ -65,7 +70,9 @@ function lede() {
   const drop = ago30 ? (1 - last.stock / ago30.stock) : null;
   const net = last.r7 - last.c7;
   $('#lede').innerHTML = `On ${dstr(last.t)} India's coal power stations held <b>${fmt(last.stock, 1)} million tonnes</b> of coal, about <b>${fmt(last.days, 0)} days</b> at the current burn of ${fmt(last.c7 / 1000, 2)} Mt a day`
-    + (last.dreq ? ` and ${fmt(last.dreq, 1)} days of what they need at full load${lowSinceD ? `, the least since <b>${dstr(lowSinceD.t)}</b>` : ', the least in a record that goes back to 2017'}.` : '.')
+    + (last.dreq ? ` and ${fmt(last.dreq, 1)} days of what they need at full load${recovering
+        ? `, up from ${fmt(recentLow.dreq, 1)} days on ${dstr(recentLow.t)}${lowOfLow ? `, which was the least since <b>${dstr(lowOfLow.t)}</b>` : ', the least in a record that goes back to 2017'}`
+        : lowSinceD ? `, the least since <b>${dstr(lowSinceD.t)}</b>` : ', the least in a record that goes back to 2017'}.` : '.')
     + (drop != null ? ` That is <b>${drop > 0 ? 'down' : 'up'} ${fmt(Math.abs(drop) * 100, 0)}%</b> in 30 days` : '')
     + (ly ? ` and ${last.stock < ly.stock ? `<b>${fmt((1 - last.stock / ly.stock) * 100, 0)}% below</b>` : `${fmt((last.stock / ly.stock - 1) * 100, 0)}% above`} the same day last year.` : '.')
     + ` <b>${fmt(last.crit)}</b> of ${fmt(last.n)} stations are critical (under a quarter of the stock they are supposed to keep).`
@@ -74,8 +81,12 @@ function lede() {
   if (bad) {
     const a = $('#alert');
     a.hidden = false;
-    a.innerHTML = `${icon('alert')}<p><b>Coal stocks are falling fast.</b> ${lowSince ? `In tonnes, stock at power stations is the lowest since ${dstr(lowSince.t)}` : `In tonnes, stock at power stations is the lowest in the record (since ${dstr(NAT[0].t)})`}${lowSinceD ? `; measured against what the stations need each day, the lowest since ${dstr(lowSinceD.t)}, during the 2021 shortage` : ''}.
-      ${yearPeak ? ` It stood at ${fmt(yearPeak.stock, 1)} Mt on ${dstr(yearPeak.t)}.` : ''} ${fmt(last.crit)} stations are critical, up from ${fmt(ago30?.crit ?? NAT[0].crit)} a month earlier.</p>`;
+    const crit30 = ago30?.crit ?? NAT[0].crit;
+    const critTxt = `${fmt(last.crit)} stations are critical, ${last.crit === crit30 ? 'as many as' : last.crit > crit30 ? 'up from' : 'down from'} ${fmt(crit30)} a month earlier.`;
+    a.innerHTML = recovering
+      ? `${icon('alert')}<p><b>Coal stocks are recovering, but are still low.</b> On ${dstr(recentLow.t)} power stations held ${fmt(recentLow.stock, 1)} Mt, ${fmt(recentLow.dreq, 1)} days of what they need${lowOfLow ? `, the least since ${dstr(lowOfLow.t)}${in2021(lowOfLow) ? ', during the 2021 shortage' : ''}` : ', the least in the record'}. Stock is up ${fmt((last.stock / recentLow.stock - 1) * 100, 0)}% since${yearPeak && last.stock < yearPeak.stock ? `, still ${fmt((1 - last.stock / yearPeak.stock) * 100, 0)}% below the ${fmt(yearPeak.stock, 1)} Mt of ${dstr(yearPeak.t)}` : ''}. ${critTxt}</p>`
+      : `${icon('alert')}<p><b>${drop != null && drop > 0.05 ? 'Coal stocks are falling fast.' : 'Coal stocks are low.'}</b> ${lowSince ? `In tonnes, stock at power stations is the lowest since ${dstr(lowSince.t)}` : `In tonnes, stock at power stations is the lowest in the record (since ${dstr(NAT[0].t)})`}${lowSinceD ? `; measured against what the stations need each day, the lowest since ${dstr(lowSinceD.t)}${in2021(lowSinceD) ? ', during the 2021 shortage' : ''}` : ''}.
+      ${yearPeak ? ` It stood at ${fmt(yearPeak.stock, 1)} Mt on ${dstr(yearPeak.t)}.` : ''} ${critTxt}</p>`;
   }
 }
 

@@ -67,6 +67,11 @@ def draw(dpi):
     peak = max(NAT, key=lambda q: q["stock_mt"])
     low_since_d = next((q for q in reversed(NAT) if q["t"] < last["t"] - timedelta(days=20) and q["dreq"] is not None
                         and last["dreq"] is not None and q["dreq"] <= last["dreq"]), None)
+    # lowest point of the last 90 days; once stock is more than 5% above it, the dek tells the recovery from that low
+    recent_low = min((q for q in NAT if q["t"] > last["t"] - timedelta(days=90) and q["dreq"] is not None), key=lambda q: q["dreq"], default=None)
+    recovering = bool(recent_low and last["dreq"] is not None and last["dreq"] > recent_low["dreq"] * 1.05)
+    low_of_low = recovering and next((q for q in reversed(NAT) if q["t"] < recent_low["t"] - timedelta(days=20) and q["dreq"] is not None
+                                       and q["dreq"] <= recent_low["dreq"]), None)
     rec_low = min((q for q in NAT if q["dreq"] is not None), key=lambda q: q["dreq"])
     SUP = D["supply"]["series"]
 
@@ -83,9 +88,15 @@ def draw(dpi):
     drop30 = 1 - last["stock_mt"] / ago30["stock_mt"] if ago30 else 0
     head = ("India's power stations are burning through their coal" if drop30 > 0.1 else "Coal at India's power stations")
     S.text(M, y, head, hf)
-    dek = (f"{fmt(last['stock_mt'], 1)} million tonnes in the yards, {fmt(last['dreq'], 1)} days of what the stations need"
-           + (f", the least since {low_since_d['t']:%-d %B %Y}" if low_since_d else "") + ". "
-           + (f"In tonnes, the lowest since {low_since['t']:%B %Y}. " if low_since else "")
+    if recovering:
+        dek = (f"{fmt(last['stock_mt'], 1)} million tonnes in the yards, {fmt(last['dreq'], 1)} days of what the stations need, "
+               f"up from {fmt(recent_low['dreq'], 1)} on {recent_low['t']:%-d %B}"
+               + (f", which was the least since {low_of_low['t']:%B %Y}. " if low_of_low else ", the least on record. "))
+    else:
+        dek = (f"{fmt(last['stock_mt'], 1)} million tonnes in the yards, {fmt(last['dreq'], 1)} days of what the stations need"
+               + (f", the least since {low_since_d['t']:%-d %B %Y}" if low_since_d else "") + ". "
+               + (f"In tonnes, the lowest since {low_since['t']:%B %Y}. " if low_since else ""))
+    dek = (dek
            + f"{fmt(last['critical'])} of {fmt(last['plants'])} stations are critical.")
     y -= S.line_h(df) * 1.6
     S.text(M, y, dek, df, color=INK)
@@ -463,10 +474,15 @@ def draw(dpi):
     lf2 = font(6.6)
     lw_ = max(S.measure(t, lf2)[0] for *_, t in lg) + 30 * pt
     lh_ = len(lg) * 11 * pt + 30 * pt
-    lx0, ly0 = ox + 8 * pt, oy + 8 * pt
+    # first free corner of the map: bottom-left (Arabian Sea) first; the day's labels move, and on 1 Nov 2026 one
+    # landed there, which failed the whole poster run for three weeks
+    corners = [(ox + 8 * pt, oy + 8 * pt), (ox + mw - 8 * pt - lw_, oy + 8 * pt),
+               (ox + 8 * pt, oy + mh - 8 * pt - lh_), (ox + mw - 8 * pt - lw_, oy + mh - 8 * pt - lh_)]
+    spot = next(((x, y) for x, y in corners if S.free((x, y, x + lw_, y + lh_), pad=0)), None)
+    if spot is None:
+        raise RuntimeError("map legend would cover markers or labels in every corner")
+    lx0, ly0 = spot
     fig.add_artist(Rectangle((lx0, ly0), lw_, lh_, facecolor="#ffffffee", edgecolor=EDGE, linewidth=1.0, transform=ID, zorder=64))
-    if not S.free((lx0, ly0, lx0 + lw_, ly0 + lh_), pad=0):
-        raise RuntimeError("map legend would cover markers or labels")
     S.ix.add((lx0, ly0, lx0 + lw_, ly0 + lh_), "legend")
     yy = ly0 + lh_ - 7 * pt - S.line_h(font(7.4, "bold"))
     S.text(lx0 + 7 * pt, yy, "Pillar height = capacity; colour = coal left", font(7.4, "bold"), check=False, z=66)

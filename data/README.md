@@ -49,7 +49,9 @@ The collector runs every 15 minutes on the live site (`scrapers/collect.py`) int
 **Daily updates.** [`latest/`](latest/README.md) holds plain CSVs of the series that move every day (national coal stock and days of coal,
 coal trains per day, production and offtake per day, every monthly supply series, reservoir storage), committed daily. The full tables
 and the SQLite database are replaced daily on the [`data-latest` release](https://github.com/reclaimchennai/power-map-india/releases/tag/data-latest)
-(`power-map-india-tables.zip`, `power-map-india-sqlite.zip`), so they do not pile up in git history. `tools/publish_daily.sh` does both.
+(`power-map-india-tables.zip`, `power-map-india-sqlite.zip`), so they do not pile up in git history. The same release carries
+`power-map-india-dashboard-json.zip`: the JSON the live site reads (`data/coal/coal.json` for the Coal Tracker, `data/live/` for the map),
+as of that day. `tools/publish_daily.sh` does all of it.
 
 ## Known gaps
 

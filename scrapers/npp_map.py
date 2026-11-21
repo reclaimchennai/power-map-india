@@ -30,6 +30,7 @@ H = {"User-Agent": "Mozilla/5.0 (reclaimchennai power map)", "X-Requested-With":
      "Referer": "https://npp.gov.in/dashBoard/gc-map-dashboard"}
 IST = timezone(timedelta(hours=5, minutes=30))
 TYPES = {100001: "hydro", 100002: "thermal", 100003: "nuclear"}
+ZONES = {100001: "Northern", 100002: "Western", 100003: "Southern", 100004: "Eastern", 100005: "North Eastern"}
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS npp_stations (
@@ -84,7 +85,9 @@ def run(with_capacity=True):
     allz = get("getAllZoneGen", ID="IND")
     day = ms_to_date(allz["headerMap"]["GN_OBJ"]["generation_date"])
     archive(day, "allzone", allz)
-    zones = [(z["zone_id"], z["zone_name"]) for z in allz["dailyGenStn"] if z["zone_id"] < 100006]
+    zones = [(z["zone_id"], z["zone_name"]) for z in allz["dailyGenStn"] or [] if z["zone_id"] < 100006]
+    if not zones:  # since 3 Nov 2026 the all-India call returns no zone rows, while the per-zone calls still answer
+        zones = list(ZONES.items())
     n_st = n_day = 0
     for zid, zname in zones:
         zs = get("getAllZoneStateGen", zoneId=zid)
@@ -125,7 +128,8 @@ def run(with_capacity=True):
                     print("capacity", sname, e)
             time.sleep(0.5)
     con.close()
-    log("npp_map", "ok", f"{day}: {n_st} stations, {n_day} daily rows")
+    # an empty pass is an error, so the job is retried and shows up in the health check (it read "ok, 0 rows" for 3 weeks)
+    log("npp_map", "ok" if n_day else "error", f"{day}: {n_st} stations, {n_day} daily rows")
     return day, n_st, n_day
 
 
