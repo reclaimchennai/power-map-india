@@ -4,7 +4,7 @@ Updated 2026-11-21 (UTC) from the live collector. Plain CSV, one row per day / w
 
 | File | Rows |
 |---|---|
-| [`coal_stock_national_daily.csv`](coal_stock_national_daily.csv) | 2,965 |
+| [`coal_stock_national_daily.csv`](coal_stock_national_daily.csv) | 2,966 |
 | [`coal_rakes_daily.csv`](coal_rakes_daily.csv) | 13,730 |
 | [`coal_production_daily.csv`](coal_production_daily.csv) | 10,631 |
 | [`coal_supply_monthly.csv`](coal_supply_monthly.csv) | 15,597 |
