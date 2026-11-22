@@ -18,13 +18,13 @@ def proxy_uri():
     return os.environ.get("POWERMAP_SOCKS5_URI") or None
 
 
-def get(url, retries=3, backoff=4, use_proxy=True, **kw):
-    """GET url; raises the last error. Extra kwargs go to requests.get (timeout defaults to 60)."""
+def get(url, retries=3, backoff=4, use_proxy=True, method="GET", **kw):
+    """GET (or `method`) url; raises the last error. Extra kwargs go to requests.request (timeout defaults to 60)."""
     kw.setdefault("timeout", 60)
     last = None
     for attempt in range(retries):
         try:
-            r = requests.get(url, **kw)
+            r = requests.request(method, url, **kw)
             if r.status_code not in TRANSIENT:
                 r.raise_for_status()
                 return r
@@ -38,7 +38,7 @@ def get(url, retries=3, backoff=4, use_proxy=True, **kw):
         time.sleep(backoff * (attempt + 1))
     uri = proxy_uri() if use_proxy else None
     if uri:
-        r = requests.get(url, proxies={"http": uri, "https": uri}, **kw)
+        r = requests.request(method, url, proxies={"http": uri, "https": uri}, **kw)
         r.raise_for_status()
         return r
     raise last

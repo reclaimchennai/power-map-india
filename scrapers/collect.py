@@ -13,6 +13,7 @@ Each source runs on its own cadence (tracked in scrape_log), so a 15-minute time
   coal_msg       daily           Ministry of Coal monthly statistics: production, dispatch (by sector), rakes, lignite
   ports_coal     daily           coal handled at major / non-major ports (Ports ministry) and coal imports by HS code (TradeStat)
   gas_power      daily           gas burnt for power (PPAC, monthly) and CEA's per-plant gas allotted vs consumed
+  rail_freight   every 60 min    Indian Railways loading by commodity (coal & coke = all coal on rail), FOIS RailSAHAY
   coal_rakes     every 6 h       coal trains loaded per day by CIL subsidiary (CIL Rakes Data, FOIS), via Playwright
   gem_coal       weekly          Global Energy Monitor coal mine and terminal trackers (CC BY 4.0)
   cwc_reservoirs daily           Central Water Commission weekly bulletin: live storage in 150+ reservoirs (hydro's fuel)
@@ -200,6 +201,13 @@ def job_rakes():
     print("coal_rakes", coal_rakes.run(3))
 
 
+def job_rail_freight():
+    if not due("rail_freight", 55):
+        return
+    from scrapers import rail_freight
+    print("rail_freight", rail_freight.run())
+
+
 def job_gem():
     if not due("gem_coal", 7 * 24 * 60):
         return
@@ -223,7 +231,7 @@ def job_weather():
 
 JOBS = [("sldc_peakdet", job_sldc), ("vidyut_pravah", job_vp), ("npp_merit", job_merit), ("nfms", job_nfms), ("npp_map", job_npp), ("npp_dgr", job_dgr),
         ("cea_coal", job_coal), ("coal_supply", job_coal_supply),
-        ("cea_monthly", job_cea_monthly), ("coal_msg", job_coal_msg), ("ports_coal", job_ports_trade), ("gas_power", job_gas_power), ("coal_rakes", job_rakes), ("gem_coal", job_gem), ("cwc_reservoirs", job_cwc),
+        ("cea_monthly", job_cea_monthly), ("coal_msg", job_coal_msg), ("ports_coal", job_ports_trade), ("gas_power", job_gas_power), ("coal_rakes", job_rakes), ("rail_freight", job_rail_freight), ("gem_coal", job_gem), ("cwc_reservoirs", job_cwc),
         ("weather", job_weather)]
 
 
@@ -233,6 +241,11 @@ def export():
     export_live.main()
     import export_coal
     export_coal.main()
+    try:  # never let the check stop an export
+        import freshness
+        freshness.main()
+    except Exception as e:
+        print("[freshness] ERROR", e)
 
 
 def main():

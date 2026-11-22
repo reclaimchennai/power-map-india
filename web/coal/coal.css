@@ -154,3 +154,8 @@ td svg.sp{width:110px;height:26px;display:block}
 .tip b{font-weight:700}
 .tip .r{display:flex;gap:8px;align-items:center;justify-content:space-between}
 .tip .r i{display:inline-block;width:10px;height:10px;background:var(--c);margin-right:4px}
+/* source status (health.json) and the stale-data banner */
+.sources .late{color:var(--crit,#c62828)}
+.sources details.status summary{cursor:pointer;display:inline}
+.sources details.status ul{margin:6px 0 0;padding-left:18px;columns:2 260px;column-gap:24px}
+.hero .stale{margin:10px 0 0;padding:8px 12px;border:2px solid var(--crit,#c62828);color:var(--crit,#c62828);font-weight:600}

@@ -24,7 +24,12 @@ function setTheme(dark) {
 setTheme(document.documentElement.dataset.theme === 'dark');
 $('#theme').onclick = () => { setTheme(document.documentElement.dataset.theme !== 'dark'); redraw(); };
 
-const D = await fetch('../data/coal/coal.json', { cache: 'no-cache' }).then(r => r.json());
+// one retry after a short wait (a slow mobile network or a server restart), then say so instead of "Loading…" forever
+const getData = () => fetch('../data/coal/coal.json', { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error(`coal.json ${r.status}`); return r.json(); });
+const D = await getData().catch(() => new Promise(res => setTimeout(res, 4000)).then(getData)).catch(e => {
+  $('#lede').textContent = 'The latest figures could not be loaded just now. Please reload the page in a minute.';
+  throw e;
+});
 
 /* ------------------------------------------------------------ national series */
 const NC = D.national.cols, idx = Object.fromEntries(NC.map((c, i) => [c, i]));
@@ -141,11 +146,15 @@ function rates() {
   out.push(card('ship', imk === 'imports' ? 'Coal imports' : 'Imports to power', im ? fmt(im.v, 1) : '–', im ? `Mt in ${mstr(im.t)}` : 'Mt', im ? pct(yoy(imk)) : 'monthly figures not yet in'));
   const rk = week('rakes');
   out.push(card('train', 'Coal trains a day', rk ? fmt(rk.v, 0) : '–', 'rakes', rk ? `Coal India, 7 days to ${dstr(rk.t)}${wk(rk)}` : 'rake loading not yet in'));
+  // all coal on rail (Indian Railways' own loading figure): CIL, Singareni, captive and commercial mines, ports
+  const RL = D.rail, rc = RL?.coal;
+  out.push(rc ? card('train', 'Coal loaded on rail', fmt(rc.d, 2), 'Mt', `all India, ${dstr(tOf(RL.day))} · 7-day average ${fmt(rc.w7 / 7, 2)} Mt · ${fmt(rc.ytd, 0)} Mt since 1 April, ${fmt(rc.ytd / RL.all.ytd * 100, 0)}% of rail freight`)
+    : card('train', 'Coal loaded on rail', '–', 'Mt', 'Indian Railways figures not yet in'));
   const net = last.r7 - last.c7;
   out.push(card('chart', 'Net change in stock', `${net < 0 ? '−' : '+'}${fmt(Math.abs(net), 0)}`, 'kt a day', `receipts minus burn, 7-day average`));
-  out.push(card('alert', 'Critical stations', fmt(last.crit), `of ${fmt(last.n)}`, ago30 ? `${last.crit - ago30.crit >= 0 ? '+' : ''}${fmt(last.crit - ago30.crit)} in 30 days` : 'under 25% of normative stock'));
   const low = D.plants.filter(p => p.pct != null && p.pct < 50 && p.req > 0).length;
-  out.push(card('coal', 'Under half their stock', fmt(low), 'stations', 'below 50% of the normative stock'));
+  out.push(card('alert', 'Critical stations', fmt(last.crit), `of ${fmt(last.n)}`, (ago30 ? `${last.crit - ago30.crit >= 0 ? '+' : ''}${fmt(last.crit - ago30.crit)} in 30 days` : 'under 25% of normative stock')
+    + ` · ${fmt(low)} under half their stock`));
   const ph = lastOf('pithead_stock');
   out.push(ph ? card('mine', 'Stock at the mines', fmt(ph.v, 1), 'Mt', `pithead, ${ph.p.length > 7 ? dstr(ph.t) : mstr(ph.t)} · ${pct(yoy('pithead_stock'))}`)
     : card('ship', 'Imported coal in yards', fmt(last.imp, 2), 'Mt', `${fmt(last.imp / last.stock * 100, 0)}% of the stock at power stations`));
@@ -269,6 +278,7 @@ const SUPPLY = [
     ['Coal dispatched, all India and to power', 'train', [['offtake', '--rail', 'All uses'], ['dispatch_power', '--coal', 'To power stations']]],
   ]],
   ['On the move', [
+    ['Coal and coke loaded by Indian Railways per day', 'train', [['rail_coal_daily', '--rail']]],
     ['Coal trains loaded per day', 'train', [['rakes', '--rail']]],
     ['Coal trains to power stations', 'train', [['rakes_power', '--rail']]],
     ['Thermal coal through the ports', 'ship', [['port_coal', '--sea']]],
@@ -482,6 +492,26 @@ function tableSetup() {
 }
 
 /* ------------------------------------------------------------------- sources */
+// health.json (scripts/freshness.py, every collection pass): each source's newest data and whether it is overdue
+const H = await fetch('../data/health.json', { cache: 'no-cache' }).then(r => r.ok ? r.json() : null).catch(() => null);
+const ago = (d, kind) => d == null ? 'no data' : kind === 'month' ? 'monthly' : kind === 'day' ? (d < 1 ? 'today' : d < 2 ? 'yesterday' : `${Math.round(d)} days ago`)
+  : d < 1 ? `${Math.max(1, Math.round(d * 24))} h ago` : `${Math.round(d)} day${Math.round(d) === 1 ? '' : 's'} ago`;
+function health() {
+  if (!H?.sources) return '';
+  const late = H.sources.filter(s => s.late);
+  return `<li>Source status (checked ${new Date(H.generated).toLocaleString('en-GB', { timeZone: 'Asia/Kolkata', dateStyle: 'medium', timeStyle: 'short' })} IST): `
+    + (late.length ? `<b class="late">${late.length} late</b>: ${late.map(s => `${esc(s.label)}, latest ${esc(s.latest || 'none')}`).join('; ')}. ` : 'every source is current. ')
+    + `<details class="status"><summary>All ${H.sources.length} sources</summary><ul>${H.sources.map(s => `<li${s.late ? ' class="late"' : ''}>${s.late ? '⚠ ' : '✓ '}${esc(s.label)}: ${esc(s.kind === 'ts' ? (s.latest || 'none').replace('T', ' ').slice(0, 16) + ' UTC' : s.latest || 'none')} (${ago(s.age_days, s.kind)})</li>`).join('')}</ul></details></li>`;
+}
+// the whole dashboard file has stopped updating (collector down): say so at the top rather than show old figures as current
+function staleBanner() {
+  const hrs = (Date.now() - Date.parse(D.generated)) / 36e5;
+  if (hrs < 3) return;
+  const a = document.createElement('p');
+  a.className = 'stale';
+  a.textContent = `These figures were last refreshed ${hrs < 48 ? `${Math.round(hrs)} hours` : `${Math.round(hrs / 24)} days`} ago; the collector may be down.`;
+  $('.hero').append(a);
+}
 function sources() {
   const extra = Object.entries(SMETA).map(([k, m]) => m.url ? `<li>${esc(m.label || k)}: <a href="${esc(m.url)}">${esc(m.source || m.url)}</a></li>` : '').join('');
   $('#sources').innerHTML = `<h2>Sources</h2><ul>
@@ -489,12 +519,26 @@ function sources() {
     <li>Generation per station: CEA Daily Generation Report (DGR2).</li>
     <li>Production and offtake this financial year, and coal and lignite resources: <a href="https://coal.gov.in/en/major-statistics/production-and-supplies">Ministry of Coal</a>; Geological Survey of India National Coal Inventory.</li>${extra}
     <li>Mine and coal-terminal locations, capacity and output: ${esc(D.map.gem_attribution || 'Global Energy Monitor, Global Coal Mine Tracker (CC BY 4.0)')}</li>
+    <li>All coal and coke loaded on rail, every day: Indian Railways, <a href="https://www.fois.indianrail.gov.in/RailSAHAY/index.jsp">FOIS RailSAHAY</a> (snapshotted hourly since 22 Nov 2026).</li>
     <li>Daily coal production, dispatch and trains: Coal India's MOC dashboard and Rakes Data (FOIS); National Coal Portal. Monthly: Ministry of Coal, Monthly Coal Statistics; CEA monthly coal and import reports (since 2014); Ministry of Commerce TradeStat (imports by HS code); Ministry of Ports, Shipping and Waterways (coal through ports).</li>
     <li>Other fuels: PPAC sectoral gas consumption; CEA monthly gas reports; Central Water Commission weekly reservoir bulletins.</li>
     <li>Coalfields, ports and routes in supply chains: the power map's research (company records, CEA remarks, OpenStreetMap). Basemap © CARTO © OpenStreetMap contributors.</li>
+    ${health()}
     <li>Data refreshed ${new Date(D.generated).toLocaleString('en-GB', { timeZone: 'Asia/Kolkata', dateStyle: 'medium', timeStyle: 'short' })} IST. <a href="../data/coal/coal.json">Download the dashboard data</a> or <a href="../data/coal/series.json">every series</a> (JSON).</li></ul>`;
 }
 
-function redraw() { if (!last) return; giants(); stockCharts(); flowChart(); supplyCharts(); reserveCharts(); mapTheme(); }
-lede(); rates(); tableSetup(); table(); sources(); drawMap(); redraw();
+// every section draws on its own: a source that comes back in an unexpected shape blanks its own block, never the page
+function safe(fn, sel) {
+  try { fn(); } catch (e) {
+    console.error(fn.name, e);
+    const el = sel && document.querySelector(sel);
+    if (el) el.innerHTML = '<p class="note">This part could not be drawn from today\'s data; the rest of the page is current.</p>';
+  }
+}
+function redraw() {
+  if (!last) return;
+  safe(giants, '.giants'); safe(stockCharts, '#c-stock'); safe(flowChart, '#c-flow'); safe(supplyCharts, '#supply');
+  safe(reserveCharts, '#c-res'); safe(mapTheme);
+}
+safe(staleBanner); safe(lede, '#lede'); safe(rates, '#rates'); safe(tableSetup); safe(table, '#plants tbody'); safe(sources, '#sources'); safe(drawMap, '.map-wrap'); redraw();
 let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(redraw, 200); });

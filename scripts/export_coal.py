@@ -133,6 +133,8 @@ DERIVED = [
      "about four-fifths of India's coal; captive and commercial mines report monthly"),
     ("dispatch_daily", "Coal dispatched per day, CIL and Singareni", "Mt", (["offtake_d:CIL", "offtake_d:SCCL"], 1e-3), "CIL MOC Dashboard", ""),
     ("rakes", "Coal trains loaded per day, Coal India", "rakes", (["rakes_loaded_d:CIL"], 1), "CIL Rakes Data (FOIS)", "about 4,000 tonnes a train"),
+    ("rail_coal_daily", "Coal and coke loaded by Indian Railways per day", "Mt", (["rail_load_d:Coal and coke"], 1), "Indian Railways FOIS (RailSAHAY)",
+     "all coal on rail: Coal India, Singareni, captive and commercial mines, imported coal from the ports; daily from 21 Nov 2026"),
     ("production", "Coal production, all India", "Mt a month", (["prod_m:Total"], 1), "Ministry of Coal, Monthly Coal Statistics", ""),
     ("offtake", "Coal dispatched from the mines, all India", "Mt a month", (["dispatch_m:Total"], 1), "Ministry of Coal, Monthly Coal Statistics", ""),
     ("dispatch_power", "Coal dispatched to power stations", "Mt a month", (["dispatch_power_m:Total"], 1), "Ministry of Coal, Monthly Coal Statistics", ""),
@@ -195,6 +197,25 @@ def supply(con):
     full = {"generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "series": {k: sorted([[p, v] for p, v in d.items()]) for k, d in raw.items()}, "units": units, "sources": srcs}
     return {"series": out, "units": un, "meta": meta}, full
+
+
+def rail_block(con):
+    """Latest Indian Railways loading snapshot (FOIS RailSAHAY): coal & coke and all freight, yesterday / 7 days / month / FY."""
+    try:
+        day = con.execute("SELECT max(day) FROM rail_loading_snap").fetchone()[0]
+    except sqlite3.OperationalError:
+        return None
+    if not day:
+        return None
+    rs = rows(con, """SELECT cmdt, d_mt, w7_mt, mtd_mt, ytd_mt, max(last_seen) seen FROM rail_loading_snap WHERE day=?
+                      GROUP BY cmdt""", day)
+    one = lambda r: {"d": r["d_mt"], "w7": r["w7_mt"], "mtd": r["mtd_mt"], "ytd": r["ytd_mt"]}
+    coal = next((r for r in rs if r["cmdt"] == "Coal and coke"), None)
+    if not coal:
+        return None
+    tot = {k: round(sum((r[c] or 0) for r in rs), 2) for k, c in (("d", "d_mt"), ("w7", "w7_mt"), ("mtd", "mtd_mt"), ("ytd", "ytd_mt"))}
+    return {"day": day, "seen": coal["seen"], "coal": one(coal), "all": tot,
+            "groups": {r["cmdt"]: one(r) for r in rs}, "source": "Indian Railways FOIS (RailSAHAY), loading by commodity"}
 
 
 def fy_block(con):
@@ -299,7 +320,7 @@ def main():
     day, dates, pl = plants_block(con, plants)
     sup, full = supply(con)
     obj = {"generated": datetime.now(timezone.utc).isoformat(timespec="seconds"), "day": day, "hist_dates": dates,
-           "national": national(con), "fy": fy_block(con), "plants": pl, "supply": sup, "reserves": reserves(con), "map": map_block()}
+           "national": national(con), "fy": fy_block(con), "rail": rail_block(con), "plants": pl, "supply": sup, "reserves": reserves(con), "map": map_block()}
     con.close()
     OUT.mkdir(parents=True, exist_ok=True)
     tmp = OUT / ".coal.json.tmp"

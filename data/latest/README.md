@@ -9,9 +9,11 @@ Updated 2026-11-22 (UTC) from the live collector. Plain CSV, one row per day / w
 | [`coal_production_daily.csv`](coal_production_daily.csv) | 10,640 |
 | [`coal_supply_monthly.csv`](coal_supply_monthly.csv) | 15,597 |
 | [`reservoirs_weekly.csv`](reservoirs_weekly.csv) | 4,709 |
+| [`rail_loading_daily.csv`](rail_loading_daily.csv) | 9 |
 
 - `coal_stock_national_daily`: CEA Daily Coal Stock Report summed over operating plants. `days_of_coal_at_requirement` = stock of plants that state a requirement ÷ that daily requirement (85% PLF), comparable across the whole record. CEA widened the report on 2021-11-14 (about 27 more plants). Receipt from 2021-09, consumption from 2021-11. Rows with an obvious typo (over 3 Mt and four times the plant's normative stock) are left out.
 - `coal_rakes_daily`: CIL's Rakes Data page (FOIS); CIL is the sum of its subsidiaries. Loaded from 2022-03-27.
 - `coal_production_daily`: CIL MOC dashboard, on-day production and offtake in thousand tonnes (CIL, subsidiaries, SCCL).
 - `coal_supply_monthly`: series names are `<measure>:<entity>`; see `data/coal/coal_supply` in the data dictionary.
 - `reservoirs_weekly`: CWC weekly bulletin totals (BCM and % of live capacity), dated by bulletin.
+- `rail_loading_daily`: Indian Railways freight loading by commodity group from FOIS RailSAHAY, million tonnes; `Coal and coke` is all coal on rail (Coal India, Singareni, captive and commercial mines, imports from ports). RailSAHAY has no history, so the series starts 2026-11-21 (snapshotted hourly; dated the day loaded).

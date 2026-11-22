@@ -12,6 +12,7 @@ history). These files are plain text in a stable order, so a day's commit is onl
   coal_production_daily.csv      production and offtake per day by company, '000 t (CIL MOC dashboard, 2023-10 on)
   coal_supply_monthly.csv        every monthly series in coal_supply (production, dispatch, rakes, ports, imports, gas...)
   reservoirs_weekly.csv          all-India and regional reservoir storage (CWC, 2015 on)
+  rail_loading_daily.csv         Indian Railways loading by commodity, Mt (FOIS RailSAHAY, 2026-11-21 on)
 """
 import argparse, csv, sqlite3
 from datetime import datetime, timezone
@@ -73,6 +74,11 @@ def main():
             GROUP BY period, region ORDER BY period, region""",
              ["date", "region", "live_storage_bcm", "live_capacity_bcm", "pct_of_capacity", "pct_same_week_last_year", "pct_10yr_normal"]),
     ]
+    if con.execute("SELECT 1 FROM sqlite_master WHERE name='rail_loading_snap'").fetchone():
+        done.append(dump(con, "rail_loading_daily.csv", """
+            SELECT day, cmdt, d_mt, w7_mt, mtd_mt, ytd_mt FROM rail_loading_snap s
+            WHERE last_seen = (SELECT max(last_seen) FROM rail_loading_snap t WHERE t.day = s.day AND t.cmdt = s.cmdt)
+            ORDER BY day, cmdt""", ["date", "commodity", "loaded_mt", "last_7_days_mt", "month_to_date_mt", "fy_to_date_mt"]))
     con.close()
     lines = "\n".join(f"| [`{n}`]({n}) | {r:,} |" for n, r in done)
     (OUT / "README.md").write_text(
@@ -88,7 +94,10 @@ def main():
         "- `coal_rakes_daily`: CIL's Rakes Data page (FOIS); CIL is the sum of its subsidiaries. Loaded from 2022-03-27.\n"
         "- `coal_production_daily`: CIL MOC dashboard, on-day production and offtake in thousand tonnes (CIL, subsidiaries, SCCL).\n"
         "- `coal_supply_monthly`: series names are `<measure>:<entity>`; see `data/coal/coal_supply` in the data dictionary.\n"
-        "- `reservoirs_weekly`: CWC weekly bulletin totals (BCM and % of live capacity), dated by bulletin.\n")
+        "- `reservoirs_weekly`: CWC weekly bulletin totals (BCM and % of live capacity), dated by bulletin.\n"
+        "- `rail_loading_daily`: Indian Railways freight loading by commodity group from FOIS RailSAHAY, million tonnes; `Coal and coke` "
+        "is all coal on rail (Coal India, Singareni, captive and commercial mines, imports from ports). RailSAHAY has no history, so "
+        "the series starts 2026-11-21 (snapshotted hourly; dated the day loaded).\n")
     for n, r in done:
         print(n, r)
 
